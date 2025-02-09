@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Fangming Guo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="../index.html" class="name">Fangming Guo</a>
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="../publications/">Publications</a>
+                    <a href="../projects/" class="active">Projects</a>
+                    <a href="../blog/">Blog</a>
+                    <a href="../contact/">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <h1>Research Projects</h1>
+            
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="current">Current</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <div class="project-grid">
+                <div class="project-item" data-type="current">
+                    <div class="project-header">
+                        <img src="../assets/images/project1.jpg" alt="UAV Edge Intelligence" class="project-image">
+                        <div class="project-badges">
+                            <span class="badge current">Current</span>
+                            <span class="badge type">Research</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Edge Intelligence for UAV Systems</h3>
+                        <p class="project-date">2023 - Present</p>
+                        <p class="project-description">
+                            Developing innovative edge intelligence solutions for UAV systems, focusing on:
+                            <ul>
+                                <li>Real-time data processing at the edge</li>
+                                <li>Secure communication protocols</li>
+                                <li>Energy-efficient computing strategies</li>
+                            </ul>
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="demo-link"><i class="fas fa-play-circle"></i> Demo</a>
+                            <a href="#" class="code-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="paper-link"><i class="fas fa-file-alt"></i> Paper</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- More project items -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Fangming Guo. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/projects.js"></script>
+</body>
+</html> 

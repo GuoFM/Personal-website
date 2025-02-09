@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Fangming Guo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="../index.html" class="name">Fangming Guo</a>
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="../publications/">Publications</a>
+                    <a href="../projects/">Projects</a>
+                    <a href="../blog/" class="active">Blog</a>
+                    <a href="../contact/">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="blog-section">
+            <h1>Blog Posts</h1>
+            
+            <div class="blog-filters">
+                <div class="search-box">
+                    <input type="text" placeholder="Search posts...">
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="research">Research</button>
+                    <button class="filter-btn" data-filter="tutorial">Tutorials</button>
+                    <button class="filter-btn" data-filter="thoughts">Thoughts</button>
+                </div>
+            </div>
+
+            <div class="post-grid">
+                <div class="post-item" data-category="research">
+                    <div class="post-image">
+                        <img src="../assets/images/blog1.jpg" alt="Edge Computing in UAV Systems">
+                        <div class="post-category-badge">Research</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Edge Computing: The Future of UAV Systems</h3>
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar"></i> January 15, 2024</span>
+                            <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <p class="post-excerpt">
+                            Exploring how edge computing is revolutionizing UAV systems, enabling real-time processing and decision-making capabilities...
+                        </p>
+                        <div class="post-tags">
+                            <span class="tag">Edge Computing</span>
+                            <span class="tag">UAV</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <a href="posts/edge-computing-uav.html" class="read-more">Read More →</a>
+                    </div>
+                </div>
+                <!-- More blog posts -->
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="prev">← Previous</a>
+                <span class="page-numbers">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </span>
+                <a href="#" class="next">Next →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Fangming Guo. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/blog.js"></script>
+</body>
+</html> 

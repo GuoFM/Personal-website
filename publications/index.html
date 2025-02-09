@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Fangming</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="../index.html" class="name">Fangming Guo</a>
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="../publications/" class="active">Publications</a>
+                    <a href="../projects/">Projects</a>
+                    <a href="../blog/">Blog</a>
+                    <a href="../contact/">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="publications-section">
+            <h1>Publications</h1>
+            
+            <div class="publication-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="journal">Journal Papers</button>
+                <button class="filter-btn" data-filter="conference">Conference Papers</button>
+                <button class="filter-btn" data-filter="preprint">Preprints</button>
+            </div>
+
+            <div class="publication-list">
+                <div class="publication-item" data-type="journal">
+                    <div class="publication-content">
+                        <h3>Towards More Efficient and Secure UAV Systems: A Comprehensive Survey on Edge Intelligence</h3>
+                        <p class="authors">Fangming Guo, Feiyang Liu, et al.</p>
+                        <p class="venue">IEEE Internet of Things Journal, 2024</p>
+                        <p class="abstract">This paper presents a comprehensive survey on the integration of edge intelligence in UAV systems, focusing on efficiency and security aspects...</p>
+                        <div class="publication-links">
+                            <a href="../assets/files/paper1.pdf" class="paper-link" target="_blank">
+                                <i class="fas fa-file-pdf"></i> PDF
+                            </a>
+                            <a href="https://doi.org/10.1109/JIOT.2024.123456" class="doi-link" target="_blank">
+                                <i class="ai ai-doi"></i> DOI
+                            </a>
+                            <a href="#" class="cite-link" onclick="showCitation(event, 'paper1')">
+                                <i class="fas fa-quote-right"></i> Cite
+                            </a>
+                        </div>
+                        <div id="paper1-citation" class="citation-box" style="display: none;">
+                            <pre>@article{guo2024towards,
+    title={Towards More Efficient and Secure UAV Systems},
+    author={Guo, Fangming and Liu, Feiyang and Others},
+    journal={IEEE Internet of Things Journal},
+    year={2024}
+}</pre>
+                            <button onclick="copyText('paper1-citation')" class="copy-btn">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Fangming Guo. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/publications.js"></script>
+</body>
+</html> 

@@ -1,0 +1,16 @@
+website/
+├── index.html          # 主页
+├── blog/              
+│   └── index.html      # 博客页面
+├── publications/      
+│   └── index.html      # 发表文章页面
+├── projects/          
+│   └── index.html      # 项目展示页面
+├── css/
+│   ├── style.css       # 主样式文件
+│   └── responsive.css  # 响应式样式
+├── js/
+│   └── main.js         # JavaScript功能
+└── assets/
+    ├── images/         # 图片资源
+    └── files/          # PDF等文件 
