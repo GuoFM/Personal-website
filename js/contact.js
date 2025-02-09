@@ -1,24 +1,27 @@
-function handleSubmit(event) {
+function sendEmail(event) {
     event.preventDefault();
     
-    const formData = new FormData(event.target);
-    const data = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        subject: formData.get('subject'),
-        message: formData.get('message')
+    const btn = document.querySelector('.submit-btn');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    const templateParams = {
+        to_name: "Fangming Guo",
+        from_name: document.getElementById('name').value,
+        from_email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
+        reply_to: document.getElementById('email').value
     };
 
-    // 构建邮件内容
-    const mailtoLink = `mailto:fguo1996@cqu.edu.cn?subject=${encodeURIComponent(data.subject)}&body=${encodeURIComponent(
-        `From: ${data.name} (${data.email})\n\n${data.message}`
-    )}`;
+    emailjs.send('service_rnfrnsd', 'service_rnfrnsd', templateParams)
+        .then(function(response) {
+            window.location.href = '/thank-you.html';
+        }, function(error) {
+            alert('Sorry, there was an error. Please try again.');
+            btn.disabled = false;
+            btn.textContent = 'Send Message';
+        });
 
-    // 打开默认邮件客户端
-    window.location.href = mailtoLink;
-    
-    // 清空表单
-    event.target.reset();
-    
     return false;
 } 

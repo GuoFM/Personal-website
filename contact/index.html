@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("dcpWqWn-UOJacvOCG");
+        })();
+    </script>
 </head>
 <body>
     <header>
@@ -32,7 +38,7 @@
             <div class="contact-container">
                 <div class="contact-info">
                     <h2>Direct Contact</h2>
-                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a></p>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:fguo1996@cqu.edu.cn">fguo1996@cqu.edu.cn</a></p>
                     <p><i class="fas fa-map-marker-alt"></i> Location: Your Department, Your University</p>
                     
                     <div class="social-links">
@@ -48,7 +54,7 @@
                     </div>
                 </div>
 
-                <form action="https://formspree.io/f/您的表单ID" method="POST" class="contact-form">
+                <form id="contact-form" class="contact-form" onsubmit="return sendEmail(event)">
                     <div class="form-group">
                         <label for="name">Name *</label>
                         <input type="text" id="name" name="name" required>
@@ -68,10 +74,6 @@
                         <label for="message">Message *</label>
                         <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
-
-                    <input type="text" name="_gotcha" style="display:none">
-                    
-                    <input type="hidden" name="_next" value="https://your-website.com/thank-you">
                     
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
