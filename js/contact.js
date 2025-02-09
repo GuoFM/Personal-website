@@ -5,37 +5,26 @@ function sendEmail(event) {
     btn.disabled = true;
     btn.textContent = 'Sending...';
 
-    const messageContent = document.getElementById('message').value;
-    console.log('Message content:', messageContent);
-
+    // 简化模板参数，只使用必要的字段
     const templateParams = {
-        to_name: "Fangming Guo",
         from_name: document.getElementById('name').value,
         from_email: document.getElementById('email').value,
-        subject: document.getElementById('subject').value,
-        message: messageContent,
-        reply_to: document.getElementById('email').value
+        message: document.getElementById('message').value,
+        subject: document.getElementById('subject').value
     };
 
-    console.log('Template params:', templateParams);
+    console.log('Sending with params:', templateParams);
 
     emailjs.send('service_rnfrnsd', 'template_z8q3z8c', templateParams)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
+            alert('Message sent successfully!');
             window.location.href = 'thank-you.html';
         })
         .catch(function(error) {
             console.error('FAILED...', error);
-            if (error.text) {
-                alert('Error: ' + error.text);
-            } else if (error.message) {
-                alert('Error: ' + error.message);
-            } else {
-                alert('An unexpected error occurred. Please try again.');
-            }
-            
-            console.error('Full error object:', JSON.stringify(error, null, 2));
-            
+            alert('Failed to send message. Please try again later.');
+            console.error('Full error:', error);
             btn.disabled = false;
             btn.textContent = 'Send Message';
         });
