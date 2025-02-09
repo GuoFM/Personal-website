@@ -10,11 +10,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init({
-                publicKey: "dcpWqWn-UOJacvOCG",
-                blockHeadless: false,
-                limitRate: true
-            });
+            // 使用最简单的初始化方式
+            emailjs.init("dcpWqWn-UOJacvOCG");
         })();
     </script>
 </head>
@@ -61,12 +58,12 @@
                 <form id="contact-form" class="contact-form" onsubmit="return sendEmail(event)">
                     <div class="form-group">
                         <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="from_name" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="from_email" required>
                     </div>
                     
                     <div class="form-group">
