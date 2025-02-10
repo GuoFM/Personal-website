@@ -155,11 +155,30 @@ footer {
 
 /* Publication Items */
 .publication-item {
+    display: flex;
+    gap: 2rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
     background: var(--bg-primary);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.publication-image-container {
+    flex: 0 0 200px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.publication-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.publication-content {
+    flex: 1;
 }
 
 .publication-content h3 {
@@ -247,15 +266,14 @@ footer {
 /* 响应式设计 */
 @media (max-width: 768px) {
     .publication-item {
-        padding: 1rem;
+        flex-direction: column;
     }
     
-    .publication-content h3 {
-        font-size: 1.2rem;
-    }
-    
-    .publication-links {
-        flex-wrap: wrap;
+    .publication-image-container {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 1rem;
     }
 }
 
@@ -682,4 +700,10 @@ a {
 a:hover {
     color: var(--link-hover);
     text-decoration: underline;
+}
+
+/* Publications 页面特定样式 */
+.publications-section .publication-item {
+    display: block;
+    padding: 1.5rem;
 } 
