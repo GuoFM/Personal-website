@@ -123,13 +123,13 @@ footer {
 
 /* Publication Items */
 .publication-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding: 1rem;
     background: #fff;
-    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    display: flex;
-    margin-bottom: 2rem;
-    transition: transform 0.2s;
 }
 
 .publication-item:hover {
@@ -542,4 +542,36 @@ footer {
 
 .back-home:hover {
     background-color: var(--secondary-color);
+}
+
+/* 添加图片容器样式 */
+.publication-image-container {
+    max-width: 300px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.publication-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.publication-image:hover {
+    transform: scale(1.05);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .publication-item {
+        flex-direction: column;
+    }
+    
+    .publication-image-container {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        max-width: 100%;
+    }
 } 
