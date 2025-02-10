@@ -768,25 +768,30 @@ footer {
 }
 
 .badge {
-    padding: 0.25rem 0.5rem;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
     border-radius: 4px;
     font-size: 0.8rem;
-    color: var(--text-light);
-    transition: 
-        background-color var(--transition-normal) var(--ease-in-out),
-        transform var(--transition-fast) var(--ease-in-out);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary);
+    background-color: var(--bg-muted);
+    margin-right: 0.5rem;
+    transition: all 0.2s ease;
 }
 
 .badge.current {
-    background-color: var(--accent-color);
+    background-color: #4CAF50;
+    color: white;
 }
 
 .badge.type {
-    background-color: var(--secondary-color);
+    background-color: var(--bg-accent);
+    color: var(--text-primary);
 }
 
 .badge:hover {
-    transform: scale(1.05);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
 }
 
 /* Thank You Page Styles */
