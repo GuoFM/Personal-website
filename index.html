@@ -65,7 +65,13 @@
             <div class="publication-list">
                 <div class="publication-item">
                     <div class="publication-image-container">
-                        <img src="assets/images/paper1-preview.jpg" alt="Publication 1 Preview" class="publication-image">
+                        <!-- 添加图片加载错误处理 -->
+                        <img 
+                            src="assets/images/paper1-preview.jpg" 
+                            alt="Publication 1 Preview" 
+                            class="publication-image"
+                            onerror="this.onerror=null; this.src='assets/images/default-paper.svg';"
+                        >
                     </div>
                     <div class="publication-content">
                         <h3>Event-driven Tactile Sensing With Dense Spiking Graph Neural Networks</h3>
