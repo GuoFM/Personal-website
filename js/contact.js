@@ -24,20 +24,42 @@ function sendEmail(event) {
                 // 显示成功提示框
                 alert('Message sent successfully! Redirecting to thank you page...');
                 
-                // 延迟后尝试跳转
+                // 添加当前位置的调试信息
+                console.log('Current location:', window.location.href);
+                console.log('Attempting to redirect from:', window.location.pathname);
+                
                 setTimeout(() => {
                     try {
-                        // 尝试多种跳转方式
-                        window.location.replace('../thank-you.html');
-                        // 如果上面的不成功，尝试这个
-                        if(!window.location.href.includes('thank-you')) {
-                            window.open('../thank-you.html', '_self');
+                        // 根据当前路径构建正确的相对路径
+                        const currentPath = window.location.pathname;
+                        let redirectPath;
+                        
+                        if (currentPath.includes('/contact/')) {
+                            redirectPath = '../thank-you.html';
+                        } else if (currentPath.includes('/contact')) {
+                            redirectPath = './thank-you.html';
+                        } else {
+                            redirectPath = '/thank-you.html';
                         }
+                        
+                        console.log('Redirecting to:', redirectPath);
+                        
+                        // 尝试跳转
+                        window.location.href = redirectPath;
+                        
+                        // 检查跳转是否成功
+                        setTimeout(() => {
+                            if (!window.location.href.includes('thank-you')) {
+                                console.log('First redirect attempt failed, trying alternative...');
+                                window.location.replace(redirectPath);
+                            }
+                        }, 500);
+                        
                     } catch (error) {
                         console.error('Redirect error:', error);
-                        alert('Message sent successfully! But redirect failed. Please go back to home page.');
+                        alert('Redirect failed. Current path: ' + window.location.pathname);
                     }
-                }, 1500); // 延长等待时间到1.5秒
+                }, 1500);
             })
             .catch(function(error) {
                 console.error('Error:', error);
