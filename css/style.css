@@ -608,29 +608,27 @@ footer {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--spacing-4);
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 0.5rem;
-    color: var(--text-secondary);
-    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-2);
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-family: inherit;
-    transition: 
-        border-color var(--transition-normal) var(--ease-out),
-        box-shadow var(--transition-normal) var(--bounce),
-        transform var(--transition-fast) var(--ease-out);
+    padding: var(--spacing-3);
+    border: 1px solid var(--text-muted);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal) var(--ease-out);
 }
 
 .form-group textarea {
@@ -918,7 +916,7 @@ a:hover {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--spacing-4);
+    padding: 0 var(--spacing-6);
 }
 
 /* 按钮系统 */
@@ -1442,4 +1440,30 @@ a:hover {
     font-size: var(--text-sm);
     font-weight: var(--font-weight-semibold);
     color: var(--text-accent);
+}
+
+/* 统一页面容器样式 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+/* 统一页面主体间距 */
+main {
+    padding-top: calc(var(--header-height) + var(--spacing-8));  /* 头部固定导航的高度 + 间距 */
+    min-height: calc(100vh - var(--footer-height));  /* 确保页面至少占满视口高度 */
+}
+
+/* 统一section间距 */
+section {
+    margin-bottom: var(--spacing-16);
+}
+
+/* 统一卡片网格布局 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-8);
 } 
