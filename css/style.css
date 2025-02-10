@@ -1,8 +1,8 @@
 :root {
     /* 主题颜色优化 */
     --primary-color: #01060c;
-    --secondary-color: #1592e6;
-    --accent-color: #eb2d18;
+    --secondary-color: #0996f5;
+    --accent-color: #f11f08;
     --success-color: #2ecc71;
     
     /* 文字颜色优化 */
@@ -787,7 +787,7 @@ footer {
 /* Type badge 样式 */
 .badge.type {
     background-color: var(--bg-accent);  /* 浅蓝色背景 */
-    color: #000000;  /* 纯黑色文字 */
+    color: #070000;  /* 纯黑色文字 */
     border: 1px solid rgba(0, 0, 0, 0.1);  /* 添加细边框增加对比度 */
 }
 
