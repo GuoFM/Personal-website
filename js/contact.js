@@ -32,18 +32,18 @@ window.sendEmail = function(event) {
                 btn.textContent = 'Message Sent!';
                 btn.style.backgroundColor = '#28a745';
                 
-                alert('Message sent successfully!');
+                // 先重置表单
+                document.getElementById('contact-form').reset();
                 
+                // 显示成功消息并跳转
+                alert('Message sent successfully!');
                 console.log('Attempting redirect...');
-                // 尝试多种跳转方式
-                try {
-                    window.location.href = 'thank-you.html';
-                    console.log('Redirect attempted');
-                } catch (redirectError) {
-                    console.error('Redirect failed:', redirectError);
-                    // 备用跳转方式
-                    window.location = 'thank-you.html';
-                }
+                
+                // 使用完整的相对路径
+                const redirectPath = './thank-you.html';
+                console.log('Redirect path:', redirectPath);
+                
+                window.location.href = redirectPath;
             })
             .catch(function(error) {
                 console.error('EmailJS Error:', error);
@@ -59,10 +59,16 @@ window.sendEmail = function(event) {
         btn.style.backgroundColor = '';
         alert('An error occurred. Please try again.');
     }
-
-    console.log('End of sendEmail function');
-    return false;
 };
 
-// 添加页面加载完成的日志
-console.log('Contact.js loaded'); 
+// 页面加载完成后绑定事件
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Contact.js loaded and DOM ready');
+    const form = document.getElementById('contact-form');
+    if (form) {
+        form.addEventListener('submit', sendEmail);
+        console.log('Submit event handler attached');
+    } else {
+        console.error('Contact form not found');
+    }
+}); 
