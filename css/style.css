@@ -1,8 +1,8 @@
 :root {
     /* 主题颜色优化 */
     --primary-color: #01060c;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
+    --secondary-color: #1592e6;
+    --accent-color: #eb2d18;
     --success-color: #2ecc71;
     
     /* 文字颜色优化 */
@@ -772,21 +772,23 @@ footer {
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
     font-size: 0.8rem;
-    font-weight: var(--font-weight-medium);
-    color: var(--text-primary);
-    background-color: var(--bg-muted);
+    font-weight: var(--font-weight-semibold);  /* 加粗 */
     margin-right: 0.5rem;
     transition: all 0.2s ease;
 }
 
+/* Current badge 样式 */
 .badge.current {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50;  /* 绿色背景 */
+    color: #ffffff;  /* 纯白色文字 */
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);  /* 添加轻微文字阴影提高可读性 */
 }
 
+/* Type badge 样式 */
 .badge.type {
-    background-color: var(--bg-accent);
-    color: var(--text-primary);
+    background-color: var(--bg-accent);  /* 浅蓝色背景 */
+    color: #000000;  /* 纯黑色文字 */
+    border: 1px solid rgba(0, 0, 0, 0.1);  /* 添加细边框增加对比度 */
 }
 
 .badge:hover {
