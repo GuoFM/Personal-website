@@ -1,8 +1,14 @@
-function sendEmail(event) {
+// 确保函数在全局作用域
+window.sendEmail = function(event) {
     event.preventDefault();
     console.log('Form submitted');
     
     const btn = document.querySelector('.submit-btn');
+    if (!btn) {
+        console.error('Submit button not found');
+        return false;
+    }
+    
     btn.disabled = true;
     btn.textContent = 'Sending...';
     console.log('Button disabled and text updated');
@@ -15,6 +21,10 @@ function sendEmail(event) {
     console.log('Template params:', templateParams);
 
     try {
+        if (!window.emailjs) {
+            throw new Error('EmailJS not loaded');
+        }
+        
         console.log('Starting email send...');
         emailjs.send('service_rnfrnsd', 'template_z8q3z8c', templateParams)
             .then(function(response) {
@@ -24,8 +34,16 @@ function sendEmail(event) {
                 
                 alert('Message sent successfully!');
                 
-                console.log('Attempting immediate redirect');
-                window.location = 'thank-you.html';
+                console.log('Attempting redirect...');
+                // 尝试多种跳转方式
+                try {
+                    window.location.href = 'thank-you.html';
+                    console.log('Redirect attempted');
+                } catch (redirectError) {
+                    console.error('Redirect failed:', redirectError);
+                    // 备用跳转方式
+                    window.location = 'thank-you.html';
+                }
             })
             .catch(function(error) {
                 console.error('EmailJS Error:', error);
@@ -44,4 +62,7 @@ function sendEmail(event) {
 
     console.log('End of sendEmail function');
     return false;
-} 
+};
+
+// 添加页面加载完成的日志
+console.log('Contact.js loaded'); 
