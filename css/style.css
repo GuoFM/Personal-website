@@ -6,16 +6,17 @@
     --success-color: #2ecc71;
     
     /* 文字颜色优化 */
-    --text-primary: #2d3748;    /* 更深的主要文字颜色 */
-    --text-secondary: #4a5568;  /* 更柔和的次要文字 */
-    --text-muted: #718096;      /* 淡化文字 */
-    --text-accent: #2b6cb0;     /* 更专业的强调色 */
+    --text-primary: #1a202c;    /* 更深的主要文字颜色 */
+    --text-secondary: #2d3748;  /* 更深的次要文字 */
+    --text-muted: #4a5568;      /* 更深的淡化文字 */
+    --text-accent: #2563eb;     /* 更鲜明的强调色 */
+    --text-light: #f7fafc;      /* 浅色文字 */
     
     /* 背景颜色优化 */
     --bg-primary: #ffffff;
-    --bg-secondary: #f7fafc;
-    --bg-accent: #ebf8ff;
-    --bg-muted: #edf2f7;
+    --bg-secondary: #f8fafc;
+    --bg-accent: #e6f0ff;       /* 更明显的强调背景 */
+    --bg-muted: #f1f5f9;
     
     /* 字体大小系统 */
     --text-xs: 0.813rem;     /* 13px */
@@ -243,7 +244,7 @@ footer {
     gap: 2rem;
     margin-top: 1rem;
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-stat {
@@ -266,9 +267,9 @@ footer {
 
 .filter-btn {
     padding: 0.5rem 1.5rem;
-    border: 1px solid var(--text-secondary);
+    border: 1px solid var(--text-muted);
     border-radius: 4px;
-    background: none;
+    background: var(--bg-muted);
     color: var(--text-secondary);
     cursor: pointer;
     transition: 
@@ -280,9 +281,9 @@ footer {
 
 .filter-btn:hover,
 .filter-btn.active {
+    color: var(--text-light);
     background-color: var(--text-accent);
     border-color: var(--text-accent);
-    color: white;
 }
 
 /* Publication Items - 主页样式 */
@@ -344,7 +345,7 @@ footer {
 .publication-content .abstract {
     margin: 0.75rem 0;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.7;
     /* 限制摘要最大行数 */
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -451,7 +452,7 @@ footer {
 .project-links a {
     display: inline-block;
     margin-right: 1rem;
-    color: var(--secondary-color);
+    color: var(--text-accent);
     text-decoration: none;
     font-size: 0.9rem;
     transition: 
@@ -503,7 +504,7 @@ footer {
 }
 
 .read-more {
-    color: var(--secondary-color);
+    color: var(--text-accent);
     text-decoration: none;
     font-size: 0.9rem;
 }
@@ -614,8 +615,8 @@ footer {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--text-primary);
-    font-weight: 500;
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-semibold);
 }
 
 .form-group input,
@@ -770,7 +771,7 @@ footer {
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
     font-size: 0.8rem;
-    color: white;
+    color: var(--text-light);
     transition: 
         background-color var(--transition-normal) var(--ease-in-out),
         transform var(--transition-fast) var(--ease-in-out);
@@ -1191,6 +1192,7 @@ a:hover {
     letter-spacing: -0.02em;  /* 稍微调整字间距 */
     position: relative;
     display: inline-block;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* 添加轻微阴影提高可读性 */
 }
 
 /* 统一装饰线样式 */
@@ -1236,7 +1238,7 @@ a:hover {
 .venue {
     font-family: var(--body-font);
     font-size: var(--text-sm);
-    color: var(--text-secondary);
+    color: var(--text-muted);
     font-weight: var(--font-weight-medium);
 }
 
@@ -1288,7 +1290,15 @@ a:hover {
 .form-group label {
     font-family: var(--body-font);
     font-size: var(--text-base);
-    color: var(--text-primary);
+    color: var(--text-secondary);
     margin-bottom: var(--spacing-2);
     font-weight: var(--font-weight-semibold);  /* 加粗 */
+}
+
+/* 强调文本颜色优化 */
+.venue strong,
+.news-content strong,
+.publication-content strong {
+    color: var(--text-accent);
+    font-weight: var(--font-weight-bold);
 } 
