@@ -1,14 +1,14 @@
 :root {
     /* 主题颜色优化 */
-    --primary-color: #2c3e50;
+    --primary-color: #01060c;
     --secondary-color: #3498db;
     --accent-color: #e74c3c;
     --success-color: #2ecc71;
     
     /* 文字颜色优化 */
-    --text-primary: #1a202c;    /* 更深的主要文字颜色 */
-    --text-secondary: #2d3748;  /* 更深的次要文字 */
-    --text-muted: #4a5568;      /* 更深的淡化文字 */
+    --text-primary: #01040b;    /* 更深的主要文字颜色 */
+    --text-secondary: #000309;  /* 更深的次要文字 */
+    --text-muted: #000309;      /* 更深的淡化文字 */
     --text-accent: #2563eb;     /* 更鲜明的强调色 */
     --text-light: #f7fafc;      /* 浅色文字 */
     
