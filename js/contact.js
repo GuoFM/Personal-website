@@ -18,14 +18,10 @@ function sendEmail(event) {
             .then(function() {
                 btn.textContent = 'Message Sent!';
                 document.getElementById('contact-form').reset();
-                // 使用完整的 URL 路径
+                // 使用相对路径，从当前页面位置（contact/index.html）返回上一级
                 setTimeout(() => {
-                    // 获取当前域名并拼接路径
-                    const baseUrl = window.location.origin;
-                    window.location.href = baseUrl + '/thank-you.html';
-                    
-                    // 添加调试信息
-                    console.log('Redirecting to:', baseUrl + '/thank-you.html');
+                    window.location.href = '../../thank-you.html';
+                    console.log('Redirecting to: ../../thank-you.html');
                 }, 1000);
             })
             .catch(function(error) {
