@@ -18,10 +18,11 @@ function sendEmail(event) {
             .then(function() {
                 btn.textContent = 'Message Sent!';
                 document.getElementById('contact-form').reset();
-                // 使用相对路径，从当前页面位置（contact/index.html）返回上一级
                 setTimeout(() => {
-                    window.location.href = '../../thank-you.html';
-                    console.log('Redirecting to: ../../thank-you.html');
+                    // 从 contact 目录返回上一级到根目录
+                    window.location.href = '../thank-you.html';
+                    // 添加调试日志
+                    console.log('Attempting to redirect to:', '../thank-you.html');
                 }, 1000);
             })
             .catch(function(error) {
