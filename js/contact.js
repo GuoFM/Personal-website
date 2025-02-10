@@ -34,9 +34,9 @@ window.sendEmail = function(event) {
                 
                 document.getElementById('contact-form').reset();
                 
-                // 直接使用 window.location.href 进行跳转
+                // 由于 thank-you.html 在同一个文件夹中，使用相对路径
                 console.log('Redirecting to thank-you page...');
-                window.location.href = 'thank-you.html';
+                window.location.replace('./thank-you.html');
             })
             .catch(function(error) {
                 console.error('EmailJS Error:', error);
