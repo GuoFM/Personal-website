@@ -50,6 +50,16 @@
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    
+    /* 动画时间 */
+    --transition-fast: 150ms;
+    --transition-normal: 250ms;
+    --transition-slow: 350ms;
+    
+    /* 动画曲线 */
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
 }
 
 * {
@@ -111,6 +121,7 @@ header {
     text-decoration: none;
     padding: var(--spacing-2) 0;
     position: relative;
+    transition: color var(--transition-normal) var(--ease-in-out);
 }
 
 .nav-links a::after {
@@ -121,7 +132,7 @@ header {
     width: 0;
     height: 2px;
     background-color: var(--text-accent);
-    transition: width 0.2s ease;
+    transition: width var(--transition-normal) var(--ease-out);
 }
 
 .nav-links a:hover::after,
@@ -158,6 +169,14 @@ header {
     margin-right: 1rem;
     color: var(--primary-color);
     text-decoration: none;
+    transition: 
+        transform var(--transition-normal) var(--ease-out),
+        color var(--transition-normal) var(--ease-out);
+}
+
+.social-links a:hover {
+    transform: translateY(-2px);
+    color: var(--text-accent);
 }
 
 /* Sections */
@@ -235,7 +254,10 @@ footer {
     background: none;
     color: var(--text-secondary);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: 
+        background-color var(--transition-fast) var(--ease-in-out),
+        transform var(--transition-fast) var(--ease-in-out),
+        box-shadow var(--transition-fast) var(--ease-in-out);
     font-size: 0.9rem;
 }
 
@@ -256,14 +278,14 @@ footer {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
     margin-bottom: var(--spacing-6);
-    transition: transform 0.2s ease;
-    grid-template-columns: 280px 1fr;  /* 减小一点图片容器宽度 */
-    gap: 1.8rem;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background: var(--bg-primary);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: 
+        transform var(--transition-normal) var(--ease-out),
+        box-shadow var(--transition-normal) var(--ease-out);
+}
+
+.publication-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
 }
 
 .publication-image-container {
@@ -284,7 +306,7 @@ footer {
     height: 100%;
     object-fit: cover; /* 保持图片比例并填充容器 */
     object-position: center; /* 居中裁剪 */
-    transition: transform 0.3s ease;
+    transition: transform var(--transition-slow) var(--ease-out);
 }
 
 .publication-image:hover {
@@ -299,10 +321,8 @@ footer {
 }
 
 .publication-content h3 {
-    font-size: 1.3rem;
-    line-height: 1.4;
-    margin-bottom: 0.75rem;
-    color: var(--text-primary);
+    font-size: var(--text-xl);
+    margin-bottom: var(--spacing-3);
 }
 
 .publication-content .abstract {
@@ -341,17 +361,17 @@ footer {
     }
 }
 
-.authors {
+.publication-content .authors {
     color: var(--text-secondary);
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
+    margin-bottom: var(--spacing-2);
 }
 
-.venue {
+.publication-content .venue {
     color: var(--text-accent);
-    font-style: italic;
-    margin-bottom: 0.75rem;
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
+    font-weight: 500;
+    margin-bottom: var(--spacing-3);
 }
 
 .publication-links {
@@ -369,12 +389,13 @@ footer {
     border-radius: 4px;
     text-decoration: none;
     font-size: 0.9rem;
-    transition: all 0.2s ease;
+    transition: 
+        color var(--transition-normal) var(--ease-out),
+        transform var(--transition-normal) var(--ease-out);
 }
 
 .publication-links a:hover {
-    background-color: var(--text-accent);
-    color: white;
+    transform: translateX(2px);
 }
 
 .publication-links i {
@@ -388,30 +409,23 @@ footer {
 
 /* Project Items */
 .project-item {
-    background: var(--bg-primary);
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
-    overflow: hidden;
-    transition: transform 0.2s ease;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: 
+        transform var(--transition-normal) var(--ease-out),
+        box-shadow var(--transition-normal) var(--ease-out);
 }
 
-.project-header {
-    position: relative;
+.project-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
 }
 
-.project-image {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-}
-
-.project-content {
-    padding: var(--spacing-6);
-}
-
-.project-content h3 {
-    font-size: var(--text-xl);
-    margin-bottom: var(--spacing-3);
+.project-item h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
 }
 
 .project-description {
@@ -425,27 +439,42 @@ footer {
     color: var(--secondary-color);
     text-decoration: none;
     font-size: 0.9rem;
+    transition: 
+        color var(--transition-normal) var(--ease-out),
+        transform var(--transition-normal) var(--ease-out);
+}
+
+.project-links a:hover {
+    transform: translateX(2px);
 }
 
 /* Blog Post Items */
 .post-item {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    background: white;
-    border-radius: 8px;
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
     overflow: hidden;
-    transition: transform 0.2s;
+    transition: 
+        transform var(--transition-normal) var(--ease-out),
+        box-shadow var(--transition-normal) var(--ease-out);
 }
 
 .post-item:hover {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
 }
 
 .post-item h3 {
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
+    font-size: var(--text-xl);
+    margin-bottom: var(--spacing-3);
+}
+
+.post-meta {
+    display: flex;
+    gap: var(--spacing-4);
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+    margin-bottom: var(--spacing-3);
 }
 
 .post-date {
@@ -468,12 +497,17 @@ footer {
 .post-image {
     position: relative;
     height: 200px;
+    transition: transform var(--transition-slow) var(--ease-out);
 }
 
 .post-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.post-image:hover {
+    transform: scale(1.05);
 }
 
 .post-category-badge {
@@ -506,11 +540,14 @@ footer {
     margin-right: 1.5rem;
     color: var(--primary-color);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: 
+        transform var(--transition-normal) var(--ease-out),
+        color var(--transition-normal) var(--ease-out);
 }
 
 .social-links a:hover {
-    color: var(--secondary-color);
+    transform: translateY(-2px);
+    color: var(--text-accent);
 }
 
 /* Contact Page Styles */
@@ -575,6 +612,9 @@ footer {
     border-radius: 4px;
     font-size: 1rem;
     font-family: inherit;
+    transition: 
+        border-color var(--transition-normal) var(--ease-in-out),
+        box-shadow var(--transition-normal) var(--ease-in-out);
 }
 
 .form-group textarea {
@@ -590,8 +630,8 @@ footer {
 
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(44, 62, 80, 0.1);
+    border-color: var(--text-accent);
+    box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.1);
 }
 
 .submit-btn {
@@ -602,11 +642,18 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.2s ease;
+    transition: 
+        background-color var(--transition-fast) var(--ease-in-out),
+        transform var(--transition-fast) var(--ease-in-out),
+        box-shadow var(--transition-fast) var(--ease-in-out);
 }
 
 .submit-btn:hover {
     background-color: var(--link-hover);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
 }
 
 /* Projects Page Styles */
@@ -678,6 +725,23 @@ footer {
 }
 
 /* Project Item Enhancements */
+.project-header {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform var(--transition-slow) var(--ease-out);
+}
+
+.project-item:hover .project-image {
+    transform: scale(1.05);
+}
+
 .project-badges {
     position: absolute;
     top: 1rem;
@@ -691,6 +755,9 @@ footer {
     border-radius: 4px;
     font-size: 0.8rem;
     color: white;
+    transition: 
+        background-color var(--transition-normal) var(--ease-in-out),
+        transform var(--transition-fast) var(--ease-in-out);
 }
 
 .badge.current {
@@ -699,6 +766,10 @@ footer {
 
 .badge.type {
     background-color: var(--secondary-color);
+}
+
+.badge:hover {
+    transform: scale(1.05);
 }
 
 /* Thank You Page Styles */
@@ -804,18 +875,139 @@ footer {
 
 /* 链接样式优化 */
 a {
-    color: var(--link-color);
+    color: var(--text-accent);
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 a:hover {
-    color: var(--link-hover);
-    text-decoration: underline;
+    color: var(--secondary-color);
 }
 
 /* Publications 页面特定样式 */
 .publications-section .publication-item {
     display: block;
     padding: 1.5rem;
+}
+
+/* 容器系统 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+}
+
+/* 按钮系统 */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--radius-md);
+    font-weight: 500;
+    transition: 
+        background-color var(--transition-fast) var(--ease-in-out),
+        transform var(--transition-fast) var(--ease-in-out),
+        box-shadow var(--transition-fast) var(--ease-in-out);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* 卡片系统 */
+.card {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* 通用动画类 */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s var(--ease-out) forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.5s var(--ease-out) forwards;
+}
+
+/* 关键帧动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 页面加载动画 */
+.content-section {
+    animation: fadeIn 0.5s var(--ease-out);
+}
+
+/* 图片加载动画 */
+.image-loading {
+    animation: imagePulse 1.5s var(--ease-in-out) infinite;
+}
+
+@keyframes imagePulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+/* 链接悬停效果 */
+.publication-links a,
+.project-links a {
+    transition: 
+        color var(--transition-normal) var(--ease-out),
+        transform var(--transition-normal) var(--ease-out);
+}
+
+.publication-links a:hover,
+.project-links a:hover {
+    transform: translateX(2px);
 } 
