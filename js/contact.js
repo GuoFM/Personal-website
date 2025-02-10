@@ -12,30 +12,37 @@ function sendEmail(event) {
     };
 
     try {
+        console.log('Attempting to send email...');
         emailjs.send('service_rnfrnsd', 'template_z8q3z8c', templateParams)
-            .then(function() {
+            .then(function(response) {
+                console.log('Email sent successfully:', response);
                 btn.textContent = 'Message Sent!';
                 btn.style.backgroundColor = '#28a745';
+                
+                console.log('Resetting form...');
                 document.getElementById('contact-form').reset();
                 
-                // 添加成功提示
+                console.log('Showing success alert...');
                 alert('Message sent successfully!');
                 
-                // 使用 setTimeout 确保提示显示后再跳转
+                console.log('Setting up redirect...');
                 setTimeout(() => {
-                    // 直接跳转到同一目录下的 thank-you.html
+                    console.log('Attempting to redirect...');
                     window.location.href = './thank-you.html';
+                    console.log('Redirect command executed');
                 }, 500);
+                
+                console.log('All success handlers completed');
             })
             .catch(function(error) {
-                console.error('Error:', error);
+                console.error('Error sending email:', error);
                 btn.disabled = false;
                 btn.textContent = 'Send Message';
                 btn.style.backgroundColor = '';
                 alert('Failed to send message. Please try again.');
             });
     } catch (error) {
-        console.error('Error:', error);
+        console.error('Caught error:', error);
         btn.disabled = false;
         btn.textContent = 'Send Message';
         btn.style.backgroundColor = '';
