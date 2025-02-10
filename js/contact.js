@@ -33,19 +33,10 @@ window.sendEmail = function(event) {
                 btn.style.backgroundColor = '#28a745';
                 
                 document.getElementById('contact-form').reset();
-                alert('Message sent successfully!');
                 
-                // 尝试新的跳转方式
-                console.log('Attempting redirect...');
-                const currentPath = window.location.pathname;
-                console.log('Current path:', currentPath);
-                
-                // 创建一个链接并模拟点击
-                const link = document.createElement('a');
-                link.href = 'thank-you.html';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+                // 直接使用 window.location.href 进行跳转
+                console.log('Redirecting to thank-you page...');
+                window.location.href = 'thank-you.html';
             })
             .catch(function(error) {
                 console.error('EmailJS Error:', error);
