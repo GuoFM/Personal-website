@@ -27,8 +27,8 @@ window.sendEmail = function(event) {
         
         console.log('Starting email send...');
         emailjs.send(
-            'service_rnfrnsd',  // 您的 EmailJS service ID
-            'template_z8q3z8c', // 您的 EmailJS template ID
+            'service_rnfrnsd',  // 检查 Service ID 是否正确
+            'template_z8q3z8c', // 检查 Template ID 是否正确
             templateParams
         )
         .then(
@@ -49,11 +49,15 @@ window.sendEmail = function(event) {
                 }, 1000);
             },
             function(error) {
-                console.log("FAILED", error);
+                console.log("FAILED", error.text);
+                if (error.text.includes("quota")) {
+                    alert("Service temporarily unavailable. Please contact directly via email.");
+                } else {
+                    alert("Failed to send message. Please try again or contact directly via email.");
+                }
                 btn.disabled = false;
                 btn.textContent = 'Send Message';
                 btn.style.backgroundColor = '';
-                alert('Failed to send message. Please try again or contact directly via email.');
             }
         );
     } catch (error) {
