@@ -18,10 +18,11 @@ function sendEmail(event) {
             .then(function() {
                 btn.textContent = 'Message Sent!';
                 document.getElementById('contact-form').reset();
+                // 添加成功提示后延迟跳转
                 setTimeout(() => {
-                    btn.disabled = false;
-                    btn.textContent = 'Send Message';
-                }, 2000);
+                    // 使用相对路径跳转到 thank-you.html
+                    window.location.href = '../thank-you.html';
+                }, 1000); // 1秒后跳转
             })
             .catch(function(error) {
                 console.error('Error:', error);
