@@ -4,14 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const filter = button.dataset.filter;
-            
+            // Remove active class from all buttons
             filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
             button.classList.add('active');
 
+            const filterValue = button.getAttribute('data-filter');
+
             publications.forEach(pub => {
-                if (filter === 'all' || pub.dataset.type === filter) {
-                    pub.style.display = 'flex';
+                if (filterValue === 'all' || pub.getAttribute('data-type') === filterValue) {
+                    pub.style.display = 'block';
                 } else {
                     pub.style.display = 'none';
                 }
