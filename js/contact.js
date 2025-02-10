@@ -11,14 +11,14 @@ window.sendEmail = function(event) {
     
     btn.disabled = true;
     btn.textContent = 'Sending...';
-    console.log('Button disabled and text updated');
 
+    // 获取表单数据
     const templateParams = {
         from_name: document.getElementById('name').value,
         from_email: document.getElementById('email').value,
-        message: document.getElementById('message').value
+        message: document.getElementById('message').value,
+        to_email: 'fguo1996@cqu.edu.cn'  // 添加接收者邮箱
     };
-    console.log('Template params:', templateParams);
 
     try {
         if (!window.emailjs) {
@@ -26,31 +26,42 @@ window.sendEmail = function(event) {
         }
         
         console.log('Starting email send...');
-        emailjs.send('service_rnfrnsd', 'template_z8q3z8c', templateParams)
-            .then(function(response) {
-                console.log('Email sent successfully:', response);
+        emailjs.send(
+            'service_rnfrnsd',  // 您的 EmailJS service ID
+            'template_z8q3z8c', // 您的 EmailJS template ID
+            templateParams
+        )
+        .then(
+            function(response) {
+                console.log("SUCCESS", response);
                 btn.textContent = 'Message Sent!';
                 btn.style.backgroundColor = '#28a745';
                 
+                // 清空表单
                 document.getElementById('contact-form').reset();
                 
-                // 由于 thank-you.html 在同一个文件夹中，使用相对路径
-                console.log('Redirecting to thank-you page...');
-                window.location.replace('./thank-you.html');
-            })
-            .catch(function(error) {
-                console.error('EmailJS Error:', error);
+                // 显示成功消息
+                alert('Message sent successfully! Thank you for your message.');
+                
+                // 延迟跳转，确保用户看到成功消息
+                setTimeout(() => {
+                    window.location.href = './thank-you.html';
+                }, 1000);
+            },
+            function(error) {
+                console.log("FAILED", error);
                 btn.disabled = false;
                 btn.textContent = 'Send Message';
                 btn.style.backgroundColor = '';
-                alert('Failed to send message. Please try again.');
-            });
+                alert('Failed to send message. Please try again or contact directly via email.');
+            }
+        );
     } catch (error) {
         console.error('Try-Catch Error:', error);
         btn.disabled = false;
         btn.textContent = 'Send Message';
         btn.style.backgroundColor = '';
-        alert('An error occurred. Please try again.');
+        alert('An error occurred. Please try again or contact directly via email.');
     }
 };
 

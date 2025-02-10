@@ -10,7 +10,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("dcpWqWn-UOJacvOCG");
+            emailjs.init("YOUR_USER_ID");  // 需要替换为您的 EmailJS USER_ID
         })();
     </script>
 </head>
@@ -57,22 +57,17 @@
                 <form id="contact-form" class="contact-form">
                     <div class="form-group">
                         <label for="name">Name *</label>
-                        <input type="text" id="name" name="from_name" required autocomplete="name">
+                        <input type="text" id="name" name="from_name" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="email">Email *</label>
-                        <input type="email" id="email" name="from_email" required autocomplete="email">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <input type="text" id="subject" name="subject" required autocomplete="off">
+                        <input type="email" id="email" name="from_email" required>
                     </div>
                     
                     <div class="form-group">
                         <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="6" required autocomplete="off"></textarea>
+                        <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
                     
                     <button type="submit" class="submit-btn">Send Message</button>
