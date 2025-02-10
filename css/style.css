@@ -18,14 +18,14 @@
     --bg-muted: #edf2f7;
     
     /* 字体大小系统 */
-    --text-xs: 0.75rem;    /* 12px */
-    --text-sm: 0.875rem;   /* 14px */
-    --text-base: 1rem;     /* 16px */
-    --text-lg: 1.125rem;   /* 18px */
-    --text-xl: 1.25rem;    /* 20px */
-    --text-2xl: 1.5rem;    /* 24px */
-    --text-3xl: 1.875rem;  /* 30px */
-    --text-4xl: 2.25rem;   /* 36px */
+    --text-xs: 0.813rem;     /* 13px */
+    --text-sm: 0.938rem;     /* 15px */
+    --text-base: 1.063rem;   /* 17px */
+    --text-lg: 1.188rem;     /* 19px */
+    --text-xl: 1.375rem;     /* 22px */
+    --text-2xl: 1.625rem;    /* 26px */
+    --text-3xl: 2rem;        /* 32px */
+    --text-4xl: 2.5rem;      /* 40px */
     
     /* 间距系统 */
     --spacing-1: 0.25rem;  /* 4px */
@@ -52,14 +52,21 @@
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     
     /* 动画时间 */
-    --transition-fast: 150ms;
-    --transition-normal: 250ms;
-    --transition-slow: 350ms;
+    --transition-fast: 200ms;    /* 稍微延长快速动画 */
+    --transition-normal: 300ms;  /* 调整标准动画时间 */
+    --transition-slow: 500ms;    /* 延长慢速动画 */
     
     /* 动画曲线 */
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-    --ease-out: cubic-bezier(0, 0, 0.2, 1);
-    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);  /* 平滑过渡 */
+    --ease-out: cubic-bezier(0.0, 0, 0.2, 1);     /* 快出 */
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);        /* 快进 */
+    --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);  /* 弹跳效果 */
+    
+    /* 字体优化 */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 }
 
 * {
@@ -132,7 +139,7 @@ header {
     width: 0;
     height: 2px;
     background-color: var(--text-accent);
-    transition: width var(--transition-normal) var(--ease-out);
+    transition: width var(--transition-normal) var(--bounce);
 }
 
 .nav-links a:hover::after,
@@ -144,6 +151,7 @@ header {
 .hero {
     padding: 8rem 2rem 4rem;
     background-color: #f8f9fa;
+    animation: slideInLeft var(--transition-slow) var(--ease-out) both;
 }
 
 .profile-container {
@@ -159,6 +167,8 @@ header {
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    animation: scaleIn var(--transition-slow) var(--bounce) both;
+    animation-delay: var(--transition-normal);
 }
 
 .social-links {
@@ -172,7 +182,14 @@ header {
     transition: 
         transform var(--transition-normal) var(--ease-out),
         color var(--transition-normal) var(--ease-out);
+    opacity: 0;
+    animation: slideInRight var(--transition-normal) var(--ease-out) forwards;
 }
+
+.social-links a:nth-child(1) { animation-delay: 300ms; }
+.social-links a:nth-child(2) { animation-delay: 400ms; }
+.social-links a:nth-child(3) { animation-delay: 500ms; }
+.social-links a:nth-child(4) { animation-delay: 600ms; }
 
 .social-links a:hover {
     transform: translateY(-2px);
@@ -279,13 +296,12 @@ footer {
     box-shadow: var(--shadow-md);
     margin-bottom: var(--spacing-6);
     transition: 
-        transform var(--transition-normal) var(--ease-out),
+        transform var(--transition-normal) var(--bounce),
         box-shadow var(--transition-normal) var(--ease-out);
 }
 
 .publication-item:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-8px) scale(1.02);
 }
 
 .publication-image-container {
@@ -414,13 +430,12 @@ footer {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: 
-        transform var(--transition-normal) var(--ease-out),
+        transform var(--transition-normal) var(--bounce),
         box-shadow var(--transition-normal) var(--ease-out);
 }
 
 .project-item:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-8px) scale(1.02);
 }
 
 .project-item h3 {
@@ -455,13 +470,12 @@ footer {
     box-shadow: var(--shadow-md);
     overflow: hidden;
     transition: 
-        transform var(--transition-normal) var(--ease-out),
+        transform var(--transition-normal) var(--bounce),
         box-shadow var(--transition-normal) var(--ease-out);
 }
 
 .post-item:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-8px) scale(1.02);
 }
 
 .post-item h3 {
@@ -613,8 +627,9 @@ footer {
     font-size: 1rem;
     font-family: inherit;
     transition: 
-        border-color var(--transition-normal) var(--ease-in-out),
-        box-shadow var(--transition-normal) var(--ease-in-out);
+        border-color var(--transition-normal) var(--ease-out),
+        box-shadow var(--transition-normal) var(--bounce),
+        transform var(--transition-fast) var(--ease-out);
 }
 
 .form-group textarea {
@@ -632,6 +647,7 @@ footer {
     outline: none;
     border-color: var(--text-accent);
     box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.1);
+    transform: translateY(-2px);
 }
 
 .submit-btn {
@@ -643,9 +659,9 @@ footer {
     cursor: pointer;
     font-size: 1rem;
     transition: 
-        background-color var(--transition-fast) var(--ease-in-out),
-        transform var(--transition-fast) var(--ease-in-out),
-        box-shadow var(--transition-fast) var(--ease-in-out);
+        background-color var(--transition-fast) var(--ease-out),
+        transform var(--transition-fast) var(--ease-out),
+        box-shadow var(--transition-fast) var(--ease-out);
 }
 
 .submit-btn:hover {
@@ -653,7 +669,7 @@ footer {
 }
 
 .submit-btn:active {
-    transform: translateY(0);
+    transform: translateY(-2px);
 }
 
 /* Projects Page Styles */
@@ -906,9 +922,9 @@ a:hover {
     border-radius: var(--radius-md);
     font-weight: 500;
     transition: 
-        background-color var(--transition-fast) var(--ease-in-out),
-        transform var(--transition-fast) var(--ease-in-out),
-        box-shadow var(--transition-fast) var(--ease-in-out);
+        background-color var(--transition-fast) var(--ease-out),
+        transform var(--transition-fast) var(--ease-out),
+        box-shadow var(--transition-fast) var(--ease-out);
 }
 
 .btn-primary {
@@ -922,12 +938,11 @@ a:hover {
 }
 
 .btn:hover {
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
 }
 
 .btn:active {
-    transform: translateY(0);
+    transform: translateY(-2px);
 }
 
 /* 卡片系统 */
@@ -1010,4 +1025,155 @@ a:hover {
 .publication-links a:hover,
 .project-links a:hover {
     transform: translateX(2px);
+}
+
+/* 新增动画关键帧 */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* 页面加载动画序列 */
+.hero {
+    animation: slideInLeft var(--transition-slow) var(--ease-out) both;
+}
+
+.profile-image {
+    animation: scaleIn var(--transition-slow) var(--bounce) both;
+    animation-delay: var(--transition-normal);
+}
+
+.social-links a {
+    opacity: 0;
+    animation: slideInRight var(--transition-normal) var(--ease-out) forwards;
+}
+
+.social-links a:nth-child(1) { animation-delay: 300ms; }
+.social-links a:nth-child(2) { animation-delay: 400ms; }
+.social-links a:nth-child(3) { animation-delay: 500ms; }
+.social-links a:nth-child(4) { animation-delay: 600ms; }
+
+/* 滚动动画类 */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 
+        opacity var(--transition-normal) var(--ease-out),
+        transform var(--transition-normal) var(--ease-out);
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 悬浮动画效果 */
+.float-animation {
+    animation: floatAnimation 3s var(--ease-in-out) infinite;
+}
+
+/* 移动端动画优化 */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* 优化项目卡片动画 */
+.project-item {
+    transition: 
+        transform var(--transition-normal) var(--bounce),
+        box-shadow var(--transition-normal) var(--ease-out);
+}
+
+.project-item:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* 优化文章卡片动画 */
+.post-item {
+    transition: 
+        transform var(--transition-normal) var(--bounce),
+        box-shadow var(--transition-normal) var(--ease-out);
+}
+
+.post-item:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* 按钮动画优化 */
+.btn {
+    transition: 
+        transform var(--transition-fast) var(--bounce),
+        background-color var(--transition-fast) var(--ease-out),
+        box-shadow var(--transition-fast) var(--ease-out);
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+.btn:active {
+    transform: translateY(-2px);
+}
+
+/* 导航链接动画优化 */
+.nav-links a::after {
+    transition: width var(--transition-normal) var(--bounce);
+}
+
+/* 表单输入动画优化 */
+.form-group input,
+.form-group textarea {
+    transition: 
+        border-color var(--transition-normal) var(--ease-out),
+        box-shadow var(--transition-normal) var(--bounce),
+        transform var(--transition-fast) var(--ease-out);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    transform: translateY(-2px);
 } 
