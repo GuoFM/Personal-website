@@ -153,6 +153,25 @@ footer {
     margin-top: 4rem;
 }
 
+.footer-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-stat i {
+    font-size: 1rem;
+}
+
 /* Publication Filters */
 .publication-filters {
     margin-bottom: 2rem;
