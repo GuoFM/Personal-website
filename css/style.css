@@ -4,6 +4,9 @@
     --text-color: #333;
     --background-color: #fff;
     --accent-color: #e74c3c;
+    --link-color: #0366d6;
+    --heading-color: #24292e;
+    --date-color: #586069;
     
     /* 添加字体变量 */
     --heading-font: 'Lora', serif;
@@ -620,4 +623,82 @@ footer {
     .publication-links {
         flex-wrap: wrap;
     }
+}
+
+/* 标题样式优化 */
+.hero h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* News 部分样式 */
+.news-section {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.news-section h2 {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    margin-bottom: 1.5rem;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-item {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.news-item::before {
+    content: "•";
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+}
+
+.news-date {
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    color: var(--date-color);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.news-content {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.news-content strong {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* 链接样式优化 */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
 } 
