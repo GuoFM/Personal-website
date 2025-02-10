@@ -1308,4 +1308,138 @@ a:hover {
 .publication-content strong {
     color: var(--text-accent);
     font-weight: var(--font-weight-bold);
+}
+
+/* 统一页面标题样式 */
+.blog-section h1,
+.projects-section h1,
+.contact-section h1,
+.publications-section h1 {
+    font-family: var(--heading-font);
+    font-size: var(--text-4xl);
+    color: var(--text-primary);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-8);
+    position: relative;
+    display: inline-block;
+}
+
+/* 统一二级标题样式 */
+.blog-section h2,
+.projects-section h2,
+.contact-section h2,
+.publications-section h2 {
+    font-family: var(--heading-font);
+    font-size: var(--text-2xl);
+    color: var(--text-accent);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-6);
+}
+
+/* 统一卡片标题样式 */
+.blog-item h3,
+.project-item h3,
+.contact-item h3,
+.publication-item h3 {
+    font-family: var(--heading-font);
+    font-size: var(--text-xl);
+    color: var(--text-primary);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-3);
+}
+
+/* 统一正文样式 */
+.blog-content p,
+.project-description,
+.contact-content p,
+.publication-content p {
+    font-family: var(--body-font);
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* 统一元信息样式（日期、作者等） */
+.blog-date,
+.project-date,
+.contact-date,
+.publication-date,
+.authors {
+    font-family: var(--body-font);
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    font-weight: var(--font-weight-medium);
+}
+
+/* 统一链接样式 */
+.blog-links a,
+.project-links a,
+.contact-links a,
+.publication-links a {
+    font-family: var(--body-font);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-accent);
+}
+
+/* 统一按钮样式 */
+.filter-btn,
+.submit-btn {
+    font-family: var(--body-font);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* 统一标签样式 */
+.badge {
+    font-family: var(--body-font);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* 统一所有页面的主标题样式 */
+.blog-section h1,
+.projects-section h1,
+.contact-section h1,
+.publications-section h1 {
+    font-family: var(--heading-font);
+    font-size: var(--text-4xl);
+    color: var(--text-primary);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-8);
+    position: relative;
+    display: inline-block;
+}
+
+/* 统一所有页面的内容样式 */
+.blog-content,
+.project-description,
+.contact-content,
+.publication-content {
+    font-family: var(--body-font);
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* 统一所有页面的日期样式 */
+.blog-date,
+.project-date,
+.contact-date,
+.publication-date {
+    font-family: var(--body-font);
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    font-weight: var(--font-weight-medium);
+}
+
+/* 统一所有页面的链接样式 */
+.blog-links a,
+.project-links a,
+.contact-links a,
+.publication-links a {
+    font-family: var(--body-font);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-accent);
 } 
