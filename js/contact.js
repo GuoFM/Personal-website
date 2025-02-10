@@ -1,53 +1,47 @@
 function sendEmail(event) {
     event.preventDefault();
+    console.log('Form submitted');
     
     const btn = document.querySelector('.submit-btn');
     btn.disabled = true;
     btn.textContent = 'Sending...';
+    console.log('Button disabled and text updated');
 
     const templateParams = {
         from_name: document.getElementById('name').value,
         from_email: document.getElementById('email').value,
         message: document.getElementById('message').value
     };
+    console.log('Template params:', templateParams);
 
     try {
-        console.log('Attempting to send email...');
+        console.log('Starting email send...');
         emailjs.send('service_rnfrnsd', 'template_z8q3z8c', templateParams)
             .then(function(response) {
                 console.log('Email sent successfully:', response);
                 btn.textContent = 'Message Sent!';
                 btn.style.backgroundColor = '#28a745';
                 
-                console.log('Resetting form...');
-                document.getElementById('contact-form').reset();
-                
-                console.log('Showing success alert...');
                 alert('Message sent successfully!');
                 
-                console.log('Setting up redirect...');
-                setTimeout(() => {
-                    console.log('Attempting to redirect...');
-                    window.location.href = './thank-you.html';
-                    console.log('Redirect command executed');
-                }, 500);
-                
-                console.log('All success handlers completed');
+                console.log('Attempting immediate redirect');
+                window.location = 'thank-you.html';
             })
             .catch(function(error) {
-                console.error('Error sending email:', error);
+                console.error('EmailJS Error:', error);
                 btn.disabled = false;
                 btn.textContent = 'Send Message';
                 btn.style.backgroundColor = '';
                 alert('Failed to send message. Please try again.');
             });
     } catch (error) {
-        console.error('Caught error:', error);
+        console.error('Try-Catch Error:', error);
         btn.disabled = false;
         btn.textContent = 'Send Message';
         btn.style.backgroundColor = '';
         alert('An error occurred. Please try again.');
     }
 
+    console.log('End of sendEmail function');
     return false;
 } 
