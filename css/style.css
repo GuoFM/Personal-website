@@ -182,8 +182,8 @@ footer {
 /* Publication Items - 主页样式 */
 .publication-item {
     display: grid;
-    grid-template-columns: 300px 1fr;  /* 固定图片宽度为300px，文字部分自适应 */
-    gap: 2rem;
+    grid-template-columns: 280px 1fr;  /* 减小一点图片容器宽度 */
+    gap: 1.8rem;
     margin-bottom: 2rem;
     padding: 1.5rem;
     background: var(--bg-primary);
@@ -192,21 +192,28 @@ footer {
 }
 
 .publication-image-container {
-    width: 100%;
-    aspect-ratio: 4/3;  /* 固定图片比例为4:3 */
+    width: 280px;  /* 固定宽度 */
+    height: 210px; /* 固定高度，保持4:3比例 */
     overflow: hidden;
     border-radius: 6px;
+    position: relative; /* 用于图片定位 */
+    background-color: var(--bg-secondary); /* 图片加载前的背景色 */
 }
 
 .publication-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.2s ease;
+    object-fit: cover; /* 保持图片比例并填充容器 */
+    object-position: center; /* 居中裁剪 */
+    transition: transform 0.3s ease;
 }
 
 .publication-image:hover {
-    transform: scale(1.05);
+    transform: translate(-50%, -50%) scale(1.05);
 }
 
 .publication-content {
@@ -234,22 +241,28 @@ footer {
     overflow: hidden;
 }
 
-/* 响应式设计 */
+/* 响应式设计优化 */
 @media (max-width: 1024px) {
     .publication-item {
-        grid-template-columns: 250px 1fr;  /* 在中等屏幕上减小图片宽度 */
+        grid-template-columns: 240px 1fr;
         gap: 1.5rem;
+    }
+
+    .publication-image-container {
+        width: 240px;
+        height: 180px;
     }
 }
 
 @media (max-width: 768px) {
     .publication-item {
-        grid-template-columns: 1fr;  /* 在移动端改为垂直布局 */
+        grid-template-columns: 1fr;
     }
     
     .publication-image-container {
-        max-width: 100%;
-        aspect-ratio: 16/9;  /* 在移动端可以改用更宽的比例 */
+        width: 100%;
+        height: 240px;
+        margin-bottom: 1rem;
     }
 }
 
