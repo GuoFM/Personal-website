@@ -1176,4 +1176,119 @@ a:hover {
 .form-group input:focus,
 .form-group textarea:focus {
     transform: translateY(-2px);
+}
+
+/* 标题样式统一 */
+.projects-section h1,
+.blog-section h1,
+.contact-section h1 {
+    font-family: var(--heading-font);
+    font-size: var(--text-4xl);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-8);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* 二级标题统一 */
+.projects-section h2,
+.blog-section h2,
+.contact-section h2 {
+    font-family: var(--heading-font);
+    font-size: var(--text-2xl);
+    color: var(--text-accent);
+    margin-bottom: var(--spacing-4);
+    font-weight: var(--font-weight-medium);
+}
+
+/* 三级标题统一 */
+.project-item h3,
+.post-item h3,
+.contact-info h3 {
+    font-family: var(--heading-font);
+    font-size: var(--text-xl);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-3);
+    font-weight: var(--font-weight-medium);
+}
+
+/* 正文文字统一 */
+.project-description,
+.post-excerpt,
+.contact-intro,
+.form-group label {
+    font-family: var(--body-font);
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* 元信息文字统一 */
+.project-date,
+.post-date,
+.post-meta,
+.badge {
+    font-family: var(--body-font);
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+}
+
+/* 按钮文字统一 */
+.filter-btn,
+.submit-btn,
+.btn {
+    font-family: var(--body-font);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+/* 链接文字统一 */
+.project-links a,
+.post-links a,
+.read-more {
+    font-family: var(--body-font);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-accent);
+}
+
+/* 标签文字统一 */
+.tag,
+.badge {
+    font-family: var(--body-font);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Direct Contact 标题样式 */
+.contact-info h2 {
+    font-family: var(--heading-font);
+    font-size: var(--text-2xl);
+    color: var(--text-accent);
+    margin-bottom: var(--spacing-6);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Research Projects 和 Blog Posts 标题样式 */
+.projects-section > h1,
+.blog-section > h1 {
+    font-family: var(--heading-font);
+    font-size: var(--text-4xl);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-8);
+    font-weight: var(--font-weight-semibold);
+    position: relative;
+    display: inline-block;
+}
+
+/* 添加标题装饰线 */
+.projects-section > h1::after,
+.blog-section > h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background-color: var(--text-accent);
+    border-radius: 2px;
 } 
