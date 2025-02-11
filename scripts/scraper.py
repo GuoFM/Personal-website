@@ -1,7 +1,7 @@
 import requests
 import yaml
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 import os
 
 def fetch_conference_data():
@@ -49,19 +49,20 @@ def fetch_conference_data():
                                     if deadline and deadline != 'TBD':
                                         try:
                                             # 处理时区
-                                            timezone = latest_conf.get('timezone', 'UTC')
+                                            timezone_str = latest_conf.get('timezone', 'UTC')
                                             
-                                            # 解析截稿日期
-                                            deadline_date = datetime.strptime(deadline.split()[0], '%Y-%m-%d')
-                                            if deadline_date > datetime.now():
+                                            # 解析截稿日期，不考虑时区
+                                            deadline_str = deadline.split()[0]
+                                            deadline_date = datetime.strptime(deadline_str, '%Y-%m-%d')
+                                            
+                                            # 只比较日期部分
+                                            if deadline_date.date() >= datetime.now().date():
                                                 # 处理摘要截止日期
                                                 abstract_deadline = timeline.get('abstract_deadline')
                                                 if abstract_deadline and abstract_deadline != 'TBD':
-                                                    if not abstract_deadline.endswith(timezone):
-                                                        abstract_deadline = f"{abstract_deadline} {timezone}"
+                                                    abstract_deadline = f"{abstract_deadline} {timezone_str}"
                                                 
-                                                if not deadline.endswith(timezone):
-                                                    deadline = f"{deadline} {timezone}"
+                                                deadline = f"{deadline} {timezone_str}"
                                                 
                                                 conference = {
                                                     'title': conf_data['title'],
@@ -76,7 +77,8 @@ def fetch_conference_data():
                                                     'year': str(latest_conf.get('year', ''))
                                                 }
                                                 conferences.append(conference)
-                                                print(f"Successfully processed conference: {conf_data['title']}")
+                                                print(f"Successfully processed conference: {conf_data['title']} with deadline {deadline}")
+                                                
                                         except ValueError as e:
                                             print(f"Error parsing date for conference {conf_data.get('title')}: {str(e)}")
                                             continue
