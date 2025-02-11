@@ -5,9 +5,19 @@ from datetime import datetime
 import os
 
 def fetch_conference_data():
-    # 使用 GitHub API 获取会议目录
-    api_url = "https://api.github.com/repos/ccfddl/ccf-deadlines/contents/conference"
-    categories = ['ai', 'architecture', 'security', 'software', 'theory', 'network', 'db', 'cg', 'hi', 'mx']
+    # 使用正确的分类代码
+    categories = {
+        'DS': '计算机体系结构/并行与分布计算/存储系统',
+        'NW': '计算机网络',
+        'SC': '网络与信息安全',
+        'SE': '软件工程/系统软件/程序设计语言',
+        'DB': '数据库/数据挖掘/内容检索',
+        'CT': '计算机科学理论',
+        'CG': '计算机图形学与多媒体',
+        'AI': '人工智能',
+        'HI': '人机交互与普适计算',
+        'MX': '交叉/综合/新兴'
+    }
     
     print("Starting to fetch conference data...")
     conferences = []
@@ -20,65 +30,46 @@ def fetch_conference_data():
             'Accept': 'application/vnd.github.v3+json'
         }
     
-    for category in categories:
-        print(f"Processing category: {category}")
-        try:
-            # 获取每个分类目录下的文件
-            category_url = f"{api_url}/{category}"
-            print(f"Fetching from: {category_url}")
-            
-            response = requests.get(category_url, headers=headers)
-            response.raise_for_status()
-            files = response.json()
-            
-            # 处理每个会议的 YAML 文件
-            for file in files:
-                if file['name'].endswith('.yml'):
-                    try:
-                        # 获取 YAML 文件内容
-                        yaml_content = requests.get(file['download_url'], headers=headers).text
-                        conf_data = yaml.safe_load(yaml_content)
-                        
-                        if conf_data and 'confs' in conf_data and conf_data['confs']:
-                            # 获取最新一届会议信息
-                            latest_conf = conf_data['confs'][-1]
-                            
-                            if 'timeline' in latest_conf:
-                                for timeline in latest_conf['timeline']:
-                                    deadline = timeline.get('deadline')
-                                    if deadline and deadline != 'TBD':
-                                        # 处理时区
-                                        timezone = latest_conf.get('timezone', 'UTC')
-                                        if not deadline.endswith(timezone):
-                                            deadline = f"{deadline} {timezone}"
-                                        
-                                        # 处理摘要截止日期
-                                        abstract_deadline = timeline.get('abstract_deadline')
-                                        if abstract_deadline and abstract_deadline != 'TBD':
-                                            if not abstract_deadline.endswith(timezone):
-                                                abstract_deadline = f"{abstract_deadline} {timezone}"
-                                        
-                                        conference = {
-                                            'title': conf_data['title'],
-                                            'rank': conf_data['rank']['ccf'],
-                                            'category': conf_data.get('sub', category.upper()),
-                                            'abstract_deadline': abstract_deadline,
-                                            'submission_deadline': deadline,
-                                            'conference_date': latest_conf.get('date', 'TBA'),
-                                            'location': latest_conf.get('place', 'TBA'),
-                                            'website': latest_conf.get('link', '#'),
-                                            'link': latest_conf.get('link', '#')
-                                        }
-                                        conferences.append(conference)
-                                        print(f"Successfully processed conference: {conf_data['title']}")
-                                        
-                    except Exception as e:
-                        print(f"Error processing conference file {file['name']}: {str(e)}")
-                        continue
-                        
-        except Exception as e:
-            print(f"Error processing category {category}: {str(e)}")
-            continue
+    try:
+        # 获取主数据文件
+        api_url = "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/data/ccf-deadlines.json"
+        print(f"Fetching from: {api_url}")
+        
+        response = requests.get(api_url, headers=headers)
+        response.raise_for_status()
+        data = response.json()
+        
+        # 处理每个会议数据
+        for conf in data:
+            try:
+                deadline = conf.get('deadline')
+                if deadline and deadline != 'TBD':
+                    # 获取分类中文名称
+                    category_code = conf.get('type', 'MX')
+                    category_name = categories.get(category_code, '其他')
+                    
+                    conference = {
+                        'title': conf['name'],
+                        'rank': conf.get('ccf_level', 'N/A'),
+                        'category': category_name,
+                        'category_code': category_code,
+                        'abstract_deadline': conf.get('abstract_deadline'),
+                        'submission_deadline': deadline,
+                        'conference_date': conf.get('date', 'TBA'),
+                        'location': conf.get('place', 'TBA'),
+                        'website': conf.get('website', '#'),
+                        'link': conf.get('link', '#')
+                    }
+                    conferences.append(conference)
+                    print(f"Successfully processed conference: {conf['name']}")
+                    
+            except Exception as e:
+                print(f"Error processing conference {conf.get('name', 'unknown')}: {str(e)}")
+                continue
+                
+    except Exception as e:
+        print(f"Error fetching data: {str(e)}")
+        return []
     
     if not conferences:
         print("No conferences were found!")
