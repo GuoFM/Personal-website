@@ -1466,4 +1466,70 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-6);
     margin-bottom: var(--spacing-8);
+}
+
+/* 统一所有页面的主标题样式 */
+.blog-section h1,
+.projects-section h1,
+.contact-section h1,
+.publications-section h1 {
+    font-family: var(--heading-font);
+    font-size: var(--text-4xl);
+    color: var(--text-primary);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-8);
+    position: relative;
+    display: inline-block;
+    letter-spacing: -0.02em;
+}
+
+/* 添加统一的装饰线 */
+.blog-section h1::after,
+.projects-section h1::after,
+.contact-section h1::after,
+.publications-section h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background-color: var(--text-accent);
+    border-radius: 2px;
+}
+
+/* 统一二级标题样式 */
+.blog-section h2,
+.projects-section h2,
+.contact-section h2,
+.publications-section h2 {
+    font-family: var(--heading-font);
+    font-size: var(--text-2xl);
+    color: var(--text-accent);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-6);
+}
+
+/* 统一卡片标题样式 */
+.blog-item h3,
+.project-item h3,
+.contact-item h3,
+.publication-item h3 {
+    font-family: var(--heading-font);
+    font-size: var(--text-xl);
+    color: var(--text-primary);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-3);
+}
+
+/* 统一段落文本样式 */
+.blog-content p,
+.project-description,
+.contact-content p,
+.publication-content p {
+    font-family: var(--body-font);
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-4);
 } 

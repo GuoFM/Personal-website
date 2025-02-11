@@ -41,10 +41,31 @@ document.addEventListener('DOMContentLoaded', function() {
     // 添加调试信息（可选）
     console.log('Current page:', normalizedPath);
     console.log('Page stats:', pageStats[normalizedPath]);
+
+    // 获取最后更新时间
+    updateLastModified();
 });
 
 // 添加清除统计的辅助函数（仅用于测试）
 function clearStats() {
     localStorage.removeItem('pageStats');
     location.reload();
+}
+
+// 使用 Git 最后提交时间
+const lastCommitDate = '__LAST_COMMIT_DATE__';  // 这个变量会在构建时被替换
+
+function updateLastModified() {
+    const lastUpdateElement = document.getElementById('last-update');
+    if (lastUpdateElement) {
+        const date = new Date(lastCommitDate);
+        const options = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        };
+        
+        const formattedDate = date.toLocaleDateString('en-US', options);
+        lastUpdateElement.textContent = formattedDate;
+    }
 } 
