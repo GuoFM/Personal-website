@@ -13,6 +13,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0   # 获取完整历史记录
     
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -38,4 +40,10 @@ jobs:
         git add public/data/conferences.json
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update conference data" && git push)
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Deploy to GitHub Pages
+      run: |
+        git checkout gh-pages
+        git merge main -m "Merge main into gh-pages"
+        git push origin gh-pages 
