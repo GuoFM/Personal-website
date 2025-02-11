@@ -51,9 +51,14 @@ def save_data(conferences):
         import os
         os.makedirs('public/data', exist_ok=True)
         
-        with open('public/data/conferences.json', 'w', encoding='utf-8') as f:
+        # 使用绝对路径
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        root_dir = os.path.dirname(script_dir)
+        file_path = os.path.join(root_dir, 'public', 'data', 'conferences.json')
+        
+        with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(conferences, f, ensure_ascii=False, indent=2)
-            print(f"Successfully saved {len(conferences)} conferences")
+            print(f"Successfully saved {len(conferences)} conferences to {file_path}")
     except Exception as e:
         print(f"Error saving data: {e}")
 
