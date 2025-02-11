@@ -1,0 +1,2 @@
+# 如果存在类似的规则，需要添加例外
+public/data/conferences.json !public/data/conferences.json 

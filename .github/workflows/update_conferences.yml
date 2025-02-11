@@ -15,7 +15,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.PAT_TOKEN }}  # 使用 PAT token
+        token: ${{ secrets.PAT_TOKEN }}
         
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -27,22 +27,53 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests pyyaml
 
+    - name: Create data directory
+      run: |
+        mkdir -p public/data
+        echo "Created directory structure:"
+        ls -la public/
+
     - name: Run scraper
       run: |
         echo "Starting conference scraper..."
-        mkdir -p public/data
         python scripts/scraper.py
         echo "Checking generated file..."
         ls -la public/data/
-        cat public/data/conferences.json || echo "File not found"
+        if [ -f "public/data/conferences.json" ]; then
+          echo "File exists, checking content:"
+          cat public/data/conferences.json
+        else
+          echo "Error: conferences.json not found"
+          exit 1
+        fi
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+    - name: Check file status
+      run: |
+        if [ -f "public/data/conferences.json" ]; then
+          echo "File exists and will be committed"
+          git status
+        else
+          echo "Error: File does not exist"
+          exit 1
+        fi
 
     - name: Commit and push changes
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add public/data/conferences.json
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update conference data" && git push)
+        
+        # 确保文件被追踪
+        git add -f public/data/conferences.json
+        
+        # 检查是否有变更需要提交
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update conference data"
+          git push
+          echo "Changes committed and pushed"
+        fi
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }} 
