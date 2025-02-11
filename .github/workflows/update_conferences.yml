@@ -23,7 +23,9 @@ jobs:
         pip install requests pyyaml
     
     - name: Run scraper
-      run: python scripts/scraper.py
+      run: |
+        mkdir -p public/data
+        python scripts/scraper.py
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
