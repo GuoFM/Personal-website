@@ -5,7 +5,6 @@ from datetime import datetime
 import os
 
 def fetch_conference_data():
-    # 会议分类目录
     categories = ['NW', 'DS', 'SC', 'SE', 'DB', 'CT', 'CG', 'AI', 'HI', 'MX']
     
     print("Starting to fetch conference data...")
@@ -22,7 +21,6 @@ def fetch_conference_data():
     for category in categories:
         print(f"Processing category: {category}")
         try:
-            # 获取分类目录下的文件列表
             api_url = f"https://api.github.com/repos/ccfddl/ccf-deadlines/contents/conference/{category}"
             print(f"Fetching from: {api_url}")
             
@@ -30,11 +28,9 @@ def fetch_conference_data():
             response.raise_for_status()
             files = response.json()
             
-            # 处理每个会议的 YAML 文件
             for file in files:
                 if file['name'].endswith('.yml'):
                     try:
-                        # 获取 YAML 文件内容
                         yaml_url = file['download_url']
                         print(f"Fetching conference file: {yaml_url}")
                         
@@ -81,9 +77,11 @@ def fetch_conference_data():
                                                 }
                                                 conferences.append(conference)
                                                 print(f"Successfully processed conference: {conf_data['title']}")
-                                                
-                    except ValueError as e:
-                        print(f"Error parsing date for conference {conf_data.get('title')}: {str(e)}")
+                                        except ValueError as e:
+                                            print(f"Error parsing date for conference {conf_data.get('title')}: {str(e)}")
+                                            continue
+                    except Exception as e:
+                        print(f"Error processing conference file {file['name']}: {str(e)}")
                         continue
                         
         except Exception as e:
