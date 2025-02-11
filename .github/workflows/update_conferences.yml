@@ -2,78 +2,34 @@ name: Update Conference Data
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # 每天UTC时间0点运行
+    - cron: '0 0 * * *'  # 每天运行
   workflow_dispatch:      # 允许手动触发
 
 jobs:
-  update:
+  update-conferences:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write    # 添加写入权限
-
+    
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.PAT_TOKEN }}
-        
+    - uses: actions/checkout@v2
+    
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v2
       with:
-        python-version: '3.8'
-
+        python-version: '3.x'
+    
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install requests pyyaml
-
-    - name: Create data directory
-      run: |
-        mkdir -p public/data
-        echo "Created directory structure:"
-        ls -la public/
-
+    
     - name: Run scraper
-      run: |
-        echo "Starting conference scraper..."
-        python scripts/scraper.py
-        echo "Checking generated file..."
-        ls -la public/data/
-        if [ -f "public/data/conferences.json" ]; then
-          echo "File exists, checking content:"
-          cat public/data/conferences.json
-        else
-          echo "Error: conferences.json not found"
-          exit 1
-        fi
+      run: python scripts/scraper.py
       env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
-
-    - name: Check file status
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Commit and push if changed
       run: |
-        if [ -f "public/data/conferences.json" ]; then
-          echo "File exists and will be committed"
-          git status
-        else
-          echo "Error: File does not exist"
-          exit 1
-        fi
-
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        
-        # 确保文件被追踪
-        git add -f public/data/conferences.json
-        
-        # 检查是否有变更需要提交
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
-          git commit -m "Update conference data"
-          git push
-          echo "Changes committed and pushed"
-        fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }} 
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add public/data/conferences.json
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update conference data" && git push) 

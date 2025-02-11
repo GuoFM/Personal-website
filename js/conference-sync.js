@@ -139,4 +139,117 @@ class ConferenceSync {
 document.addEventListener('DOMContentLoaded', () => {
     const sync = new ConferenceSync();
     sync.startAutoUpdate();
-}); 
+});
+
+async function loadConferences() {
+    try {
+        const response = await fetch('/data/conferences.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch conference data');
+        }
+        const conferences = await response.json();
+        displayConferences(conferences);
+    } catch (error) {
+        console.error('Error loading conferences:', error);
+        document.getElementById('conference-list').innerHTML = 
+            '<p class="error">Failed to load conference data. Please try again later.</p>';
+    }
+}
+
+function displayConferences(conferences) {
+    const container = document.getElementById('conference-list');
+    if (!conferences || conferences.length === 0) {
+        container.innerHTML = '<p>No upcoming conference deadlines found.</p>';
+        return;
+    }
+
+    // 按 CCF 等级分组
+    const conferencesByRank = {
+        'A': conferences.filter(c => c.rank === 'A'),
+        'B': conferences.filter(c => c.rank === 'B'),
+        'C': conferences.filter(c => c.rank === 'C')
+    };
+
+    container.innerHTML = ''; // 清空现有内容
+
+    // 创建会议列表
+    Object.entries(conferencesByRank).forEach(([rank, rankConferences]) => {
+        if (rankConferences.length > 0) {
+            const section = document.createElement('div');
+            section.className = `ccf-${rank.toLowerCase()}-conferences`;
+            section.style.display = 'none'; // 默认隐藏，由过滤器控制显示
+
+            rankConferences.forEach(conf => {
+                const confElement = createConferenceElement(conf);
+                section.appendChild(confElement);
+            });
+
+            container.appendChild(section);
+        }
+    });
+
+    // 初始化过滤器
+    initializeFilters();
+}
+
+function createConferenceElement(conf) {
+    const element = document.createElement('div');
+    element.className = 'conference-item';
+    
+    const deadline = new Date(conf.submission_deadline.split(' ')[0]);
+    const daysUntil = Math.ceil((deadline - new Date()) / (1000 * 60 * 60 * 24));
+    
+    element.innerHTML = `
+        <div class="conference-header">
+            <h3>${conf.title} ${conf.year}</h3>
+            <span class="ccf-rank">CCF-${conf.rank}</span>
+        </div>
+        <div class="conference-info">
+            <p class="description">${conf.description}</p>
+            <p class="deadline">Submission Deadline: ${conf.submission_deadline}</p>
+            ${conf.abstract_deadline ? `<p class="abstract-deadline">Abstract Deadline: ${conf.abstract_deadline}</p>` : ''}
+            <p class="countdown">${daysUntil} days until deadline</p>
+            <p class="location">${conf.location}</p>
+            <a href="${conf.website}" target="_blank" class="conference-link">Conference Website</a>
+        </div>
+    `;
+    
+    return element;
+}
+
+function initializeFilters() {
+    // 获取所有过滤器按钮
+    const filterButtons = document.querySelectorAll('.filter-button');
+    
+    // 为每个按钮添加点击事件
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const rank = button.getAttribute('data-rank');
+            
+            // 更新按钮状态
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            
+            // 显示/隐藏相应的会议
+            document.querySelectorAll('.ccf-a-conferences, .ccf-b-conferences, .ccf-c-conferences')
+                .forEach(section => {
+                    section.style.display = 'none';
+                });
+            
+            if (rank === 'all') {
+                document.querySelectorAll('.ccf-a-conferences, .ccf-b-conferences, .ccf-c-conferences')
+                    .forEach(section => {
+                        section.style.display = 'block';
+                    });
+            } else {
+                document.querySelector(`.ccf-${rank}-conferences`).style.display = 'block';
+            }
+        });
+    });
+    
+    // 默认显示所有会议
+    document.querySelector('[data-rank="all"]').click();
+}
+
+// 页面加载时初始化
+document.addEventListener('DOMContentLoaded', loadConferences); 
