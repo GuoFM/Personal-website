@@ -7,8 +7,13 @@ import os
 def fetch_conference_data():
     # 获取会议目录列表
     api_url = "https://api.github.com/repos/ccfddl/ccf-deadlines/contents/conference"
+    print(f"Fetching data from GitHub API: {api_url}")
+    headers = {}
+    if 'GITHUB_TOKEN' in os.environ:
+        headers['Authorization'] = f"token {os.environ['GITHUB_TOKEN']}"
+    
     try:
-        response = requests.get(api_url)
+        response = requests.get(api_url, headers=headers)
         response.raise_for_status()
         categories = response.json()
         
@@ -34,27 +39,37 @@ def fetch_conference_data():
                             # 处理截稿日期
                             if 'timeline' in latest_conf:
                                 for timeline in latest_conf['timeline']:
-                                    if 'abstract_deadline' in timeline:
-                                        abstract_date = timeline['abstract_deadline']
-                                    deadline = timeline['deadline']
-                                    if deadline != 'TBD':
-                                        # 转换时区
-                                        timezone = latest_conf.get('timezone', 'UTC')
-                                        deadline_with_tz = f"{deadline} {timezone}"
-                                        
-                                        conferences.append({
-                                            'title': conf_data['title'],
-                                            'rank': conf_data['rank']['ccf'],
-                                            'category': conf_data['sub'],
-                                            'abstract_deadline': abstract_date if 'abstract_date' in locals() else None,
-                                            'submission_deadline': deadline,
-                                            'conference_date': latest_conf.get('date', 'TBA'),
-                                            'location': latest_conf.get('place', 'TBA'),
-                                            'website': latest_conf.get('link', '#'),
-                                            'link': latest_conf.get('link', '#')
-                                        })
-                                        print(f"Successfully processed conference: {conf_data['title']}")
-                                        
+                                    try:
+                                        deadline = timeline.get('deadline')
+                                        if deadline and deadline != 'TBD':
+                                            # 处理时区
+                                            timezone = latest_conf.get('timezone', 'UTC')
+                                            
+                                            # 添加时区信息
+                                            if not deadline.endswith(timezone):
+                                                deadline = f"{deadline} {timezone}"
+                                            
+                                            # 同样处理 abstract_deadline
+                                            abstract_deadline = timeline.get('abstract_deadline')
+                                            if abstract_deadline and abstract_deadline != 'TBD':
+                                                if not abstract_deadline.endswith(timezone):
+                                                    abstract_deadline = f"{abstract_deadline} {timezone}"
+                                            
+                                            conferences.append({
+                                                'title': conf_data['title'],
+                                                'rank': conf_data['rank']['ccf'],
+                                                'category': conf_data['sub'],
+                                                'abstract_deadline': abstract_deadline,
+                                                'submission_deadline': deadline,
+                                                'conference_date': latest_conf.get('date', 'TBA'),
+                                                'location': latest_conf.get('place', 'TBA'),
+                                                'website': latest_conf.get('link', '#'),
+                                                'link': latest_conf.get('link', '#')
+                                            })
+                                            print(f"Successfully processed conference: {conf_data['title']}")
+                                    except Exception as e:
+                                        print(f"Error processing timeline for {conf_data['title']}: {e}")
+                                        continue
                         except (KeyError, IndexError) as e:
                             print(f"Error processing conference file {conf_file['name']}: {e}")
                             continue
