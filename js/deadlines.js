@@ -10,13 +10,13 @@ class ConferenceDisplay {
     async init() {
         const listElement = document.getElementById('conference-list');
         try {
-            listElement.innerHTML = '<p class="loading">Loading conference deadlines...</p>';
+            listElement.innerHTML = '<div class="loading-spinner"></div>';
             await this.loadConferences();
             this.setupEventListeners();
             this.filterAndDisplayConferences();
         } catch (error) {
-            console.error('Failed to initialize conference display:', error);
-            listElement.innerHTML = '<p class="error">Failed to load conference data. Please try again later.</p>';
+            console.error('Failed to initialize:', error);
+            listElement.innerHTML = '<p class="error-message">Failed to load conference data. Please try again later.</p>';
         }
     }
 
@@ -27,24 +27,32 @@ class ConferenceDisplay {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
-            this.conferences = data.conferences || [];
+            
+            if (!data || !Array.isArray(data.conferences)) {
+                throw new Error('Invalid data format');
+            }
+            
+            this.conferences = data.conferences;
+            console.log(`Loaded ${this.conferences.length} conferences`);
             
             // 更新最后更新时间
             const lastUpdateElem = document.getElementById('last-update');
-            if (lastUpdateElem) {
+            if (lastUpdateElem && data.last_updated) {
                 const date = new Date(data.last_updated);
                 lastUpdateElem.textContent = date.toLocaleDateString();
             }
         } catch (error) {
-            throw new Error('Failed to fetch conference data: ' + error.message);
+            console.error('Failed to fetch conference data:', error);
+            throw error;
         }
     }
 
     setupEventListeners() {
         // Rank filters
-        document.querySelectorAll('.filter-button').forEach(button => {
-            button.addEventListener('click', () => {
-                document.querySelectorAll('.filter-button').forEach(btn => 
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault(); // 防止页面跳转
+                document.querySelectorAll('.filter-btn').forEach(btn => 
                     btn.classList.remove('active'));
                 button.classList.add('active');
                 this.currentRank = button.dataset.rank;
@@ -53,7 +61,7 @@ class ConferenceDisplay {
         });
 
         // Category filters
-        document.querySelectorAll('.category-checkbox input').forEach(checkbox => {
+        document.querySelectorAll('.checkbox-label input').forEach(checkbox => {
             checkbox.addEventListener('change', () => {
                 const category = checkbox.dataset.category;
                 if (checkbox.checked) {
@@ -62,6 +70,7 @@ class ConferenceDisplay {
                     this.selectedCategories.delete(category);
                 }
                 this.filterAndDisplayConferences();
+                console.log('Selected categories:', this.selectedCategories); // 调试信息
             });
         });
     }
@@ -100,7 +109,11 @@ class ConferenceDisplay {
     displayConferences() {
         const container = document.getElementById('conference-list');
         if (!this.filteredConferences.length) {
-            container.innerHTML = '<p>No conferences found matching the current filter.</p>';
+            container.innerHTML = `
+                <div class="empty-state">
+                    <p>No conferences found matching the current filters.</p>
+                </div>
+            `;
             return;
         }
 
@@ -120,8 +133,7 @@ class ConferenceDisplay {
                         <span class="info-label">Deadline</span>
                         <span class="info-value ${this.getTimeUntil(conf.submission_deadline) === 'Today' ? 'deadline-soon' : ''}">
                             ${conf.submission_deadline}
-                            (${this.getTimeUntil(conf.submission_deadline)})
-                            ${conf.comment ? `- ${conf.comment}` : ''}
+                            <span class="deadline-countdown">${this.getTimeUntil(conf.submission_deadline)}</span>
                         </span>
                     </div>
                     <div class="info-item">

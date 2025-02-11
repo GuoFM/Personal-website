@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="stylesheet" href="/css/deadlines.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -30,41 +29,45 @@
     </header>
 
     <main class="container">
-        <section class="deadlines-section">
+        <section class="content-section">
             <h1>Conference Deadlines</h1>
             
-            <div class="filters-container">
-                <div class="filter-section">
+            <div class="filter-container">
+                <div class="filter-group">
                     <h3>CCF Rank</h3>
-                    <div class="filter-buttons">
-                        <button class="filter-button active" data-rank="all">All</button>
-                        <button class="filter-button" data-rank="A">CCF-A</button>
-                        <button class="filter-button" data-rank="B">CCF-B</button>
-                        <button class="filter-button" data-rank="C">CCF-C</button>
+                    <div class="publication-filters">
+                        <button class="filter-btn active" data-rank="all">All</button>
+                        <button class="filter-btn" data-rank="A">CCF-A</button>
+                        <button class="filter-btn" data-rank="B">CCF-B</button>
+                        <button class="filter-btn" data-rank="C">CCF-C</button>
                     </div>
                 </div>
 
-                <div class="filter-section">
+                <div class="filter-group">
                     <h3>Categories</h3>
-                    <div class="category-filters">
-                        <label class="category-checkbox">
-                            <input type="checkbox" data-category="AI" checked> Artificial Intelligence
+                    <div class="checkbox-grid">
+                        <label class="checkbox-label">
+                            <input type="checkbox" data-category="AI" checked>
+                            <span>Artificial Intelligence</span>
                         </label>
-                        <label class="category-checkbox">
-                            <input type="checkbox" data-category="NW" checked> Networks
+                        <label class="checkbox-label">
+                            <input type="checkbox" data-category="NW" checked>
+                            <span>Networks</span>
                         </label>
-                        <label class="category-checkbox">
-                            <input type="checkbox" data-category="SC" checked> Security
+                        <label class="checkbox-label">
+                            <input type="checkbox" data-category="SC" checked>
+                            <span>Security</span>
                         </label>
-                        <label class="category-checkbox">
-                            <input type="checkbox" data-category="SE" checked> Software Engineering
+                        <label class="checkbox-label">
+                            <input type="checkbox" data-category="SE" checked>
+                            <span>Software Engineering</span>
                         </label>
-                        <!-- Add more categories -->
+                        <!-- Add more categories as needed -->
                     </div>
                 </div>
             </div>
 
-            <div id="conference-list" class="conference-grid">
+            <div id="conference-list" class="card-grid">
                 <!-- Conferences will be loaded here -->
             </div>
         </section>
