@@ -3,7 +3,7 @@ class ConferenceDisplay {
         this.conferences = [];
         this.filteredConferences = [];
         this.currentRank = 'all';
-        this.selectedCategories = new Set(['AI', 'NW', 'SC', 'SE', 'DB', 'CT', 'CG', 'HI', 'MX']);
+        this.selectedCategories = new Set(['AI', 'NW', 'SC', 'SE', 'DB', 'CT', 'CG', 'HI', 'MX', 'DS']);
         this.init();
     }
 
