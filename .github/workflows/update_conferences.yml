@@ -35,7 +35,9 @@ jobs:
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
+        git stash -u  # 暂存所有更改
         git pull --rebase origin main
+        git stash pop  # 恢复更改
         git add public/data/conferences.json
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update conference data" && git push)
       env:
