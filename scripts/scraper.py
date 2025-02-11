@@ -12,28 +12,51 @@ def fetch_conference_data():
     print("Starting to fetch conference data...")
     conferences = []
     
+    # 设置 GitHub API 认证
+    headers = {}
+    if 'GITHUB_TOKEN' in os.environ:
+        headers = {
+            'Authorization': f"Bearer {os.environ['GITHUB_TOKEN']}",
+            'Accept': 'application/vnd.github.v3+json'
+        }
+    
     for category in categories:
         print(f"Processing category: {category}")
-        category_url = f"{base_url}/{category}"
         
         try:
             # 获取目录列表
-            response = requests.get(f"https://api.github.com/repos/ccfddl/ccf-deadlines/contents/conference/{category}")
+            api_url = f"https://api.github.com/repos/ccfddl/ccf-deadlines/contents/conference/{category}"
+            print(f"Fetching from: {api_url}")
+            
+            response = requests.get(api_url, headers=headers)
             response.raise_for_status()
             conf_files = response.json()
             
+            if not isinstance(conf_files, list):
+                print(f"Unexpected response format for {category}: {conf_files}")
+                continue
+            
             for conf_file in conf_files:
-                if conf_file['name'].endswith('.yml'):
+                if not isinstance(conf_file, dict):
+                    print(f"Unexpected file format in {category}: {conf_file}")
+                    continue
+                    
+                if conf_file.get('name', '').endswith('.yml'):
                     try:
                         # 获取 YAML 文件内容
                         yaml_url = conf_file['download_url']
                         print(f"Fetching conference file: {yaml_url}")
-                        yaml_response = requests.get(yaml_url)
+                        
+                        yaml_response = requests.get(yaml_url, headers=headers)
                         yaml_response.raise_for_status()
                         
                         # 解析 YAML 数据
                         conf_data = yaml.safe_load(yaml_response.text)
                         
+                        if not conf_data:
+                            print(f"Empty YAML data for {conf_file['name']}")
+                            continue
+                            
                         if 'confs' in conf_data and conf_data['confs']:
                             latest_conf = conf_data['confs'][-1]  # 获取最新一届会议
                             
@@ -69,12 +92,16 @@ def fetch_conference_data():
                                         print(f"Successfully processed conference: {conf_data['title']}")
                                         
                     except Exception as e:
-                        print(f"Error processing conference file {conf_file['name']}: {e}")
+                        print(f"Error processing conference file {conf_file.get('name', 'unknown')}: {str(e)}")
                         continue
                         
         except Exception as e:
-            print(f"Error processing category {category}: {e}")
+            print(f"Error processing category {category}: {str(e)}")
             continue
+    
+    if not conferences:
+        print("No conferences were found!")
+        return []
     
     # 过滤过期会议并排序
     now = datetime.now()
@@ -85,7 +112,7 @@ def fetch_conference_data():
             if deadline > now:
                 valid_conferences.append(conf)
         except ValueError as e:
-            print(f"Error parsing deadline for {conf['title']}: {e}")
+            print(f"Error parsing deadline for {conf['title']}: {str(e)}")
             continue
     
     valid_conferences.sort(key=lambda x: datetime.strptime(x['submission_deadline'].split()[0], '%Y-%m-%d'))
@@ -106,8 +133,18 @@ def save_data(conferences):
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(conferences, f, ensure_ascii=False, indent=2)
             print(f"Successfully saved {len(conferences)} conferences to {file_path}")
+            
+        # 验证文件是否成功创建
+        if os.path.exists(file_path):
+            print(f"Verified: File exists at {file_path}")
+            print(f"File size: {os.path.getsize(file_path)} bytes")
+        else:
+            print(f"Warning: File was not created at {file_path}")
+            
     except Exception as e:
-        print(f"Error saving data: {e}")
+        print(f"Error saving data: {str(e)}")
+        print(f"Current working directory: {os.getcwd()}")
+        print(f"Directory contents: {os.listdir('.')}")
 
 if __name__ == "__main__":
     print("Starting conference data scraper...")

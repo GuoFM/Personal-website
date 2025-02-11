@@ -30,9 +30,11 @@ jobs:
     - name: Run scraper
       run: |
         echo "Starting conference scraper..."
+        mkdir -p public/data
         python scripts/scraper.py
         echo "Checking generated file..."
-        cat public/data/conferences.json
+        ls -la public/data/
+        cat public/data/conferences.json || echo "File not found"
       env:
         GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
