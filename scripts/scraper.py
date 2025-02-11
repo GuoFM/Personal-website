@@ -132,8 +132,14 @@ def save_data(conferences):
         os.makedirs('public/data', exist_ok=True)
         file_path = os.path.join('public', 'data', 'conferences.json')
         
+        # 添加元数据
+        data = {
+            'last_updated': datetime.now().isoformat(),
+            'conferences': conferences
+        }
+        
         with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(conferences, f, ensure_ascii=False, indent=2)
+            json.dump(data, f, ensure_ascii=False, indent=2)
             print(f"Successfully saved {len(conferences)} conferences to {file_path}")
             
     except Exception as e:
