@@ -1,46 +1,80 @@
 import requests
+import yaml
 import json
 from datetime import datetime
+import os
 
 def fetch_conference_data():
-    url = "https://ccfddl.github.io/data/ccf-deadlines.json"
+    # 获取会议目录列表
+    api_url = "https://api.github.com/repos/ccfddl/ccf-deadlines/contents/conference"
     try:
-        response = requests.get(url)
+        response = requests.get(api_url)
         response.raise_for_status()
-        data = response.json()
+        categories = response.json()
         
-        # 转换数据格式
         conferences = []
-        for conf in data:
-            # 确保日期格式正确
-            try:
-                abstract_date = datetime.strptime(conf['abstract_deadline'], '%Y-%m-%d %H:%M:%S') if conf.get('abstract_deadline') else None
-                submission_date = datetime.strptime(conf['deadline'], '%Y-%m-%d %H:%M:%S')
+        for category in categories:
+            if category['type'] == 'dir':
+                # 获取每个分类下的会议文件
+                category_url = category['url']
+                conf_response = requests.get(category_url)
+                conf_response.raise_for_status()
+                conf_files = conf_response.json()
                 
-                conferences.append({
-                    'title': conf['name'],
-                    'rank': conf['ccf_level'],
-                    'category': conf['categories'][0] if conf.get('categories') else 'Computer Science',
-                    'abstract_deadline': abstract_date.strftime('%Y-%m-%d %H:%M:%S') if abstract_date else None,
-                    'submission_deadline': submission_date.strftime('%Y-%m-%d %H:%M:%S'),
-                    'conference_date': conf.get('date', 'TBA'),
-                    'location': conf.get('place', 'TBA'),
-                    'website': conf.get('website', '#'),
-                    'link': conf.get('link', '#')
-                })
-            except (ValueError, KeyError) as e:
-                print(f"Error processing conference {conf.get('name')}: {e}")
+                for conf_file in conf_files:
+                    if conf_file['name'].endswith('.yml'):
+                        # 获取会议 YAML 文件内容
+                        yaml_content = requests.get(conf_file['download_url']).text
+                        conf_data = yaml.safe_load(yaml_content)
+                        
+                        # 处理会议数据
+                        try:
+                            latest_conf = conf_data['confs'][-1]  # 获取最新一届会议
+                            
+                            # 处理截稿日期
+                            if 'timeline' in latest_conf:
+                                for timeline in latest_conf['timeline']:
+                                    if 'abstract_deadline' in timeline:
+                                        abstract_date = timeline['abstract_deadline']
+                                    deadline = timeline['deadline']
+                                    if deadline != 'TBD':
+                                        # 转换时区
+                                        timezone = latest_conf.get('timezone', 'UTC')
+                                        deadline_with_tz = f"{deadline} {timezone}"
+                                        
+                                        conferences.append({
+                                            'title': conf_data['title'],
+                                            'rank': conf_data['rank']['ccf'],
+                                            'category': conf_data['sub'],
+                                            'abstract_deadline': abstract_date if 'abstract_date' in locals() else None,
+                                            'submission_deadline': deadline,
+                                            'conference_date': latest_conf.get('date', 'TBA'),
+                                            'location': latest_conf.get('place', 'TBA'),
+                                            'website': latest_conf.get('link', '#'),
+                                            'link': latest_conf.get('link', '#')
+                                        })
+                                        print(f"Successfully processed conference: {conf_data['title']}")
+                                        
+                        except (KeyError, IndexError) as e:
+                            print(f"Error processing conference file {conf_file['name']}: {e}")
+                            continue
+        
+        # 过滤过期会议并排序
+        now = datetime.now()
+        valid_conferences = []
+        for conf in conferences:
+            try:
+                deadline = datetime.strptime(conf['submission_deadline'], '%Y-%m-%d %H:%M:%S')
+                if deadline > now:
+                    valid_conferences.append(conf)
+            except ValueError:
                 continue
         
-        # 按截稿日期排序并过滤过期会议
-        now = datetime.now()
-        conferences = [
-            conf for conf in conferences 
-            if datetime.strptime(conf['submission_deadline'], '%Y-%m-%d %H:%M:%S') > now
-        ]
-        conferences.sort(key=lambda x: datetime.strptime(x['submission_deadline'], '%Y-%m-%d %H:%M:%S'))
+        valid_conferences.sort(key=lambda x: datetime.strptime(x['submission_deadline'], '%Y-%m-%d %H:%M:%S'))
         
-        return conferences
+        print(f"Total valid conferences fetched: {len(valid_conferences)}")
+        return valid_conferences
+        
     except Exception as e:
         print(f"Error fetching data: {e}")
         return []
@@ -48,7 +82,6 @@ def fetch_conference_data():
 def save_data(conferences):
     try:
         # 确保目录存在
-        import os
         os.makedirs('public/data', exist_ok=True)
         
         # 使用绝对路径
@@ -63,5 +96,9 @@ def save_data(conferences):
         print(f"Error saving data: {e}")
 
 if __name__ == "__main__":
+    print("Starting conference data scraper...")
     conferences = fetch_conference_data()
-    save_data(conferences) 
+    if conferences:
+        save_data(conferences)
+    else:
+        print("No conference data was fetched.") 
