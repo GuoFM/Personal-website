@@ -36,10 +36,13 @@ def fetch_conference_data():
                         yaml_response.raise_for_status()
                         conf_data = yaml.safe_load(yaml_response.text)
                         
-                        if not conf_data or 'confs' not in conf_data:
+                        if not conf_data:
                             continue
                             
                         # 获取最新一届会议信息
+                        if 'confs' not in conf_data:
+                            continue
+                            
                         latest_conf = None
                         latest_year = 0
                         
@@ -51,6 +54,7 @@ def fetch_conference_data():
                         if not latest_conf or 'timeline' not in latest_conf:
                             continue
                             
+                        # 处理每个截止日期
                         for timeline in latest_conf['timeline']:
                             deadline = timeline.get('deadline')
                             if not deadline or deadline == 'TBD':
@@ -58,34 +62,27 @@ def fetch_conference_data():
                                 
                             try:
                                 # 解析截稿日期
-                                deadline_date = datetime.strptime(deadline.split()[0], '%Y-%m-%d')
+                                deadline_date = datetime.strptime(deadline, '%Y-%m-%d %H:%M:%S')
                                 
                                 if deadline_date.date() >= datetime.now().date():
                                     # 处理时区
                                     timezone_str = latest_conf.get('timezone', 'UTC')
-                                    
-                                    # 处理摘要截止日期
-                                    abstract_deadline = timeline.get('abstract_deadline', '')
-                                    if abstract_deadline and abstract_deadline != 'TBD':
-                                        abstract_deadline = f"{abstract_deadline} {timezone_str}"
-                                    
-                                    deadline = f"{deadline} {timezone_str}"
                                     
                                     conference = {
                                         'title': conf_data['title'],
                                         'description': conf_data.get('description', ''),
                                         'rank': conf_data['rank']['ccf'],
                                         'category': category,
-                                        'abstract_deadline': abstract_deadline,
-                                        'submission_deadline': deadline,
+                                        'submission_deadline': f"{deadline} {timezone_str}",
                                         'conference_date': latest_conf.get('date', 'TBA'),
                                         'location': latest_conf.get('place', 'TBA'),
                                         'website': latest_conf.get('link', '#'),
-                                        'year': str(latest_year)
+                                        'year': str(latest_year),
+                                        'comment': timeline.get('comment', '')
                                     }
                                     
                                     conferences.append(conference)
-                                    print(f"Added conference: {conf_data['title']} ({latest_year})")
+                                    print(f"Added conference: {conf_data['title']} ({latest_year}) - {timeline.get('comment', '')}")
                                     
                             except ValueError as e:
                                 print(f"Error parsing date for {conf_data['title']}: {str(e)}")
@@ -104,7 +101,7 @@ def fetch_conference_data():
         return []
     
     # 按截稿日期排序
-    conferences.sort(key=lambda x: datetime.strptime(x['submission_deadline'].split()[0], '%Y-%m-%d'))
+    conferences.sort(key=lambda x: datetime.strptime(x['submission_deadline'].split(' ')[0], '%Y-%m-%d'))
     
     print(f"Total valid conferences found: {len(conferences)}")
     return conferences
