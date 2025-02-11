@@ -5,9 +5,9 @@ from datetime import datetime
 import os
 
 def fetch_conference_data():
-    # 直接从 GitHub raw content 获取会议数据
-    base_url = "https://raw.githubusercontent.com/ccfddl/ccf-deadlines/main/conference"
-    categories = ['ai', 'architecture', 'security', 'software', 'theory', 'network']
+    # 使用 GitHub API 获取会议目录
+    api_url = "https://api.github.com/repos/ccfddl/ccf-deadlines/contents/conference"
+    categories = ['ai', 'architecture', 'security', 'software', 'theory', 'network', 'db', 'cg', 'hi', 'mx']
     
     print("Starting to fetch conference data...")
     conferences = []
@@ -22,43 +22,26 @@ def fetch_conference_data():
     
     for category in categories:
         print(f"Processing category: {category}")
-        
         try:
-            # 获取目录列表
-            api_url = f"https://api.github.com/repos/ccfddl/ccf-deadlines/contents/conference/{category}"
-            print(f"Fetching from: {api_url}")
+            # 获取每个分类目录下的文件
+            category_url = f"{api_url}/{category}"
+            print(f"Fetching from: {category_url}")
             
-            response = requests.get(api_url, headers=headers)
+            response = requests.get(category_url, headers=headers)
             response.raise_for_status()
-            conf_files = response.json()
+            files = response.json()
             
-            if not isinstance(conf_files, list):
-                print(f"Unexpected response format for {category}: {conf_files}")
-                continue
-            
-            for conf_file in conf_files:
-                if not isinstance(conf_file, dict):
-                    print(f"Unexpected file format in {category}: {conf_file}")
-                    continue
-                    
-                if conf_file.get('name', '').endswith('.yml'):
+            # 处理每个会议的 YAML 文件
+            for file in files:
+                if file['name'].endswith('.yml'):
                     try:
                         # 获取 YAML 文件内容
-                        yaml_url = conf_file['download_url']
-                        print(f"Fetching conference file: {yaml_url}")
+                        yaml_content = requests.get(file['download_url'], headers=headers).text
+                        conf_data = yaml.safe_load(yaml_content)
                         
-                        yaml_response = requests.get(yaml_url, headers=headers)
-                        yaml_response.raise_for_status()
-                        
-                        # 解析 YAML 数据
-                        conf_data = yaml.safe_load(yaml_response.text)
-                        
-                        if not conf_data:
-                            print(f"Empty YAML data for {conf_file['name']}")
-                            continue
-                            
-                        if 'confs' in conf_data and conf_data['confs']:
-                            latest_conf = conf_data['confs'][-1]  # 获取最新一届会议
+                        if conf_data and 'confs' in conf_data and conf_data['confs']:
+                            # 获取最新一届会议信息
+                            latest_conf = conf_data['confs'][-1]
                             
                             if 'timeline' in latest_conf:
                                 for timeline in latest_conf['timeline']:
@@ -66,12 +49,10 @@ def fetch_conference_data():
                                     if deadline and deadline != 'TBD':
                                         # 处理时区
                                         timezone = latest_conf.get('timezone', 'UTC')
-                                        
-                                        # 添加时区信息
                                         if not deadline.endswith(timezone):
                                             deadline = f"{deadline} {timezone}"
                                         
-                                        # 处理 abstract_deadline
+                                        # 处理摘要截止日期
                                         abstract_deadline = timeline.get('abstract_deadline')
                                         if abstract_deadline and abstract_deadline != 'TBD':
                                             if not abstract_deadline.endswith(timezone):
@@ -80,7 +61,7 @@ def fetch_conference_data():
                                         conference = {
                                             'title': conf_data['title'],
                                             'rank': conf_data['rank']['ccf'],
-                                            'category': conf_data.get('sub', category.capitalize()),
+                                            'category': conf_data.get('sub', category.upper()),
                                             'abstract_deadline': abstract_deadline,
                                             'submission_deadline': deadline,
                                             'conference_date': latest_conf.get('date', 'TBA'),
@@ -92,7 +73,7 @@ def fetch_conference_data():
                                         print(f"Successfully processed conference: {conf_data['title']}")
                                         
                     except Exception as e:
-                        print(f"Error processing conference file {conf_file.get('name', 'unknown')}: {str(e)}")
+                        print(f"Error processing conference file {file['name']}: {str(e)}")
                         continue
                         
         except Exception as e:
