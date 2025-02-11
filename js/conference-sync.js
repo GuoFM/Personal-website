@@ -1,7 +1,7 @@
 class ConferenceSync {
     constructor() {
         // ccfddl.com 的数据 API
-        this.API_URL = 'https://ccfddl.github.io/data/ccf-deadlines.json';
+        this.API_URL = '/data/conferences.json';
         this.conferences = [];
         this.lastFetchTime = null;
         this.CACHE_DURATION = 60 * 60 * 1000; // 1小时的毫秒数
@@ -12,7 +12,7 @@ class ConferenceSync {
             // 检查是否需要重新获取数据
             const now = new Date().getTime();
             if (this.lastFetchTime && (now - this.lastFetchTime < this.CACHE_DURATION)) {
-                return this.conferences; // 使用缓存的数据
+                return this.conferences;
             }
 
             const response = await fetch(this.API_URL);
@@ -21,24 +21,16 @@ class ConferenceSync {
             // 更新缓存时间
             this.lastFetchTime = now;
             
-            // 转换数据格式并过滤已过期会议
-            this.conferences = data
-                .map(conf => ({
-                    title: conf.name,
-                    rank: conf.ccf_level || 'N/A',
-                    category: conf.categories?.[0] || 'Computer Science',
-                    abstract_deadline: conf.abstract_deadline,
-                    submission_deadline: conf.deadline,
-                    conference_date: conf.date || 'TBA',
-                    location: conf.place || 'TBA',
-                    website: conf.website || '#',
-                    link: conf.link || '#'
-                }))
-                .filter(conf => {
+            // 确保日期格式正确并过滤过期会议
+            this.conferences = data.filter(conf => {
+                try {
                     const deadline = new Date(conf.submission_deadline);
                     return deadline > new Date();
-                })
-                .sort((a, b) => new Date(a.submission_deadline) - new Date(b.submission_deadline));
+                } catch (e) {
+                    console.error(`Invalid date format for conference: ${conf.title}`);
+                    return false;
+                }
+            }).sort((a, b) => new Date(a.submission_deadline) - new Date(b.submission_deadline));
 
             return this.conferences;
         } catch (error) {
@@ -91,15 +83,23 @@ class ConferenceSync {
     }
 
     formatDate(dateString) {
-        const date = new Date(dateString);
-        return date.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit',
-            timeZoneName: 'short'
-        });
+        try {
+            const date = new Date(dateString);
+            if (isNaN(date.getTime())) {
+                return 'TBA';
+            }
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                timeZoneName: 'short'
+            });
+        } catch (e) {
+            console.error(`Error formatting date: ${dateString}`);
+            return 'TBA';
+        }
     }
 
     async updateDeadlines() {
