@@ -2,53 +2,83 @@ class ConferenceDisplay {
     constructor() {
         this.conferences = [];
         this.filteredConferences = [];
-        this.currentFilter = 'all';
+        this.currentRank = 'all';
+        this.selectedCategories = new Set(['AI', 'NW', 'SC', 'SE', 'DB', 'CT', 'CG', 'HI', 'MX']);
         this.init();
     }
 
     async init() {
+        const listElement = document.getElementById('conference-list');
         try {
+            listElement.innerHTML = '<p class="loading">Loading conference deadlines...</p>';
             await this.loadConferences();
             this.setupEventListeners();
-            this.filterConferences(this.currentFilter);
-            this.displayConferences();
+            this.filterAndDisplayConferences();
         } catch (error) {
             console.error('Failed to initialize conference display:', error);
-            document.getElementById('conference-list').innerHTML = 
-                '<p class="error">Failed to load conference data. Please try again later.</p>';
+            listElement.innerHTML = '<p class="error">Failed to load conference data. Please try again later.</p>';
         }
     }
 
     async loadConferences() {
-        const response = await fetch('/data/conferences.json');
-        if (!response.ok) {
-            throw new Error('Failed to fetch conference data');
+        try {
+            const response = await fetch('/data/conferences.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            this.conferences = data.conferences || [];
+            
+            // 更新最后更新时间
+            const lastUpdateElem = document.getElementById('last-update');
+            if (lastUpdateElem) {
+                const date = new Date(data.last_updated);
+                lastUpdateElem.textContent = date.toLocaleDateString();
+            }
+        } catch (error) {
+            throw new Error('Failed to fetch conference data: ' + error.message);
         }
-        this.conferences = await response.json();
-        this.sortConferences();
     }
 
     setupEventListeners() {
+        // Rank filters
         document.querySelectorAll('.filter-button').forEach(button => {
             button.addEventListener('click', () => {
                 document.querySelectorAll('.filter-button').forEach(btn => 
                     btn.classList.remove('active'));
                 button.classList.add('active');
-                this.filterConferences(button.dataset.rank);
-                this.displayConferences();
+                this.currentRank = button.dataset.rank;
+                this.filterAndDisplayConferences();
+            });
+        });
+
+        // Category filters
+        document.querySelectorAll('.category-checkbox input').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                const category = checkbox.dataset.category;
+                if (checkbox.checked) {
+                    this.selectedCategories.add(category);
+                } else {
+                    this.selectedCategories.delete(category);
+                }
+                this.filterAndDisplayConferences();
             });
         });
     }
 
-    filterConferences(rank) {
-        this.currentFilter = rank;
-        this.filteredConferences = rank === 'all' 
-            ? this.conferences 
-            : this.conferences.filter(conf => conf.rank === rank);
+    filterAndDisplayConferences() {
+        this.filteredConferences = this.conferences.filter(conf => {
+            const rankMatch = this.currentRank === 'all' || conf.rank === this.currentRank;
+            const categoryMatch = this.selectedCategories.has(conf.category);
+            return rankMatch && categoryMatch;
+        });
+
+        this.sortConferences();
+        this.displayConferences();
     }
 
     sortConferences() {
-        this.conferences.sort((a, b) => {
+        this.filteredConferences.sort((a, b) => {
             const dateA = new Date(a.submission_deadline.split(' ')[0]);
             const dateB = new Date(b.submission_deadline.split(' ')[0]);
             return dateA - dateB;

@@ -29,36 +29,58 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Conference Deadlines</h1>
-        
-        <div class="conference-filters">
-            <button class="filter-button active" data-rank="all">All</button>
-            <button class="filter-button" data-rank="A">CCF-A</button>
-            <button class="filter-button" data-rank="B">CCF-B</button>
-            <button class="filter-button" data-rank="C">CCF-C</button>
-        </div>
+    <main class="container">
+        <section class="deadlines-section">
+            <h1>Conference Deadlines</h1>
+            
+            <div class="filters-container">
+                <div class="filter-section">
+                    <h3>CCF Rank</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-button active" data-rank="all">All</button>
+                        <button class="filter-button" data-rank="A">CCF-A</button>
+                        <button class="filter-button" data-rank="B">CCF-B</button>
+                        <button class="filter-button" data-rank="C">CCF-C</button>
+                    </div>
+                </div>
 
-        <div id="conference-list">
-            <p class="loading">Loading conference deadlines...</p>
-        </div>
+                <div class="filter-section">
+                    <h3>Categories</h3>
+                    <div class="category-filters">
+                        <label class="category-checkbox">
+                            <input type="checkbox" data-category="AI" checked> Artificial Intelligence
+                        </label>
+                        <label class="category-checkbox">
+                            <input type="checkbox" data-category="NW" checked> Networks
+                        </label>
+                        <label class="category-checkbox">
+                            <input type="checkbox" data-category="SC" checked> Security
+                        </label>
+                        <label class="category-checkbox">
+                            <input type="checkbox" data-category="SE" checked> Software Engineering
+                        </label>
+                        <!-- Add more categories -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="conference-list" class="conference-grid">
+                <!-- Conferences will be loaded here -->
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>© 2024 Fangming Guo. All rights reserved.</p>
-        <div class="footer-info">
-            <div class="footer-stat">
-                <i class="fas fa-eye"></i>
-                <span id="visit-count">Loading...</span> visits
-            </div>
-            <div class="footer-stat">
-                <i class="fas fa-clock"></i>
-                Last updated: <span id="last-update">2025-02-11</span>
+        <div class="footer-content">
+            <p>© 2024 Fangming Guo. All rights reserved.</p>
+            <div class="footer-stats">
+                <span><i class="fas fa-eye"></i> <span id="visit-count">Loading...</span> visits</span>
+                <span><i class="fas fa-clock"></i> Last updated: <span id="last-update">Loading...</span></span>
             </div>
         </div>
     </footer>
 
     <script src="/js/deadlines.js"></script>
-    <script src="../js/stats.js"></script>
+    <script src="/js/stats.js"></script>
 </body>
 </html> 

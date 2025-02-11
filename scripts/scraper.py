@@ -6,6 +6,18 @@ import os
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
+CATEGORY_NAMES = {
+    'AI': 'Artificial Intelligence',
+    'NW': 'Networks',
+    'SC': 'Security',
+    'SE': 'Software Engineering',
+    'DB': 'Databases',
+    'CT': 'Theory',
+    'CG': 'Computer Graphics',
+    'HI': 'Human-Computer Interaction',
+    'MX': 'Interdisciplinary'
+}
+
 def fetch_conference_data():
     categories = ['NW', 'DS', 'SC', 'SE', 'DB', 'CT', 'CG', 'AI', 'HI', 'MX']
     
