@@ -42,44 +42,48 @@ def fetch_conference_data():
                         yaml_response.raise_for_status()
                         conf_data = yaml.safe_load(yaml_response.text)
                         
-                        if conf_data and 'confs' in conf_data:
+                        if conf_data and 'confs' in conf_data and conf_data['confs']:
                             # 获取最新一届会议信息
                             latest_conf = conf_data['confs'][-1]
                             
+                            # 检查是否有时间线信息
                             if 'timeline' in latest_conf:
                                 for timeline in latest_conf['timeline']:
                                     deadline = timeline.get('deadline')
                                     if deadline and deadline != 'TBD':
-                                        # 处理时区
-                                        timezone = latest_conf.get('timezone', 'UTC')
-                                        
-                                        # 添加时区信息
-                                        if not deadline.endswith(timezone):
-                                            deadline = f"{deadline} {timezone}"
-                                        
-                                        # 处理摘要截止日期
-                                        abstract_deadline = timeline.get('abstract_deadline')
-                                        if abstract_deadline and abstract_deadline != 'TBD':
-                                            if not abstract_deadline.endswith(timezone):
-                                                abstract_deadline = f"{abstract_deadline} {timezone}"
-                                        
-                                        conference = {
-                                            'title': conf_data['title'],
-                                            'description': conf_data.get('description', ''),
-                                            'rank': conf_data['rank']['ccf'],
-                                            'category': conf_data.get('sub', category),
-                                            'abstract_deadline': abstract_deadline,
-                                            'submission_deadline': deadline,
-                                            'conference_date': latest_conf.get('date', 'TBA'),
-                                            'location': latest_conf.get('place', 'TBA'),
-                                            'website': latest_conf.get('link', '#'),
-                                            'year': latest_conf.get('year', '')
-                                        }
-                                        conferences.append(conference)
-                                        print(f"Successfully processed conference: {conf_data['title']}")
-                                        
-                    except Exception as e:
-                        print(f"Error processing conference file {file['name']}: {str(e)}")
+                                        try:
+                                            # 处理时区
+                                            timezone = latest_conf.get('timezone', 'UTC')
+                                            
+                                            # 解析截稿日期
+                                            deadline_date = datetime.strptime(deadline.split()[0], '%Y-%m-%d')
+                                            if deadline_date > datetime.now():
+                                                # 处理摘要截止日期
+                                                abstract_deadline = timeline.get('abstract_deadline')
+                                                if abstract_deadline and abstract_deadline != 'TBD':
+                                                    if not abstract_deadline.endswith(timezone):
+                                                        abstract_deadline = f"{abstract_deadline} {timezone}"
+                                                
+                                                if not deadline.endswith(timezone):
+                                                    deadline = f"{deadline} {timezone}"
+                                                
+                                                conference = {
+                                                    'title': conf_data['title'],
+                                                    'description': conf_data.get('description', ''),
+                                                    'rank': conf_data['rank']['ccf'],
+                                                    'category': conf_data.get('sub', category),
+                                                    'abstract_deadline': abstract_deadline,
+                                                    'submission_deadline': deadline,
+                                                    'conference_date': latest_conf.get('date', 'TBA'),
+                                                    'location': latest_conf.get('place', 'TBA'),
+                                                    'website': latest_conf.get('link', '#'),
+                                                    'year': str(latest_conf.get('year', ''))
+                                                }
+                                                conferences.append(conference)
+                                                print(f"Successfully processed conference: {conf_data['title']}")
+                                                
+                    except ValueError as e:
+                        print(f"Error parsing date for conference {conf_data.get('title')}: {str(e)}")
                         continue
                         
         except Exception as e:
@@ -90,22 +94,11 @@ def fetch_conference_data():
         print("No conferences were found!")
         return []
     
-    # 过滤过期会议并排序
-    now = datetime.now()
-    valid_conferences = []
-    for conf in conferences:
-        try:
-            deadline = datetime.strptime(conf['submission_deadline'].split()[0], '%Y-%m-%d')
-            if deadline > now:
-                valid_conferences.append(conf)
-        except ValueError as e:
-            print(f"Error parsing deadline for {conf['title']}: {str(e)}")
-            continue
+    # 按截稿日期排序
+    conferences.sort(key=lambda x: datetime.strptime(x['submission_deadline'].split()[0], '%Y-%m-%d'))
     
-    valid_conferences.sort(key=lambda x: datetime.strptime(x['submission_deadline'].split()[0], '%Y-%m-%d'))
-    
-    print(f"Total valid conferences fetched: {len(valid_conferences)}")
-    return valid_conferences
+    print(f"Total valid conferences fetched: {len(conferences)}")
+    return conferences
 
 def save_data(conferences):
     try:
@@ -125,6 +118,9 @@ def save_data(conferences):
         if os.path.exists(file_path):
             print(f"Verified: File exists at {file_path}")
             print(f"File size: {os.path.getsize(file_path)} bytes")
+            with open(file_path, 'r', encoding='utf-8') as f:
+                print("File content preview:")
+                print(f.read()[:500])
         else:
             print(f"Warning: File was not created at {file_path}")
             
