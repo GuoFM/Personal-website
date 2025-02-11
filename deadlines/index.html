@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Deadlines - Fangming Guo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <a href="../index.html" class="name">Fangming Guo</a>
+                <div class="nav-links">
+                    <a href="../index.html">Home</a>
+                    <a href="../publications/">Publications</a>
+                    <a href="../projects/">Projects</a>
+                    <a href="../blog/">Blog</a>
+                    <a href="../contact/">Contact</a>
+                    <a href="../deadlines/" class="active">Deadlines</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="deadlines-section">
+            <h1>Conference Deadlines</h1>
+            
+            <div class="deadline-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ccf-a">CCF-A</button>
+                <button class="filter-btn" data-filter="ccf-b">CCF-B</button>
+                <button class="filter-btn" data-filter="ccf-c">CCF-C</button>
+            </div>
+
+            <div class="deadline-grid">
+                <!-- Example conference items -->
+                <div class="deadline-item" data-type="ccf-a">
+                    <div class="deadline-header">
+                        <h3>CVPR 2025</h3>
+                        <div class="deadline-badges">
+                            <span class="badge ccf-a">CCF-A</span>
+                            <span class="badge type">Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="deadline-content">
+                        <p class="deadline-date">
+                            <i class="fas fa-clock"></i> Abstract: Nov 10, 2024
+                        </p>
+                        <p class="deadline-date">
+                            <i class="fas fa-paper-plane"></i> Full Paper: Nov 17, 2024
+                        </p>
+                        <p class="conference-date">
+                            <i class="fas fa-calendar-alt"></i> Conference: June 15-20, 2025
+                        </p>
+                        <p class="conference-location">
+                            <i class="fas fa-map-marker-alt"></i> Location: Paris, France
+                        </p>
+                        <div class="deadline-links">
+                            <a href="#" class="website-link">
+                                <i class="fas fa-globe"></i> Website
+                            </a>
+                            <a href="#" class="notice-link">
+                                <i class="fas fa-bullhorn"></i> CFP
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- More conference items -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Fangming Guo. All rights reserved.</p>
+        <div class="footer-info">
+            <div class="footer-stat">
+                <i class="fas fa-eye"></i>
+                <span id="visit-count">Loading...</span> visits
+            </div>
+            <div class="footer-stat">
+                <i class="fas fa-clock"></i>
+                Last updated: <span id="last-update">2024-03-15</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/deadlines.js"></script>
+    <script src="../js/stats.js"></script>
+</body>
+</html> 

@@ -1532,4 +1532,74 @@ section {
     color: var(--text-secondary);
     line-height: 1.7;
     margin-bottom: var(--spacing-4);
+}
+
+/* Conference Deadlines 样式 */
+.deadline-item {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-6);
+    margin-bottom: var(--spacing-6);
+    transition: 
+        transform var(--transition-normal) var(--bounce),
+        box-shadow var(--transition-normal) var(--ease-out);
+}
+
+.deadline-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.deadline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-4);
+}
+
+.deadline-badges {
+    display: flex;
+    gap: var(--spacing-2);
+}
+
+.badge.ccf-a {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.badge.ccf-b {
+    background-color: #2196F3;
+    color: white;
+}
+
+.badge.ccf-c {
+    background-color: #9E9E9E;
+    color: white;
+}
+
+.deadline-date,
+.conference-date,
+.conference-location {
+    margin-bottom: var(--spacing-2);
+    color: var(--text-secondary);
+}
+
+.deadline-links {
+    margin-top: var(--spacing-4);
+    display: flex;
+    gap: var(--spacing-4);
+}
+
+.deadline-links a {
+    color: var(--text-accent);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    transition: color var(--transition-normal) var(--ease-out);
+}
+
+.deadline-links a:hover {
+    color: var(--secondary-color);
 } 
