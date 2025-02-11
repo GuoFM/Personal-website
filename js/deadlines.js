@@ -43,6 +43,13 @@ class ConferenceDisplay {
             }
         } catch (error) {
             console.error('Failed to fetch conference data:', error);
+            const listElement = document.getElementById('conference-list');
+            listElement.innerHTML = `
+                <div class="error-message">
+                    <p>Failed to load conference data. Error: ${error.message}</p>
+                    <button onclick="location.reload()">Try Again</button>
+                </div>
+            `;
             throw error;
         }
     }

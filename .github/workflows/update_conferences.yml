@@ -9,12 +9,12 @@ jobs:
   update-conferences:
     runs-on: ubuntu-latest
     permissions:
-      contents: write    # 添加写入权限
+      contents: write    
     
     steps:
     - uses: actions/checkout@v2
       with:
-        fetch-depth: 0  # 获取完整历史记录
+        fetch-depth: 0
     
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -37,10 +37,5 @@ jobs:
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git stash -u  # 暂存所有更改
-        git pull --rebase origin main
-        git stash pop  # 恢复更改
         git add public/data/conferences.json
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update conference data" && git push)
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update conference data" && git push) 

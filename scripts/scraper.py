@@ -121,7 +121,7 @@ def fetch_conference_data():
     
     if not conferences:
         print("No conferences were found!")
-        return []
+        return None
     
     conferences.sort(key=lambda x: datetime.strptime(x['submission_deadline'].split(' ')[0], '%Y-%m-%d'))
     print(f"\nTotal conferences found: {len(conferences)}")
@@ -129,10 +129,10 @@ def fetch_conference_data():
 
 def save_data(conferences):
     try:
+        # 确保目录存在
         os.makedirs('public/data', exist_ok=True)
-        file_path = os.path.join('public', 'data', 'conferences.json')
+        file_path = 'public/data/conferences.json'
         
-        # 添加元数据
         data = {
             'last_updated': datetime.now().isoformat(),
             'conferences': conferences
@@ -144,6 +144,7 @@ def save_data(conferences):
             
     except Exception as e:
         print(f"Error saving data: {str(e)}")
+        raise e
 
 if __name__ == "__main__":
     print("Starting conference scraper...")
