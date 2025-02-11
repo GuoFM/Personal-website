@@ -7,43 +7,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/deadlines.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-container">
-                <a href="../index.html" class="name">Fangming Guo</a>
+                <a href="/" class="name">Fangming Guo</a>
                 <div class="nav-links">
-                    <a href="../index.html">Home</a>
-                    <a href="../publications/">Publications</a>
-                    <a href="../projects/">Projects</a>
-                    <a href="../blog/">Blog</a>
-                    <a href="../contact/">Contact</a>
-                    <a href="../deadlines/" class="active">Deadlines</a>
+                    <a href="/">Home</a>
+                    <a href="/publications/">Publications</a>
+                    <a href="/projects/">Projects</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/contact/">Contact</a>
+                    <a href="/deadlines/" class="active">Deadlines</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="deadlines-section">
-            <h1>Conference Deadlines</h1>
-            
-            <div class="deadline-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="ccf-a">CCF-A</button>
-                <button class="filter-btn" data-filter="ccf-b">CCF-B</button>
-                <button class="filter-btn" data-filter="ccf-c">CCF-C</button>
-            </div>
+        <h1>Conference Deadlines</h1>
+        
+        <div class="conference-filters">
+            <button class="filter-button active" data-rank="all">All</button>
+            <button class="filter-button" data-rank="A">CCF-A</button>
+            <button class="filter-button" data-rank="B">CCF-B</button>
+            <button class="filter-button" data-rank="C">CCF-C</button>
+        </div>
 
-            <div class="deadline-grid">
-                <!-- Conference items will be dynamically inserted here -->
-                <div class="loading-spinner"></div>
-            </div>
-        </section>
+        <div id="conference-list">
+            <p class="loading">Loading conference deadlines...</p>
+        </div>
     </main>
 
     <footer>
@@ -60,6 +58,7 @@
         </div>
     </footer>
 
+    <script src="/js/deadlines.js"></script>
     <script src="../js/conference-sync.js"></script>
     <script src="../js/stats.js"></script>
 </body>
