@@ -2,35 +2,40 @@ class PublicationDisplay {
     constructor() {
         this.publications = [];
         this.currentFilter = 'all';
-        this.init();
     }
 
     async init() {
         const publicationList = document.querySelector('.publication-list');
-        try {
-            // 使用相对于当前页面的路径
-            const response = await fetch('../data/publications.json');
-            console.log('Fetch response:', response); // 调试日志
+        if (!publicationList) {
+            console.error('Publication list element not found');
+            return;
+        }
 
+        try {
+            // 使用绝对路径
+            const response = await fetch('/data/publications.json');
+            console.log('Fetching publications from:', '/data/publications.json');
+            
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                throw new Error(`Failed to load publications (${response.status})`);
             }
 
             const data = await response.json();
-            console.log('Publications data:', data); // 调试日志
+            console.log('Loaded publications:', data);
+
+            if (!data || !Array.isArray(data.publications)) {
+                throw new Error('Invalid publications data format');
+            }
 
             this.publications = data.publications;
             this.displayPublications();
             this.setupFilters();
         } catch (error) {
-            console.error('Error details:', {
-                message: error.message,
-                stack: error.stack
-            });
+            console.error('Failed to load publications:', error);
             publicationList.innerHTML = `
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
-                    Error loading publications: ${error.message}
+                    ${error.message}
                 </div>`;
         }
     }
@@ -86,30 +91,44 @@ class PublicationDisplay {
     }
 
     displayPublications() {
-        console.log('Displaying publications:', this.publications); // 调试日志
+        const publicationList = document.querySelector('.publication-list');
+        if (!publicationList) return;
+
         const filteredPubs = this.currentFilter === 'all' 
             ? this.publications 
             : this.publications.filter(pub => pub.type === this.currentFilter);
 
-        const publicationList = document.querySelector('.publication-list');
-        if (!publicationList) {
-            console.error('Publication list element not found');
+        if (filteredPubs.length === 0) {
+            publicationList.innerHTML = `
+                <div class="no-results">
+                    <i class="fas fa-info-circle"></i>
+                    No publications found for this category.
+                </div>`;
             return;
         }
 
-        const publicationsHtml = filteredPubs
+        publicationList.innerHTML = filteredPubs
             .map((pub, index) => this.renderPublication(pub, index))
             .join('');
-        
-        console.log('Generated HTML:', publicationsHtml); // 调试日志
-        publicationList.innerHTML = publicationsHtml;
+
+        // 触发动画
+        setTimeout(() => {
+            document.querySelectorAll('.publication-item').forEach(item => {
+                item.classList.add('visible');
+            });
+        }, 100);
     }
 }
 
-// 确保脚本加载完成后再初始化
-window.addEventListener('load', () => {
-    console.log('Window loaded, initializing PublicationDisplay');
-    new PublicationDisplay();
+// 等待 DOM 完全加载后再初始化
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM Content Loaded');
+    const display = new PublicationDisplay();
+    // 延迟一点初始化，确保所有元素都准备好
+    setTimeout(() => {
+        console.log('Initializing PublicationDisplay');
+        display.init();
+    }, 100);
 });
 
 // 添加引用功能
