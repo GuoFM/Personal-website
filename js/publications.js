@@ -1,46 +1,96 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const publications = document.querySelectorAll('.publication-item');
+class PublicationDisplay {
+    constructor() {
+        this.publications = [];
+        this.currentFilter = 'all';
+        this.init();
+    }
 
-    // 检查数据文件路径 - 使用相对路径
-    fetch('../public/data/conferences.json')
-        .then(response => {
+    async init() {
+        const publicationList = document.querySelector('.publication-list');
+        try {
+            const response = await fetch('/data/publications.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            return response;
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Successfully loaded conference data');
-        })
-        .catch(error => {
-            console.error('Error loading conference data:', error);
-            // 输出完整的错误信息以便调试
-            console.error('Error details:', {
-                message: error.message,
-                stack: error.stack
+            const data = await response.json();
+            this.publications = data.publications;
+            this.displayPublications();
+            this.setupFilters();
+        } catch (error) {
+            console.error('Error loading publications:', error);
+            publicationList.innerHTML = `
+                <p class="error-message">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Error loading publications. Please try again later.
+                </p>`;
+        }
+    }
+
+    setupFilters() {
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                // 移除所有按钮的active类
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                // 添加active类到被点击的按钮
+                e.target.classList.add('active');
+                
+                this.currentFilter = e.target.getAttribute('data-filter');
+                this.displayPublications();
             });
         });
+    }
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
+    renderPublicationLinks(links) {
+        let linksHtml = '';
+        if (links.paper) {
+            linksHtml += `
+                <a href="${links.paper}" class="btn paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> Paper
+                </a>`;
+        }
+        if (links.code) {
+            linksHtml += `
+                <a href="${links.code}" class="btn code-link" target="_blank">
+                    <i class="fab fa-github"></i> Code
+                </a>`;
+        }
+        return linksHtml;
+    }
 
-            const filterValue = button.getAttribute('data-filter');
+    renderPublication(pub, index) {
+        return `
+            <div class="publication-item card animate-in" 
+                 data-type="${pub.type}"
+                 style="animation-delay: ${index * 0.1}s">
+                <div class="publication-content">
+                    <h3>${pub.title}</h3>
+                    <p class="authors">${pub.authors}</p>
+                    <p class="venue"><strong>${pub.venue}</strong>, ${pub.date}</p>
+                    <div class="publication-links">
+                        ${this.renderPublicationLinks(pub.links)}
+                    </div>
+                </div>
+            </div>
+        `;
+    }
 
-            publications.forEach(pub => {
-                if (filterValue === 'all' || pub.getAttribute('data-type') === filterValue) {
-                    pub.style.display = 'block';
-                } else {
-                    pub.style.display = 'none';
-                }
-            });
-        });
-    });
+    displayPublications() {
+        const filteredPubs = this.currentFilter === 'all' 
+            ? this.publications 
+            : this.publications.filter(pub => pub.type === this.currentFilter);
+
+        const publicationList = document.querySelector('.publication-list');
+        publicationList.innerHTML = filteredPubs
+            .map((pub, index) => this.renderPublication(pub, index))
+            .join('');
+    }
+}
+
+// 当 DOM 加载完成后初始化
+document.addEventListener('DOMContentLoaded', () => {
+    new PublicationDisplay();
 });
 
 // 添加引用功能
