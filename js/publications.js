@@ -12,31 +12,61 @@ class PublicationDisplay {
         }
 
         try {
-            // 使用完整的 URL
-            const jsonUrl = 'https://www.fangmingguo.com/data/publications.json';
-            console.log('Fetching publications from:', jsonUrl);
-            
-            const response = await fetch(jsonUrl, {
-                method: 'GET',
-                headers: {
-                    'Accept': 'application/json',
-                    'Cache-Control': 'no-cache'
+            // 使用硬编码的数据
+            this.publications = [
+                {
+                    "title": "Event-driven Tactile Sensing With Dense Spiking Graph Neural Networks",
+                    "authors": "F Guo, F Yu, M Li, et al.",
+                    "venue": "IEEE Transactions on Instrumentation and Measurement",
+                    "date": "Jan 2025",
+                    "type": "journal",
+                    "links": {
+                        "paper": "https://www.researchgate.net/publication/387190722_Event-driven_Tactile_Sensing_With_Dense_Spiking_Graph_Neural_Networks",
+                        "code": "https://github.com/cqu-uisc/deepTactile"
+                    }
+                },
+                {
+                    "title": "Spike-BRGNet: Efficient and Accurate Event-based Semantic Segmentation with Boundary Region-guided Spiking Neural Networks",
+                    "authors": "X Long, X Zhu, F Guo, et al.",
+                    "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+                    "date": "Nov 2024",
+                    "type": "journal",
+                    "links": {
+                        "paper": "https://ieeexplore.ieee.org/abstract/document/10750266"
+                    }
+                },
+                {
+                    "title": "Accurate and Efficient Floor Localization with Scalable Spiking Graph Neural Networks",
+                    "authors": "F Gu, F Guo, F Yu, et al.",
+                    "venue": "Satellite Navigation",
+                    "date": "March 2024",
+                    "type": "journal",
+                    "links": {
+                        "paper": "https://satellite-navigation.springeropen.com/articles/10.1186/s43020-024-00127-8"
+                    }
+                },
+                {
+                    "title": "Efficient and Accurate Indoor/Outdoor Detection with Deep Spiking Neural Networks",
+                    "authors": "F Guo, X Long, K Liu, et al.",
+                    "venue": "IEEE GLOBECOM",
+                    "date": "Dec 2023",
+                    "type": "conference",
+                    "links": {
+                        "paper": "https://ieeexplore.ieee.org/abstract/document/10437685"
+                    }
+                },
+                {
+                    "title": "Efficient Event-based Semantic Segmentation with Spike-driven Lightweight Transformer-based Networks",
+                    "authors": "X Zhu, F Guo, X Long, et al.",
+                    "venue": "arXiv",
+                    "date": "2025",
+                    "type": "preprint",
+                    "links": {
+                        "paper": "https://arxiv.org/abs/2412.12843"
+                    }
                 }
-            });
+            ];
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-
-            const data = await response.json();
-            console.log('Publications loaded:', data);
-
-            if (!data || !data.publications) {
-                throw new Error('Invalid data format');
-            }
-
-            this.publications = data.publications;
-            
             // 清除加载状态并显示数据
             this.displayPublications();
             this.setupFilters();
@@ -44,11 +74,11 @@ class PublicationDisplay {
             // 添加成功加载的标记
             publicationList.classList.add('loaded');
         } catch (error) {
-            console.error('Error loading publications:', error);
+            console.error('Error displaying publications:', error);
             publicationList.innerHTML = `
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
-                    Failed to load publications
+                    Failed to display publications
                     <br>
                     <small>${error.message}</small>
                 </div>`;
