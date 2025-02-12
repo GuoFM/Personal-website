@@ -176,8 +176,10 @@ class ConferenceDisplay {
     }
 
     renderConferenceList(conferences) {
-        return conferences.map(conf => `
-            <div class="conference-card ${new Date(conf.submission_deadline.split(' ')[0]) < new Date() ? 'passed-deadline' : ''}">
+        return conferences.map((conf, index) => `
+            <div class="conference-card animate-in" 
+                 style="animation-delay: ${index * 0.1}s"
+                 ${new Date(conf.submission_deadline.split(' ')[0]) < new Date() ? 'passed-deadline' : ''}">
                 <div class="conference-header">
                     <h3 class="conference-title">
                         <a href="${conf.website}" target="_blank" rel="noopener">
@@ -218,4 +220,19 @@ class ConferenceDisplay {
 // Initialize when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     new ConferenceDisplay();
+
+    // 添加滚动动画
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    document.querySelectorAll('.conference-card').forEach(card => {
+        observer.observe(card);
+    });
 }); 
