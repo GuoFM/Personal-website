@@ -7,8 +7,19 @@ class PublicationDisplay {
 
     async init() {
         try {
+            // 显示加载状态
+            const publicationList = document.getElementById('publication-list');
+            publicationList.innerHTML = `
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i> Loading publications...
+                </div>
+            `;
+
             // 加载数据
             const response = await fetch('../data/publications.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
             const data = await response.json();
             this.publications = data.publications;
             
@@ -19,6 +30,16 @@ class PublicationDisplay {
             this.setupFilterListeners();
         } catch (error) {
             console.error('Error loading publications:', error);
+            // 显示错误信息
+            const publicationList = document.getElementById('publication-list');
+            publicationList.innerHTML = `
+                <div class="error-message">
+                    <i class="fas fa-exclamation-circle"></i>
+                    Failed to load publications. Please try again later.
+                    <br>
+                    <small>Error: ${error.message}</small>
+                </div>
+            `;
         }
     }
 
@@ -42,6 +63,16 @@ class PublicationDisplay {
         const filteredPublications = this.publications.filter(pub => 
             this.currentFilter === 'all' || pub.type === this.currentFilter
         );
+
+        if (filteredPublications.length === 0) {
+            publicationList.innerHTML = `
+                <div class="error-message">
+                    <i class="fas fa-info-circle"></i>
+                    No publications found for the selected filter.
+                </div>
+            `;
+            return;
+        }
 
         publicationList.innerHTML = filteredPublications.map((pub, index) => `
             <div class="publication-item card animate-in" 
