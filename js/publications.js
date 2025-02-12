@@ -12,34 +12,60 @@ class PublicationDisplay {
         }
 
         try {
-            // 使用基于域名的绝对路径
-            const baseUrl = window.location.origin;
-            const response = await fetch(`${baseUrl}/data/publications.json`);
-            console.log('Fetching from:', `${baseUrl}/data/publications.json`);
+            // 直接使用相对路径
+            const jsonUrl = '../data/publications.json';
+            console.log('Attempting to fetch from:', jsonUrl);
+            
+            const response = await fetch(jsonUrl);
+            console.log('Fetch response status:', response.status);
+            console.log('Response headers:', [...response.headers.entries()]);
 
             if (!response.ok) {
-                throw new Error(`Failed to load publications (${response.status})`);
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
 
-            const data = await response.json();
-            console.log('Loaded data:', data);
+            const contentType = response.headers.get('content-type');
+            if (!contentType || !contentType.includes('application/json')) {
+                console.warn('Warning: Unexpected content type:', contentType);
+            }
 
-            if (!data || !data.publications) {
-                throw new Error('Invalid data format');
+            const text = await response.text(); // 先获取原始文本
+            console.log('Raw response:', text);
+
+            let data;
+            try {
+                data = JSON.parse(text);
+            } catch (e) {
+                throw new Error(`JSON parse error: ${e.message}`);
+            }
+
+            if (!data || !Array.isArray(data.publications)) {
+                throw new Error('Invalid data format: publications array not found');
             }
 
             this.publications = data.publications;
-            console.log('Publications loaded:', this.publications);
+            console.log('Successfully loaded publications:', this.publications);
+            
+            // 清除加载状态
+            publicationList.innerHTML = '';
+            
             this.displayPublications();
             this.setupFilters();
         } catch (error) {
-            console.error('Error loading publications:', error);
+            console.error('Failed to load publications:', {
+                error,
+                stack: error.stack,
+                url: window.location.href
+            });
+            
             publicationList.innerHTML = `
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
-                    Failed to load publications. Please try again later.
+                    Failed to load publications
                     <br>
-                    <small>Error: ${error.message}</small>
+                    <small>${error.message}</small>
+                    <br>
+                    <small>Please check the console for more details.</small>
                 </div>`;
         }
     }
@@ -124,11 +150,19 @@ class PublicationDisplay {
     }
 }
 
-// 初始化代码
+// 确保 DOM 完全加载后再初始化
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Initializing with base URL:', window.location.origin);
+    console.log('DOM loaded, current URL:', window.location.href);
+    console.log('Document readyState:', document.readyState);
+    
     const display = new PublicationDisplay();
-    display.init();
+    
+    // 等待所有资源加载完成
+    if (document.readyState === 'complete') {
+        display.init();
+    } else {
+        window.addEventListener('load', () => display.init());
+    }
 });
 
 // 添加引用功能

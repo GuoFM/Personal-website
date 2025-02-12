@@ -65,16 +65,14 @@
     </footer>
 
     <script>
-        // 添加更多调试信息
-        console.log('Current page URL:', window.location.href);
-        console.log('Current page path:', window.location.pathname);
-        console.log('Base URL:', document.baseURI);
-        
+        // 添加页面加载调试信息
+        console.log('Page loading started');
         document.addEventListener('DOMContentLoaded', () => {
-            console.log('DOM loaded');
+            console.log('DOM Content Loaded');
+            console.log('Base URL:', document.baseURI);
+            console.log('Current path:', window.location.pathname);
             const publicationList = document.querySelector('.publication-list');
             console.log('Publication list element:', publicationList);
-            console.log('Publication list HTML:', publicationList?.innerHTML);
         });
     </script>
     <script src="../js/publications.js"></script>
