@@ -99,6 +99,55 @@ h4 { font-size: var(--text-2xl); }
 h5 { font-size: var(--text-xl); }
 h6 { font-size: var(--text-lg); }
 
+/* 链接按钮系统 */
+.link-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-2) var(--spacing-3);
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    text-decoration: none;
+    transition: all var(--transition-normal) var(--ease-out);
+}
+
+.link-button:hover {
+    transform: translateY(-1px);
+}
+
+/* Demo 链接 */
+.demo-link {
+    color: var(--accent);
+}
+
+.demo-link:hover {
+    color: var(--accent-light);
+}
+
+/* Code 链接 */
+.code-link {
+    color: var(--success);
+}
+
+.code-link:hover {
+    color: #40d364; /* 稍微亮一点的绿色 */
+}
+
+/* Paper 链接 */
+.paper-link {
+    color: var(--text-secondary);
+}
+
+.paper-link:hover {
+    color: var(--text-primary);
+}
+
+/* 图标样式 */
+.link-button i {
+    font-size: 1.1em;
+}
+
 /* 按钮系统 */
 .button {
     display: inline-flex;
