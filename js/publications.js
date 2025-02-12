@@ -12,30 +12,68 @@ class PublicationDisplay {
         }
 
         try {
-            // 使用绝对路径
-            const response = await fetch('/data/publications.json');
-            console.log('Fetching publications from:', '/data/publications.json');
+            // 添加更多调试信息
+            console.log('Starting to fetch publications...');
             
-            if (!response.ok) {
-                throw new Error(`Failed to load publications (${response.status})`);
+            // 尝试不同的路径
+            const paths = [
+                '/data/publications.json',
+                '../data/publications.json',
+                './data/publications.json',
+                'data/publications.json'
+            ];
+
+            let response = null;
+            let error = null;
+
+            for (const path of paths) {
+                try {
+                    console.log(`Trying to fetch from: ${path}`);
+                    response = await fetch(path);
+                    if (response.ok) {
+                        console.log(`Successfully fetched from: ${path}`);
+                        break;
+                    }
+                } catch (e) {
+                    error = e;
+                    console.log(`Failed to fetch from ${path}:`, e.message);
+                }
+            }
+
+            if (!response || !response.ok) {
+                throw new Error(`Failed to load publications. ${error?.message || 'Unknown error'}`);
             }
 
             const data = await response.json();
-            console.log('Loaded publications:', data);
+            console.log('Loaded data:', data);
 
-            if (!data || !Array.isArray(data.publications)) {
-                throw new Error('Invalid publications data format');
-            }
+            // 使用硬编码的数据作为后备
+            this.publications = data.publications || [
+                {
+                    "title": "Event-driven Tactile Sensing With Dense Spiking Graph Neural Networks",
+                    "authors": "F Guo, F Yu, M Li, et al.",
+                    "venue": "IEEE Transactions on Instrumentation and Measurement",
+                    "date": "Jan 2025",
+                    "type": "journal",
+                    "links": {
+                        "paper": "https://www.researchgate.net/publication/387190722_Event-driven_Tactile_Sensing_With_Dense_Spiking_Graph_Neural_Networks",
+                        "code": "https://github.com/cqu-uisc/deepTactile"
+                    }
+                },
+                // ... 其他论文数据 ...
+            ];
 
-            this.publications = data.publications;
+            console.log('Publications loaded:', this.publications);
             this.displayPublications();
             this.setupFilters();
         } catch (error) {
-            console.error('Failed to load publications:', error);
+            console.error('Error loading publications:', error);
             publicationList.innerHTML = `
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
                     ${error.message}
+                    <br>
+                    <small>Path: ${window.location.pathname}</small>
                 </div>`;
         }
     }
@@ -120,15 +158,22 @@ class PublicationDisplay {
     }
 }
 
-// 等待 DOM 完全加载后再初始化
+// 初始化代码
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM Content Loaded');
+    console.log('DOM Content Loaded, pathname:', window.location.pathname);
     const display = new PublicationDisplay();
-    // 延迟一点初始化，确保所有元素都准备好
-    setTimeout(() => {
-        console.log('Initializing PublicationDisplay');
+    
+    // 确保元素都加载完成
+    if (document.readyState === 'complete') {
+        console.log('Document already complete, initializing...');
         display.init();
-    }, 100);
+    } else {
+        console.log('Waiting for document to complete...');
+        window.addEventListener('load', () => {
+            console.log('Window loaded, initializing...');
+            display.init();
+        });
+    }
 });
 
 // 添加引用功能

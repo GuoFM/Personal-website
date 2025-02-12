@@ -65,11 +65,16 @@
     </footer>
 
     <script>
-        // 添加调试代码
-        console.log('Page loaded');
+        // 添加更多调试信息
+        console.log('Current page URL:', window.location.href);
+        console.log('Current page path:', window.location.pathname);
+        console.log('Base URL:', document.baseURI);
+        
         document.addEventListener('DOMContentLoaded', () => {
             console.log('DOM loaded');
-            console.log('Publication list element:', document.querySelector('.publication-list'));
+            const publicationList = document.querySelector('.publication-list');
+            console.log('Publication list element:', publicationList);
+            console.log('Publication list HTML:', publicationList?.innerHTML);
         });
     </script>
     <script src="../js/publications.js"></script>
