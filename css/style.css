@@ -187,15 +187,37 @@ header {
 
 .social-links a {
     color: var(--text-secondary);
-    transition: color var(--transition-normal) var(--ease-out);
+    transition: all var(--transition-normal) var(--ease-out);
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
 }
 
 .social-links a:hover {
     color: var(--text-accent);
+    transform: translateY(-3px);
 }
 
+/* 为每个图标添加延迟动画 */
+.social-links a:nth-child(1) { animation-delay: 0.1s; }
+.social-links a:nth-child(2) { animation-delay: 0.2s; }
+.social-links a:nth-child(3) { animation-delay: 0.3s; }
+.social-links a:nth-child(4) { animation-delay: 0.4s; }
+.social-links a:nth-child(5) { animation-delay: 0.5s; }
+.social-links a:nth-child(6) { animation-delay: 0.6s; }
+
 .social-links i {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Sections */
