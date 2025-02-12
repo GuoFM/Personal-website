@@ -467,33 +467,38 @@ footer {
 }
 
 .publications-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-6);
+    margin-top: var(--spacing-8);
 }
 
 .publication-item {
     background: var(--bg-primary);
-    border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
     padding: var(--spacing-6);
     transition: all var(--transition-normal) var(--ease-out);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .publication-item:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-lg);
 }
 
 .publication-content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-2);
+    gap: var(--spacing-3);
+    height: 100%;
 }
 
 .publication-title {
     font-family: var(--heading-font);
-    font-size: var(--text-xl);
+    font-size: var(--text-lg);
     color: var(--text-primary);
     margin: 0;
     line-height: 1.4;
@@ -502,7 +507,7 @@ footer {
 .publication-authors {
     color: var(--text-secondary);
     font-size: var(--text-base);
-    margin: var(--spacing-2) 0;
+    margin: 0;
 }
 
 .publication-venue {
@@ -519,7 +524,8 @@ footer {
 .publication-links {
     display: flex;
     gap: var(--spacing-4);
-    margin-top: var(--spacing-4);
+    margin-top: auto;
+    padding-top: var(--spacing-4);
 }
 
 .publication-links a {
@@ -545,7 +551,7 @@ footer {
 }
 
 .publication-links a:hover {
-    transform: translateY(-1px);
+    transform: translateY(-2px);
     box-shadow: var(--shadow-sm);
 }
 
@@ -557,6 +563,17 @@ footer {
 .code-link:hover {
     background: var(--text-secondary);
     color: white;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    .publications-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .publication-item {
+        margin-bottom: var(--spacing-4);
+    }
 }
 
 /* Project Items */
@@ -1039,12 +1056,6 @@ a {
 
 a:hover {
     color: var(--secondary-color);
-}
-
-/* Publications 页面特定样式 */
-.publications-section .publication-item {
-    display: block;
-    padding: 1.5rem;
 }
 
 /* 容器系统 */
@@ -1654,7 +1665,9 @@ section {
 .blog-content p,
 .project-description,
 .contact-content p,
-.publication-content p {
+.publication-content p,
+.contact-intro,
+.blog-intro {
     font-family: var(--body-font);
     font-size: var(--text-base);
     color: var(--text-secondary);
