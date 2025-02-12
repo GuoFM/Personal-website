@@ -53,15 +53,15 @@
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     
     /* 动画时间 */
-    --transition-fast: 200ms;    /* 稍微延长快速动画 */
-    --transition-normal: 300ms;  /* 调整标准动画时间 */
-    --transition-slow: 500ms;    /* 延长慢速动画 */
+    --transition-fast: 150ms;
+    --transition-normal: 250ms;
+    --transition-slow: 350ms;
     
     /* 动画曲线 */
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);  /* 平滑过渡 */
-    --ease-out: cubic-bezier(0.0, 0, 0.2, 1);     /* 快出 */
-    --ease-in: cubic-bezier(0.4, 0, 1, 1);        /* 快进 */
-    --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);  /* 弹跳效果 */
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-out: cubic-bezier(0.0, 0, 0.2, 1);
+    --ease-in: cubic-bezier(0.4, 0, 1, 1);
+    --bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
     
     /* 字体优化 */
     --font-weight-normal: 400;
@@ -703,702 +703,308 @@ footer {
 
 /* Blog Page Styles */
 .blog-section {
-    padding: 8rem 2rem 4rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 6rem auto 3rem;
+    padding: 0 var(--spacing-4);
 }
 
 .blog-filters {
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacing-8);
 }
 
 .search-box {
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-4);
 }
 
 .search-box input {
     width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
+    padding: var(--spacing-3) var(--spacing-4);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    transition: all var(--transition-normal) var(--ease-out);
 }
 
-.category-filters {
+.search-box input:focus {
+    outline: none;
+    border-color: var(--text-accent);
+    box-shadow: var(--shadow-sm);
+}
+
+.post-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-6);
+    margin-bottom: var(--spacing-6);
+    transition: all var(--transition-normal) var(--ease-out);
+}
+
+.post-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--text-accent);
+}
+
+.post-meta {
     display: flex;
-    gap: 1rem;
+    gap: var(--spacing-4);
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+    margin-bottom: var(--spacing-3);
 }
 
-.pagination {
-    margin-top: 3rem;
+.post-excerpt {
+    color: var(--text-secondary);
+    margin: var(--spacing-4) 0;
+    line-height: 1.6;
+}
+
+.post-tags {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    gap: var(--spacing-2);
+    margin: var(--spacing-4) 0;
+    flex-wrap: wrap;
 }
 
-.page-numbers {
+/* 项目页面样式 */
+.project-card {
     display: flex;
-    gap: 0.5rem;
+    flex-direction: column;
+    gap: var(--spacing-4);
 }
 
-.page-numbers a {
-    padding: 0.5rem 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    text-decoration: none;
-    color: var(--text-primary);
-}
-
-.page-numbers a.active {
-    background-color: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
-}
-
-/* Project Item Enhancements */
 .project-header {
     position: relative;
-    margin-bottom: 1rem;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    overflow: hidden;
 }
 
 .project-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 8px;
-    transition: transform var(--transition-slow) var(--ease-out);
+    transition: transform var(--transition-normal) var(--ease-out);
 }
 
-.project-item:hover .project-image {
+.project-card:hover .project-image {
     transform: scale(1.05);
 }
 
 .project-badges {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: var(--spacing-4);
+    right: var(--spacing-4);
     display: flex;
-    gap: 0.5rem;
+    gap: var(--spacing-2);
 }
 
-.badge {
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: var(--font-weight-semibold);  /* 加粗 */
-    margin-right: 0.5rem;
-    transition: all 0.2s ease;
+/* 联系表单样式 */
+.form-input {
+    width: 100%;
+    padding: var(--spacing-3);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    transition: all var(--transition-normal) var(--ease-out);
+    background: var(--bg-primary);
 }
 
-/* Current badge 样式 */
-.badge.current {
-    background-color: #4CAF50;  /* 绿色背景 */
-    color: #ffffff;  /* 纯白色文字 */
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);  /* 添加轻微文字阴影提高可读性 */
-}
-
-/* Type badge 样式 */
-.badge.type {
-    background-color: var(--bg-accent);  /* 浅蓝色背景 */
-    color: #070000;  /* 纯黑色文字 */
-    border: 1px solid rgba(0, 0, 0, 0.1);  /* 添加细边框增加对比度 */
-}
-
-.badge:hover {
-    transform: translateY(-1px);
+.form-input:focus {
+    outline: none;
+    border-color: var(--text-accent);
     box-shadow: var(--shadow-sm);
 }
 
-/* Thank You Page Styles */
-.thank-you-section {
-    padding: 8rem 2rem 4rem;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+textarea.form-input {
+    min-height: 150px;
+    resize: vertical;
 }
 
-.thank-you-section h1 {
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
+.form-group {
+    margin-bottom: var(--spacing-4);
 }
 
-.thank-you-section p {
-    font-size: 1.2rem;
-    color: var(--text-primary);
-    margin-bottom: 2rem;
-}
-
-.back-home {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.back-home:hover {
-    background-color: var(--secondary-color);
-}
-
-/* 标题样式优化 */
-.hero h1 {
-    font-family: var(--heading-font);
-    font-size: 2.5rem;
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-}
-
-.hero h2 {
-    font-size: 1.5rem;
-    color: var(--secondary-color);
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-/* News 部分样式 */
-.news-section {
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-    background-color: var(--bg-secondary);
-    border-radius: 8px;
-}
-
-.news-section h2 {
-    font-family: var(--heading-font);
-    font-size: 1.8rem;
-    color: var(--text-primary);
-    margin-bottom: 1.5rem;
-}
-
-.news-list {
-    list-style: none;
-    padding: 0;
-}
-
-.news-item {
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.news-item::before {
-    content: "•";
-    color: var(--secondary-color);
-    font-size: 1.5rem;
-    position: absolute;
-    left: 0;
-    top: -0.2rem;
-}
-
-.news-date {
-    font-family: var(--heading-font);
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-}
-
-.news-content {
-    color: var(--text-secondary);
-    line-height: 1.6;
-}
-
-.news-content strong {
-    color: var(--text-accent);
-    font-weight: 600;
-}
-
-/* 链接样式优化 */
-a {
-    color: var(--text-accent);
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-a:hover {
-    color: var(--secondary-color);
-}
-
-/* Publications 页面特定样式 */
-.publications-section .publication-item {
+.form-group label {
     display: block;
-    padding: 1.5rem;
+    margin-bottom: var(--spacing-2);
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-medium);
 }
 
-/* 容器系统 */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-6);
-}
-
-/* 按钮系统 */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--spacing-2) var(--spacing-4);
+.submit-btn {
+    width: 100%;
+    padding: var(--spacing-3) var(--spacing-4);
+    background: var(--text-accent);
+    color: white;
+    border: none;
     border-radius: var(--radius-md);
-    font-weight: 500;
-    transition: 
-        background-color var(--transition-fast) var(--ease-out),
-        transform var(--transition-fast) var(--ease-out),
-        box-shadow var(--transition-fast) var(--ease-out);
+    font-weight: var(--font-weight-medium);
+    transition: all var(--transition-normal) var(--ease-out);
 }
 
-.btn-primary {
-    background-color: var(--primary-color);
-    color: white;
+.submit-btn:hover {
+    background: var(--text-accent);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
 }
 
-.btn-secondary {
-    background-color: var(--secondary-color);
-    color: white;
+/* 社交链接样式 */
+.social-links {
+    display: flex;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-6);
 }
 
-.btn:hover {
-    transform: translateY(-4px);
+.social-links a {
+    color: var(--text-secondary);
+    transition: all var(--transition-normal) var(--ease-out);
 }
 
-.btn:active {
+.social-links a:hover {
+    color: var(--text-accent);
     transform: translateY(-2px);
 }
 
-/* 卡片系统 */
+/* 分页样式 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-8);
+}
+
+.page-numbers {
+    display: flex;
+    gap: var(--spacing-2);
+}
+
+.page-numbers a {
+    padding: var(--spacing-2) var(--spacing-4);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    transition: all var(--transition-normal) var(--ease-out);
+}
+
+.page-numbers a.active,
+.page-numbers a:hover {
+    background: var(--text-accent);
+    color: white;
+    border-color: var(--text-accent);
+}
+
+/* 页面通用样式优化 */
+.section-title {
+    font-family: var(--heading-font);
+    font-size: var(--text-3xl);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-8);
+    animation: fadeIn 0.5s var(--ease-out);
+}
+
+.section-description {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-8);
+    line-height: 1.6;
+    animation: fadeIn 0.5s var(--ease-out) 0.1s backwards;
+}
+
+/* 统一卡片样式 */
 .card {
     background: var(--bg-primary);
+    border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-md);
     padding: var(--spacing-6);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: var(--spacing-4);
+    transition: all var(--transition-normal) var(--ease-out);
 }
 
 .card:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-md);
+    border-color: var(--text-accent);
+}
+
+/* 统一按钮样式 */
+.btn {
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--radius-md);
+    font-weight: var(--font-weight-medium);
+    transition: all var(--transition-normal) var(--ease-out);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* 统一标签样式 */
+.tag {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-medium);
+    background: var(--bg-accent);
+    color: var(--text-accent);
+    transition: all var(--transition-normal) var(--ease-out);
+}
+
+.tag:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* 统一网格布局 */
+.grid {
+    display: grid;
+    gap: var(--spacing-6);
+    margin-top: var(--spacing-8);
+}
+
+/* 响应式网格 */
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 添加平滑滚动 */
+html {
+    scroll-behavior: smooth;
 }
 
 /* 通用动画类 */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 0.5s var(--ease-out) forwards;
-}
-
-.slide-up {
+.animate-in {
     opacity: 0;
     transform: translateY(20px);
-    animation: slideUp 0.5s var(--ease-out) forwards;
+    transition: opacity var(--transition-normal) var(--ease-out),
+                transform var(--transition-normal) var(--bounce);
 }
 
-/* 关键帧动画 */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* 页面加载动画 */
-.content-section {
-    animation: fadeIn 0.5s var(--ease-out);
-}
-
-/* 图片加载动画 */
-.image-loading {
-    animation: imagePulse 1.5s var(--ease-in-out) infinite;
-}
-
-@keyframes imagePulse {
-    0% {
-        opacity: 0.6;
-    }
-    50% {
-        opacity: 0.8;
-    }
-    100% {
-        opacity: 0.6;
-    }
-}
-
-/* 链接悬停效果 */
-.publication-links a,
-.project-links a {
-    transition: 
-        color var(--transition-normal) var(--ease-out),
-        transform var(--transition-normal) var(--ease-out);
-}
-
-.publication-links a:hover,
-.project-links a:hover {
-    transform: translateX(2px);
-}
-
-/* 新增动画关键帧 */
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes scaleIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-@keyframes floatAnimation {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-/* 页面加载动画序列 */
-.hero {
-    animation: slideInLeft var(--transition-slow) var(--ease-out) both;
-}
-
-.profile-image {
-    animation: scaleIn var(--transition-slow) var(--bounce) both;
-    animation-delay: var(--transition-normal);
-}
-
-.social-links a {
-    opacity: 0;
-    animation: slideInRight var(--transition-normal) var(--ease-out) forwards;
-}
-
-.social-links a:nth-child(1) { animation-delay: 300ms; }
-.social-links a:nth-child(2) { animation-delay: 400ms; }
-.social-links a:nth-child(3) { animation-delay: 500ms; }
-.social-links a:nth-child(4) { animation-delay: 600ms; }
-
-/* 滚动动画类 */
-.scroll-reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 
-        opacity var(--transition-normal) var(--ease-out),
-        transform var(--transition-normal) var(--ease-out);
-}
-
-.scroll-reveal.active {
+.animate-in.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* 悬浮动画效果 */
-.float-animation {
-    animation: floatAnimation 3s var(--ease-in-out) infinite;
+/* 卡片悬停效果 */
+.card-hover {
+    transition: all var(--transition-normal) var(--ease-out);
 }
 
-/* 移动端动画优化 */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
-/* 优化项目卡片动画 */
-.project-item {
-    transition: 
-        transform var(--transition-normal) var(--bounce),
-        box-shadow var(--transition-normal) var(--ease-out);
-}
-
-.project-item:hover {
-    transform: translateY(-8px) scale(1.02);
-}
-
-/* 优化文章卡片动画 */
-.post-item {
-    transition: 
-        transform var(--transition-normal) var(--bounce),
-        box-shadow var(--transition-normal) var(--ease-out);
-}
-
-.post-item:hover {
-    transform: translateY(-8px) scale(1.02);
-}
-
-/* 按钮动画优化 */
-.btn {
-    transition: 
-        transform var(--transition-fast) var(--bounce),
-        background-color var(--transition-fast) var(--ease-out),
-        box-shadow var(--transition-fast) var(--ease-out);
-}
-
-.btn:hover {
-    transform: translateY(-4px);
-}
-
-.btn:active {
+.card-hover:hover {
     transform: translateY(-2px);
-}
-
-/* 导航链接动画优化 */
-.nav-links a::after {
-    transition: width var(--transition-normal) var(--bounce);
-}
-
-/* 表单输入动画优化 */
-.form-group input,
-.form-group textarea {
-    transition: 
-        border-color var(--transition-normal) var(--ease-out),
-        box-shadow var(--transition-normal) var(--bounce),
-        transform var(--transition-fast) var(--ease-out);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    transform: translateY(-2px);
-}
-
-/* 页面主标题统一样式 */
-.projects-section h1,
-.blog-section h1,
-.contact-section h1,
-.publications-section h1 {
-    font-family: var(--heading-font);
-    font-size: var(--text-4xl);
-    color: var(--text-primary);
-    margin-bottom: var(--spacing-8);
-    font-weight: var(--font-weight-bold);  /* 加粗 */
-    letter-spacing: -0.02em;  /* 稍微调整字间距 */
-    position: relative;
-    display: inline-block;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* 添加轻微阴影提高可读性 */
-}
-
-/* 统一装饰线样式 */
-.projects-section h1::after,
-.blog-section h1::after,
-.contact-section h1::after,
-.publications-section h1::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 60%;
-    height: 3px;
-    background-color: var(--text-accent);
-    border-radius: 2px;
-}
-
-/* 项目和博客卡片标题统一 */
-.project-item h3,
-.post-item h3,
-.publication-item h3 {
-    font-family: var(--heading-font);
-    font-size: var(--text-xl);
-    color: var(--text-primary);
-    margin-bottom: var(--spacing-3);
-    font-weight: var(--font-weight-bold);  /* 加粗 */
-    line-height: 1.4;
-}
-
-/* 重要文本加粗 */
-.project-description strong,
-.post-excerpt strong,
-.contact-intro strong,
-.publication-content strong {
-    font-weight: var(--font-weight-bold);
-    color: var(--text-primary);
-}
-
-/* 作者和日期信息统一 */
-.project-date,
-.post-date,
-.authors,
-.venue {
-    font-family: var(--body-font);
-    font-size: var(--text-sm);
-    color: var(--text-muted);
-    font-weight: var(--font-weight-medium);
-}
-
-/* 按钮文字加粗 */
-.filter-btn,
-.submit-btn,
-.btn {
-    font-family: var(--body-font);
-    font-size: var(--text-sm);
-    font-weight: var(--font-weight-semibold);  /* 加粗 */
-    letter-spacing: 0.02em;
-}
-
-/* 链接文字加粗 */
-.project-links a,
-.post-links a,
-.publication-links a,
-.read-more {
-    font-family: var(--body-font);
-    font-size: var(--text-sm);
-    font-weight: var(--font-weight-semibold);  /* 加粗 */
-    color: var(--text-accent);
-}
-
-/* 二级标题加粗 */
-.section-title,
-.projects-section h2,
-.blog-section h2,
-.contact-section h2,
-.publications-section h2 {
-    font-family: var(--heading-font);
-    font-size: var(--text-2xl);
-    color: var(--text-accent);
-    margin-bottom: var(--spacing-6);
-    font-weight: var(--font-weight-bold);  /* 加粗 */
-    letter-spacing: -0.01em;
-}
-
-/* Contact 页面特殊样式 */
-.contact-info h2 {
-    font-family: var(--heading-font);
-    font-size: var(--text-2xl);
-    color: var(--text-accent);
-    margin-bottom: var(--spacing-6);
-    font-weight: var(--font-weight-bold);  /* 加粗 */
-}
-
-/* 表单标签加粗 */
-.form-group label {
-    font-family: var(--body-font);
-    font-size: var(--text-base);
-    color: var(--text-secondary);
-    margin-bottom: var(--spacing-2);
-    font-weight: var(--font-weight-semibold);  /* 加粗 */
-}
-
-/* 强调文本颜色优化 */
-.venue strong,
-.news-content strong,
-.publication-content strong {
-    color: var(--text-accent);
-    font-weight: var(--font-weight-bold);
-}
-
-/* 统一页面标题样式 */
-.blog-section h1,
-.projects-section h1,
-.contact-section h1,
-.publications-section h1 {
-    font-family: var(--heading-font);
-    font-size: var(--text-4xl);
-    color: var(--text-primary);
-    font-weight: var(--font-weight-bold);
-    margin-bottom: var(--spacing-8);
-    position: relative;
-    display: inline-block;
-}
-
-/* 统一二级标题样式 */
-.blog-section h2,
-.projects-section h2,
-.contact-section h2,
-.publications-section h2 {
-    font-family: var(--heading-font);
-    font-size: var(--text-2xl);
-    color: var(--text-accent);
-    font-weight: var(--font-weight-bold);
-    margin-bottom: var(--spacing-6);
-}
-
-/* 统一卡片标题样式 */
-.blog-item h3,
-.project-item h3,
-.contact-item h3,
-.publication-item h3 {
-    font-family: var(--heading-font);
-    font-size: var(--text-xl);
-    color: var(--text-primary);
-    font-weight: var(--font-weight-bold);
-    margin-bottom: var(--spacing-3);
-}
-
-/* 统一正文样式 */
-.blog-content p,
-.project-description,
-.contact-content p,
-.publication-content p {
-    font-family: var(--body-font);
-    font-size: var(--text-base);
-    color: var(--text-secondary);
-    line-height: 1.7;
-}
-
-/* 统一元信息样式（日期、作者等） */
-.blog-date,
-.project-date,
-.contact-date,
-.publication-date,
-.authors {
-    font-family: var(--body-font);
-    font-size: var(--text-sm);
-    color: var(--text-muted);
-    font-weight: var(--font-weight-medium);
-}
-
-/* 统一按钮样式 */
-.filter-btn,
-.submit-btn {
-    font-family: var(--body-font);
-    font-size: var(--text-sm);
-    font-weight: var(--font-weight-semibold);
-}
-
-/* 统一标签样式 */
-.badge {
-    font-family: var(--body-font);
-    font-size: var(--text-xs);
-    font-weight: var(--font-weight-semibold);
+    box-shadow: var(--shadow-md);
+    border-color: var(--text-accent);
 }
 
 /* 统一所有页面的主标题样式 */
@@ -2097,4 +1703,111 @@ section {
 /* 添加平滑滚动 */
 html {
     scroll-behavior: smooth;
+}
+
+/* 通用动画类 */
+.animate-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity var(--transition-normal) var(--ease-out),
+                transform var(--transition-normal) var(--bounce);
+}
+
+.animate-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 卡片悬停效果 */
+.card-hover {
+    transition: all var(--transition-normal) var(--ease-out);
+}
+
+.card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--text-accent);
+}
+
+/* 页面通用样式优化 */
+.section-title {
+    font-family: var(--heading-font);
+    font-size: var(--text-3xl);
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-8);
+    animation: fadeIn 0.5s var(--ease-out);
+}
+
+.section-description {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-8);
+    line-height: 1.6;
+    animation: fadeIn 0.5s var(--ease-out) 0.1s backwards;
+}
+
+/* 统一卡片样式 */
+.card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-6);
+    margin-bottom: var(--spacing-4);
+    transition: all var(--transition-normal) var(--ease-out);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--text-accent);
+}
+
+/* 统一按钮样式 */
+.btn {
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--radius-md);
+    font-weight: var(--font-weight-medium);
+    transition: all var(--transition-normal) var(--ease-out);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* 统一标签样式 */
+.tag {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-2);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-medium);
+    background: var(--bg-accent);
+    color: var(--text-accent);
+    transition: all var(--transition-normal) var(--ease-out);
+}
+
+.tag:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* 统一网格布局 */
+.grid {
+    display: grid;
+    gap: var(--spacing-6);
+    margin-top: var(--spacing-8);
+}
+
+/* 响应式网格 */
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 } 
