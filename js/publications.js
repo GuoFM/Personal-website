@@ -1,4 +1,4 @@
-class PublicationDisplay {
+class PublicationManager {
     constructor() {
         this.publications = [];
         this.currentFilter = 'all';
@@ -8,15 +8,10 @@ class PublicationDisplay {
     async init() {
         try {
             // 显示加载状态
-            const publicationList = document.getElementById('publication-list');
-            publicationList.innerHTML = `
-                <div class="loading-spinner">
-                    <i class="fas fa-spinner fa-spin"></i> Loading publications...
-                </div>
-            `;
+            this.showLoading();
 
             // 加载数据
-            const response = await fetch('../data/publications.json');
+            const response = await fetch('/data/publications.json');
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -30,14 +25,30 @@ class PublicationDisplay {
             this.setupFilterListeners();
         } catch (error) {
             console.error('Error loading publications:', error);
-            // 显示错误信息
-            const publicationList = document.getElementById('publication-list');
+            this.showError(error.message);
+        }
+    }
+
+    showLoading() {
+        const publicationList = document.getElementById('publication-list');
+        if (publicationList) {
+            publicationList.innerHTML = `
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i> Loading publications...
+                </div>
+            `;
+        }
+    }
+
+    showError(message) {
+        const publicationList = document.getElementById('publication-list');
+        if (publicationList) {
             publicationList.innerHTML = `
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
                     Failed to load publications. Please try again later.
                     <br>
-                    <small>Error: ${error.message}</small>
+                    <small>Error: ${message}</small>
                 </div>
             `;
         }
@@ -47,11 +58,8 @@ class PublicationDisplay {
         const filterButtons = document.querySelectorAll('.filter-btn');
         filterButtons.forEach(button => {
             button.addEventListener('click', () => {
-                // 更新按钮状态
                 filterButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
-                
-                // 更新过滤器并重新显示
                 this.currentFilter = button.dataset.filter;
                 this.displayPublications();
             });
@@ -60,6 +68,8 @@ class PublicationDisplay {
 
     displayPublications() {
         const publicationList = document.getElementById('publication-list');
+        if (!publicationList) return;
+
         const filteredPublications = this.publications.filter(pub => 
             this.currentFilter === 'all' || pub.type === this.currentFilter
         );
@@ -113,7 +123,7 @@ class PublicationDisplay {
 
 // 初始化
 document.addEventListener('DOMContentLoaded', () => {
-    new PublicationDisplay();
+    new PublicationManager();
 });
 
 // 添加引用功能
