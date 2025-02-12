@@ -454,7 +454,109 @@ footer {
 
 /* Publications 页面特定样式 */
 .publications-section {
-    padding-top: 6rem;
+    padding: var(--spacing-16) var(--spacing-4);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.publication-filters {
+    display: flex;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-8);
+    flex-wrap: wrap;
+}
+
+.publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.publication-item {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-6);
+    transition: all var(--transition-normal) var(--ease-out);
+}
+
+.publication-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.publication-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+}
+
+.publication-title {
+    font-family: var(--heading-font);
+    font-size: var(--text-xl);
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.publication-authors {
+    color: var(--text-secondary);
+    font-size: var(--text-base);
+    margin: var(--spacing-2) 0;
+}
+
+.publication-venue {
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+    margin: 0;
+}
+
+.venue-name {
+    color: var(--text-accent);
+    font-weight: var(--font-weight-medium);
+}
+
+.publication-links {
+    display: flex;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-4);
+}
+
+.publication-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    transition: all var(--transition-normal) var(--ease-out);
+}
+
+.paper-link {
+    background: var(--bg-accent);
+    color: var(--text-accent);
+}
+
+.code-link {
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.publication-links a:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.paper-link:hover {
+    background: var(--text-accent);
+    color: white;
+}
+
+.code-link:hover {
+    background: var(--text-secondary);
+    color: white;
 }
 
 /* Project Items */
