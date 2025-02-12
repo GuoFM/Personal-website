@@ -180,28 +180,46 @@ header {
 }
 
 .social-links {
-    margin-top: 1.5rem;
+    display: flex;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-6);
 }
 
 .social-links a {
-    margin-right: 1rem;
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: 
-        transform var(--transition-normal) var(--ease-out),
-        color var(--transition-normal) var(--ease-out);
-    opacity: 0;
-    animation: slideInRight var(--transition-normal) var(--ease-out) forwards;
+    color: var(--text-secondary);
+    transition: all var(--transition-normal) var(--ease-out);
+    font-size: var(--text-xl);
+    padding: var(--spacing-2);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
 }
 
-.social-links a:nth-child(1) { animation-delay: 300ms; }
-.social-links a:nth-child(2) { animation-delay: 400ms; }
-.social-links a:nth-child(3) { animation-delay: 500ms; }
-.social-links a:nth-child(4) { animation-delay: 600ms; }
-
 .social-links a:hover {
-    transform: translateY(-2px);
     color: var(--text-accent);
+    transform: translateY(-2px);
+}
+
+.social-links a i {
+    font-size: 1.5em;
+}
+
+/* 为每个社交图标添加特定颜色 */
+.social-links a[title="Google Scholar"]:hover {
+    color: #4285f4;
+}
+
+.social-links a[title="GitHub"]:hover {
+    color: #333;
+}
+
+.social-links a[title="LinkedIn"]:hover {
+    color: #0077b5;
+}
+
+.social-links a[title="Email"]:hover {
+    color: #ea4335;
 }
 
 /* Sections */
@@ -438,7 +456,103 @@ footer {
 
 /* Publications 页面特定样式 */
 .publications-section {
-    padding-top: 6rem;
+    padding-top: var(--spacing-16);
+}
+
+.publication-filters {
+    margin-bottom: var(--spacing-8);
+    display: flex;
+    gap: var(--spacing-2);
+    flex-wrap: wrap;
+}
+
+.publications-grid {
+    display: grid;
+    gap: var(--spacing-6);
+}
+
+.publication-item {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-6);
+    transition: all var(--transition-normal) var(--ease-out);
+}
+
+.publication-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.publication-title {
+    font-family: var(--heading-font);
+    font-size: var(--text-xl);
+    margin-bottom: var(--spacing-2);
+    color: var(--text-primary);
+}
+
+.publication-authors {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-2);
+}
+
+.publication-venue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-4);
+    color: var(--text-accent);
+    font-style: italic;
+}
+
+.publication-links {
+    display: flex;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-4);
+}
+
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm);
+    text-decoration: none;
+    transition: all var(--transition-normal) var(--ease-out);
+    border: 1px solid var(--border-color);
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+}
+
+.pub-link:hover {
+    border-color: var(--text-accent);
+    color: var(--text-accent);
+    transform: translateY(-1px);
+}
+
+.citation-box {
+    margin-top: var(--spacing-4);
+    padding: var(--spacing-4);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    font-family: monospace;
+    font-size: var(--text-sm);
+}
+
+.copy-btn {
+    margin-top: var(--spacing-2);
+    padding: var(--spacing-2) var(--spacing-4);
+    border: none;
+    background: var(--text-accent);
+    color: white;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background var(--transition-normal) var(--ease-out);
+}
+
+.copy-btn:hover {
+    background: var(--secondary-color);
 }
 
 /* Project Items */

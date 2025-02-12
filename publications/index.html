@@ -29,9 +29,9 @@
         </nav>
     </header>
 
-    <main>
-        <section class="publications-section">
-            <h1>Publications</h1>
+    <main class="container">
+        <section class="content-section publications-section">
+            <h1 class="section-title">Publications</h1>
             
             <div class="publication-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
@@ -40,20 +40,40 @@
                 <button class="filter-btn" data-filter="preprint">Preprints</button>
             </div>
 
-            <div class="publication-list">
-                <!-- Journal Papers -->
+            <div class="publications-grid">
+                <!-- 每个论文条目使用新的布局 -->
                 <div class="publication-item" data-type="journal">
                     <div class="publication-content">
-                        <h3>Event-driven Tactile Sensing With Dense Spiking Graph Neural Networks</h3>
-                        <p class="authors">F Guo, F Yu, M Li, et al.</p>
-                        <p class="venue"><strong>IEEE Transactions on Instrumentation and Measurement</strong>, Jan 2025</p>
+                        <h3 class="publication-title">
+                            Event-driven Tactile Sensing With Dense Spiking Graph Neural Networks
+                        </h3>
+                        <p class="publication-authors">F Guo, F Yu, M Li, et al.</p>
+                        <p class="publication-venue">
+                            <span class="venue-name">IEEE Transactions on Instrumentation and Measurement</span>
+                            <span class="publication-date">Jan 2025</span>
+                        </p>
                         <div class="publication-links">
-                            <a href="https://www.researchgate.net/publication/387190722_Event-driven_Tactile_Sensing_With_Dense_Spiking_Graph_Neural_Networks" class="paper-link">
+                            <a href="#" class="pub-link paper-link">
                                 <i class="fas fa-file-pdf"></i> Paper
                             </a>
-                            <a href="https://github.com/cqu-uisc/deepTactile" class="code-link">
+                            <a href="#" class="pub-link code-link">
                                 <i class="fab fa-github"></i> Code
                             </a>
+                            <button class="pub-link cite-link" onclick="showCitation('paper1')">
+                                <i class="fas fa-quote-right"></i> Cite
+                            </button>
+                        </div>
+                        <div id="paper1-citation" class="citation-box" style="display: none;">
+                            <pre>@article{guo2025event,
+  title={Event-driven Tactile Sensing With Dense Spiking Graph Neural Networks},
+  author={Guo, Fangming and Yu, Feng and Li, Ming and others},
+  journal={IEEE Transactions on Instrumentation and Measurement},
+  year={2025},
+  publisher={IEEE}
+}</pre>
+                            <button class="copy-btn" onclick="copyText('paper1-citation')">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
                         </div>
                     </div>
                 </div>
