@@ -86,47 +86,53 @@ class PublicationDisplay {
     }
 
     setupFilters() {
-        document.querySelectorAll('.filter-btn').forEach(button => {
-            button.addEventListener('click', (e) => {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
                 // 移除所有按钮的active类
-                document.querySelectorAll('.filter-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                // 添加active类到被点击的按钮
-                e.target.classList.add('active');
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // 添加active类到当前按钮
+                button.classList.add('active');
                 
-                this.currentFilter = e.target.getAttribute('data-filter');
+                this.currentFilter = button.dataset.filter;
                 this.displayPublications();
             });
         });
     }
 
     renderPublicationLinks(links) {
-        let linksHtml = '';
+        const linkElements = [];
+        
         if (links.paper) {
-            linksHtml += `
-                <a href="${links.paper}" class="btn paper-link" target="_blank">
-                    <i class="fas fa-file-pdf"></i> Paper
-                </a>`;
+            linkElements.push(`
+                <a href="${links.paper}" class="publication-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-alt"></i> Paper
+                </a>`);
         }
+        
         if (links.code) {
-            linksHtml += `
-                <a href="${links.code}" class="btn code-link" target="_blank">
+            linkElements.push(`
+                <a href="${links.code}" class="publication-link" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i> Code
-                </a>`;
+                </a>`);
         }
-        return linksHtml;
+        
+        return linkElements.join('');
     }
 
-    renderPublication(pub, index) {
+    renderPublication(pub) {
         return `
-            <div class="publication-item card animate-in" 
-                 data-type="${pub.type}"
-                 style="animation-delay: ${index * 0.1}s">
+            <div class="publication-item">
                 <div class="publication-content">
-                    <h3>${pub.title}</h3>
-                    <p class="authors">${pub.authors}</p>
-                    <p class="venue"><strong>${pub.venue}</strong>, ${pub.date}</p>
+                    <div class="publication-header">
+                        <h3 class="publication-title">${pub.title}</h3>
+                        <span class="publication-type">${pub.type}</span>
+                    </div>
+                    <div class="publication-meta">
+                        <p class="publication-authors">${pub.authors}</p>
+                        <p class="publication-venue">${pub.venue}</p>
+                        <p class="publication-date">${pub.date}</p>
+                    </div>
                     <div class="publication-links">
                         ${this.renderPublicationLinks(pub.links)}
                     </div>
@@ -137,7 +143,13 @@ class PublicationDisplay {
 
     displayPublications() {
         const publicationList = document.querySelector('.publication-list');
-        if (!publicationList) return;
+        if (!publicationList) {
+            console.error('Publication list element not found');
+            return;
+        }
+
+        // 清除加载状态
+        publicationList.innerHTML = '';
 
         const filteredPubs = this.currentFilter === 'all' 
             ? this.publications 
@@ -152,23 +164,26 @@ class PublicationDisplay {
             return;
         }
 
-        publicationList.innerHTML = filteredPubs
-            .map((pub, index) => this.renderPublication(pub, index))
+        const publicationsHTML = filteredPubs
+            .map(pub => this.renderPublication(pub))
             .join('');
 
-        // 触发动画
-        requestAnimationFrame(() => {
+        publicationList.innerHTML = publicationsHTML;
+
+        // 添加动画效果
+        setTimeout(() => {
             document.querySelectorAll('.publication-item').forEach((item, index) => {
                 setTimeout(() => {
                     item.classList.add('visible');
                 }, index * 100);
             });
-        });
+        }, 0);
     }
 }
 
 // 初始化代码
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('Initializing PublicationDisplay');
     const display = new PublicationDisplay();
     display.init();
 });
