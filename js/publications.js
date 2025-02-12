@@ -4,43 +4,52 @@ class PublicationDisplay {
     }
 
     async init() {
+        const publicationList = document.getElementById('publication-list');
+        
         try {
             // 显示加载状态
-            const publicationList = document.getElementById('publication-list');
             publicationList.innerHTML = `
                 <div class="loading-spinner">
                     <i class="fas fa-spinner fa-spin"></i> Loading publications...
                 </div>
             `;
 
-            // 加载数据
-            const response = await fetch('../data/publications.json');
+            // 使用绝对路径加载数据
+            const response = await fetch('/data/publications.json');
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                throw new Error(`Failed to load publications (${response.status})`);
             }
+
             const data = await response.json();
-            
-            // 渲染数据
-            this.renderPublications(data.publications);
+            if (!data || !Array.isArray(data.publications)) {
+                throw new Error('Invalid publications data format');
+            }
+
+            // 渲染出版物列表
+            this.renderPublicationList(data.publications);
             
             // 设置过滤器事件监听
             this.setupFilterListeners(data.publications);
 
+            console.log('Successfully loaded publications data');
+
         } catch (error) {
             console.error('Error loading publications:', error);
-            const publicationList = document.getElementById('publication-list');
             publicationList.innerHTML = `
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
-                    Failed to load publications. Please try again later.
+                    Failed to load publications.
+                    <button onclick="window.location.reload()" class="retry-btn">
+                        <i class="fas fa-redo"></i> Try Again
+                    </button>
                     <br>
-                    <small>Error: ${error.message}</small>
+                    <small>${error.message}</small>
                 </div>
             `;
         }
     }
 
-    renderPublications(publications, filter = 'all') {
+    renderPublicationList(publications, filter = 'all') {
         const publicationList = document.getElementById('publication-list');
         const filteredPublications = filter === 'all' 
             ? publications 
@@ -48,7 +57,7 @@ class PublicationDisplay {
 
         if (filteredPublications.length === 0) {
             publicationList.innerHTML = `
-                <div class="error-message">
+                <div class="no-results">
                     <i class="fas fa-info-circle"></i>
                     No publications found for the selected filter.
                 </div>
@@ -56,7 +65,7 @@ class PublicationDisplay {
             return;
         }
 
-        publicationList.innerHTML = filteredPublications.map((pub, index) => `
+        const html = filteredPublications.map((pub, index) => `
             <div class="publication-item card animate-in" 
                  data-type="${pub.type}" 
                  style="animation-delay: ${index * 0.1}s">
@@ -77,12 +86,12 @@ class PublicationDisplay {
                     </div>
                     <div class="publication-links">
                         ${pub.links.paper ? `
-                            <a href="${pub.links.paper}" class="btn paper-link" target="_blank">
+                            <a href="${pub.links.paper}" class="btn paper-link" target="_blank" rel="noopener">
                                 <i class="fas fa-file-pdf"></i> Paper
                             </a>
                         ` : ''}
                         ${pub.links.code ? `
-                            <a href="${pub.links.code}" class="btn code-link" target="_blank">
+                            <a href="${pub.links.code}" class="btn code-link" target="_blank" rel="noopener">
                                 <i class="fab fa-github"></i> Code
                             </a>
                         ` : ''}
@@ -90,19 +99,19 @@ class PublicationDisplay {
                 </div>
             </div>
         `).join('');
+
+        publicationList.innerHTML = html;
     }
 
     setupFilterListeners(publications) {
         const filterButtons = document.querySelectorAll('.filter-btn');
         filterButtons.forEach(button => {
             button.addEventListener('click', () => {
-                // 更新按钮状态
                 filterButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
                 
-                // 过滤并重新渲染
                 const filterValue = button.dataset.filter;
-                this.renderPublications(publications, filterValue);
+                this.renderPublicationList(publications, filterValue);
             });
         });
     }
