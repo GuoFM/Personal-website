@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/design-system.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -30,22 +29,22 @@
     </header>
 
     <main>
-        <section class="projects-section animate-in">
-            <h1 class="section-title">Research Projects</h1>
+        <section class="projects-section">
+            <h1>Research Projects</h1>
             
-            <div class="project-filters animate-in" style="animation-delay: 0.1s">
+            <div class="project-filters">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="current">Current</button>
                 <button class="filter-btn" data-filter="completed">Completed</button>
             </div>
 
             <div class="project-grid">
-                <div class="project-card card animate-in" data-type="current" style="animation-delay: 0.2s">
+                <div class="project-item" data-type="current">
                     <div class="project-header">
-                        <img src="../assets/images/project1.jpg" alt="Project Image" class="project-image">
+                        <img src="../assets/images/project1.jpg" alt="UAV Edge Intelligence" class="project-image" onerror="this.style.display='none';">
                         <div class="project-badges">
-                            <span class="tag">Current</span>
-                            <span class="tag">Research</span>
+                            <span class="badge current">Current</span>
+                            <span class="badge type">Research</span>
                         </div>
                     </div>
                     <div class="project-content">
@@ -60,9 +59,9 @@
                             <li>Energy-efficient computing strategies</li>
                         </ul>
                         <div class="project-links">
-                            <a href="#" class="link-button demo-link"><i class="fas fa-play-circle"></i> Demo</a>
-                            <a href="#" class="link-button code-link"><i class="fab fa-github"></i> Code</a>
-                            <a href="#" class="link-button paper-link"><i class="fas fa-file-alt"></i> Paper</a>
+                            <a href="#" class="demo-link"><i class="fas fa-play-circle"></i> Demo</a>
+                            <a href="#" class="code-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="paper-link"><i class="fas fa-file-alt"></i> Paper</a>
                         </div>
                     </div>
                 </div>

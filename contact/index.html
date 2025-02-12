@@ -6,7 +6,6 @@
     <title>Contact - Fangming Guo</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/design-system.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -33,21 +32,16 @@
     </header>
 
     <main>
-        <section class="contact-section animate-in">
-            <h1 class="section-title">Contact Me</h1>
-            <p class="section-description">Feel free to reach out for academic collaborations or research opportunities.</p>
+        <section class="contact-section">
+            <h1>Contact Me</h1>
+            <p class="contact-intro">Feel free to reach out to me for academic collaborations, research opportunities, or any questions.</p>
             
-            <div class="contact-container grid">
-                <div class="contact-info card animate-in" style="animation-delay: 0.1s">
+            <div class="contact-container">
+                <div class="contact-info">
                     <h2>Direct Contact</h2>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:fguo1996@cqu.edu.cn">fguo1996@cqu.edu.cn</a>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>College of Computer Science, Chongqing University</span>
-                    </div>
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:fguo1996@cqu.edu.cn">fguo1996@cqu.edu.cn</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: College of Computer Science, Chongqing University</p>
+                    
                     <div class="social-links">
                         <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" title="Google Scholar">
                             <i class="ai ai-google-scholar-square ai-2x"></i>
@@ -61,23 +55,23 @@
                     </div>
                 </div>
 
-                <form id="contact-form" class="contact-form card animate-in" style="animation-delay: 0.2s">
+                <form id="contact-form" class="contact-form">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required class="form-input">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="from_name" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required class="form-input">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="from_email" required>
                     </div>
                     
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" required class="form-input"></textarea>
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
                     
-                    <button type="submit" class="btn submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn">Send Message</button>
                 </form>
             </div>
         </section>
