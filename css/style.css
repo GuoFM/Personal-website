@@ -1855,4 +1855,32 @@ html {
     color: var(--text-secondary);
     background: var(--bg-secondary);
     border-radius: var(--radius-md);
+}
+
+.publication-list {
+    position: relative;
+    min-height: 200px;
+}
+
+.loading-indicator {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.publication-list.loaded .loading-indicator {
+    display: none;
+}
+
+.publication-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.publication-item.visible {
+    opacity: 1;
+    transform: translateY(0);
 } 

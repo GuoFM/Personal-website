@@ -12,60 +12,45 @@ class PublicationDisplay {
         }
 
         try {
-            // 直接使用相对路径
-            const jsonUrl = '../data/publications.json';
-            console.log('Attempting to fetch from:', jsonUrl);
+            // 使用完整的 URL
+            const jsonUrl = 'https://www.fangmingguo.com/data/publications.json';
+            console.log('Fetching publications from:', jsonUrl);
             
-            const response = await fetch(jsonUrl);
-            console.log('Fetch response status:', response.status);
-            console.log('Response headers:', [...response.headers.entries()]);
+            const response = await fetch(jsonUrl, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json',
+                    'Cache-Control': 'no-cache'
+                }
+            });
 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
 
-            const contentType = response.headers.get('content-type');
-            if (!contentType || !contentType.includes('application/json')) {
-                console.warn('Warning: Unexpected content type:', contentType);
-            }
+            const data = await response.json();
+            console.log('Publications loaded:', data);
 
-            const text = await response.text(); // 先获取原始文本
-            console.log('Raw response:', text);
-
-            let data;
-            try {
-                data = JSON.parse(text);
-            } catch (e) {
-                throw new Error(`JSON parse error: ${e.message}`);
-            }
-
-            if (!data || !Array.isArray(data.publications)) {
-                throw new Error('Invalid data format: publications array not found');
+            if (!data || !data.publications) {
+                throw new Error('Invalid data format');
             }
 
             this.publications = data.publications;
-            console.log('Successfully loaded publications:', this.publications);
             
-            // 清除加载状态
-            publicationList.innerHTML = '';
-            
+            // 清除加载状态并显示数据
             this.displayPublications();
             this.setupFilters();
+
+            // 添加成功加载的标记
+            publicationList.classList.add('loaded');
         } catch (error) {
-            console.error('Failed to load publications:', {
-                error,
-                stack: error.stack,
-                url: window.location.href
-            });
-            
+            console.error('Error loading publications:', error);
             publicationList.innerHTML = `
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
                     Failed to load publications
                     <br>
                     <small>${error.message}</small>
-                    <br>
-                    <small>Please check the console for more details.</small>
                 </div>`;
         }
     }
@@ -142,27 +127,20 @@ class PublicationDisplay {
             .join('');
 
         // 触发动画
-        setTimeout(() => {
-            document.querySelectorAll('.publication-item').forEach(item => {
-                item.classList.add('visible');
+        requestAnimationFrame(() => {
+            document.querySelectorAll('.publication-item').forEach((item, index) => {
+                setTimeout(() => {
+                    item.classList.add('visible');
+                }, index * 100);
             });
-        }, 100);
+        });
     }
 }
 
-// 确保 DOM 完全加载后再初始化
+// 初始化代码
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM loaded, current URL:', window.location.href);
-    console.log('Document readyState:', document.readyState);
-    
     const display = new PublicationDisplay();
-    
-    // 等待所有资源加载完成
-    if (document.readyState === 'complete') {
-        display.init();
-    } else {
-        window.addEventListener('load', () => display.init());
-    }
+    display.init();
 });
 
 // 添加引用功能
