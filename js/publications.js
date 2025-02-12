@@ -8,21 +8,47 @@ class PublicationDisplay {
     async init() {
         const publicationList = document.querySelector('.publication-list');
         try {
-            const response = await fetch('/data/publications.json');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+            // 尝试多个可能的路径
+            let response;
+            const possiblePaths = [
+                '/data/publications.json',
+                '../data/publications.json',
+                './data/publications.json',
+                'data/publications.json'
+            ];
+
+            for (const path of possiblePaths) {
+                try {
+                    response = await fetch(path);
+                    if (response.ok) break;
+                } catch (e) {
+                    console.log(`Trying path ${path} failed`);
+                }
             }
+
+            if (!response || !response.ok) {
+                throw new Error(`Failed to load publications. Status: ${response?.status}`);
+            }
+
             const data = await response.json();
+            console.log('Publications loaded:', data); // 调试日志
+
+            if (!data || !data.publications) {
+                throw new Error('Invalid data format');
+            }
+
             this.publications = data.publications;
             this.displayPublications();
             this.setupFilters();
         } catch (error) {
             console.error('Error loading publications:', error);
             publicationList.innerHTML = `
-                <p class="error-message">
+                <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
-                    Error loading publications. Please try again later.
-                </p>`;
+                    Error loading publications: ${error.message}
+                    <br>
+                    <small>Please check console for more details.</small>
+                </div>`;
         }
     }
 
