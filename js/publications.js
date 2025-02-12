@@ -12,7 +12,7 @@ class PublicationDisplay {
         }
 
         try {
-            // 使用硬编码的数据
+            // 直接使用硬编码的数据
             this.publications = [
                 {
                     "title": "Event-driven Tactile Sensing With Dense Spiking Graph Neural Networks",
@@ -67,18 +67,18 @@ class PublicationDisplay {
                 }
             ];
 
-            // 清除加载状态并显示数据
+            // 清除加载状态
+            publicationList.innerHTML = '';
+            
+            // 显示数据
             this.displayPublications();
             this.setupFilters();
-
-            // 添加成功加载的标记
-            publicationList.classList.add('loaded');
         } catch (error) {
-            console.error('Error displaying publications:', error);
+            console.error('Error:', error);
             publicationList.innerHTML = `
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
-                    Failed to display publications
+                    Failed to load publications
                     <br>
                     <small>${error.message}</small>
                 </div>`;
@@ -89,40 +89,17 @@ class PublicationDisplay {
         const filterButtons = document.querySelectorAll('.filter-btn');
         filterButtons.forEach(button => {
             button.addEventListener('click', () => {
-                // 移除所有按钮的active类
                 filterButtons.forEach(btn => btn.classList.remove('active'));
-                // 添加active类到当前按钮
                 button.classList.add('active');
-                
                 this.currentFilter = button.dataset.filter;
                 this.displayPublications();
             });
         });
     }
 
-    renderPublicationLinks(links) {
-        const linkElements = [];
-        
-        if (links.paper) {
-            linkElements.push(`
-                <a href="${links.paper}" class="publication-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fas fa-file-alt"></i> Paper
-                </a>`);
-        }
-        
-        if (links.code) {
-            linkElements.push(`
-                <a href="${links.code}" class="publication-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i> Code
-                </a>`);
-        }
-        
-        return linkElements.join('');
-    }
-
     renderPublication(pub) {
         return `
-            <div class="publication-item">
+            <article class="publication-item">
                 <div class="publication-content">
                     <div class="publication-header">
                         <h3 class="publication-title">${pub.title}</h3>
@@ -134,22 +111,25 @@ class PublicationDisplay {
                         <p class="publication-date">${pub.date}</p>
                     </div>
                     <div class="publication-links">
-                        ${this.renderPublicationLinks(pub.links)}
+                        ${pub.links.paper ? `
+                            <a href="${pub.links.paper}" class="publication-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-file-alt"></i> Paper
+                            </a>
+                        ` : ''}
+                        ${pub.links.code ? `
+                            <a href="${pub.links.code}" class="publication-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        ` : ''}
                     </div>
                 </div>
-            </div>
+            </article>
         `;
     }
 
     displayPublications() {
         const publicationList = document.querySelector('.publication-list');
-        if (!publicationList) {
-            console.error('Publication list element not found');
-            return;
-        }
-
-        // 清除加载状态
-        publicationList.innerHTML = '';
+        if (!publicationList) return;
 
         const filteredPubs = this.currentFilter === 'all' 
             ? this.publications 
@@ -164,24 +144,22 @@ class PublicationDisplay {
             return;
         }
 
-        const publicationsHTML = filteredPubs
+        publicationList.innerHTML = filteredPubs
             .map(pub => this.renderPublication(pub))
             .join('');
 
-        publicationList.innerHTML = publicationsHTML;
-
         // 添加动画效果
-        setTimeout(() => {
+        requestAnimationFrame(() => {
             document.querySelectorAll('.publication-item').forEach((item, index) => {
                 setTimeout(() => {
                     item.classList.add('visible');
                 }, index * 100);
             });
-        }, 0);
+        });
     }
 }
 
-// 初始化代码
+// 等待 DOM 加载完成后初始化
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Initializing PublicationDisplay');
     const display = new PublicationDisplay();
