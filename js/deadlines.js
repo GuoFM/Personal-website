@@ -93,36 +93,42 @@ class ConferenceDisplay {
 
         // 2. 使用 UTC 时间避免时区问题
         const now = new Date();
-        const todayUTC = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
+        const todayUTC = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
 
-        // 3. 使用 reduce 分割未过期和已过期会议
-        const [upcomingConferences, passedConferences] = this.filteredConferences.reduce((acc, conf) => {
+        // 3. 分组时使用 UTC 日期比较
+        const upcomingConferences = this.filteredConferences.filter(conf => {
             const deadlineDate = this.parseDeadline(conf.submission_deadline);
             const deadlineUTC = Date.UTC(
-                deadlineDate.getFullYear(),
-                deadlineDate.getMonth(),
-                deadlineDate.getDate(),
-                23, 59, 59
+                deadlineDate.getFullYear(), 
+                deadlineDate.getMonth(), 
+                deadlineDate.getDate()
             );
-            
-            // 判断是否过期，并放入对应数组
-            deadlineUTC >= todayUTC ? acc[0].push(conf) : acc[1].push(conf);
-            return acc;
-        }, [[], []]);
+            return deadlineUTC >= todayUTC; // 包含今天
+        });
 
-        // 4. 分别对两组会议进行排序
-        // 未过期会议：按截止日期从近到远排序
+        const passedConferences = this.filteredConferences.filter(conf => {
+            const deadlineDate = this.parseDeadline(conf.submission_deadline);
+            const deadlineUTC = Date.UTC(
+                deadlineDate.getFullYear(), 
+                deadlineDate.getMonth(), 
+                deadlineDate.getDate()
+            );
+            return deadlineUTC < todayUTC;
+        });
+
+        // 4. 排序
         upcomingConferences.sort((a, b) => {
             const dateA = this.parseDeadline(a.submission_deadline);
             const dateB = this.parseDeadline(b.submission_deadline);
-            return dateA - dateB;  // 升序，近期在前
+            const dateDiff = dateA - dateB;
+            return dateDiff !== 0 ? dateDiff : a.title.localeCompare(b.title);
         });
 
-        // 已过期会议：按截止日期从远到近排序
         passedConferences.sort((a, b) => {
             const dateA = this.parseDeadline(a.submission_deadline);
             const dateB = this.parseDeadline(b.submission_deadline);
-            return dateB - dateA;  // 降序，最近过期的在前
+            const dateDiff = dateB - dateA;  // 注意这里是降序
+            return dateDiff !== 0 ? dateDiff : a.title.localeCompare(b.title);
         });
 
         // 5. 渲染结果
@@ -137,7 +143,6 @@ class ConferenceDisplay {
             return;
         }
 
-        // 6. 分组显示会议
         container.innerHTML = `
             ${upcomingConferences.length > 0 ? `
                 <h3 class="conference-section-title">Upcoming Deadlines (${upcomingConferences.length})</h3>
@@ -209,9 +214,8 @@ class ConferenceDisplay {
     }
 
     parseDeadline(deadline) {
-        const [date, time = '23:59:59', timezone = 'UTC'] = deadline.split(' ');
-        // 创建一个带时区的日期字符串
-        return new Date(`${date}T${time}${timezone === 'AoE' ? '-12:00' : '+00:00'}`);
+        const [date, time, timezone] = deadline.split(' ');
+        return new Date(date + 'T' + (time || '00:00:00'));
     }
 }
 
