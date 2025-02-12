@@ -1,46 +1,88 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const publications = document.querySelectorAll('.publication-item');
+class PublicationDisplay {
+    constructor() {
+        this.publications = [];
+        this.currentFilter = 'all';
+        this.init();
+    }
 
-    // 检查数据文件路径 - 使用相对路径
-    fetch('../public/data/conferences.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response;
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Successfully loaded conference data');
-        })
-        .catch(error => {
-            console.error('Error loading conference data:', error);
-            // 输出完整的错误信息以便调试
-            console.error('Error details:', {
-                message: error.message,
-                stack: error.stack
+    async init() {
+        try {
+            // 加载数据
+            const response = await fetch('../data/publications.json');
+            const data = await response.json();
+            this.publications = data.publications;
+            
+            // 初始化显示
+            this.displayPublications();
+            
+            // 设置过滤器事件监听
+            this.setupFilterListeners();
+        } catch (error) {
+            console.error('Error loading publications:', error);
+        }
+    }
+
+    setupFilterListeners() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // 更新按钮状态
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // 更新过滤器并重新显示
+                this.currentFilter = button.dataset.filter;
+                this.displayPublications();
             });
         });
+    }
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
+    displayPublications() {
+        const publicationList = document.getElementById('publication-list');
+        const filteredPublications = this.publications.filter(pub => 
+            this.currentFilter === 'all' || pub.type === this.currentFilter
+        );
 
-            const filterValue = button.getAttribute('data-filter');
+        publicationList.innerHTML = filteredPublications.map((pub, index) => `
+            <div class="publication-item card animate-in" 
+                 data-type="${pub.type}" 
+                 style="animation-delay: ${index * 0.1}s">
+                <div class="publication-content">
+                    <h3>${pub.title}</h3>
+                    <p class="authors">${pub.authors.join(', ')}</p>
+                    <p class="venue">
+                        <strong>${pub.venue}</strong>, 
+                        ${new Date(pub.date).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'short'
+                        })}
+                    </p>
+                    <div class="publication-tags">
+                        ${pub.tags.map(tag => `
+                            <span class="tag">${tag}</span>
+                        `).join('')}
+                    </div>
+                    <div class="publication-links">
+                        ${pub.links.paper ? `
+                            <a href="${pub.links.paper}" class="btn paper-link" target="_blank">
+                                <i class="fas fa-file-pdf"></i> Paper
+                            </a>
+                        ` : ''}
+                        ${pub.links.code ? `
+                            <a href="${pub.links.code}" class="btn code-link" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                        ` : ''}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    }
+}
 
-            publications.forEach(pub => {
-                if (filterValue === 'all' || pub.getAttribute('data-type') === filterValue) {
-                    pub.style.display = 'block';
-                } else {
-                    pub.style.display = 'none';
-                }
-            });
-        });
-    });
+// 初始化
+document.addEventListener('DOMContentLoaded', () => {
+    new PublicationDisplay();
 });
 
 // 添加引用功能
