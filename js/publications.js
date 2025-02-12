@@ -3,34 +3,43 @@ class PublicationManager {
         this.publications = [];
         this.currentFilter = 'all';
         this.init();
+        console.log('PublicationManager initialized'); // 调试日志
     }
 
     async init() {
         try {
-            // 显示加载状态
+            console.log('Starting to load publications...'); // 调试日志
             this.showLoading();
 
-            // 加载数据
-            const response = await fetch('/data/publications.json');
+            // 修改为相对路径
+            const response = await fetch('../data/publications.json');
+            console.log('Fetch response:', response); // 调试日志
+
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
+
             const data = await response.json();
+            console.log('Loaded data:', data); // 调试日志
+
             this.publications = data.publications;
+            console.log('Publications array:', this.publications); // 调试日志
             
-            // 初始化显示
             this.displayPublications();
-            
-            // 设置过滤器事件监听
             this.setupFilterListeners();
         } catch (error) {
-            console.error('Error loading publications:', error);
+            console.error('Error loading publications:', {
+                message: error.message,
+                stack: error.stack,
+                type: error.name
+            });
             this.showError(error.message);
         }
     }
 
     showLoading() {
         const publicationList = document.getElementById('publication-list');
+        console.log('Publication list element:', publicationList); // 调试日志
         if (publicationList) {
             publicationList.innerHTML = `
                 <div class="loading-spinner">
@@ -121,8 +130,10 @@ class PublicationManager {
     }
 }
 
-// 初始化
+// 确保 DOM 加载完成后再初始化
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM Content Loaded'); // 调试日志
+    console.log('Publication list element exists:', !!document.getElementById('publication-list')); // 调试日志
     new PublicationManager();
 });
 
