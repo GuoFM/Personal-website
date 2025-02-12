@@ -26,8 +26,7 @@
     {
       "src": "/contact",
       "dest": "/contact/index.html"
-    },
-    { "src": "/data/(.*)", "dest": "/data/$1" }
+    }
   ],
   "github": {
     "enabled": true,
