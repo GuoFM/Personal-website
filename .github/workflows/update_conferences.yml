@@ -28,7 +28,7 @@ jobs:
     
     - name: Run scraper
       run: |
-        mkdir -p public/data
+        mkdir -p data
         python scripts/scraper.py
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -37,5 +37,5 @@ jobs:
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add public/data/conferences.json
+        git add data/conferences.json
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update conference data" && git push) 

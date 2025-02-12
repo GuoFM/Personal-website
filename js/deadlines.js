@@ -12,8 +12,8 @@ class ConferenceDisplay {
         try {
             listElement.innerHTML = '<div class="loading-spinner"></div>';
             await this.loadConferences();
-            this.setupEventListeners();
             this.filterAndDisplayConferences();
+            this.setupEventListeners();
         } catch (error) {
             console.error('Failed to initialize:', error);
             listElement.innerHTML = '<p class="error-message">Failed to load conference data. Please try again later.</p>';
@@ -33,6 +33,8 @@ class ConferenceDisplay {
             }
             
             this.conferences = data.conferences;
+            this.filteredConferences = [...this.conferences];
+            
             console.log(`Loaded ${this.conferences.length} conferences`);
             
             // 更新最后更新时间
@@ -47,7 +49,7 @@ class ConferenceDisplay {
             listElement.innerHTML = `
                 <div class="error-message">
                     <p>Failed to load conference data. Error: ${error.message}</p>
-                    <button onclick="location.reload()">Try Again</button>
+                    <button onclick="location.reload()" class="retry-button">Try Again</button>
                 </div>
             `;
             throw error;
@@ -77,44 +79,55 @@ class ConferenceDisplay {
                     this.selectedCategories.delete(category);
                 }
                 this.filterAndDisplayConferences();
-                console.log('Selected categories:', this.selectedCategories); // 调试信息
             });
         });
     }
 
     filterAndDisplayConferences() {
+        // 1. 先按照 rank 和 category 进行过滤
         this.filteredConferences = this.conferences.filter(conf => {
             const rankMatch = this.currentRank === 'all' || conf.rank === this.currentRank;
             const categoryMatch = this.selectedCategories.has(conf.category);
             return rankMatch && categoryMatch;
         });
 
-        this.sortConferences();
-        this.displayConferences();
-    }
-
-    sortConferences() {
-        this.filteredConferences.sort((a, b) => {
-            const dateA = new Date(a.submission_deadline.split(' ')[0]);
-            const dateB = new Date(b.submission_deadline.split(' ')[0]);
-            return dateA - dateB;
-        });
-    }
-
-    getTimeUntil(deadline) {
-        const deadlineDate = new Date(deadline.split(' ')[0]);
+        // 2. 使用 UTC 时间避免时区问题
         const now = new Date();
-        const diffTime = deadlineDate - now;
-        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-        
-        if (diffDays < 0) return 'Deadline passed';
-        if (diffDays === 0) return 'Today';
-        if (diffDays === 1) return 'Tomorrow';
-        return `${diffDays} days`;
-    }
+        const todayUTC = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59);
 
-    displayConferences() {
+        // 3. 使用 reduce 分割未过期和已过期会议
+        const [upcomingConferences, passedConferences] = this.filteredConferences.reduce((acc, conf) => {
+            const deadlineDate = this.parseDeadline(conf.submission_deadline);
+            const deadlineUTC = Date.UTC(
+                deadlineDate.getFullYear(),
+                deadlineDate.getMonth(),
+                deadlineDate.getDate(),
+                23, 59, 59
+            );
+            
+            // 判断是否过期，并放入对应数组
+            deadlineUTC >= todayUTC ? acc[0].push(conf) : acc[1].push(conf);
+            return acc;
+        }, [[], []]);
+
+        // 4. 分别对两组会议进行排序
+        // 未过期会议：按截止日期从近到远排序
+        upcomingConferences.sort((a, b) => {
+            const dateA = this.parseDeadline(a.submission_deadline);
+            const dateB = this.parseDeadline(b.submission_deadline);
+            return dateA - dateB;  // 升序，近期在前
+        });
+
+        // 已过期会议：按截止日期从远到近排序
+        passedConferences.sort((a, b) => {
+            const dateA = this.parseDeadline(a.submission_deadline);
+            const dateB = this.parseDeadline(b.submission_deadline);
+            return dateB - dateA;  // 降序，最近过期的在前
+        });
+
+        // 5. 渲染结果
         const container = document.getElementById('conference-list');
+        
         if (!this.filteredConferences.length) {
             container.innerHTML = `
                 <div class="empty-state">
@@ -124,8 +137,47 @@ class ConferenceDisplay {
             return;
         }
 
-        container.innerHTML = this.filteredConferences.map(conf => `
-            <div class="conference-card">
+        // 6. 分组显示会议
+        container.innerHTML = `
+            ${upcomingConferences.length > 0 ? `
+                <h3 class="conference-section-title">Upcoming Deadlines (${upcomingConferences.length})</h3>
+                ${this.renderConferenceList(upcomingConferences)}
+            ` : ''}
+            
+            ${passedConferences.length > 0 ? `
+                <h3 class="conference-section-title">Past Deadlines (${passedConferences.length})</h3>
+                ${this.renderConferenceList(passedConferences)}
+            ` : ''}
+        `;
+    }
+
+    getTimeUntil(deadline) {
+        const deadlineDate = this.parseDeadline(deadline);
+        const now = new Date();
+        
+        // 计算 UTC 午夜时间的差值
+        const deadlineUTC = Date.UTC(
+            deadlineDate.getFullYear(), 
+            deadlineDate.getMonth(), 
+            deadlineDate.getDate()
+        );
+        const nowUTC = Date.UTC(
+            now.getFullYear(), 
+            now.getMonth(), 
+            now.getDate()
+        );
+        
+        const diffDays = Math.floor((deadlineUTC - nowUTC) / (1000 * 60 * 60 * 24));
+        
+        if (diffDays < 0) return 'Deadline passed';
+        if (diffDays === 0) return 'Today';
+        if (diffDays === 1) return 'Tomorrow';
+        return `${diffDays} days left`;
+    }
+
+    renderConferenceList(conferences) {
+        return conferences.map(conf => `
+            <div class="conference-card ${new Date(conf.submission_deadline.split(' ')[0]) < new Date() ? 'passed-deadline' : ''}">
                 <div class="conference-header">
                     <h3 class="conference-title">
                         <a href="${conf.website}" target="_blank" rel="noopener">
@@ -154,6 +206,12 @@ class ConferenceDisplay {
                 </div>
             </div>
         `).join('');
+    }
+
+    parseDeadline(deadline) {
+        const [date, time = '23:59:59', timezone = 'UTC'] = deadline.split(' ');
+        // 创建一个带时区的日期字符串
+        return new Date(`${date}T${time}${timezone === 'AoE' ? '-12:00' : '+00:00'}`);
     }
 }
 

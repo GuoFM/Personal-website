@@ -2,6 +2,27 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const publications = document.querySelectorAll('.publication-item');
 
+    // 检查数据文件路径 - 使用相对路径
+    fetch('../public/data/conferences.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response;
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Successfully loaded conference data');
+        })
+        .catch(error => {
+            console.error('Error loading conference data:', error);
+            // 输出完整的错误信息以便调试
+            console.error('Error details:', {
+                message: error.message,
+                stack: error.stack
+            });
+        });
+
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
             // Remove active class from all buttons
@@ -39,4 +60,4 @@ function copyText(elementId) {
             btn.innerHTML = '<i class="fas fa-copy"></i> Copy';
         }, 2000);
     });
-} 
+}

@@ -130,8 +130,10 @@ def fetch_conference_data():
 def save_data(conferences):
     try:
         # 确保目录存在
-        os.makedirs('public/data', exist_ok=True)
-        file_path = 'public/data/conferences.json'
+        # os.makedirs('public/data', exist_ok=True)
+        # file_path = 'public/data/conferences.json'
+        os.makedirs('data', exist_ok=True)
+        file_path = 'data/conferences.json'
         
         data = {
             'last_updated': datetime.now().isoformat(),
