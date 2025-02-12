@@ -1,87 +1,50 @@
-class PublicationManager {
+class PublicationDisplay {
     constructor() {
-        this.publications = [];
-        this.currentFilter = 'all';
         this.init();
-        console.log('PublicationManager initialized'); // 调试日志
     }
 
     async init() {
         try {
-            console.log('Starting to load publications...'); // 调试日志
-            this.showLoading();
-
-            // 修改为相对路径
-            const response = await fetch('../data/publications.json');
-            console.log('Fetch response:', response); // 调试日志
-
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-
-            const data = await response.json();
-            console.log('Loaded data:', data); // 调试日志
-
-            this.publications = data.publications;
-            console.log('Publications array:', this.publications); // 调试日志
-            
-            this.displayPublications();
-            this.setupFilterListeners();
-        } catch (error) {
-            console.error('Error loading publications:', {
-                message: error.message,
-                stack: error.stack,
-                type: error.name
-            });
-            this.showError(error.message);
-        }
-    }
-
-    showLoading() {
-        const publicationList = document.getElementById('publication-list');
-        console.log('Publication list element:', publicationList); // 调试日志
-        if (publicationList) {
+            // 显示加载状态
+            const publicationList = document.getElementById('publication-list');
             publicationList.innerHTML = `
                 <div class="loading-spinner">
                     <i class="fas fa-spinner fa-spin"></i> Loading publications...
                 </div>
             `;
-        }
-    }
 
-    showError(message) {
-        const publicationList = document.getElementById('publication-list');
-        if (publicationList) {
+            // 加载数据
+            const response = await fetch('../data/publications.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            
+            // 渲染数据
+            this.renderPublications(data.publications);
+            
+            // 设置过滤器事件监听
+            this.setupFilterListeners(data.publications);
+
+        } catch (error) {
+            console.error('Error loading publications:', error);
+            const publicationList = document.getElementById('publication-list');
             publicationList.innerHTML = `
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
                     Failed to load publications. Please try again later.
                     <br>
-                    <small>Error: ${message}</small>
+                    <small>Error: ${error.message}</small>
                 </div>
             `;
         }
     }
 
-    setupFilterListeners() {
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                filterButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-                this.currentFilter = button.dataset.filter;
-                this.displayPublications();
-            });
-        });
-    }
-
-    displayPublications() {
+    renderPublications(publications, filter = 'all') {
         const publicationList = document.getElementById('publication-list');
-        if (!publicationList) return;
-
-        const filteredPublications = this.publications.filter(pub => 
-            this.currentFilter === 'all' || pub.type === this.currentFilter
-        );
+        const filteredPublications = filter === 'all' 
+            ? publications 
+            : publications.filter(pub => pub.type === filter);
 
         if (filteredPublications.length === 0) {
             publicationList.innerHTML = `
@@ -128,13 +91,26 @@ class PublicationManager {
             </div>
         `).join('');
     }
+
+    setupFilterListeners(publications) {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // 更新按钮状态
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // 过滤并重新渲染
+                const filterValue = button.dataset.filter;
+                this.renderPublications(publications, filterValue);
+            });
+        });
+    }
 }
 
-// 确保 DOM 加载完成后再初始化
+// 初始化
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM Content Loaded'); // 调试日志
-    console.log('Publication list element exists:', !!document.getElementById('publication-list')); // 调试日志
-    new PublicationManager();
+    new PublicationDisplay();
 });
 
 // 添加引用功能
