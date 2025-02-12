@@ -8,46 +8,29 @@ class PublicationDisplay {
     async init() {
         const publicationList = document.querySelector('.publication-list');
         try {
-            // 尝试多个可能的路径
-            let response;
-            const possiblePaths = [
-                '/data/publications.json',
-                '../data/publications.json',
-                './data/publications.json',
-                'data/publications.json'
-            ];
+            // 使用相对于当前页面的路径
+            const response = await fetch('../data/publications.json');
+            console.log('Fetch response:', response); // 调试日志
 
-            for (const path of possiblePaths) {
-                try {
-                    response = await fetch(path);
-                    if (response.ok) break;
-                } catch (e) {
-                    console.log(`Trying path ${path} failed`);
-                }
-            }
-
-            if (!response || !response.ok) {
-                throw new Error(`Failed to load publications. Status: ${response?.status}`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
 
             const data = await response.json();
-            console.log('Publications loaded:', data); // 调试日志
-
-            if (!data || !data.publications) {
-                throw new Error('Invalid data format');
-            }
+            console.log('Publications data:', data); // 调试日志
 
             this.publications = data.publications;
             this.displayPublications();
             this.setupFilters();
         } catch (error) {
-            console.error('Error loading publications:', error);
+            console.error('Error details:', {
+                message: error.message,
+                stack: error.stack
+            });
             publicationList.innerHTML = `
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
                     Error loading publications: ${error.message}
-                    <br>
-                    <small>Please check console for more details.</small>
                 </div>`;
         }
     }
@@ -103,19 +86,29 @@ class PublicationDisplay {
     }
 
     displayPublications() {
+        console.log('Displaying publications:', this.publications); // 调试日志
         const filteredPubs = this.currentFilter === 'all' 
             ? this.publications 
             : this.publications.filter(pub => pub.type === this.currentFilter);
 
         const publicationList = document.querySelector('.publication-list');
-        publicationList.innerHTML = filteredPubs
+        if (!publicationList) {
+            console.error('Publication list element not found');
+            return;
+        }
+
+        const publicationsHtml = filteredPubs
             .map((pub, index) => this.renderPublication(pub, index))
             .join('');
+        
+        console.log('Generated HTML:', publicationsHtml); // 调试日志
+        publicationList.innerHTML = publicationsHtml;
     }
 }
 
-// 当 DOM 加载完成后初始化
-document.addEventListener('DOMContentLoaded', () => {
+// 确保脚本加载完成后再初始化
+window.addEventListener('load', () => {
+    console.log('Window loaded, initializing PublicationDisplay');
     new PublicationDisplay();
 });
 

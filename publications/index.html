@@ -64,6 +64,14 @@
         </div>
     </footer>
 
+    <script>
+        // 添加调试代码
+        console.log('Page loaded');
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM loaded');
+            console.log('Publication list element:', document.querySelector('.publication-list'));
+        });
+    </script>
     <script src="../js/publications.js"></script>
     <script src="../js/stats.js"></script>
 </body>
