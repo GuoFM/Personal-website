@@ -297,4 +297,49 @@ code, pre {
 .tag {
     font-size: var(--text-xs);
     font-weight: var(--font-weight-medium);
+}
+
+/* 社交媒体链接样式 */
+.social-links {
+    display: flex;
+    gap: var(--spacing-4);
+    margin-top: var(--spacing-6);
+}
+
+.social-links a {
+    color: var(--text-secondary);
+    font-size: var(--text-xl);
+    transition: all var(--transition-normal) var(--ease-out);
+    opacity: 0.8;
+}
+
+.social-links a:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+    opacity: 1;
+}
+
+/* 学术图标特殊样式 */
+.social-links .ai {
+    font-size: 1.4em;  /* 学术图标通常需要稍大一些 */
+}
+
+.social-links .fa-github:hover {
+    color: #333;  /* GitHub 黑色 */
+}
+
+.social-links .ai-google-scholar:hover {
+    color: #4285f4;  /* Google Scholar 蓝色 */
+}
+
+.social-links .fa-linkedin:hover {
+    color: #0077b5;  /* LinkedIn 蓝色 */
+}
+
+.social-links .fa-twitter:hover {
+    color: #1da1f2;  /* Twitter 蓝色 */
+}
+
+.social-links .fa-researchgate:hover {
+    color: #00ccbb;  /* ResearchGate 绿色 */
 } 
