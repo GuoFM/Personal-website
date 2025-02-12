@@ -12,57 +12,23 @@ class PublicationDisplay {
         }
 
         try {
-            // 添加更多调试信息
-            console.log('Starting to fetch publications...');
-            
-            // 尝试不同的路径
-            const paths = [
-                '/data/publications.json',
-                '../data/publications.json',
-                './data/publications.json',
-                'data/publications.json'
-            ];
+            // 使用基于域名的绝对路径
+            const baseUrl = window.location.origin;
+            const response = await fetch(`${baseUrl}/data/publications.json`);
+            console.log('Fetching from:', `${baseUrl}/data/publications.json`);
 
-            let response = null;
-            let error = null;
-
-            for (const path of paths) {
-                try {
-                    console.log(`Trying to fetch from: ${path}`);
-                    response = await fetch(path);
-                    if (response.ok) {
-                        console.log(`Successfully fetched from: ${path}`);
-                        break;
-                    }
-                } catch (e) {
-                    error = e;
-                    console.log(`Failed to fetch from ${path}:`, e.message);
-                }
-            }
-
-            if (!response || !response.ok) {
-                throw new Error(`Failed to load publications. ${error?.message || 'Unknown error'}`);
+            if (!response.ok) {
+                throw new Error(`Failed to load publications (${response.status})`);
             }
 
             const data = await response.json();
             console.log('Loaded data:', data);
 
-            // 使用硬编码的数据作为后备
-            this.publications = data.publications || [
-                {
-                    "title": "Event-driven Tactile Sensing With Dense Spiking Graph Neural Networks",
-                    "authors": "F Guo, F Yu, M Li, et al.",
-                    "venue": "IEEE Transactions on Instrumentation and Measurement",
-                    "date": "Jan 2025",
-                    "type": "journal",
-                    "links": {
-                        "paper": "https://www.researchgate.net/publication/387190722_Event-driven_Tactile_Sensing_With_Dense_Spiking_Graph_Neural_Networks",
-                        "code": "https://github.com/cqu-uisc/deepTactile"
-                    }
-                },
-                // ... 其他论文数据 ...
-            ];
+            if (!data || !data.publications) {
+                throw new Error('Invalid data format');
+            }
 
+            this.publications = data.publications;
             console.log('Publications loaded:', this.publications);
             this.displayPublications();
             this.setupFilters();
@@ -71,9 +37,9 @@ class PublicationDisplay {
             publicationList.innerHTML = `
                 <div class="error-message">
                     <i class="fas fa-exclamation-circle"></i>
-                    ${error.message}
+                    Failed to load publications. Please try again later.
                     <br>
-                    <small>Path: ${window.location.pathname}</small>
+                    <small>Error: ${error.message}</small>
                 </div>`;
         }
     }
@@ -160,20 +126,9 @@ class PublicationDisplay {
 
 // 初始化代码
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM Content Loaded, pathname:', window.location.pathname);
+    console.log('Initializing with base URL:', window.location.origin);
     const display = new PublicationDisplay();
-    
-    // 确保元素都加载完成
-    if (document.readyState === 'complete') {
-        console.log('Document already complete, initializing...');
-        display.init();
-    } else {
-        console.log('Waiting for document to complete...');
-        window.addEventListener('load', () => {
-            console.log('Window loaded, initializing...');
-            display.init();
-        });
-    }
+    display.init();
 });
 
 // 添加引用功能
