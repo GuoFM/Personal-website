@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-02-12T08:15:54.688971",
+  "last_updated": "2025-02-13T00:54:54.475328",
   "conferences": [
     {
       "title": "PODC",
@@ -12,18 +12,6 @@
       "website": "https://www.podc.org/podc2024",
       "year": "2024",
       "comment": ""
-    },
-    {
-      "title": "SOUPS",
-      "description": "Symposium On Usable Privacy and Security",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-02-15 23:59:59 AoE",
-      "conference_date": "AUGUST 11-13, 2024",
-      "location": "Philadelphia, USA",
-      "website": "https://www.usenix.org/conference/soups2024",
-      "year": "2024",
-      "comment": "Paper Submission Deadline"
     },
     {
       "title": "KSEM",
@@ -84,18 +72,6 @@
       "website": "https://www.iccbr2024.org/",
       "year": "2024",
       "comment": "Early Submission"
-    },
-    {
-      "title": "IH&MMSec",
-      "description": "ACM Workshop on Information Hiding and Multimedia Security",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-02-29 23:59:59 AoE",
-      "conference_date": "June 24-26, 2024",
-      "location": "Baiona, Spain",
-      "website": "https://www.ihmmsec.org/",
-      "year": "2024",
-      "comment": "Paper Submission Deadline"
     },
     {
       "title": "ASPLOS",
@@ -254,6 +230,18 @@
       "comment": "Highlight Papers Track"
     },
     {
+      "title": "MICRO",
+      "description": "IEEE/ACM International Symposium on Microarchitecture",
+      "rank": "A",
+      "category": "DS",
+      "submission_deadline": "2024-04-04 11:59:59 UTC-5",
+      "conference_date": "October 18-22, 2025",
+      "location": "Seoul, Korea",
+      "website": "https://microarch.org/micro58/",
+      "year": "2025",
+      "comment": "Abstract Deadline"
+    },
+    {
       "title": "FOCS",
       "description": "IEEE Symposium on Foundations of Computer Science",
       "rank": "A",
@@ -283,11 +271,11 @@
       "rank": "A",
       "category": "DS",
       "submission_deadline": "2024-04-11 11:59:59 UTC-5",
-      "conference_date": "November 2-6, 2024",
-      "location": "Austin, Texas, USA",
-      "website": "https://microarch.org/micro57/",
-      "year": "2024",
-      "comment": "Abstract Deadline"
+      "conference_date": "October 18-22, 2025",
+      "location": "Seoul, Korea",
+      "website": "https://microarch.org/micro58/",
+      "year": "2025",
+      "comment": "Full Paper Deadline"
     },
     {
       "title": "SYSTOR",
@@ -374,18 +362,6 @@
       "comment": ""
     },
     {
-      "title": "MICRO",
-      "description": "IEEE/ACM International Symposium on Microarchitecture",
-      "rank": "A",
-      "category": "DS",
-      "submission_deadline": "2024-04-18 11:59:59 UTC-5",
-      "conference_date": "November 2-6, 2024",
-      "location": "Austin, Texas, USA",
-      "website": "https://microarch.org/micro57/",
-      "year": "2024",
-      "comment": "Full Paper Deadline"
-    },
-    {
       "title": "PPSN",
       "description": "International Conference on Parallel Problem Solving From Nature",
       "rank": "B",
@@ -456,18 +432,6 @@
       "website": "https://computeranimation.org/",
       "year": "2024",
       "comment": "Submission deadline (papers and posters)"
-    },
-    {
-      "title": "ICDF2C",
-      "description": "International Conference on Digital Forensics & Cyber Crime",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-04-30 23:59:59 UTC-12",
-      "conference_date": "October 9-10, 2024",
-      "location": "Dubrovnik, Croatia",
-      "website": "https://icdf2c.eai-conferences.org/2024/",
-      "year": "2024",
-      "comment": "Full Paper Submission deadline"
     },
     {
       "title": "VLDB",
@@ -2558,6 +2522,18 @@
       "comment": ""
     },
     {
+      "title": "SOUPS",
+      "description": "Symposium On Usable Privacy and Security",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-02-06 23:59:59 AoE",
+      "conference_date": "August 10-12, 2025",
+      "location": "Seattle, WA, USA",
+      "website": "https://www.usenix.org/conference/soups2025",
+      "year": "2025",
+      "comment": "Mandatory Paper Registration Deadline"
+    },
+    {
       "title": "COLT",
       "description": "Annual Conference on Learning Theory",
       "rank": "B",
@@ -2618,18 +2594,6 @@
       "comment": "Final paper submission deadline"
     },
     {
-      "title": "InterSpeech",
-      "description": "Conference of the International Speech Communication Association",
-      "rank": "C",
-      "category": "CG",
-      "submission_deadline": "2025-02-12 23:59:59 UTC+0",
-      "conference_date": "August 17-22, 2025",
-      "location": "Rotterdam, Netherlands",
-      "website": "https://www.interspeech2025.org/home",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "CRYPTO",
       "description": "International Cryptology Conference",
       "rank": "A",
@@ -2640,6 +2604,18 @@
       "website": "https://crypto.iacr.org/2025/",
       "year": "2025",
       "comment": ""
+    },
+    {
+      "title": "SOUPS",
+      "description": "Symposium On Usable Privacy and Security",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-02-13 23:59:59 AoE",
+      "conference_date": "August 10-12, 2025",
+      "location": "Seattle, WA, USA",
+      "website": "https://www.usenix.org/conference/soups2025",
+      "year": "2025",
+      "comment": "Paper Submission Deadline"
     },
     {
       "title": "Internetware",
@@ -2738,6 +2714,18 @@
       "comment": "2nd round Deadline"
     },
     {
+      "title": "InterSpeech",
+      "description": "Conference of the International Speech Communication Association",
+      "rank": "C",
+      "category": "CG",
+      "submission_deadline": "2025-02-19 23:59:59 UTC+0",
+      "conference_date": "August 17-22, 2025",
+      "location": "Rotterdam, Netherlands",
+      "website": "https://www.interspeech2025.org/home",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "GLSVLSI",
       "description": "Great Lakes Symposium on VLSI",
       "rank": "C",
@@ -2808,6 +2796,18 @@
       "website": "https://www.icics2025.org/",
       "year": "2025",
       "comment": "First round"
+    },
+    {
+      "title": "IH&MMSec",
+      "description": "ACM Workshop on Information Hiding and Multimedia Security",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-02-28 23:59:59 AoE",
+      "conference_date": "June 18-20, 2025",
+      "location": "San Jose, CA, USA",
+      "website": "https://www.ihmmsec.org/cms/home/index.html",
+      "year": "2025",
+      "comment": "Submission Deadline"
     },
     {
       "title": "PETS",
@@ -3312,6 +3312,18 @@
       "website": "https://conf.researchr.org/home/ase-2025",
       "year": "2025",
       "comment": ""
+    },
+    {
+      "title": "ICDF2C",
+      "description": "International Conference on Digital Forensics & Cyber Crime",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-05-31 23:59:59 UTC-12",
+      "conference_date": "November 17-19, 2025",
+      "location": "Miami, Florida, USA",
+      "website": "https://icdf2c.eai-conferences.org/2025/",
+      "year": "2025",
+      "comment": "Full Paper Submission deadline"
     },
     {
       "title": "EDBT",
