@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-02-14T00:54:47.395404",
+  "last_updated": "2025-02-15T00:54:01.227661",
   "conferences": [
     {
       "title": "PODC",
@@ -10,18 +10,6 @@
       "conference_date": "June 17-21, 2024",
       "location": "Nantes, France",
       "website": "https://www.podc.org/podc2024",
-      "year": "2024",
-      "comment": ""
-    },
-    {
-      "title": "KSEM",
-      "description": "International Conference on Knowledge Science, Engineering and Management",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2024-02-15 23:59:00 UTC+0",
-      "conference_date": "Aug 16-18, 2024",
-      "location": "Birmingham",
-      "website": "https://ai-edge.net/",
       "year": "2024",
       "comment": ""
     },
@@ -2866,6 +2854,18 @@
       "conference_date": "July 7-12, 2025",
       "location": "Helsinki, Finland",
       "website": "https://services.conferences.computer.org/2025/icws-2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "KSEM",
+      "description": "International Conference on Knowledge Science, Engineering and Management",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-03-04 23:59:59 UTC+0",
+      "conference_date": "August 4-6, 2025",
+      "location": "Macao SAR, China",
+      "website": "https://ksem2025.scimeeting.cn/",
       "year": "2025",
       "comment": ""
     },
