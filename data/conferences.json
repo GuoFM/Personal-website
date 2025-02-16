@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-02-15T00:54:01.227661",
+  "last_updated": "2025-02-16T00:59:41.671079",
   "conferences": [
     {
       "title": "PODC",
@@ -2654,18 +2654,6 @@
       "comment": "Round 1(Winter) Paper Submission"
     },
     {
-      "title": "ICMR",
-      "description": "ACM SIGMM International Conference on Multimedia Retrieval",
-      "rank": "B",
-      "category": "CG",
-      "submission_deadline": "2025-02-16 23:59:59 UTC-12",
-      "conference_date": "June 30 - July 3, 2025",
-      "location": "Chicago, USA",
-      "website": "https://www.icmr-2025.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "SPAA",
       "description": "ACM Symposium on Parallelism in Algorithms and Architectures",
       "rank": "B",
@@ -2734,6 +2722,18 @@
       "conference_date": "September 17-21, 2025",
       "location": "Wuhan, China",
       "website": "https://www.icdar2025.com/home",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "ICMR",
+      "description": "ACM SIGMM International Conference on Multimedia Retrieval",
+      "rank": "B",
+      "category": "CG",
+      "submission_deadline": "2025-02-23 23:59:59 UTC-12",
+      "conference_date": "June 30 - July 3, 2025",
+      "location": "Chicago, USA",
+      "website": "https://www.icmr-2025.org/",
       "year": "2025",
       "comment": ""
     },
