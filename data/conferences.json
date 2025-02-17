@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-02-16T00:59:41.671079",
+  "last_updated": "2025-02-17T00:57:35.615810",
   "conferences": [
     {
       "title": "PODC",
@@ -218,18 +218,6 @@
       "comment": "Highlight Papers Track"
     },
     {
-      "title": "MICRO",
-      "description": "IEEE/ACM International Symposium on Microarchitecture",
-      "rank": "A",
-      "category": "DS",
-      "submission_deadline": "2024-04-04 11:59:59 UTC-5",
-      "conference_date": "October 18-22, 2025",
-      "location": "Seoul, Korea",
-      "website": "https://microarch.org/micro58/",
-      "year": "2025",
-      "comment": "Abstract Deadline"
-    },
-    {
       "title": "FOCS",
       "description": "IEEE Symposium on Foundations of Computer Science",
       "rank": "A",
@@ -252,18 +240,6 @@
       "website": "https://icpr2024.org/",
       "year": "2024",
       "comment": ""
-    },
-    {
-      "title": "MICRO",
-      "description": "IEEE/ACM International Symposium on Microarchitecture",
-      "rank": "A",
-      "category": "DS",
-      "submission_deadline": "2024-04-11 11:59:59 UTC-5",
-      "conference_date": "October 18-22, 2025",
-      "location": "Seoul, Korea",
-      "website": "https://microarch.org/micro58/",
-      "year": "2025",
-      "comment": "Full Paper Deadline"
     },
     {
       "title": "SYSTOR",
@@ -3002,6 +2978,18 @@
       "comment": ""
     },
     {
+      "title": "CP",
+      "description": "International Conference on Principles and Practice of Constraint Programming",
+      "rank": "B",
+      "category": "SE",
+      "submission_deadline": "2025-03-27 22:59:59 AoE",
+      "conference_date": "August 10-15, 2025",
+      "location": "Glasgow, Scotland",
+      "website": "https://cp2025.a4cp.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "COLM",
       "description": "Conference on Language Modeling",
       "rank": "N",
@@ -3084,6 +3072,18 @@
       "website": "https://uist.acm.org/2025/",
       "year": "2025",
       "comment": "paper deadline"
+    },
+    {
+      "title": "MICRO",
+      "description": "IEEE/ACM International Symposium on Microarchitecture",
+      "rank": "A",
+      "category": "DS",
+      "submission_deadline": "2025-04-11 23:59:59 UTC-4",
+      "conference_date": "October 18-22, 2025",
+      "location": "Seoul, Korea",
+      "website": "https://microarch.org/micro58/",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "ACM MM",
