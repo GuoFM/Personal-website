@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-02-17T00:57:35.615810",
+  "last_updated": "2025-02-18T00:54:30.115764",
   "conferences": [
     {
       "title": "PODC",
@@ -466,18 +466,6 @@
       "conference_date": "Oct 21-25, 2024",
       "location": "Greater Seattle Area, USA",
       "website": "https://ieeeismar.org/",
-      "year": "2024",
-      "comment": ""
-    },
-    {
-      "title": "SecureComm",
-      "description": "International Conference on Security and Privacy in Communication Networks",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-05-10 23:59:59 AoE",
-      "conference_date": "October 28-30, 2024",
-      "location": "Dubai, United Arab Emirates",
-      "website": "https://securecomm.eai-conferences.org/2024/",
       "year": "2024",
       "comment": ""
     },
@@ -2690,18 +2678,6 @@
       "comment": ""
     },
     {
-      "title": "ICDAR",
-      "description": "International Conference on Document Analysis and Recognition",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2025-02-21 23:59:59 UTC+0",
-      "conference_date": "September 17-21, 2025",
-      "location": "Wuhan, China",
-      "website": "https://www.icdar2025.com/home",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "ICMR",
       "description": "ACM SIGMM International Conference on Multimedia Retrieval",
       "rank": "B",
@@ -2786,6 +2762,18 @@
       "comment": "Issue 4 Paper Submission Deadline"
     },
     {
+      "title": "SecureComm",
+      "description": "International Conference on Security and Privacy in Communication Networks",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-03-01 23:59:59 AoE",
+      "conference_date": "July 4-6, 2025",
+      "location": "Xiangtan, China",
+      "website": "https://securecomm.eai-conferences.org/2025/",
+      "year": "2025",
+      "comment": "Full Paper Submission deadline"
+    },
+    {
       "title": "VLDB",
       "description": "International Conference on Very Large Data Bases",
       "rank": "A",
@@ -2854,6 +2842,18 @@
       "conference_date": "August 15-17, 2025",
       "location": "Chengdu, China",
       "website": "https://tcsuestc.com/cocoon2025",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "ICDAR",
+      "description": "International Conference on Document Analysis and Recognition",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-03-07 23:59:59 UTC+0",
+      "conference_date": "September 17-21, 2025",
+      "location": "Wuhan, China",
+      "website": "https://www.icdar2025.com/home",
       "year": "2025",
       "comment": ""
     },
