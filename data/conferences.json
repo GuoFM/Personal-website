@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-02-18T00:54:30.115764",
+  "last_updated": "2025-02-19T00:55:05.649311",
   "conferences": [
     {
       "title": "PODC",
@@ -36,18 +36,6 @@
       "website": "https://pldi24.sigplan.org/home/LCTES-2024",
       "year": "2024",
       "comment": "Paper submission"
-    },
-    {
-      "title": "TASE",
-      "description": "Theoretical Aspects of Software Engineering",
-      "rank": "C",
-      "category": "SE",
-      "submission_deadline": "2024-02-24 23:59:59 AoE",
-      "conference_date": "July 29-August 1, 2024",
-      "location": "Guiyang, China",
-      "website": "https://tase2024.github.io/index.html",
-      "year": "2024",
-      "comment": ""
     },
     {
       "title": "ICCBR",
@@ -254,18 +242,6 @@
       "comment": "Posters with Extended Abstract Track"
     },
     {
-      "title": "ICSME",
-      "description": "International Conference on Software Maintenance and Evolution",
-      "rank": "B",
-      "category": "SE",
-      "submission_deadline": "2024-04-11 23:59:59 AoE",
-      "conference_date": "October 06-11, 2024",
-      "location": "Flagstaff, Arizona, USA",
-      "website": "https://conf.researchr.org/home/icsme-2024",
-      "year": "2024",
-      "comment": ""
-    },
-    {
       "title": "NSPW",
       "description": "New Security Paradigms Workshop",
       "rank": "C",
@@ -455,18 +431,6 @@
       "location": "Philadelphia, PA, USA",
       "website": "https://www.usenix.org/conference/nsdi25",
       "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "ISMAR",
-      "description": "International Symposium on Mixed and Augmented Reality",
-      "rank": "B",
-      "category": "CG",
-      "submission_deadline": "2024-05-08 23:59:59 AoE",
-      "conference_date": "Oct 21-25, 2024",
-      "location": "Greater Seattle Area, USA",
-      "website": "https://ieeeismar.org/",
-      "year": "2024",
       "comment": ""
     },
     {
@@ -1862,6 +1826,18 @@
       "comment": "Fall deadline"
     },
     {
+      "title": "WiSec",
+      "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2024-11-21 23:59:59 AoE",
+      "conference_date": "June 30 - July 3, 2025",
+      "location": "Arlington, Virginia, USA",
+      "website": "https://wisec2025.gmu.edu/",
+      "year": "2025",
+      "comment": "First Cycle deadline"
+    },
+    {
       "title": "WoWMoM",
       "description": "IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks",
       "rank": "C",
@@ -2594,18 +2570,6 @@
       "comment": ""
     },
     {
-      "title": "IWQoS",
-      "description": "IEEE/ACM International Symposium on Quality of Service",
-      "rank": "B",
-      "category": "NW",
-      "submission_deadline": "2025-02-16 23:59:59 AoE",
-      "conference_date": "July 02-04, 2025",
-      "location": "Gold Coast, Australia",
-      "website": "https://iwqos2025.ieee-iwqos.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "SETTA",
       "description": "Symposium on Dependable Software Engineering: Theories, Tools and Applications",
       "rank": "C",
@@ -2674,6 +2638,30 @@
       "conference_date": "June 30-July 2, 2025",
       "location": "New Orleans, LA, USA",
       "website": "https://www.glsvlsi.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "TASE",
+      "description": "Theoretical Aspects of Software Engineering",
+      "rank": "C",
+      "category": "SE",
+      "submission_deadline": "2025-02-21 23:59:59 AoE",
+      "conference_date": "July 14-16, 2025",
+      "location": "Limassol, Cyprus",
+      "website": "https://cyprusconferences.org/tase2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "IWQoS",
+      "description": "IEEE/ACM International Symposium on Quality of Service",
+      "rank": "B",
+      "category": "NW",
+      "submission_deadline": "2025-02-23 23:59:59 AoE",
+      "conference_date": "July 02-04, 2025",
+      "location": "Gold Coast, Australia",
+      "website": "https://iwqos2025.ieee-iwqos.org/",
       "year": "2025",
       "comment": ""
     },
@@ -2882,6 +2870,18 @@
       "comment": ""
     },
     {
+      "title": "WiSec",
+      "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-03-12 23:59:59 AoE",
+      "conference_date": "June 30 - July 3, 2025",
+      "location": "Arlington, Virginia, USA",
+      "website": "https://wisec2025.gmu.edu/",
+      "year": "2025",
+      "comment": "Second Cycle deadline"
+    },
+    {
       "title": "APNet",
       "description": "Asia-Pacific Workshop on Networking",
       "rank": "C",
@@ -2890,6 +2890,18 @@
       "conference_date": "August 7-8, 2025",
       "location": "Shanghai, China",
       "website": "https://conferences.sigcomm.org/events/apnet2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "ICSME",
+      "description": "International Conference on Software Maintenance and Evolution",
+      "rank": "B",
+      "category": "SE",
+      "submission_deadline": "2025-03-13 23:59:59 AoE",
+      "conference_date": "September 07-12, 2025",
+      "location": "Auckland, New Zealand",
+      "website": "https://conf.researchr.org/home/icsme-2025",
       "year": "2025",
       "comment": ""
     },
@@ -3082,6 +3094,18 @@
       "conference_date": "October 18-22, 2025",
       "location": "Seoul, Korea",
       "website": "https://microarch.org/micro58/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "ISMAR",
+      "description": "International Symposium on Mixed and Augmented Reality",
+      "rank": "B",
+      "category": "CG",
+      "submission_deadline": "2025-04-11 23:59:59 AoE",
+      "conference_date": "Oct 8-12, 2025",
+      "location": "Daejeon, South Korea",
+      "website": "https://www.ieeeismar.net/2025/",
       "year": "2025",
       "comment": ""
     },
