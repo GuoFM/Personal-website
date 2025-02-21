@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-02-20T00:55:18.949063",
+  "last_updated": "2025-02-21T00:55:43.105656",
   "conferences": [
     {
       "title": "PODC",
@@ -74,18 +74,6 @@
       "comment": "ToSC, Volume 2024, Issue 2 Submission deadline"
     },
     {
-      "title": "CASA",
-      "description": "International Conference on Computer Animation and Social Agents",
-      "rank": "C",
-      "category": "CG",
-      "submission_deadline": "2024-03-05 23:59:59 AoE",
-      "conference_date": "June 5-7, 2024",
-      "location": "Wuhan, China",
-      "website": "https://casa2024.wtu.edu.cn/index.htm",
-      "year": "2024",
-      "comment": ""
-    },
-    {
       "title": "NETYS",
       "description": "The International Conference on Networked Systems",
       "rank": "N",
@@ -132,18 +120,6 @@
       "website": "https://eusipcolyon.sciencesconf.org/",
       "year": "2024",
       "comment": "first round"
-    },
-    {
-      "title": "ICDT",
-      "description": "International Conference on Database Theory",
-      "rank": "B",
-      "category": "DB",
-      "submission_deadline": "2024-03-18 23:59:59 AoE",
-      "conference_date": "March 25-28, 2025",
-      "location": "Barcelona, Spain",
-      "website": "https://edbticdt2025.upc.edu/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "PACT",
@@ -514,18 +490,6 @@
       "conference_date": "Dec 2 - 6, 2024",
       "location": "Milan, Italy",
       "website": "https://tcc.iacr.org/2024/",
-      "year": "2024",
-      "comment": ""
-    },
-    {
-      "title": "CIKM",
-      "description": "ACM International Conference on Information and Knowledge Management",
-      "rank": "B",
-      "category": "DB",
-      "submission_deadline": "2024-05-20 23:59:59 AoE",
-      "conference_date": "October 21-25, 2024",
-      "location": "Boise, Idaho, USA",
-      "website": "https://cikm2024.org/",
       "year": "2024",
       "comment": ""
     },
@@ -1250,18 +1214,6 @@
       "comment": ""
     },
     {
-      "title": "ICDT",
-      "description": "International Conference on Database Theory",
-      "rank": "B",
-      "category": "DB",
-      "submission_deadline": "2024-09-19 23:59:59 AoE",
-      "conference_date": "March 25-28, 2025",
-      "location": "Barcelona, Spain",
-      "website": "https://edbticdt2025.upc.edu/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "AsiaCCS",
       "description": "Asia Conference on Computer and Communications Security",
       "rank": "C",
@@ -1378,6 +1330,18 @@
       "conference_date": "May 12-16, 2025",
       "location": "London, UK",
       "website": "https://eg25.cs.ucl.ac.uk/main/home.html",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "SDM",
+      "description": "SIAM International Conference on Data Mining",
+      "rank": "B",
+      "category": "DB",
+      "submission_deadline": "2024-10-04 23:59:59 UTC-8",
+      "conference_date": "May 1-3, 2025",
+      "location": "Alexandria, Virginia, USA",
+      "website": "https://www.siam.org/conferences-events/siam-conferences/sdm25",
       "year": "2025",
       "comment": ""
     },
@@ -2846,6 +2810,18 @@
       "comment": ""
     },
     {
+      "title": "CASA",
+      "description": "International Conference on Computer Animation and Social Agents",
+      "rank": "C",
+      "category": "CG",
+      "submission_deadline": "2025-03-08 23:59:59 AoE",
+      "conference_date": "June 2-5, 2025",
+      "location": "Strasbourg, France",
+      "website": "https://casa2025.sciencesconf.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "ICCV",
       "description": "IEEE International Conference on Computer Vision",
       "rank": "A",
@@ -2964,6 +2940,18 @@
       "website": "https://www.usenix.net/conference/fast26",
       "year": "2026",
       "comment": "Spring deadline"
+    },
+    {
+      "title": "ICDT",
+      "description": "International Conference on Database Theory",
+      "rank": "B",
+      "category": "DB",
+      "submission_deadline": "2025-03-20 23:59:59 AoE",
+      "conference_date": "March 24-27, 2026",
+      "location": "Tampere, Finland",
+      "website": "https://edbticdt2026.github.io/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "OOPSLA",
@@ -3467,6 +3455,18 @@
       "location": "Wuhan, China",
       "website": "https://ieeebibm.org/BIBM2025/",
       "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "ICDT",
+      "description": "International Conference on Database Theory",
+      "rank": "B",
+      "category": "DB",
+      "submission_deadline": "2025-09-10 23:59:59 AoE",
+      "conference_date": "March 24-27, 2026",
+      "location": "Tampere, Finland",
+      "website": "https://edbticdt2026.github.io/",
+      "year": "2026",
       "comment": ""
     },
     {
