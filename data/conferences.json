@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-02-21T00:55:43.105656",
+  "last_updated": "2025-02-22T00:53:26.996917",
   "conferences": [
     {
       "title": "PODC",
@@ -264,18 +264,6 @@
       "website": "https://www.ndss-symposium.org/ndss2025/",
       "year": "2025",
       "comment": "Summer"
-    },
-    {
-      "title": "ISWC",
-      "description": "International Semantic Web Conference",
-      "rank": "B",
-      "category": "DB",
-      "submission_deadline": "2024-04-17 23:59:59 AoE",
-      "conference_date": "November 11-15, 2024",
-      "location": "Baltimore, USA",
-      "website": "https://iswc2024.semanticweb.org/",
-      "year": "2024",
-      "comment": ""
     },
     {
       "title": "PPSN",
@@ -3262,6 +3250,18 @@
       "conference_date": "October 22 - 24, 2025",
       "location": "Kyoto, Japan",
       "website": "https://adma2025.github.io",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "ISWC",
+      "description": "International Semantic Web Conference",
+      "rank": "B",
+      "category": "DB",
+      "submission_deadline": "2025-05-13 23:59:59 AoE",
+      "conference_date": "November 2-6, 2025",
+      "location": "Nara, Japan",
+      "website": "https://iswc2025.semanticweb.org",
       "year": "2025",
       "comment": ""
     },
