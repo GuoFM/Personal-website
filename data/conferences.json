@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-02-22T00:53:26.996917",
+  "last_updated": "2025-02-23T00:59:20.219065",
   "conferences": [
     {
       "title": "PODC",
@@ -216,18 +216,6 @@
       "website": "https://www.systor.org/2024/",
       "year": "2024",
       "comment": "Posters with Extended Abstract Track"
-    },
-    {
-      "title": "NSPW",
-      "description": "New Security Paradigms Workshop",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-04-12 23:59:00 UTC-11",
-      "conference_date": "September 16-18, 2024",
-      "location": "Bedford, PA USA",
-      "website": "https://www.nspw.org/2024/cfp",
-      "year": "2024",
-      "comment": ""
     },
     {
       "title": "RAID",
@@ -2582,18 +2570,6 @@
       "comment": ""
     },
     {
-      "title": "GLSVLSI",
-      "description": "Great Lakes Symposium on VLSI",
-      "rank": "C",
-      "category": "DS",
-      "submission_deadline": "2025-02-21 23:59:00 UTC-5",
-      "conference_date": "June 30-July 2, 2025",
-      "location": "New Orleans, LA, USA",
-      "website": "https://www.glsvlsi.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "TASE",
       "description": "Theoretical Aspects of Software Engineering",
       "rank": "C",
@@ -2786,6 +2762,18 @@
       "comment": ""
     },
     {
+      "title": "GLSVLSI",
+      "description": "Great Lakes Symposium on VLSI",
+      "rank": "C",
+      "category": "DS",
+      "submission_deadline": "2025-03-07 23:59:00 UTC-5",
+      "conference_date": "June 30-July 2, 2025",
+      "location": "New Orleans, LA, USA",
+      "website": "https://www.glsvlsi.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "ICDAR",
       "description": "International Conference on Document Analysis and Recognition",
       "rank": "C",
@@ -2942,6 +2930,18 @@
       "comment": ""
     },
     {
+      "title": "SACMAT",
+      "description": "ACM Symposium on Access Control Models and Technologies",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-03-24 23:59:59 AoE",
+      "conference_date": "July 8-10, 2025",
+      "location": "Stony Brook, NY, USA",
+      "website": "https://www.sacmat.org/2025/index.php",
+      "year": "2025",
+      "comment": "Paper Submission Deadline"
+    },
+    {
       "title": "OOPSLA",
       "description": "Conference on Object-Oriented Programming Systems, Languages, and Applications",
       "rank": "A",
@@ -3070,6 +3070,18 @@
       "conference_date": "October 18-22, 2025",
       "location": "Seoul, Korea",
       "website": "https://microarch.org/micro58/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "NSPW",
+      "description": "New Security Paradigms Workshop",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-04-11 23:59:59 AoE",
+      "conference_date": "August 24-27, 2025",
+      "location": "Aerzen, Germany",
+      "website": "https://www.nspw.org/2025",
       "year": "2025",
       "comment": ""
     },
