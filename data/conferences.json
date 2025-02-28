@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-02-27T00:56:15.765956",
+  "last_updated": "2025-02-28T00:57:02.274243",
   "conferences": [
     {
       "title": "PODC",
@@ -216,18 +216,6 @@
       "website": "https://www.systor.org/2024/",
       "year": "2024",
       "comment": "Posters with Extended Abstract Track"
-    },
-    {
-      "title": "RAID",
-      "description": "International Symposium on Recent Advances in Intrusion Detection",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2024-04-15 23:59:59 AoE",
-      "conference_date": "September 30 - October 2, 2024",
-      "location": "Palazzo della Salute, Padua, Italy",
-      "website": "https://raid2024.github.io/",
-      "year": "2024",
-      "comment": ""
     },
     {
       "title": "FM",
@@ -612,18 +600,6 @@
       "website": "https://ksiresearch.org/seke/seke24.html",
       "year": "2024",
       "comment": ""
-    },
-    {
-      "title": "ISC",
-      "description": "Information Security Conference",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-06-13 23:59:59 AoE",
-      "conference_date": "Oct 23 - 25, 2024",
-      "location": "VA, USA",
-      "website": "https://isc24.cs.gmu.edu/",
-      "year": "2024",
-      "comment": "Submission Deadline"
     },
     {
       "title": "ASPLOS",
@@ -2810,18 +2786,6 @@
       "comment": ""
     },
     {
-      "title": "Euro-Par",
-      "description": "European Conference on Parallel and Distributed Computing",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2025-03-09 23:59:59 AoE",
-      "conference_date": "August 25-29, 2025",
-      "location": "Dresden, Germany",
-      "website": "https://2025.euro-par.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "WiSec",
       "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
       "rank": "C",
@@ -2890,6 +2854,18 @@
       "conference_date": "Sept 9-12, 2025",
       "location": "Kaunas, Lithuania",
       "website": "https://e-nns.org/icann2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "Euro-Par",
+      "description": "European Conference on Parallel and Distributed Computing",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-03-17 23:59:59 AoE",
+      "conference_date": "August 25-29, 2025",
+      "location": "Dresden, Germany",
+      "website": "https://2025.euro-par.org/",
       "year": "2025",
       "comment": ""
     },
@@ -3146,6 +3122,18 @@
       "comment": "Schedule for TCHES Volume 2025/4"
     },
     {
+      "title": "RAID",
+      "description": "International Symposium on Recent Advances in Intrusion Detection",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-04-17 23:59:59 AoE",
+      "conference_date": "October 19-22, 2025",
+      "location": "Gold Coast, Australia",
+      "website": "https://raid2025.github.io/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "SOSP",
       "description": "ACM Symposium on Operating Systems Principles",
       "rank": "A",
@@ -3360,6 +3348,18 @@
       "website": "https://icdf2c.eai-conferences.org/2025/",
       "year": "2025",
       "comment": "Full Paper Submission deadline"
+    },
+    {
+      "title": "ISC",
+      "description": "Information Security Conference",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-06-04 23:59:59 AoE",
+      "conference_date": "October 20-22, 2025",
+      "location": "Seoul, South Korea",
+      "website": "https://isc25.skku.edu/",
+      "year": "2025",
+      "comment": "Submission Deadline"
     },
     {
       "title": "EDBT",
