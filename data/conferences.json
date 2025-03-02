@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-01T01:00:44.931870",
+  "last_updated": "2025-03-02T01:00:01.907203",
   "conferences": [
     {
       "title": "PODC",
@@ -454,18 +454,6 @@
       "conference_date": "Dec 2 - 6, 2024",
       "location": "Milan, Italy",
       "website": "https://tcc.iacr.org/2024/",
-      "year": "2024",
-      "comment": ""
-    },
-    {
-      "title": "NeurIPS",
-      "description": "Conference on Neural Information Processing Systems",
-      "rank": "A",
-      "category": "AI",
-      "submission_deadline": "2024-05-22 20:00:00 UTC+0",
-      "conference_date": "December 9-December 15, 2024",
-      "location": "Vancouver, Canada",
-      "website": "https://neurips.cc/Conferences/2024",
       "year": "2024",
       "comment": ""
     },
@@ -3288,6 +3276,18 @@
       "website": "https://2026.eurosys.org/",
       "year": "2026",
       "comment": "Spring Submission Deadline"
+    },
+    {
+      "title": "NeurIPS",
+      "description": "Conference on Neural Information Processing Systems",
+      "rank": "A",
+      "category": "AI",
+      "submission_deadline": "2025-05-15 23:59:59 AoE",
+      "conference_date": "December 2-7, 2025",
+      "location": "San Diego Convention Center, USA",
+      "website": "https://neurips.cc/Conferences/2025",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "ICNP",
