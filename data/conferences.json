@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-02T01:00:01.907203",
+  "last_updated": "2025-03-03T00:58:08.860686",
   "conferences": [
     {
       "title": "PODC",
@@ -2486,18 +2486,6 @@
       "comment": "Round 1(Winter) Paper Submission"
     },
     {
-      "title": "SPAA",
-      "description": "ACM Symposium on Parallelism in Algorithms and Architectures",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2025-02-18 23:59:59 AoE",
-      "conference_date": "July 28 - August 1, 2025",
-      "location": "Portland, Oregon",
-      "website": "https://spaa.acm.org/call-for-papers/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "CGI",
       "description": "Computer Graphics International",
       "rank": "C",
@@ -2602,6 +2590,18 @@
       "conference_date": "Sep 23-27, 2025",
       "location": "Daejeon, Republic of Korea",
       "website": "https://conferences.miccai.org/2025/en/default.asp",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "SPAA",
+      "description": "ACM Symposium on Parallelism in Algorithms and Architectures",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-02-28 23:59:59 AoE",
+      "conference_date": "July 28 - August 1, 2025",
+      "location": "Portland, Oregon",
+      "website": "https://spaa.acm.org/call-for-papers/",
       "year": "2025",
       "comment": ""
     },
