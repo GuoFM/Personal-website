@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-05T00:57:24.818906",
+  "last_updated": "2025-03-06T00:57:01.928088",
   "conferences": [
     {
       "title": "PODC",
@@ -180,18 +180,6 @@
       "website": "https://www.systor.org/2024/",
       "year": "2024",
       "comment": "Highlight Papers Track"
-    },
-    {
-      "title": "FOCS",
-      "description": "IEEE Symposium on Foundations of Computer Science",
-      "rank": "A",
-      "category": "CT",
-      "submission_deadline": "2024-04-04 20:00:00 UTC-5",
-      "conference_date": "October 27-30, 2024",
-      "location": "Chicago, IL, USA",
-      "website": "https://focs.computer.org/2024/",
-      "year": "2024",
-      "comment": ""
     },
     {
       "title": "ICPR",
@@ -420,18 +408,6 @@
       "website": "https://www.icwsm.org/2025/index.html",
       "year": "2025",
       "comment": "1st Full-paper Deadline"
-    },
-    {
-      "title": "ACM SIGGRAPH ASIA",
-      "description": "ACM SIGGRAPH Annual Conference in Asia",
-      "rank": "A",
-      "category": "CG",
-      "submission_deadline": "2024-05-19 23:59:00 UTC-12",
-      "conference_date": "December 3-6, 2024",
-      "location": "Tokyo, Japan",
-      "website": "https://asia.siggraph.org/2024/",
-      "year": "2024",
-      "comment": ""
     },
     {
       "title": "ICCD",
@@ -2966,6 +2942,18 @@
       "comment": "abstract deadline"
     },
     {
+      "title": "FOCS",
+      "description": "IEEE Symposium on Foundations of Computer Science",
+      "rank": "A",
+      "category": "CT",
+      "submission_deadline": "2025-04-03 20:00:00 UTC-5",
+      "conference_date": "December 14-17, 2025",
+      "location": "Sydney, Australia",
+      "website": "https://focs.computer.org/2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "SMC",
       "description": "IEEE International Conference on Systems, Man, and Cybernetics",
       "rank": "C",
@@ -3312,6 +3300,18 @@
       "website": "https://www.icics2025.org/",
       "year": "2025",
       "comment": "Second round"
+    },
+    {
+      "title": "ACM SIGGRAPH ASIA",
+      "description": "ACM SIGGRAPH Annual Conference in Asia",
+      "rank": "A",
+      "category": "CG",
+      "submission_deadline": "2025-05-23 23:59:00 UTC-12",
+      "conference_date": "December 15-18, 2025",
+      "location": "Hong Kong, China",
+      "website": "https://asia.siggraph.org/2025/",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "ASE",
