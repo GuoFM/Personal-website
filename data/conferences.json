@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-09T00:50:19.563307",
+  "last_updated": "2025-03-10T00:48:28.034581",
   "conferences": [
     {
       "title": "PODC",
@@ -2690,18 +2690,6 @@
       "comment": ""
     },
     {
-      "title": "GLSVLSI",
-      "description": "Great Lakes Symposium on VLSI",
-      "rank": "C",
-      "category": "DS",
-      "submission_deadline": "2025-03-07 23:59:00 UTC-5",
-      "conference_date": "June 30-July 2, 2025",
-      "location": "New Orleans, LA, USA",
-      "website": "https://www.glsvlsi.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "ICDAR",
       "description": "International Conference on Document Analysis and Recognition",
       "rank": "C",
@@ -2806,6 +2794,18 @@
       "conference_date": "Sept 9-12, 2025",
       "location": "Kaunas, Lithuania",
       "website": "https://e-nns.org/icann2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "GLSVLSI",
+      "description": "Great Lakes Symposium on VLSI",
+      "rank": "C",
+      "category": "DS",
+      "submission_deadline": "2025-03-17 23:59:00 UTC-5",
+      "conference_date": "June 30-July 2, 2025",
+      "location": "New Orleans, LA, USA",
+      "website": "https://www.glsvlsi.org/",
       "year": "2025",
       "comment": ""
     },
@@ -2976,6 +2976,18 @@
       "website": "https://clustercomp.org/2025",
       "year": "2025",
       "comment": "Full Paper Deadline"
+    },
+    {
+      "title": "EGSR",
+      "description": "Eurographics Symposium on Rendering",
+      "rank": "B",
+      "category": "CG",
+      "submission_deadline": "2025-04-07 23:59:59 UTC",
+      "conference_date": "June 25-27, 2025",
+      "location": "Copenhagen, Denmark",
+      "website": "https://conferences.eg.org/egsr2025/",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "RecSys",
