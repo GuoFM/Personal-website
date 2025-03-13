@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-12T00:57:06.492420",
+  "last_updated": "2025-03-13T00:57:56.026979",
   "conferences": [
     {
       "title": "PODC",
@@ -82,18 +82,6 @@
       "conference_date": "May 29-31, 2024",
       "location": "Rabat, Morocco",
       "website": "https://netys.net/",
-      "year": "2024",
-      "comment": ""
-    },
-    {
-      "title": "ECCV",
-      "description": "European Conference on Computer Vision",
-      "rank": "B",
-      "category": "AI",
-      "submission_deadline": "2024-03-07 13:00:00 UTC-8",
-      "conference_date": "September 29 - October 4, 2024",
-      "location": "MiCo Milano, Italy",
-      "website": "https://eccv2024.ecva.net/",
       "year": "2024",
       "comment": ""
     },
@@ -3158,6 +3146,18 @@
       "comment": "Second Submission deadline"
     },
     {
+      "title": "CoRL",
+      "description": "The Conference on Robot Learning",
+      "rank": "N",
+      "category": "AI",
+      "submission_deadline": "2025-04-30 23:59:59 AoE",
+      "conference_date": "September 27-30, 2025",
+      "location": "Seoul, Korea",
+      "website": "https://www.corl.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "CollaborateCom2025",
       "description": "International Conference on Collaborative Computing: Networking, Applications and Worksharing",
       "rank": "C",
@@ -3324,6 +3324,18 @@
       "website": "https://www.icics2025.org/",
       "year": "2025",
       "comment": "Second round"
+    },
+    {
+      "title": "CIKM",
+      "description": "ACM International Conference on Information and Knowledge Management",
+      "rank": "B",
+      "category": "DB",
+      "submission_deadline": "2025-05-23 23:59:59 AoE",
+      "conference_date": "November 10-14, 2025",
+      "location": "Coex, Seoul, Korea",
+      "website": "https://cikm2025.org",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "ACM SIGGRAPH ASIA",
@@ -3564,6 +3576,18 @@
       "website": "https://www.ieee-security.org/TC/SP2026/",
       "year": "2026",
       "comment": "Second Paper submission deadline"
+    },
+    {
+      "title": "ECCV",
+      "description": "European Conference on Computer Vision",
+      "rank": "B",
+      "category": "AI",
+      "submission_deadline": "2026-03-06 13:00:00 UTC-8",
+      "conference_date": "September 8 - 13, 2026",
+      "location": "Malmö, Sweden",
+      "website": "https://eccv.ecva.net/",
+      "year": "2026",
+      "comment": ""
     }
   ]
 }
