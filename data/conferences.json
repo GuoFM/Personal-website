@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-13T00:57:56.026979",
+  "last_updated": "2025-03-14T00:57:30.107125",
   "conferences": [
     {
       "title": "PODC",
@@ -132,18 +132,6 @@
       "website": "https://pact2024.github.io/",
       "year": "2024",
       "comment": "Paper submission deadline"
-    },
-    {
-      "title": "VLDB",
-      "description": "International Conference on Very Large Data Bases",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2024-04-01 17:00:00 UTC-7",
-      "conference_date": "September 1-5, 2025",
-      "location": "London, United Kingdom",
-      "website": "http://www.vldb.org/2025/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "ICCBR",
@@ -288,18 +276,6 @@
       "website": "https://computeranimation.org/",
       "year": "2024",
       "comment": "Submission deadline (papers and posters)"
-    },
-    {
-      "title": "VLDB",
-      "description": "International Conference on Very Large Data Bases",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2024-05-01 17:00:00 UTC-7",
-      "conference_date": "September 1-5, 2025",
-      "location": "London, United Kingdom",
-      "website": "http://www.vldb.org/2025/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "KR",
@@ -494,18 +470,6 @@
       "comment": "ToSC, Volume 2024, Issue 3 Submission deadline"
     },
     {
-      "title": "VLDB",
-      "description": "International Conference on Very Large Data Bases",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2024-06-01 17:00:00 UTC-7",
-      "conference_date": "September 1-5, 2025",
-      "location": "London, United Kingdom",
-      "website": "http://www.vldb.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "IISWC",
       "description": "IEEE International Symposium on Workload Characterization",
       "rank": "N",
@@ -600,18 +564,6 @@
       "website": "https://www.fm24.polimi.it/",
       "year": "2024",
       "comment": "Final Version"
-    },
-    {
-      "title": "VLDB",
-      "description": "International Conference on Very Large Data Bases",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2024-07-01 17:00:00 UTC-7",
-      "conference_date": "September 1-5, 2025",
-      "location": "London, United Kingdom",
-      "website": "http://www.vldb.org/2025/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "ACCV",
@@ -794,18 +746,6 @@
       "comment": ""
     },
     {
-      "title": "VLDB",
-      "description": "International Conference on Very Large Data Bases",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2024-08-01 17:00:00 UTC-7",
-      "conference_date": "September 1-5, 2025",
-      "location": "London, United Kingdom",
-      "website": "http://www.vldb.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "CIDR",
       "description": "International Conference on Innovative Data Systems Research",
       "rank": "B",
@@ -936,18 +876,6 @@
       "website": "https://fse.iacr.org/2025/",
       "year": "2025",
       "comment": "ToSC, Volume 2024, Issue 4 Submission deadline"
-    },
-    {
-      "title": "VLDB",
-      "description": "International Conference on Very Large Data Bases",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2024-09-01 17:00:00 UTC-7",
-      "conference_date": "September 1-5, 2025",
-      "location": "London, United Kingdom",
-      "website": "http://www.vldb.org/2025/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "WCNC",
@@ -1164,18 +1092,6 @@
       "website": "https://csf2025.ieee-security.org/",
       "year": "2025",
       "comment": "fall"
-    },
-    {
-      "title": "VLDB",
-      "description": "International Conference on Very Large Data Bases",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2024-10-01 17:00:00 UTC-7",
-      "conference_date": "September 1-5, 2025",
-      "location": "London, United Kingdom",
-      "website": "http://www.vldb.org/2025/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "ALT",
@@ -1538,18 +1454,6 @@
       "comment": "Research Papers Full Paper Submission"
     },
     {
-      "title": "VLDB",
-      "description": "International Conference on Very Large Data Bases",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2024-11-01 17:00:00 UTC-7",
-      "conference_date": "September 1-5, 2025",
-      "location": "London, United Kingdom",
-      "website": "http://www.vldb.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "STOC",
       "description": "ACM Symposium on the Theory of Computing",
       "rank": "A",
@@ -1802,18 +1706,6 @@
       "comment": ""
     },
     {
-      "title": "VLDB",
-      "description": "International Conference on Very Large Data Bases",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2024-12-01 17:00:00 UTC-7",
-      "conference_date": "September 1-5, 2025",
-      "location": "London, United Kingdom",
-      "website": "http://www.vldb.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "SOCG",
       "description": "International Symposium on Computational Geometry",
       "rank": "B",
@@ -1906,18 +1798,6 @@
       "conference_date": "June 30 - July 4, 2025",
       "location": "Nantes, France",
       "website": "https://2025.ieeeicme.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "VLDB",
-      "description": "International Conference on Very Large Data Bases",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2025-01-01 17:00:00 UTC-7",
-      "conference_date": "September 1-5, 2025",
-      "location": "London, United Kingdom",
-      "website": "http://www.vldb.org/2025/",
       "year": "2025",
       "comment": ""
     },
@@ -2218,18 +2098,6 @@
       "conference_date": "July 21-25, 2025",
       "location": "Zagreb, Croatia",
       "website": "https://conferences.i-cav.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "VLDB",
-      "description": "International Conference on Very Large Data Bases",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2025-02-01 17:00:00 UTC-7",
-      "conference_date": "September 1-5, 2025",
-      "location": "London, United Kingdom",
-      "website": "http://www.vldb.org/2025/",
       "year": "2025",
       "comment": ""
     },
@@ -2606,18 +2474,6 @@
       "comment": "Full Paper Submission deadline"
     },
     {
-      "title": "VLDB",
-      "description": "International Conference on Very Large Data Bases",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2025-03-01 17:00:00 UTC-7",
-      "conference_date": "September 1-5, 2025",
-      "location": "London, United Kingdom",
-      "website": "http://www.vldb.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "IROS",
       "description": "IEEE\\RSJ International Conference on Intelligent Robots and Systems",
       "rank": "C",
@@ -2918,6 +2774,18 @@
       "comment": ""
     },
     {
+      "title": "VLDB",
+      "description": "International Conference on Very Large Data Bases",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2025-04-01 17:00:00 UTC-7",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Boston, MA, USA",
+      "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "UIST",
       "description": "ACM Symposium on User Interface Software and Technology",
       "rank": "A",
@@ -3158,6 +3026,18 @@
       "comment": ""
     },
     {
+      "title": "VLDB",
+      "description": "International Conference on Very Large Data Bases",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2025-05-01 17:00:00 UTC-7",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Boston, MA, USA",
+      "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "CollaborateCom2025",
       "description": "International Conference on Collaborative Computing: Networking, Applications and Worksharing",
       "rank": "C",
@@ -3374,6 +3254,18 @@
       "comment": "Full Paper Submission deadline"
     },
     {
+      "title": "VLDB",
+      "description": "International Conference on Very Large Data Bases",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2025-06-01 17:00:00 UTC-7",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Boston, MA, USA",
+      "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "ISC",
       "description": "Information Security Conference",
       "rank": "C",
@@ -3446,6 +3338,18 @@
       "comment": "Round 2(Summer) Paper Submission"
     },
     {
+      "title": "VLDB",
+      "description": "International Conference on Very Large Data Bases",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2025-07-01 17:00:00 UTC-7",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Boston, MA, USA",
+      "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "SIGMOD",
       "description": "ACM Conference on Management of Data",
       "rank": "A",
@@ -3470,6 +3374,18 @@
       "comment": "Second Cycle: Submission"
     },
     {
+      "title": "VLDB",
+      "description": "International Conference on Very Large Data Bases",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2025-08-01 17:00:00 UTC-7",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Boston, MA, USA",
+      "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "UbiComp/ISWC",
       "description": "ACM International Joint Conference on Pervasive and Ubiquitous Computing",
       "rank": "A",
@@ -3491,6 +3407,18 @@
       "location": "Wuhan, China",
       "website": "https://ieeebibm.org/BIBM2025/",
       "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "VLDB",
+      "description": "International Conference on Very Large Data Bases",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2025-09-01 17:00:00 UTC-7",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Boston, MA, USA",
+      "website": "https://www.vldb.org/2026/",
+      "year": "2026",
       "comment": ""
     },
     {
@@ -3530,6 +3458,18 @@
       "comment": "Fall Submission Deadline"
     },
     {
+      "title": "VLDB",
+      "description": "International Conference on Very Large Data Bases",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2025-10-01 17:00:00 UTC-7",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Boston, MA, USA",
+      "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "EDBT",
       "description": "International Conference on Extending Database Technology",
       "rank": "B",
@@ -3554,6 +3494,18 @@
       "comment": "round 4"
     },
     {
+      "title": "VLDB",
+      "description": "International Conference on Very Large Data Bases",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2025-11-01 17:00:00 UTC-7",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Boston, MA, USA",
+      "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "UbiComp/ISWC",
       "description": "ACM International Joint Conference on Pervasive and Ubiquitous Computing",
       "rank": "A",
@@ -3576,6 +3528,54 @@
       "website": "https://www.ieee-security.org/TC/SP2026/",
       "year": "2026",
       "comment": "Second Paper submission deadline"
+    },
+    {
+      "title": "VLDB",
+      "description": "International Conference on Very Large Data Bases",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2025-12-01 17:00:00 UTC-7",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Boston, MA, USA",
+      "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "VLDB",
+      "description": "International Conference on Very Large Data Bases",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2026-01-01 17:00:00 UTC-7",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Boston, MA, USA",
+      "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "VLDB",
+      "description": "International Conference on Very Large Data Bases",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2026-02-01 17:00:00 UTC-7",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Boston, MA, USA",
+      "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "VLDB",
+      "description": "International Conference on Very Large Data Bases",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2026-03-01 17:00:00 UTC-7",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Boston, MA, USA",
+      "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "ECCV",
