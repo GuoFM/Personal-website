@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-16T01:02:46.964813",
+  "last_updated": "2025-03-17T00:59:31.432307",
   "conferences": [
     {
       "title": "PODC",
@@ -312,18 +312,6 @@
       "website": "https://srds-conference.org/",
       "year": "2024",
       "comment": "FULL PAPER"
-    },
-    {
-      "title": "NSDI",
-      "description": "USENIX Symposium on Networked Systems Design and Implementation",
-      "rank": "A",
-      "category": "NW",
-      "submission_deadline": "2024-05-07 23:59:59 UTC-4",
-      "conference_date": "April 28-30, 2025",
-      "location": "Philadelphia, PA, USA",
-      "website": "https://www.usenix.org/conference/nsdi25",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "ICMI",
@@ -722,18 +710,6 @@
       "comment": "Submission Due (Conference Track)"
     },
     {
-      "title": "ICONIP",
-      "description": "International Conference on Neural Information Processing",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2024-07-22 23:59:59 UTC-12",
-      "conference_date": "December 2-6, 2024",
-      "location": "Auckland, New Zealand",
-      "website": "http://iconip2024.org/",
-      "year": "2024",
-      "comment": ""
-    },
-    {
       "title": "INFOCOM",
       "description": "IEEE International Conference on Computer Communications",
       "rank": "A",
@@ -1018,18 +994,6 @@
       "conference_date": "March 8-12, 2025",
       "location": "Saint-Malo, France",
       "website": "https://ieeevr.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "NSDI",
-      "description": "USENIX Symposium on Networked Systems Design and Implementation",
-      "rank": "A",
-      "category": "NW",
-      "submission_deadline": "2024-09-19 23:59:59 UTC-4",
-      "conference_date": "April 28-30, 2025",
-      "location": "Philadelphia, PA, USA",
-      "website": "https://www.usenix.org/conference/nsdi25",
       "year": "2025",
       "comment": ""
     },
@@ -2610,7 +2574,7 @@
       "description": "European Conference on Machine Learning and 25th Principles and Practice of Knowledge Discovery in Databases",
       "rank": "B",
       "category": "DB",
-      "submission_deadline": "2025-03-14 23:59:59 UTC-8",
+      "submission_deadline": "2025-03-14 23:59:59 AoE",
       "conference_date": "September 15-19, 2025",
       "location": "Porto, Portugal",
       "website": "https://ecmlpkdd.org/2025/",
@@ -2822,18 +2786,6 @@
       "comment": ""
     },
     {
-      "title": "CLUSTER",
-      "description": "IEEE International Conference on Cluster Computing",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2025-04-05 23:59:59 AoE",
-      "conference_date": "September 2-5, 2025",
-      "location": "Edinburgh, United Kingdom",
-      "website": "https://clustercomp.org/2025",
-      "year": "2025",
-      "comment": "Full Paper Deadline"
-    },
-    {
       "title": "EGSR",
       "description": "Eurographics Symposium on Rendering",
       "rank": "B",
@@ -2954,6 +2906,18 @@
       "comment": "Schedule for TCHES Volume 2025/4"
     },
     {
+      "title": "INSCRYPT",
+      "description": "International Conference on Information Security and Cryptology",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-04-15 23:59:59 UTC-8",
+      "conference_date": "October 19-21, 2025",
+      "location": "Xi'an, China",
+      "website": "https://inscrypt2025.xidian.edu.cn/",
+      "year": "2025",
+      "comment": "1st Round"
+    },
+    {
       "title": "RAID",
       "description": "International Symposium on Recent Advances in Intrusion Detection",
       "rank": "B",
@@ -3012,6 +2976,30 @@
       "website": "https://esorics2025.sciencesconf.org/",
       "year": "2025",
       "comment": "Second Submission deadline"
+    },
+    {
+      "title": "NSDI",
+      "description": "USENIX Symposium on Networked Systems Design and Implementation",
+      "rank": "A",
+      "category": "NW",
+      "submission_deadline": "2025-04-25 23:59:59 UTC-4",
+      "conference_date": "May 4-6, 2026",
+      "location": "Renton, WA, USA",
+      "website": "https://www.usenix.org/conference/nsdi26",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "CLUSTER",
+      "description": "IEEE International Conference on Cluster Computing",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-04-25 23:59:59 AoE",
+      "conference_date": "September 2-5, 2025",
+      "location": "Edinburgh, United Kingdom",
+      "website": "https://clustercomp.org/2025",
+      "year": "2025",
+      "comment": "Full Paper Deadline"
     },
     {
       "title": "CoRL",
@@ -3156,6 +3144,18 @@
       "website": "https://2026.eurosys.org/",
       "year": "2026",
       "comment": "Spring Submission Deadline"
+    },
+    {
+      "title": "ICONIP",
+      "description": "International Conference on Neural Information Processing",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-05-15 23:59:59 UTC-12",
+      "conference_date": "November 20-24, 2025",
+      "location": "Okinawa, Japan",
+      "website": "https://iconip2025.apnns.org/",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "NeurIPS",
@@ -3326,6 +3326,18 @@
       "comment": "Submission of revised papers"
     },
     {
+      "title": "INSCRYPT",
+      "description": "International Conference on Information Security and Cryptology",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-06-15 23:59:59 UTC-8",
+      "conference_date": "October 19-21, 2025",
+      "location": "Xi'an, China",
+      "website": "https://inscrypt2025.xidian.edu.cn/",
+      "year": "2025",
+      "comment": "2nd Round"
+    },
+    {
       "title": "SETTA",
       "description": "Symposium on Dependable Software Engineering: Theories, Tools and Applications",
       "rank": "C",
@@ -3444,6 +3456,18 @@
       "website": "https://www.usenix.net/conference/fast26",
       "year": "2026",
       "comment": "Fall deadline"
+    },
+    {
+      "title": "NSDI",
+      "description": "USENIX Symposium on Networked Systems Design and Implementation",
+      "rank": "A",
+      "category": "NW",
+      "submission_deadline": "2025-09-18 23:59:59 UTC-4",
+      "conference_date": "May 4-6, 2026",
+      "location": "Renton, WA, USA",
+      "website": "https://www.usenix.org/conference/nsdi26",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "EuroSys",
