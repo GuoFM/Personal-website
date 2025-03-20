@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-19T00:59:08.354435",
+  "last_updated": "2025-03-20T00:57:41.222382",
   "conferences": [
     {
       "title": "PODC",
@@ -230,18 +230,6 @@
       "comment": "Full Paper Submission"
     },
     {
-      "title": "SRDS",
-      "description": "IEEE International Symposium on Reliable Distributed Systems",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2024-04-26 23:59:59 AoE",
-      "conference_date": "September 30-October 4, 2024",
-      "location": "Charlotte, USA",
-      "website": "https://srds-conference.org/",
-      "year": "2024",
-      "comment": "ABSTRACT"
-    },
-    {
       "title": "PRCV",
       "description": "Chinese Conference on Pattern Recognition and Computer Vision",
       "rank": "C",
@@ -300,18 +288,6 @@
       "website": "https://apsys2024.github.io/",
       "year": "2024",
       "comment": "call for papers"
-    },
-    {
-      "title": "SRDS",
-      "description": "IEEE International Symposium on Reliable Distributed Systems",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2024-05-03 23:59:59 AoE",
-      "conference_date": "September 30-October 4, 2024",
-      "location": "Charlotte, USA",
-      "website": "https://srds-conference.org/",
-      "year": "2024",
-      "comment": "FULL PAPER"
     },
     {
       "title": "ICMI",
@@ -3002,6 +2978,18 @@
       "comment": "Full Paper Deadline"
     },
     {
+      "title": "SRDS",
+      "description": "IEEE International Symposium on Reliable Distributed Systems",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-04-25 23:59:59 AoE",
+      "conference_date": "September 29-October 2, 2025",
+      "location": "Porto, Portugal",
+      "website": "https://srds-conference.org/",
+      "year": "2025",
+      "comment": "Abstract Submission"
+    },
+    {
       "title": "CoRL",
       "description": "The Conference on Robot Learning",
       "rank": "N",
@@ -3048,6 +3036,18 @@
       "website": "https://www.ubicomp.org/ubicomp-iswc-2025",
       "year": "2025",
       "comment": "second round"
+    },
+    {
+      "title": "SRDS",
+      "description": "IEEE International Symposium on Reliable Distributed Systems",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-05-02 23:59:59 AoE",
+      "conference_date": "September 29-October 2, 2025",
+      "location": "Porto, Portugal",
+      "website": "https://srds-conference.org/",
+      "year": "2025",
+      "comment": "Full Paper Submission"
     },
     {
       "title": "SAS",
