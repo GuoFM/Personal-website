@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-22T00:56:51.588633",
+  "last_updated": "2025-03-23T01:02:22.974171",
   "conferences": [
     {
       "title": "PODC",
@@ -2006,6 +2006,30 @@
       "comment": "Paper submission deadline (cycle 1)"
     },
     {
+      "title": "GECCO",
+      "description": "Genetic and Evolutionary Computation Conference",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-01-29 23:59:00 AoE",
+      "conference_date": "July 14-18, 2025",
+      "location": "Málaga, Spain (hybrid)",
+      "website": "https://gecco-2025.sigevo.org/HomePage",
+      "year": "2025",
+      "comment": "Full papers (traditional category) "
+    },
+    {
+      "title": "GECCO",
+      "description": "Genetic and Evolutionary Computation Conference",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-01-29 23:59:00 AoE",
+      "conference_date": "July 14-18, 2025",
+      "location": "Málaga, Spain (hybrid)",
+      "website": "https://gecco-2025.sigevo.org/HomePage",
+      "year": "2025",
+      "comment": "Poster-only papers "
+    },
+    {
       "title": "ICML",
       "description": "International Conference on Machine Learning",
       "rank": "A",
@@ -2558,6 +2582,18 @@
       "comment": ""
     },
     {
+      "title": "CoNLL",
+      "description": "Conference on Computational Natural Language Learning",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-03-14 23:59:59 UTC-12",
+      "conference_date": "July 31 - August 1, 2025",
+      "location": "Vienna, Austria",
+      "website": "https://www.conll.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "GLSVLSI",
       "description": "Great Lakes Symposium on VLSI",
       "rank": "C",
@@ -2758,6 +2794,18 @@
       "conference_date": "October 5-8, 2025",
       "location": "Vienna, Austria",
       "website": "https://www.ieeesmc2025.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "NLPCC",
+      "description": "CCF International Conference on Natural Language Processing and Chinese Computing",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-04-06 23:59:59 UTC+8",
+      "conference_date": "August 8-10, 2025",
+      "location": "Urumqi, China",
+      "website": "http://tcci.ccf.org.cn/conference/2025/index.php",
       "year": "2025",
       "comment": ""
     },
