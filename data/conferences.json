@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-24T01:00:12.216062",
+  "last_updated": "2025-03-25T00:59:05.821083",
   "conferences": [
     {
       "title": "PODC",
@@ -2690,18 +2690,6 @@
       "comment": "Submission Deadline Round 2"
     },
     {
-      "title": "ICIC",
-      "description": "International Conference on Intelligent Computing",
-      "rank": "C",
-      "category": "MX",
-      "submission_deadline": "2025-03-25 23:59:59 UTC+8",
-      "conference_date": "July 26-29, 2025",
-      "location": "Ningbo, China",
-      "website": "http://www.ic-icc.cn/2025/index.php",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "CP",
       "description": "International Conference on Principles and Practice of Constraint Programming",
       "rank": "B",
@@ -2844,6 +2832,18 @@
       "website": "https://uist.acm.org/2025/",
       "year": "2025",
       "comment": "paper deadline"
+    },
+    {
+      "title": "ICIC",
+      "description": "International Conference on Intelligent Computing",
+      "rank": "C",
+      "category": "MX",
+      "submission_deadline": "2025-04-10 11:59:59 UTC+8",
+      "conference_date": "July 26-29, 2025",
+      "location": "Ningbo, China",
+      "website": "http://www.ic-icc.cn/2025/index.php",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "MICRO",
