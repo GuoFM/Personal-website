@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-30T01:03:19.292892",
+  "last_updated": "2025-03-31T01:02:03.936695",
   "conferences": [
     {
       "title": "PODC",
@@ -168,18 +168,6 @@
       "website": "https://www.fm24.polimi.it/",
       "year": "2024",
       "comment": "Abstract Submission"
-    },
-    {
-      "title": "NDSS",
-      "description": "Network and Distributed System Security (NDSS) Symposium",
-      "rank": "A",
-      "category": "SC",
-      "submission_deadline": "2024-04-17 23:59:59 UTC-12",
-      "conference_date": "February 23 - February 28, 2025",
-      "location": "San Diego, California",
-      "website": "https://www.ndss-symposium.org/ndss2025/",
-      "year": "2025",
-      "comment": "Summer"
     },
     {
       "title": "PPSN",
@@ -516,18 +504,6 @@
       "website": "https://www.siam.org/conferences/cm/conference/soda25",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "NDSS",
-      "description": "Network and Distributed System Security (NDSS) Symposium",
-      "rank": "A",
-      "category": "SC",
-      "submission_deadline": "2024-07-10 23:59:59 UTC-12",
-      "conference_date": "February 23 - February 28, 2025",
-      "location": "San Diego, California",
-      "website": "https://www.ndss-symposium.org/ndss2025/",
-      "year": "2025",
-      "comment": "Fall"
     },
     {
       "title": "POPL",
@@ -3002,11 +2978,23 @@
       "comment": "Second Submission deadline"
     },
     {
+      "title": "NDSS",
+      "description": "Network and Distributed System Security (NDSS) Symposium",
+      "rank": "A",
+      "category": "SC",
+      "submission_deadline": "2025-04-23 23:59:59 UTC-12",
+      "conference_date": "February 23 - February 27, 2026",
+      "location": "San Diego, California",
+      "website": "https://www.ndss-symposium.org/ndss2026/",
+      "year": "2026",
+      "comment": "Summer"
+    },
+    {
       "title": "NSDI",
       "description": "USENIX Symposium on Networked Systems Design and Implementation",
       "rank": "A",
       "category": "NW",
-      "submission_deadline": "2025-04-25 23:59:59 UTC-4",
+      "submission_deadline": "2025-04-25 23:59:59 UTC-7",
       "conference_date": "May 4-6, 2026",
       "location": "Renton, WA, USA",
       "website": "https://www.usenix.org/conference/nsdi26",
@@ -3494,6 +3482,18 @@
       "comment": ""
     },
     {
+      "title": "NDSS",
+      "description": "Network and Distributed System Security (NDSS) Symposium",
+      "rank": "A",
+      "category": "SC",
+      "submission_deadline": "2025-08-06 23:59:59 UTC-12",
+      "conference_date": "February 23 - February 27, 2026",
+      "location": "San Diego, California",
+      "website": "https://www.ndss-symposium.org/ndss2026/",
+      "year": "2026",
+      "comment": "Fall"
+    },
+    {
       "title": "VLDB",
       "description": "International Conference on Very Large Data Bases",
       "rank": "A",
@@ -3534,7 +3534,7 @@
       "description": "USENIX Symposium on Networked Systems Design and Implementation",
       "rank": "A",
       "category": "NW",
-      "submission_deadline": "2025-09-18 23:59:59 UTC-4",
+      "submission_deadline": "2025-09-18 23:59:59 UTC-7",
       "conference_date": "May 4-6, 2026",
       "location": "Renton, WA, USA",
       "website": "https://www.usenix.org/conference/nsdi26",
