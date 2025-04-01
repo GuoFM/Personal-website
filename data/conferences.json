@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-03-31T01:02:03.936695",
+  "last_updated": "2025-04-01T01:06:43.886780",
   "conferences": [
     {
       "title": "PODC",
@@ -2750,6 +2750,18 @@
       "comment": ""
     },
     {
+      "title": "CONCUR",
+      "description": "International Conference on Concurrency Theory",
+      "rank": "B",
+      "category": "CT",
+      "submission_deadline": "2025-04-09 23:59:59 AoE",
+      "conference_date": "Aug 26-29, 2025",
+      "location": "Aarhus, Denmark",
+      "website": "https://conferences.au.dk/confest2025/concur",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "UIST",
       "description": "ACM Symposium on User Interface Software and Technology",
       "rank": "A",
@@ -3024,6 +3036,18 @@
       "website": "https://srds-conference.org/",
       "year": "2025",
       "comment": "Abstract Submission"
+    },
+    {
+      "title": "FMCAD",
+      "description": "Formal Methods in Computer-Aided Design",
+      "rank": "C",
+      "category": "CT",
+      "submission_deadline": "2025-04-27 23:59:00 AoE",
+      "conference_date": "Oct. 6-10, 2025",
+      "location": "Menlo Park, USA",
+      "website": "https://fmcad.forsyte.at/FMCAD25/",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "CoRL",
