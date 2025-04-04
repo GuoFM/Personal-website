@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-03T00:59:15.343201",
+  "last_updated": "2025-04-04T00:58:43.537320",
   "conferences": [
     {
       "title": "PODC",
@@ -2690,18 +2690,6 @@
       "comment": ""
     },
     {
-      "title": "SMC",
-      "description": "IEEE International Conference on Systems, Man, and Cybernetics",
-      "rank": "C",
-      "category": "MX",
-      "submission_deadline": "2025-04-04 23:59:59 UTC+8",
-      "conference_date": "October 5-8, 2025",
-      "location": "Vienna, Austria",
-      "website": "https://www.ieeesmc2025.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "NLPCC",
       "description": "CCF International Conference on Natural Language Processing and Chinese Computing",
       "rank": "C",
@@ -2952,6 +2940,18 @@
       "website": "https://pact2025.github.io/",
       "year": "2025",
       "comment": "Paper submission deadline"
+    },
+    {
+      "title": "SMC",
+      "description": "IEEE International Conference on Systems, Man, and Cybernetics",
+      "rank": "C",
+      "category": "MX",
+      "submission_deadline": "2025-04-20 23:59:59 UTC+8",
+      "conference_date": "October 5-8, 2025",
+      "location": "Vienna, Austria",
+      "website": "https://www.ieeesmc2025.org/",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "ICCAD",
