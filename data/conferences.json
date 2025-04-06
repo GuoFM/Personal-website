@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-05T00:58:19.395326",
+  "last_updated": "2025-04-06T01:02:59.731005",
   "conferences": [
     {
       "title": "PODC",
@@ -288,18 +288,6 @@
       "website": "https://www.iccd-conf.com/Call_for_papers.html",
       "year": "2024",
       "comment": "abstract and full paper deadline"
-    },
-    {
-      "title": "TCC",
-      "description": "Theory of Cryptography Conference",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2024-05-20 19:59:59 UTC+2",
-      "conference_date": "Dec 2 - 6, 2024",
-      "location": "Milan, Italy",
-      "website": "https://tcc.iacr.org/2024/",
-      "year": "2024",
-      "comment": ""
     },
     {
       "title": "ACSAC",
@@ -3298,6 +3286,18 @@
       "conference_date": "December 15-18, 2025",
       "location": "Hong Kong, China",
       "website": "https://asia.siggraph.org/2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "TCC",
+      "description": "Theory of Cryptography Conference",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-05-27 23:59:59 AoE",
+      "conference_date": "December 2-5, 2025",
+      "location": "Aarhus, Denmark",
+      "website": "https://tcc.iacr.org/2025/",
       "year": "2025",
       "comment": ""
     },
