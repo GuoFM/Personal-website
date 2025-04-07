@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-06T01:02:59.731005",
+  "last_updated": "2025-04-07T01:01:30.737854",
   "conferences": [
     {
       "title": "PODC",
@@ -2805,7 +2805,7 @@
       "submission_deadline": "2025-04-11 23:59:59 UTC-12",
       "conference_date": "October 27-31, 2025",
       "location": "Dublin, Ireland",
-      "website": "https://2025.acmmm.org/",
+      "website": "https://acmmm2025.org/",
       "year": "2025",
       "comment": ""
     },
