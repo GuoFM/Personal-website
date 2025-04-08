@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-07T01:01:30.737854",
+  "last_updated": "2025-04-08T00:59:21.830243",
   "conferences": [
     {
       "title": "PODC",
@@ -132,18 +132,6 @@
       "website": "https://www.systor.org/2024/",
       "year": "2024",
       "comment": "Highlight Papers Track"
-    },
-    {
-      "title": "ICPR",
-      "description": "International Conference on Pattern Recognition",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2024-04-10 23:59:59 UTC-7",
-      "conference_date": "Dec 01-05, 2024",
-      "location": "Kolkata, India",
-      "website": "https://icpr2024.org/",
-      "year": "2024",
-      "comment": ""
     },
     {
       "title": "SYSTOR",
@@ -420,18 +408,6 @@
       "website": "https://icfem2024.info/",
       "year": "2024",
       "comment": "Paper Submission"
-    },
-    {
-      "title": "PRICAI",
-      "description": "Pacific Rim International Conference on Artificial Intelligence",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2024-06-26 23:59:59 UTC-12",
-      "conference_date": "Nov 18-24, 2024",
-      "location": "Kyoto, Japan",
-      "website": "https://www.pricai.org/2024/",
-      "year": "2024",
-      "comment": ""
     },
     {
       "title": "FM",
@@ -802,18 +778,6 @@
       "conference_date": "June 23-27, 2025",
       "location": "Trondheim, Norway",
       "website": "https://conf.researchr.org/home/fse-2025",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "ICASSP",
-      "description": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
-      "rank": "B",
-      "category": "CG",
-      "submission_deadline": "2024-09-12 23:59:59 UTC-7",
-      "conference_date": "April 6-11, 2025",
-      "location": "Hyderabad, India",
-      "website": "https://2025.ieeeicassp.org/",
       "year": "2025",
       "comment": ""
     },
@@ -2898,7 +2862,7 @@
       "description": "ACM Symposium on Operating Systems Principles",
       "rank": "A",
       "category": "SE",
-      "submission_deadline": "2025-04-17 23:59:59 UTC-8",
+      "submission_deadline": "2025-04-17 23:59:59 UTC-7",
       "conference_date": "October 13 - 16, 2025",
       "location": "Lotte Hotel World, Seoul, Republic of Korea",
       "website": "https://sigops.org/s/conferences/sosp/2025/index.html",
@@ -3410,6 +3374,18 @@
       "comment": "Submission of revised papers"
     },
     {
+      "title": "PRICAI",
+      "description": "Pacific Rim International Conference on Artificial Intelligence",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-06-13 23:59:59 UTC-12",
+      "conference_date": "Nov 17-21, 2025",
+      "location": "Wellington, New Zealand",
+      "website": "https://www.pricai.org/2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "INSCRYPT",
       "description": "International Conference on Information Security and Cryptology",
       "rank": "C",
@@ -3492,6 +3468,18 @@
       "website": "https://www.ubicomp.org/ubicomp-iswc-2025",
       "year": "2025",
       "comment": "third round (only for resubmissions after major revisions)"
+    },
+    {
+      "title": "MMAsia",
+      "description": "ACM Multimedia Asia",
+      "rank": "C",
+      "category": "CG",
+      "submission_deadline": "2025-08-02 23:59:59 AoE",
+      "conference_date": "December 9-12, 2025",
+      "location": "Grand Millenium Hotel, Kuala Lumpur, Malaysia",
+      "website": "https://mmasia2025.org/",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "BIBM",
