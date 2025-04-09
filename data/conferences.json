@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-08T00:59:21.830243",
+  "last_updated": "2025-04-09T00:59:26.235798",
   "conferences": [
     {
       "title": "PODC",
@@ -180,18 +180,6 @@
       "website": "https://www.fm24.polimi.it/",
       "year": "2024",
       "comment": "Full Paper Submission"
-    },
-    {
-      "title": "SCA",
-      "description": "ACM SIGGRAPH/Eurographics Symposium on Computer Animation",
-      "rank": "B",
-      "category": "CG",
-      "submission_deadline": "2024-04-29 23:59:59 UTC",
-      "conference_date": "August 21-23, 2024",
-      "location": "McGill University, Montreal, Canada",
-      "website": "https://computeranimation.org/",
-      "year": "2024",
-      "comment": "Submission deadline (papers and posters)"
     },
     {
       "title": "KR",
@@ -2666,6 +2654,18 @@
       "comment": ""
     },
     {
+      "title": "SCA",
+      "description": "ACM SIGGRAPH/Eurographics Symposium on Computer Animation",
+      "rank": "B",
+      "category": "CG",
+      "submission_deadline": "2025-04-07 23:59:59 AoE",
+      "conference_date": "August 8-10, 2025",
+      "location": "Vancouver, Canada",
+      "website": "https://computeranimation.org/",
+      "year": "2025",
+      "comment": "Submission deadline (papers)"
+    },
+    {
       "title": "RecSys",
       "description": "ACM Conference on Recommender Systems",
       "rank": "B",
@@ -3408,6 +3408,18 @@
       "website": "https://www.setta2025.uk",
       "year": "2025",
       "comment": "Round 2(Summer) Paper Submission"
+    },
+    {
+      "title": "SCA",
+      "description": "ACM SIGGRAPH/Eurographics Symposium on Computer Animation",
+      "rank": "B",
+      "category": "CG",
+      "submission_deadline": "2025-06-15 23:59:59 AoE",
+      "conference_date": "August 8-10, 2025",
+      "location": "Vancouver, Canada",
+      "website": "https://computeranimation.org/",
+      "year": "2025",
+      "comment": "Submission deadline (posters)"
     },
     {
       "title": "VLDB",
