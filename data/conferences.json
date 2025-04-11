@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-10T00:59:34.980865",
+  "last_updated": "2025-04-11T00:59:48.466456",
   "conferences": [
     {
       "title": "PODC",
@@ -3455,6 +3455,18 @@
       "location": "Boston, MA, USA",
       "website": "https://www.vldb.org/2026/",
       "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "PDCAT",
+      "description": "26th International Conference on Parallel and Distributed Computing, Applications and Technologies",
+      "rank": "N",
+      "category": "DS",
+      "submission_deadline": "2025-07-06 23:59:00 UTC+10",
+      "conference_date": "November 14-November 16, 2025",
+      "location": "Gold Coast, Australia",
+      "website": "https://www.pd-cat.org/",
+      "year": "2025",
       "comment": ""
     },
     {
