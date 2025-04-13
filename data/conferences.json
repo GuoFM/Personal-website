@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-12T00:58:38.187205",
+  "last_updated": "2025-04-13T02:29:33.560768",
   "conferences": [
     {
       "title": "PODC",
@@ -3588,6 +3588,18 @@
       "website": "https://www.usenix.net/conference/fast26",
       "year": "2026",
       "comment": "Fall deadline"
+    },
+    {
+      "title": "ICASSP",
+      "description": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+      "rank": "B",
+      "category": "CG",
+      "submission_deadline": "2025-09-17 22:59:59 UTC-8",
+      "conference_date": "May 3-8, 2026",
+      "location": "Barcelona, Spain",
+      "website": "https://2026.ieeeicassp.org/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "NSDI",
