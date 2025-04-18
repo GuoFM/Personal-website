@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-17T01:00:20.677815",
+  "last_updated": "2025-04-18T00:59:56.873228",
   "conferences": [
     {
       "title": "PODC",
@@ -2846,18 +2846,6 @@
       "comment": ""
     },
     {
-      "title": "SMC",
-      "description": "IEEE International Conference on Systems, Man, and Cybernetics",
-      "rank": "C",
-      "category": "MX",
-      "submission_deadline": "2025-04-20 23:59:59 UTC+8",
-      "conference_date": "October 5-8, 2025",
-      "location": "Vienna, Austria",
-      "website": "https://www.ieeesmc2025.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "ICCAD",
       "description": "IEEE/ACM International Conference on Computer-Aided Design",
       "rank": "B",
@@ -3048,6 +3036,18 @@
       "website": "https://apweb2025.sau.edu.cn/",
       "year": "2025",
       "comment": "second round"
+    },
+    {
+      "title": "SMC",
+      "description": "IEEE International Conference on Systems, Man, and Cybernetics",
+      "rank": "C",
+      "category": "MX",
+      "submission_deadline": "2025-05-04 23:59:59 UTC+8",
+      "conference_date": "October 5-8, 2025",
+      "location": "Vienna, Austria",
+      "website": "https://www.ieeesmc2025.org/",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "ECAI",
