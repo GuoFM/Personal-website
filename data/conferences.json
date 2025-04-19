@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-18T00:59:56.873228",
+  "last_updated": "2025-04-19T00:57:42.656745",
   "conferences": [
     {
       "title": "PODC",
@@ -206,18 +206,6 @@
       "comment": "1st Full-paper Deadline"
     },
     {
-      "title": "ICCD",
-      "description": "International Conference on Computer Design",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2024-05-20 23:59:00 AoE",
-      "conference_date": "November, 2024",
-      "location": "Milan, Italy",
-      "website": "https://www.iccd-conf.com/Call_for_papers.html",
-      "year": "2024",
-      "comment": "abstract and full paper deadline"
-    },
-    {
       "title": "CSFW",
       "description": "IEEE Computer Security Foundations Workshop",
       "rank": "B",
@@ -264,18 +252,6 @@
       "website": "https://fse.iacr.org/2025/",
       "year": "2025",
       "comment": "ToSC, Volume 2024, Issue 3 Submission deadline"
-    },
-    {
-      "title": "IISWC",
-      "description": "IEEE International Symposium on Workload Characterization",
-      "rank": "N",
-      "category": "DS",
-      "submission_deadline": "2024-06-03 00:00:00 UTC",
-      "conference_date": "September 15-17, 2024",
-      "location": "Vancouver BC Canada",
-      "website": "https://iiswc.org/iiswc2024/",
-      "year": "2024",
-      "comment": "Submissions Due: 2024-06-03"
     },
     {
       "title": "FM",
@@ -1610,6 +1586,18 @@
       "comment": ""
     },
     {
+      "title": "NOSSDAV",
+      "description": "International Workshop on Network and Operating System Support for Digital Audio and Video",
+      "rank": "B",
+      "category": "NW",
+      "submission_deadline": "2025-01-17 23:59:59 AoE",
+      "conference_date": "March 31- April 3, 2025",
+      "location": "Stellenbosch, South Africa",
+      "website": "https://nossdav.org/2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "FCCM",
       "description": "IEEE Symposium on Field-Programmable Custom Computing Machines",
       "rank": "C",
@@ -2510,6 +2498,18 @@
       "comment": ""
     },
     {
+      "title": "EMSOFT",
+      "description": "International Conference on Embedded Software",
+      "rank": "B",
+      "category": "MX",
+      "submission_deadline": "2025-03-30 23:59:59 AoE",
+      "conference_date": "September 28 - October 3, 2025",
+      "location": "TAIPEI, TAIWAN",
+      "website": "https://esweek.org/emsoft/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "IEEE VIS",
       "description": "IEEE Visualization Conference",
       "rank": "A",
@@ -2531,6 +2531,18 @@
       "location": "Boston, MA, USA",
       "website": "https://www.vldb.org/2026/",
       "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ISBRA",
+      "description": "International Symposium on Bioinformatics Research and Applications",
+      "rank": "C",
+      "category": "MX",
+      "submission_deadline": "2025-04-01 23:59:59 AoE",
+      "conference_date": "August 3-5, 2025",
+      "location": "Helsinki, Finland",
+      "website": "https://www.helsinki.fi/en/conferences/isbra2025",
+      "year": "2025",
       "comment": ""
     },
     {
@@ -2786,18 +2798,6 @@
       "comment": ""
     },
     {
-      "title": "RAID",
-      "description": "International Symposium on Recent Advances in Intrusion Detection",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2025-04-17 23:59:59 AoE",
-      "conference_date": "October 19-22, 2025",
-      "location": "Gold Coast, Australia",
-      "website": "https://raid2025.github.io/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "SOSP",
       "description": "ACM Symposium on Operating Systems Principles",
       "rank": "A",
@@ -2858,18 +2858,6 @@
       "comment": ""
     },
     {
-      "title": "ICPP",
-      "description": "International Conference on Parallel Processing",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2025-04-21 23:59:59 AoE",
-      "conference_date": "September 8-11, 2025",
-      "location": "San Diego, CA, USA",
-      "website": "https://icpp2025.sdsc.edu",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "ESORICS",
       "description": "European Symposium on Research in Computer Security",
       "rank": "B",
@@ -2892,6 +2880,18 @@
       "website": "https://www.ndss-symposium.org/ndss2026/",
       "year": "2026",
       "comment": "Summer"
+    },
+    {
+      "title": "RAID",
+      "description": "International Symposium on Recent Advances in Intrusion Detection",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-04-24 23:59:59 AoE",
+      "conference_date": "October 19-22, 2025",
+      "location": "Gold Coast, Australia",
+      "website": "https://raid2025.github.io/",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "NSDI",
@@ -2962,6 +2962,18 @@
       "conference_date": "September 27-30, 2025",
       "location": "Seoul, Korea",
       "website": "https://www.corl.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "ICPP",
+      "description": "International Conference on Parallel Processing",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-05-01 23:59:59 AoE",
+      "conference_date": "September 8-11, 2025",
+      "location": "San Diego, CA, USA",
+      "website": "https://icpp2025.sdsc.edu",
       "year": "2025",
       "comment": ""
     },
@@ -3086,6 +3098,18 @@
       "comment": ""
     },
     {
+      "title": "ICCD",
+      "description": "International Conference on Computer Design",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-05-11 23:59:00 AoE",
+      "conference_date": "November 10-12, 2025",
+      "location": "Dallas, USA",
+      "website": "https://www.iccd-conf.com/home.html",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "KR",
       "description": "International Conference on Principles of Knowledge Representation and Reasoning",
       "rank": "B",
@@ -3202,6 +3226,18 @@
       "conference_date": "November 5 - 9, 2025",
       "location": "Suzhou, China",
       "website": "https://2025.emnlp.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "RTSS",
+      "description": "The IEEE Real-Time Systems Symposium",
+      "rank": "A",
+      "category": "MX",
+      "submission_deadline": "2025-05-22 23:59:59 AoE",
+      "conference_date": "December 2-5, 2025",
+      "location": "Boston, MA, USA",
+      "website": "http://2025.rtss.org/",
       "year": "2025",
       "comment": ""
     },
@@ -3444,6 +3480,30 @@
       "website": "https://computeranimation.org/",
       "year": "2025",
       "comment": "Submission deadline (posters)"
+    },
+    {
+      "title": "APBC",
+      "description": "Asia Pacific Bioinformatics Conference",
+      "rank": "C",
+      "category": "MX",
+      "submission_deadline": "2025-06-15 23:59:59 UTC+0",
+      "conference_date": "September 19-22, 2025",
+      "location": "Nanjing， China",
+      "website": "https://bioinfo.nuaa.edu.cn/apbc2025/main.psp",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "IISWC",
+      "description": "IEEE International Symposium on Workload Characterization",
+      "rank": "N",
+      "category": "DS",
+      "submission_deadline": "2025-06-21 00:00:00 UTC",
+      "conference_date": "October 12-14, 2025",
+      "location": "Irvine, USA",
+      "website": "https://iiswc.org/iiswc2025/",
+      "year": "2025",
+      "comment": "Submissions Due: 2025-06-21"
     },
     {
       "title": "VLDB",
