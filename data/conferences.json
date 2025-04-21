@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-20T01:04:48.987862",
+  "last_updated": "2025-04-21T01:04:29.199339",
   "conferences": [
     {
       "title": "PODC",
@@ -264,18 +264,6 @@
       "website": "https://www.fm24.polimi.it/",
       "year": "2024",
       "comment": "Paper Notification"
-    },
-    {
-      "title": "SEKE",
-      "description": "International Conference on Software Engineering and Knowledge Engineering",
-      "rank": "C",
-      "category": "SE",
-      "submission_deadline": "2024-06-10 23:59:59 UTC-5",
-      "conference_date": "October 28-November 5, 2024",
-      "location": "Amalfi, Italy / Virtual venue",
-      "website": "https://ksiresearch.org/seke/seke24.html",
-      "year": "2024",
-      "comment": ""
     },
     {
       "title": "ASPLOS",
@@ -2974,6 +2962,18 @@
       "conference_date": "September 8-11, 2025",
       "location": "San Diego, CA, USA",
       "website": "https://icpp2025.sdsc.edu",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "SEKE",
+      "description": "International Conference on Software Engineering and Knowledge Engineering",
+      "rank": "C",
+      "category": "SE",
+      "submission_deadline": "2025-05-01 23:59:00 UTC-5",
+      "conference_date": "Sept 29 - Oct 6, 2025",
+      "location": "Pompeii, Italy & Virtual",
+      "website": "https://ksiresearch.org/seke/seke25.html",
       "year": "2025",
       "comment": ""
     },
