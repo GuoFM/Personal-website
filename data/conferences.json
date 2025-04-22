@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-21T01:04:29.199339",
+  "last_updated": "2025-04-22T01:01:49.477302",
   "conferences": [
     {
       "title": "PODC",
@@ -180,18 +180,6 @@
       "website": "https://apsys2024.github.io/",
       "year": "2024",
       "comment": "call for papers"
-    },
-    {
-      "title": "ISSRE",
-      "description": "International Symposium on Software Reliability Engineering",
-      "rank": "B",
-      "category": "SE",
-      "submission_deadline": "2024-05-15 23:59:59 AoE",
-      "conference_date": "October 28-31, 2024",
-      "location": "Tsukuba, Japan",
-      "website": "https://issre.github.io/2024/index.html",
-      "year": "2024",
-      "comment": "Research Track Paper submission deadline"
     },
     {
       "title": "ICWSM",
@@ -2846,18 +2834,6 @@
       "comment": ""
     },
     {
-      "title": "ESORICS",
-      "description": "European Symposium on Research in Computer Security",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2025-04-22 23:59:59 AoE",
-      "conference_date": "September 22-26, 2025",
-      "location": "Toulouse, France",
-      "website": "https://esorics2025.sciencesconf.org/",
-      "year": "2025",
-      "comment": "Second Submission deadline"
-    },
-    {
       "title": "NDSS",
       "description": "Network and Distributed System Security (NDSS) Symposium",
       "rank": "A",
@@ -2940,6 +2916,30 @@
       "website": "https://fmcad.forsyte.at/FMCAD25/",
       "year": "2025",
       "comment": ""
+    },
+    {
+      "title": "ISSRE",
+      "description": "International Symposium on Software Reliability Engineering",
+      "rank": "B",
+      "category": "SE",
+      "submission_deadline": "2025-04-28 23:59:59 AoE",
+      "conference_date": "October 21st-24th, 2025",
+      "location": "São Paulo, Brazil",
+      "website": "https://issre.github.io/2025/index.html",
+      "year": "2025",
+      "comment": "Abstract submission - Research Track"
+    },
+    {
+      "title": "ESORICS",
+      "description": "European Symposium on Research in Computer Security",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-04-29 23:59:59 AoE",
+      "conference_date": "September 22-26, 2025",
+      "location": "Toulouse, France",
+      "website": "https://esorics2025.sciencesconf.org/",
+      "year": "2025",
+      "comment": "Second Submission deadline"
     },
     {
       "title": "CoRL",
@@ -3060,6 +3060,18 @@
       "website": "https://www.ieeesmc2025.org/",
       "year": "2025",
       "comment": ""
+    },
+    {
+      "title": "ISSRE",
+      "description": "International Symposium on Software Reliability Engineering",
+      "rank": "B",
+      "category": "SE",
+      "submission_deadline": "2025-05-05 23:59:59 AoE",
+      "conference_date": "October 21st-24th, 2025",
+      "location": "São Paulo, Brazil",
+      "website": "https://issre.github.io/2025/index.html",
+      "year": "2025",
+      "comment": "Paper submission - Research Track"
     },
     {
       "title": "ECAI",
