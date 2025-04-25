@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-24T01:02:22.971468",
+  "last_updated": "2025-04-25T01:01:30.786282",
   "conferences": [
     {
       "title": "PODC",
@@ -134,18 +134,6 @@
       "comment": "Posters with Extended Abstract Track"
     },
     {
-      "title": "FM",
-      "description": "International Symposium on Formal Methods",
-      "rank": "A",
-      "category": "SE",
-      "submission_deadline": "2024-04-15 23:59:00 AoE",
-      "conference_date": "September 09-13, 2024",
-      "location": "Milan, Italy",
-      "website": "https://www.fm24.polimi.it/",
-      "year": "2024",
-      "comment": "Abstract Submission"
-    },
-    {
       "title": "PPSN",
       "description": "International Conference on Parallel Problem Solving From Nature",
       "rank": "B",
@@ -156,30 +144,6 @@
       "website": "https://ppsn2024.fh-ooe.at/",
       "year": "2024",
       "comment": ""
-    },
-    {
-      "title": "FM",
-      "description": "International Symposium on Formal Methods",
-      "rank": "A",
-      "category": "SE",
-      "submission_deadline": "2024-04-19 23:59:00 AoE",
-      "conference_date": "September 09-13, 2024",
-      "location": "Milan, Italy",
-      "website": "https://www.fm24.polimi.it/",
-      "year": "2024",
-      "comment": "Full Paper Submission"
-    },
-    {
-      "title": "APSys",
-      "description": "ACM SIGOPS Asia-Pacific Workshop on Systems",
-      "rank": "N",
-      "category": "DS",
-      "submission_deadline": "2024-05-02 23:59:00 AoE",
-      "conference_date": "September 4-5, 2024",
-      "location": "Kyoto, Japan",
-      "website": "https://apsys2024.github.io/",
-      "year": "2024",
-      "comment": "call for papers"
     },
     {
       "title": "ICWSM",
@@ -242,18 +206,6 @@
       "comment": "ToSC, Volume 2024, Issue 3 Submission deadline"
     },
     {
-      "title": "FM",
-      "description": "International Symposium on Formal Methods",
-      "rank": "A",
-      "category": "SE",
-      "submission_deadline": "2024-06-10 23:59:00 AoE",
-      "conference_date": "September 09-13, 2024",
-      "location": "Milan, Italy",
-      "website": "https://www.fm24.polimi.it/",
-      "year": "2024",
-      "comment": "Paper Notification"
-    },
-    {
       "title": "ASPLOS",
       "description": "International Conference on Architectural Support for Programming Languages and Operating Systems",
       "rank": "A",
@@ -266,18 +218,6 @@
       "comment": "Summer Submission Deadline"
     },
     {
-      "title": "FM",
-      "description": "International Symposium on Formal Methods",
-      "rank": "A",
-      "category": "SE",
-      "submission_deadline": "2024-07-01 23:59:00 AoE",
-      "conference_date": "September 09-13, 2024",
-      "location": "Milan, Italy",
-      "website": "https://www.fm24.polimi.it/",
-      "year": "2024",
-      "comment": "Final Version"
-    },
-    {
       "title": "ACCV",
       "description": "Asian Conference on Computer Vision",
       "rank": "C",
@@ -286,18 +226,6 @@
       "conference_date": "December 8-12, 2024",
       "location": "Hanoi, Vietnam",
       "website": "https://accv2024.org/",
-      "year": "2024",
-      "comment": ""
-    },
-    {
-      "title": "ACML",
-      "description": "Asian Conference on Machine Learning",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2024-07-03 23:59:59 UTC-12",
-      "conference_date": "December 5-7, 2024",
-      "location": "Hanoi, Vietnam",
-      "website": "https://www.acml-conf.org/2024/index.html",
       "year": "2024",
       "comment": ""
     },
@@ -514,18 +442,6 @@
       "conference_date": "Mar 1-5, 2025",
       "location": "Las Vegas, Nevada, USA",
       "website": "https://ppopp25.sigplan.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "MMM",
-      "description": "International Conference on Multimedia Modeling",
-      "rank": "C",
-      "category": "CG",
-      "submission_deadline": "2024-08-19 23:59:59 AoE",
-      "conference_date": "January 7-10, 2025",
-      "location": "Nara, Japan",
-      "website": "https://mmm2025.net/",
       "year": "2025",
       "comment": ""
     },
@@ -1939,7 +1855,7 @@
       "rank": "A",
       "category": "SC",
       "submission_deadline": "2025-02-13 23:59:59 UTC-12",
-      "conference_date": "August 17-21, 2024",
+      "conference_date": "August 17-21, 2025",
       "location": "Santa Barbara, USA",
       "website": "https://crypto.iacr.org/2025/",
       "year": "2025",
@@ -2254,6 +2170,18 @@
       "conference_date": "October 19-25, 2025",
       "location": "Honolulu, Hawaii",
       "website": "https://iccv.thecvf.com/Conferences/2025",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "Cloud",
+      "description": "IEEE International Conference on Cloud Computing",
+      "rank": "C",
+      "category": "MX",
+      "submission_deadline": "2025-03-10 23:00:00 AoE",
+      "conference_date": "July 7-12, 2025",
+      "location": "Helsinki, Finland",
+      "website": "https://services.conferences.computer.org/2025/cloud/",
       "year": "2025",
       "comment": ""
     },
@@ -2774,6 +2702,18 @@
       "comment": ""
     },
     {
+      "title": "Hot Chips",
+      "description": "Hot Chips: A Symposium on High Performance Chips",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-04-16 23:59:59 AoE",
+      "conference_date": "August 24-26, 2025",
+      "location": "Memorial Auditorium, Stanford, Palo Alto, CA",
+      "website": "https://www.hotchips.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "SOSP",
       "description": "ACM Symposium on Operating Systems Principles",
       "rank": "A",
@@ -2894,6 +2834,18 @@
       "comment": "Abstract Submission"
     },
     {
+      "title": "ESEM",
+      "description": "International Symposium on Empirical Software Engineering and Measurement",
+      "rank": "B",
+      "category": "SE",
+      "submission_deadline": "2025-04-25 23:59:59 AoE",
+      "conference_date": "September 29 - October 3, 2025",
+      "location": "Honolulu, Hawai, USA",
+      "website": "https://conf.researchr.org/home/esem-2025",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "ICMI",
       "description": "ACM International Conference on Multimodal Interaction",
       "rank": "C",
@@ -2990,7 +2942,7 @@
       "comment": ""
     },
     {
-      "title": "CollaborateCom2025",
+      "title": "CollaborateCom",
       "description": "International Conference on Collaborative Computing: Networking, Applications and Worksharing",
       "rank": "C",
       "category": "HI",
@@ -3326,6 +3278,18 @@
       "comment": ""
     },
     {
+      "title": "ACML",
+      "description": "Asian Conference on Machine Learning",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-05-30 23:59:59 AoE",
+      "conference_date": "December 9-12, 2025",
+      "location": "Taipei, Taiwan",
+      "website": "https://www.acml-conf.org/2025/",
+      "year": "2025",
+      "comment": "Journal Track"
+    },
+    {
       "title": "ICDF2C",
       "description": "International Conference on Digital Forensics & Cyber Crime",
       "rank": "C",
@@ -3395,6 +3359,18 @@
       "location": "Tampere, Finland",
       "website": "https://edbticdt2026.github.io/",
       "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "APSys",
+      "description": "ACM SIGOPS Asia-Pacific Workshop on Systems",
+      "rank": "N",
+      "category": "DS",
+      "submission_deadline": "2025-06-05 23:59:00 AoE",
+      "conference_date": "October 12-13, 2025",
+      "location": "Seoul, South Korea",
+      "website": "https://apsys2025.github.io/",
+      "year": "2025",
       "comment": ""
     },
     {
@@ -3506,6 +3482,18 @@
       "comment": ""
     },
     {
+      "title": "ACML",
+      "description": "Asian Conference on Machine Learning",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-06-16 23:59:59 AoE",
+      "conference_date": "December 9-12, 2025",
+      "location": "Taipei, Taiwan",
+      "website": "https://www.acml-conf.org/2025/",
+      "year": "2025",
+      "comment": "Conference Track"
+    },
+    {
       "title": "IISWC",
       "description": "IEEE International Symposium on Workload Characterization",
       "rank": "N",
@@ -3516,6 +3504,18 @@
       "website": "https://iiswc.org/iiswc2025/",
       "year": "2025",
       "comment": "Submissions Due: 2025-06-21"
+    },
+    {
+      "title": "ICA3PP",
+      "description": "International Conference on Algorithms and Architectures for Parallel Processing",
+      "rank": "C",
+      "category": "DS",
+      "submission_deadline": "2025-06-30 23:59:00 UTC-8",
+      "conference_date": "October 30- November 2, 2025",
+      "location": "Zhengzhou, Henan, China",
+      "website": "https://ieee-cybermatics.org/2025/ica3pp/",
+      "year": "2025",
+      "comment": "Paper Submission Due"
     },
     {
       "title": "VLDB",
@@ -3578,6 +3578,18 @@
       "comment": "Second Cycle: Submission"
     },
     {
+      "title": "TrustCom",
+      "description": "IEEE International Conference on Trust, Security and Privacy in Computing and Communications",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-08-01 23:59:59 UTC+8",
+      "conference_date": "November 14 - 17, 2025",
+      "location": "Guiyang, China",
+      "website": "https://ieee-aiplus-2025.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "VLDB",
       "description": "International Conference on Very Large Data Bases",
       "rank": "A",
@@ -3636,6 +3648,18 @@
       "website": "https://www.ndss-symposium.org/ndss2026/",
       "year": "2026",
       "comment": "Fall"
+    },
+    {
+      "title": "MMM",
+      "description": "International Conference on Multimedia Modeling",
+      "rank": "C",
+      "category": "CG",
+      "submission_deadline": "2025-08-19 23:59:59 AoE",
+      "conference_date": "January 29-31, 2026",
+      "location": "Prague, Czech Republic",
+      "website": "https://mmm2026.cz/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "VLDB",
@@ -3790,6 +3814,18 @@
       "conference_date": "August 31 - September 4, 2026",
       "location": "Boston, MA, USA",
       "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "FM",
+      "description": "International Symposium on Formal Methods",
+      "rank": "A",
+      "category": "SE",
+      "submission_deadline": "2025-12-02 23:59:00 AoE",
+      "conference_date": "May 18-22, 2026",
+      "location": "Tokyo, Japan",
+      "website": "https://conf.researchr.org/home/fm-2026",
       "year": "2026",
       "comment": ""
     },
