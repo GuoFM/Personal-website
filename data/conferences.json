@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-29T01:01:08.582013",
+  "last_updated": "2025-04-30T01:02:17.493626",
   "conferences": [
     {
       "title": "PODC",
@@ -216,6 +216,18 @@
       "website": "https://www.asplos-conference.org/asplos-2025-call-for-papers/",
       "year": "2025",
       "comment": "Summer Submission Deadline"
+    },
+    {
+      "title": "CoNEXT",
+      "description": "International Conference on Emerging Networking Experiments and Technologies",
+      "rank": "B",
+      "category": "NW",
+      "submission_deadline": "2024-06-27 23:59:59 AoE",
+      "conference_date": "TBD",
+      "location": "TBD",
+      "website": "https://conferences.sigcomm.org/co-next/2025/#!/home",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "ACCV",
@@ -516,18 +528,6 @@
       "website": "https://wacv2025.thecvf.com/",
       "year": "2025",
       "comment": "second round"
-    },
-    {
-      "title": "ESEC/FSE",
-      "description": "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering",
-      "rank": "A",
-      "category": "SE",
-      "submission_deadline": "2024-09-12 23:59:59 AoE",
-      "conference_date": "June 23-27, 2025",
-      "location": "Trondheim, Norway",
-      "website": "https://conf.researchr.org/home/fse-2025",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "NOMS",
@@ -1248,18 +1248,6 @@
       "website": "https://dsn2025.github.io/",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "CoNEXT",
-      "description": "ACM International Conference on Emerging Networking Experiments and Technologies",
-      "rank": "B",
-      "category": "NW",
-      "submission_deadline": "2024-12-05 23:59:59 AoE",
-      "conference_date": "Dec 1-4, 2025",
-      "location": "HKUST, Hong Kong",
-      "website": "https://conferences.sigcomm.org/co-next/2025/#!/home",
-      "year": "2025",
-      "comment": "Winter submission"
     },
     {
       "title": "DIMVA",
@@ -2786,18 +2774,6 @@
       "comment": ""
     },
     {
-      "title": "CLUSTER",
-      "description": "IEEE International Conference on Cluster Computing",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2025-04-25 23:59:59 AoE",
-      "conference_date": "September 2-5, 2025",
-      "location": "Edinburgh, United Kingdom",
-      "website": "https://clustercomp.org/2025",
-      "year": "2025",
-      "comment": "Full Paper Deadline"
-    },
-    {
       "title": "SRDS",
       "description": "IEEE International Symposium on Reliable Distributed Systems",
       "rank": "B",
@@ -2928,6 +2904,18 @@
       "website": "https://www.ubicomp.org/ubicomp-iswc-2025",
       "year": "2025",
       "comment": "second round"
+    },
+    {
+      "title": "CLUSTER",
+      "description": "IEEE International Conference on Cluster Computing",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-05-02 23:59:59 AoE",
+      "conference_date": "September 2-5, 2025",
+      "location": "Edinburgh, United Kingdom",
+      "website": "https://clustercomp.org/2025",
+      "year": "2025",
+      "comment": "Full Paper Deadline"
     },
     {
       "title": "SRDS",
@@ -3670,6 +3658,18 @@
       "conference_date": "March 24-27, 2026",
       "location": "Tampere, Finland",
       "website": "https://edbticdt2026.github.io/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ESEC/FSE",
+      "description": "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering",
+      "rank": "A",
+      "category": "SE",
+      "submission_deadline": "2025-09-11 23:59:59 AoE",
+      "conference_date": "July 6-10, 2026",
+      "location": "Montréal, Canada",
+      "website": "https://conf.researchr.org/home/fse-2026",
       "year": "2026",
       "comment": ""
     },
