@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-04-30T01:02:17.493626",
+  "last_updated": "2025-05-01T01:07:54.309015",
   "conferences": [
     {
       "title": "PODC",
@@ -48,18 +48,6 @@
       "website": "https://www.iccbr2024.org/",
       "year": "2024",
       "comment": "Early Submission"
-    },
-    {
-      "title": "ASPLOS",
-      "description": "International Conference on Architectural Support for Programming Languages and Operating Systems",
-      "rank": "A",
-      "category": "DS",
-      "submission_deadline": "2024-03-01 23:59:59 AoE",
-      "conference_date": "March-April, 2025",
-      "location": "Rotterdam, Netherland.",
-      "website": "https://www.asplos-conference.org/asplos-2025-call-for-papers/",
-      "year": "2025",
-      "comment": "Spring Submission Deadline"
     },
     {
       "title": "FSE",
@@ -206,18 +194,6 @@
       "comment": "ToSC, Volume 2024, Issue 3 Submission deadline"
     },
     {
-      "title": "ASPLOS",
-      "description": "International Conference on Architectural Support for Programming Languages and Operating Systems",
-      "rank": "A",
-      "category": "DS",
-      "submission_deadline": "2024-06-24 23:59:59 AoE",
-      "conference_date": "March-April, 2025",
-      "location": "Rotterdam, Netherland.",
-      "website": "https://www.asplos-conference.org/asplos-2025-call-for-papers/",
-      "year": "2025",
-      "comment": "Summer Submission Deadline"
-    },
-    {
       "title": "CoNEXT",
       "description": "International Conference on Emerging Networking Experiments and Technologies",
       "rank": "B",
@@ -264,18 +240,6 @@
       "website": "https://www.siam.org/conferences/cm/conference/soda25",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "POPL",
-      "description": "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
-      "rank": "A",
-      "category": "SE",
-      "submission_deadline": "2024-07-11 23:59:59 AoE",
-      "conference_date": "January 19-25, 2025",
-      "location": "Denver, Colorado, United States",
-      "website": "https://conf.researchr.org/home/POPL-2025",
-      "year": "2025",
-      "comment": "Submission Deadline"
     },
     {
       "title": "ASP-DAC",
@@ -936,18 +900,6 @@
       "website": "https://aamas2025.org/",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "ASPLOS",
-      "description": "International Conference on Architectural Support for Programming Languages and Operating Systems",
-      "rank": "A",
-      "category": "DS",
-      "submission_deadline": "2024-10-18 23:59:59 AoE",
-      "conference_date": "March-April, 2025",
-      "location": "Rotterdam, Netherland.",
-      "website": "https://www.asplos-conference.org/asplos-2025-call-for-papers/",
-      "year": "2025",
-      "comment": "Fall Submission Deadline"
     },
     {
       "title": "EuroS&P",
@@ -2148,6 +2100,18 @@
       "website": "https://services.conferences.computer.org/2025/cloud/",
       "year": "2025",
       "comment": ""
+    },
+    {
+      "title": "ASPLOS",
+      "description": "International Conference on Architectural Support for Programming Languages and Operating Systems",
+      "rank": "A",
+      "category": "DS",
+      "submission_deadline": "2025-03-12 23:59:59 UTC-4",
+      "conference_date": "March 30-April 3, 2026",
+      "location": "Pittsburgh, PA, USA",
+      "website": "https://www.asplos-conference.org/asplos2026/cfp/",
+      "year": "2026",
+      "comment": "Spring Submission Deadline"
     },
     {
       "title": "WiSec",
@@ -3530,6 +3494,18 @@
       "comment": ""
     },
     {
+      "title": "POPL",
+      "description": "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+      "rank": "A",
+      "category": "SE",
+      "submission_deadline": "2025-07-10 23:59:59 AoE",
+      "conference_date": "January 11-17, 2026",
+      "location": "Rennes, France",
+      "website": "https://popl26.sigplan.org/",
+      "year": "2026",
+      "comment": "Submission Deadline"
+    },
+    {
       "title": "SIGMOD",
       "description": "ACM Conference on Management of Data",
       "rank": "A",
@@ -3636,6 +3612,18 @@
       "website": "https://mmm2026.cz/",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "ASPLOS",
+      "description": "International Conference on Architectural Support for Programming Languages and Operating Systems",
+      "rank": "A",
+      "category": "DS",
+      "submission_deadline": "2025-08-20 23:59:59 UTC-4",
+      "conference_date": "March 30-April 3, 2026",
+      "location": "Pittsburgh, PA, USA",
+      "website": "https://www.asplos-conference.org/asplos2026/cfp/",
+      "year": "2026",
+      "comment": "Summer Submission Deadline"
     },
     {
       "title": "VLDB",
