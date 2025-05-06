@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-05T01:05:06.956469",
+  "last_updated": "2025-05-06T01:02:39.154935",
   "conferences": [
     {
       "title": "PODC",
@@ -1622,6 +1622,18 @@
       "comment": ""
     },
     {
+      "title": "EASE",
+      "description": "International Conference on Evaluation and Assessment in Software Engineering",
+      "rank": "C",
+      "category": "SE",
+      "submission_deadline": "2025-01-31 23:59:59 AoE",
+      "conference_date": "June 17 - 20, 2025",
+      "location": "Istanbul, Turkey",
+      "website": "https://conf.researchr.org/home/ease-2025",
+      "year": "2025",
+      "comment": "Research Papers"
+    },
+    {
       "title": "CAV",
       "description": "International Conference on Computer-Aided Verification",
       "rank": "A",
@@ -2234,6 +2246,18 @@
       "comment": ""
     },
     {
+      "title": "ITS",
+      "description": "ACM International Conference on Interactive Tabletops and Surfaces",
+      "rank": "B",
+      "category": "HI",
+      "submission_deadline": "2025-03-14 23:59:59 AoE",
+      "conference_date": "TBD",
+      "location": "TBD",
+      "website": "https://iss.acm.org/2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "SPM",
       "description": "Symposium on Solid and Physical Modeling",
       "rank": "B",
@@ -2255,7 +2279,7 @@
       "location": "Istanbul, Turkey",
       "website": "https://conf.researchr.org/home/ease-2025",
       "year": "2025",
-      "comment": ""
+      "comment": "Short Papers, Emerging Results"
     },
     {
       "title": "GLSVLSI",
@@ -3278,6 +3302,18 @@
       "comment": ""
     },
     {
+      "title": "IEEE/ACM CGO",
+      "description": "The International Symposium on Code Generation and Optimization",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-05-29 23:59:59 AoE",
+      "conference_date": "TBD",
+      "location": "Sydney, Australia",
+      "website": "https://conf.researchr.org/home/cgo-2026",
+      "year": "2026",
+      "comment": "First Submission"
+    },
+    {
       "title": "ACSAC",
       "description": "Annual Computer Security Applications Conference",
       "rank": "B",
@@ -3830,8 +3866,8 @@
       "comment": "Second Submission"
     },
     {
-      "title": "ESEC/FSE",
-      "description": "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering",
+      "title": "FSE",
+      "description": "ACM International Conference on the Foundations of Software Engineering",
       "rank": "A",
       "category": "SE",
       "submission_deadline": "2025-09-11 23:59:59 AoE",
