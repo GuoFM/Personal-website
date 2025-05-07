@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-06T01:02:39.154935",
+  "last_updated": "2025-05-07T01:02:34.504687",
   "conferences": [
     {
       "title": "PODC",
@@ -3626,18 +3626,6 @@
       "comment": ""
     },
     {
-      "title": "PDCAT",
-      "description": "26th International Conference on Parallel and Distributed Computing, Applications and Technologies",
-      "rank": "N",
-      "category": "DS",
-      "submission_deadline": "2025-07-06 23:59:00 UTC+10",
-      "conference_date": "November 14-November 16, 2025",
-      "location": "Gold Coast, Australia",
-      "website": "https://www.pd-cat.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "AAAI",
       "description": "AAAI Conference on Artificial Intelligence",
       "rank": "A",
@@ -3706,6 +3694,18 @@
       "conference_date": "TBD",
       "location": "TBD",
       "website": "https://iss.acm.org/2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "PDCAT",
+      "description": "International Conference on Parallel and Distributed Computing, Applications and Technologies",
+      "rank": "N",
+      "category": "DS",
+      "submission_deadline": "2025-08-01 23:59:00 UTC+10",
+      "conference_date": "November 22-November 24, 2025",
+      "location": "Gold Coast, Australia",
+      "website": "https://www.pd-cat.org/",
       "year": "2025",
       "comment": ""
     },
