@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-10T01:00:07.919040",
+  "last_updated": "2025-05-11T01:06:35.062492",
   "conferences": [
     {
       "title": "PODC",
@@ -3638,18 +3638,6 @@
       "comment": ""
     },
     {
-      "title": "AAAI",
-      "description": "AAAI Conference on Artificial Intelligence",
-      "rank": "A",
-      "category": "AI",
-      "submission_deadline": "2025-07-12 23:59:59 UTC-12",
-      "conference_date": "January 20 - 27, 2026",
-      "location": "Singapore EXPO",
-      "website": "https://aaai.org/conference/aaai/aaai-26/",
-      "year": "2026",
-      "comment": ""
-    },
-    {
       "title": "APSEC",
       "description": "Asia-Pacific Software Engineering Conference",
       "rank": "C",
@@ -3742,6 +3730,18 @@
       "conference_date": "August 31 - September 4, 2026",
       "location": "Boston, MA, USA",
       "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "AAAI",
+      "description": "AAAI Conference on Artificial Intelligence",
+      "rank": "A",
+      "category": "AI",
+      "submission_deadline": "2025-08-01 23:59:59 UTC-12",
+      "conference_date": "January 20 - 27, 2026",
+      "location": "Singapore EXPO",
+      "website": "https://aaai.org/conference/aaai/aaai-26/",
       "year": "2026",
       "comment": ""
     },
