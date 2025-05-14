@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-13T01:04:26.668952",
+  "last_updated": "2025-05-14T01:02:41.187285",
   "conferences": [
     {
       "title": "PODC",
@@ -3470,18 +3470,6 @@
       "comment": ""
     },
     {
-      "title": "ICDE",
-      "description": "IEEE International Conference on Data Engineering",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2025-06-11 23:59:59 AoE",
-      "conference_date": "May 4-8, 2026",
-      "location": "Montréal, Canada",
-      "website": "https://icde2026.github.io/",
-      "year": "2026",
-      "comment": "first round"
-    },
-    {
       "title": "ICFP",
       "description": "International Conference on Function Programming",
       "rank": "B",
@@ -3564,6 +3552,18 @@
       "website": "https://www.acml-conf.org/2025/",
       "year": "2025",
       "comment": "Conference Track"
+    },
+    {
+      "title": "ICDE",
+      "description": "IEEE International Conference on Data Engineering",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2025-06-18 23:59:59 AoE",
+      "conference_date": "May 4-8, 2026",
+      "location": "Montréal, Canada",
+      "website": "https://icde2026.github.io/",
+      "year": "2026",
+      "comment": "first round"
     },
     {
       "title": "IISWC",
