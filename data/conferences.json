@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-15T01:00:52.612590",
+  "last_updated": "2025-05-16T01:03:44.756986",
   "conferences": [
     {
       "title": "PODC",
@@ -3684,6 +3684,18 @@
       "website": "https://iss.acm.org/2025/",
       "year": "2025",
       "comment": ""
+    },
+    {
+      "title": "IJCNLP",
+      "description": "International Joint Conference on Natural Language Processing",
+      "rank": "N",
+      "category": "AI",
+      "submission_deadline": "2025-07-28 23:59:59 UTC-12",
+      "conference_date": "Dec 20-24, 2025",
+      "location": "Mumbai, India",
+      "website": "https://www.afnlp.org/conferences/ijcnlp2025/",
+      "year": "2025",
+      "comment": "ACL Rolling Review"
     },
     {
       "title": "PDCAT",
