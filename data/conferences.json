@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-26T01:05:07.531948",
+  "last_updated": "2025-05-27T01:02:39.687302",
   "conferences": [
     {
       "title": "PODC",
@@ -206,18 +206,6 @@
       "comment": "Schedule for TCHES Volume 2025/1"
     },
     {
-      "title": "WACV",
-      "description": "IEEE/CVF Winter Conference on Applications of Computer Vision",
-      "rank": "N",
-      "category": "AI",
-      "submission_deadline": "2024-07-15 23:59:59 UTC-7",
-      "conference_date": "February 28 - March 4, 2025",
-      "location": "Tucson, Arizona, USA",
-      "website": "https://wacv2025.thecvf.com/",
-      "year": "2025",
-      "comment": "first round"
-    },
-    {
       "title": "MSN",
       "description": "International Conference on Mobility, Sensing and Networking",
       "rank": "C",
@@ -360,18 +348,6 @@
       "website": "http://acns2025.fordaysec.de/",
       "year": "2025",
       "comment": "First submission deadline"
-    },
-    {
-      "title": "WACV",
-      "description": "IEEE/CVF Winter Conference on Applications of Computer Vision",
-      "rank": "N",
-      "category": "AI",
-      "submission_deadline": "2024-09-09 23:59:59 UTC-7",
-      "conference_date": "February 28 - March 4, 2025",
-      "location": "Tucson, Arizona, USA",
-      "website": "https://wacv2025.thecvf.com/",
-      "year": "2025",
-      "comment": "second round"
     },
     {
       "title": "NOMS",
@@ -898,18 +874,6 @@
       "conference_date": "April 28-29, 2025",
       "location": "Ottawa, Canada",
       "website": "https://2025.msrconf.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "SenSys",
-      "description": "ACM Conference on Embedded Networked Sensor Systems",
-      "rank": "B",
-      "category": "NW",
-      "submission_deadline": "2024-11-14 23:59:59 AoE",
-      "conference_date": "May 6-9, 2025",
-      "location": "Irvine, USA",
-      "website": "https://sensys.acm.org/2025/",
       "year": "2025",
       "comment": ""
     },
@@ -3578,6 +3542,18 @@
       "comment": "Paper Submission Due"
     },
     {
+      "title": "SenSys",
+      "description": "ACM Conference on Embedded Networked Sensor Systems",
+      "rank": "B",
+      "category": "NW",
+      "submission_deadline": "2025-07-01 23:59:00 AoE",
+      "conference_date": "May 11-14, 2026",
+      "location": "Saint-Malo, France",
+      "website": "https://sensys.acm.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "VLDB",
       "description": "International Conference on Very Large Data Bases",
       "rank": "A",
@@ -3672,6 +3648,18 @@
       "website": "https://conf.researchr.org/home/icse-2026",
       "year": "2026",
       "comment": "Second Cycle: Submission"
+    },
+    {
+      "title": "WACV",
+      "description": "IEEE/CVF Winter Conference on Applications of Computer Vision",
+      "rank": "N",
+      "category": "AI",
+      "submission_deadline": "2025-07-18 23:59:59 AoE",
+      "conference_date": "Mar 6 - 10, 2026",
+      "location": "Tucson, Arizona, USA",
+      "website": "https://wacv.thecvf.com/",
+      "year": "2026",
+      "comment": "First round"
     },
     {
       "title": "ISS",
@@ -3984,6 +3972,18 @@
       "website": "https://www.usenix.org/conference/nsdi26",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "WACV",
+      "description": "IEEE/CVF Winter Conference on Applications of Computer Vision",
+      "rank": "N",
+      "category": "AI",
+      "submission_deadline": "2025-09-19 23:59:59 AoE",
+      "conference_date": "Mar 6 - 10, 2026",
+      "location": "Tucson, Arizona, USA",
+      "website": "https://wacv.thecvf.com/",
+      "year": "2026",
+      "comment": "Second round"
     },
     {
       "title": "EuroSys",
