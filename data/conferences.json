@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-28T01:03:40.190965",
+  "last_updated": "2025-05-29T01:03:59.666238",
   "conferences": [
     {
       "title": "PODC",
@@ -542,18 +542,6 @@
       "comment": ""
     },
     {
-      "title": "PerCom",
-      "description": "IEEE International Conference on Pervasive Computing and Communications",
-      "rank": "B",
-      "category": "HI",
-      "submission_deadline": "2024-10-04 23:59:00 AoE",
-      "conference_date": "March 17 - 21, 2025",
-      "location": "Walter E. Washington Convention Center, Washington DC, USA",
-      "website": "https://percom.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "FPGA",
       "description": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
       "rank": "B",
@@ -672,18 +660,6 @@
       "website": "https://conf.researchr.org/home/saner-2025",
       "year": "2025",
       "comment": "Research Papers Paper Submission"
-    },
-    {
-      "title": "CVM",
-      "description": "The international conference on Computational Visual Media",
-      "rank": "C",
-      "category": "CG",
-      "submission_deadline": "2024-10-12 23:59:59 UTC+0",
-      "conference_date": "April 19-21, 2025",
-      "location": "Hong Kong, China",
-      "website": "http://iccvm.org/2025/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "ISCAS",
@@ -3986,6 +3962,18 @@
       "comment": "Second round"
     },
     {
+      "title": "PerCom",
+      "description": "IEEE International Conference on Pervasive Computing and Communications",
+      "rank": "B",
+      "category": "HI",
+      "submission_deadline": "2025-09-19 23:59:00 AoE",
+      "conference_date": "March 16 - 20, 2026",
+      "location": "Pisa, Italy",
+      "website": "https://percom.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "EuroSys",
       "description": "European Conference on Computer Systems",
       "rank": "A",
@@ -4018,6 +4006,18 @@
       "conference_date": "March 24-27, 2026",
       "location": "Tampere, Finland",
       "website": "https://edbticdt2026.github.io/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "CVM",
+      "description": "The international conference on Computational Visual Media",
+      "rank": "C",
+      "category": "CG",
+      "submission_deadline": "2025-10-13 23:59:59 UTC+0",
+      "conference_date": "April 10-12, 2026",
+      "location": "Seoul, Korea",
+      "website": "http://iccvm.org/2026/",
       "year": "2026",
       "comment": ""
     },
