@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-29T01:03:59.666238",
+  "last_updated": "2025-05-30T01:02:52.952669",
   "conferences": [
     {
       "title": "PODC",
@@ -1571,18 +1571,6 @@
       "location": "Tampere, Finland",
       "website": "https://edbticdt2026.github.io/",
       "year": "2026",
-      "comment": ""
-    },
-    {
-      "title": "IJCNN",
-      "description": "International Joint Conference on Neural Networks",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2025-02-05 23:59:59 UTC-12",
-      "conference_date": "June 30 - July 5, 2025",
-      "location": "Rome, Italy",
-      "website": "https://2025.ijcnn.org/",
-      "year": "2025",
       "comment": ""
     },
     {
@@ -4114,6 +4102,18 @@
       "conference_date": "August 31 - September 4, 2026",
       "location": "Boston, MA, USA",
       "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "IJCNN",
+      "description": "International Joint Conference on Neural Networks",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2026-01-31 23:59:59 UTC-12",
+      "conference_date": "June 21 - 26, 2026",
+      "location": "Maastricht Exhibition & Congress Center, Maastricht, The Netherlands",
+      "website": "https://attend.ieee.org/wcci-2026/",
       "year": "2026",
       "comment": ""
     },
