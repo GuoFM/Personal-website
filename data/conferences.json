@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-05-31T01:02:22.476726",
+  "last_updated": "2025-06-01T01:16:04.101765",
   "conferences": [
     {
       "title": "PODC",
@@ -238,18 +238,6 @@
       "conference_date": "May 19-22, 2025",
       "location": "London, United Kindom",
       "website": "https://infocom2025.ieee-infocom.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "HPCA",
-      "description": "IEEE International Symposium on High-Performance Computer Architecture",
-      "rank": "A",
-      "category": "DS",
-      "submission_deadline": "2024-08-03 06:59:59 UTC",
-      "conference_date": "March 1-5, 2025",
-      "location": "Las Vegas, USA.",
-      "website": "https://hpca-conf.org/2025/",
       "year": "2025",
       "comment": ""
     },
@@ -770,18 +758,6 @@
       "comment": ""
     },
     {
-      "title": "MLSys",
-      "description": "Conference on Machine Learning and Systems",
-      "rank": "N",
-      "category": "MX",
-      "submission_deadline": "2024-10-24 20:00:00 AoE",
-      "conference_date": "May 13-16, 2025",
-      "location": "Santa Clara, USA",
-      "website": "https://mlsys.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "RECOMB",
       "description": "International Conference on Research inComputational Molecular Biology",
       "rank": "B",
@@ -1032,18 +1008,6 @@
       "website": "https://petsymposium.org/cfp25.php",
       "year": "2025",
       "comment": "Issue 3 Paper Submission Deadline"
-    },
-    {
-      "title": "PAKDD",
-      "description": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
-      "rank": "C",
-      "category": "DB",
-      "submission_deadline": "2024-11-30 23:59:59 UTC-8",
-      "conference_date": "June 10-13, 2025",
-      "location": "Sydney, Australia",
-      "website": "https://pakdd2025.org",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "CAiSE",
@@ -1740,18 +1704,6 @@
       "website": "https://uow-ic2.github.io/acisp2025/",
       "year": "2025",
       "comment": "2nd round Deadline"
-    },
-    {
-      "title": "InterSpeech",
-      "description": "Conference of the International Speech Communication Association",
-      "rank": "C",
-      "category": "CG",
-      "submission_deadline": "2025-02-19 23:59:59 UTC+0",
-      "conference_date": "August 17-22, 2025",
-      "location": "Rotterdam, Netherlands",
-      "website": "https://www.interspeech2025.org/home",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "TASE",
@@ -3650,6 +3602,18 @@
       "comment": "ACL Rolling Review"
     },
     {
+      "title": "HPCA",
+      "description": "IEEE International Symposium on High-Performance Computer Architecture",
+      "rank": "A",
+      "category": "DS",
+      "submission_deadline": "2025-08-01 23:59:59 UTC",
+      "conference_date": "Feb 25-Mar 1, 2026",
+      "location": "Sydney, NSW, Australia",
+      "website": "https://hpca-conf.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "PDCAT",
       "description": "International Conference on Parallel and Distributed Computing, Applications and Technologies",
       "rank": "N",
@@ -4150,6 +4114,18 @@
       "conference_date": "August 31 - September 4, 2026",
       "location": "Boston, MA, USA",
       "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "InterSpeech",
+      "description": "Conference of the International Speech Communication Association",
+      "rank": "C",
+      "category": "CG",
+      "submission_deadline": "2026-03-02 23:59:59 UTC+0",
+      "conference_date": "September 27 - October 1, 2026",
+      "location": "Sydney, Australia",
+      "website": "https://interspeech2026.org/",
       "year": "2026",
       "comment": ""
     },
