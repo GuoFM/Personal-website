@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-01T01:16:04.101765",
+  "last_updated": "2025-06-02T01:06:31.999802",
   "conferences": [
     {
       "title": "PODC",
@@ -384,18 +384,6 @@
       "website": "https://ieeevr.org/2025/",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "AsiaCCS",
-      "description": "Asia Conference on Computer and Communications Security",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-09-20 23:59:59 AoE",
-      "conference_date": "August 25-29, 2025",
-      "location": "Hanoi, Vietnam",
-      "website": "https://asiaccs2025.hust.edu.vn/",
-      "year": "2025",
-      "comment": "1st round Deadline"
     },
     {
       "title": "DATE",
@@ -1272,18 +1260,6 @@
       "website": "https://2026.sigmod.org/",
       "year": "2026",
       "comment": "round 1"
-    },
-    {
-      "title": "AsiaCCS",
-      "description": "Asia Conference on Computer and Communications Security",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2025-01-20 23:59:59 AoE",
-      "conference_date": "August 25-29, 2025",
-      "location": "Hanoi, Vietnam",
-      "website": "https://asiaccs2025.hust.edu.vn/",
-      "year": "2025",
-      "comment": "2nd round Deadline"
     },
     {
       "title": "SEC",
@@ -3770,6 +3746,18 @@
       "comment": ""
     },
     {
+      "title": "AsiaCCS",
+      "description": "Asia Conference on Computer and Communications Security",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-08-25 23:59:59 AoE",
+      "conference_date": "June 1-6, 2026",
+      "location": "Bangalore, India",
+      "website": "https://asiaccs2026.cse.iitkgp.ac.in/",
+      "year": "2026",
+      "comment": "1st round Deadline"
+    },
+    {
       "title": "USENIX Security",
       "description": "USENIX Security Symposium",
       "rank": "A",
@@ -4056,6 +4044,18 @@
       "website": "https://conf.researchr.org/home/fm-2026",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "AsiaCCS",
+      "description": "Asia Conference on Computer and Communications Security",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-12-12 23:59:59 AoE",
+      "conference_date": "June 1-6, 2026",
+      "location": "Bangalore, India",
+      "website": "https://asiaccs2026.cse.iitkgp.ac.in/",
+      "year": "2026",
+      "comment": "2nd round Deadline"
     },
     {
       "title": "VLDB",
