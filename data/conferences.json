@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-06T01:04:06.602891",
+  "last_updated": "2025-06-07T01:03:28.343492",
   "conferences": [
     {
       "title": "PODC",
@@ -636,18 +636,6 @@
       "website": "https://conf.researchr.org/home/saner-2025",
       "year": "2025",
       "comment": "Research Papers Paper Submission"
-    },
-    {
-      "title": "ISCAS",
-      "description": "IEEE International Symposium on Circuits and Systems",
-      "rank": "C",
-      "category": "DS",
-      "submission_deadline": "2024-10-14 23:59:59 AoE",
-      "conference_date": "May 25-28, 2025",
-      "location": "London, UK",
-      "website": "https://2025.ieee-iscas.org/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "WWW",
@@ -1862,6 +1850,18 @@
       "comment": ""
     },
     {
+      "title": "COMPSAC",
+      "description": "International Computer Software and Applications Conference",
+      "rank": "C",
+      "category": "SE",
+      "submission_deadline": "2025-03-05 23:59:59 AoE",
+      "conference_date": "July 8-11, 2025",
+      "location": "Toronto, Canada",
+      "website": "https://ieeecompsac.computer.org/2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "ECOOP",
       "description": "European Conference on Object-Oriented Programming",
       "rank": "B",
@@ -2654,6 +2654,18 @@
       "comment": "Abstract Submission"
     },
     {
+      "title": "ATVA",
+      "description": "International Symposium on Automated Technology for Verification and Analysis",
+      "rank": "C",
+      "category": "SE",
+      "submission_deadline": "2025-04-25 23:59:59 AoE",
+      "conference_date": "October 27-31, 2025",
+      "location": "Bengaluru, India",
+      "website": "https://conf.researchr.org/home/atva-2025",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "ESEM",
       "description": "International Symposium on Empirical Software Engineering and Measurement",
       "rank": "B",
@@ -3302,6 +3314,18 @@
       "comment": ""
     },
     {
+      "title": "SCAM",
+      "description": "IEEE International Working Conference on Source Code Analysis and Manipulation",
+      "rank": "C",
+      "category": "SE",
+      "submission_deadline": "2025-06-09 23:59:59 AoE",
+      "conference_date": "September 7-12, 2025",
+      "location": "Auckland, New Zealand",
+      "website": "https://conf.researchr.org/home/scam-2025",
+      "year": "2025",
+      "comment": "co-located with ICSME 2025"
+    },
+    {
       "title": "ICFP",
       "description": "International Conference on Function Programming",
       "rank": "B",
@@ -3516,6 +3540,18 @@
       "website": "https://www.siam.org/conferences-events/siam-conferences/soda26/",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "GROUP",
+      "description": "ACM International Conference on Supporting Group Work",
+      "rank": "B",
+      "category": "HI",
+      "submission_deadline": "2025-07-15 23:59:59 AoE",
+      "conference_date": "TBD",
+      "location": "TBD",
+      "website": "https://group.acm.org/conferences/group27/",
+      "year": "2027",
+      "comment": "Full Paper First Wave Submissions"
     },
     {
       "title": "SIGMOD",
@@ -3946,6 +3982,18 @@
       "conference_date": "March 24-27, 2026",
       "location": "Tampere, Finland",
       "website": "https://edbticdt2026.github.io/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ISCAS",
+      "description": "IEEE International Symposium on Circuits and Systems",
+      "rank": "C",
+      "category": "DS",
+      "submission_deadline": "2025-10-12 23:59:59 AoE",
+      "conference_date": "May 24-27, 2026",
+      "location": "SHANGHAI, CHINA",
+      "website": "https://2026.ieee-iscas.org/",
       "year": "2026",
       "comment": ""
     },
