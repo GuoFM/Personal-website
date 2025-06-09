@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-08T01:10:39.140626",
+  "last_updated": "2025-06-09T01:08:25.846918",
   "conferences": [
     {
       "title": "PODC",
@@ -1634,18 +1634,6 @@
       "comment": ""
     },
     {
-      "title": "SETTA",
-      "description": "Symposium on Dependable Software Engineering: Theories, Tools and Applications",
-      "rank": "C",
-      "category": "CT",
-      "submission_deadline": "2025-02-16 23:59:59 AoE",
-      "conference_date": "Dec, 2025",
-      "location": "Oxford, UK",
-      "website": "https://www.setta2025.uk",
-      "year": "2025",
-      "comment": "Round 1(Winter) Paper Submission"
-    },
-    {
       "title": "CGI",
       "description": "Computer Graphics International",
       "rank": "C",
@@ -2714,6 +2702,18 @@
       "comment": "Second Submission deadline"
     },
     {
+      "title": "SETTA",
+      "description": "Symposium on Dependable Software Engineering: Theories, Tools and Applications",
+      "rank": "C",
+      "category": "CT",
+      "submission_deadline": "2025-04-30 23:59:59 AoE",
+      "conference_date": "Dec, 2025",
+      "location": "Oxford, UK",
+      "website": "https://www.setta2025.uk",
+      "year": "2025",
+      "comment": "Round 1 Paper Submission"
+    },
+    {
       "title": "CoRL",
       "description": "The Conference on Robot Learning",
       "rank": "N",
@@ -3362,18 +3362,6 @@
       "comment": "2nd Round"
     },
     {
-      "title": "SETTA",
-      "description": "Symposium on Dependable Software Engineering: Theories, Tools and Applications",
-      "rank": "C",
-      "category": "CT",
-      "submission_deadline": "2025-06-15 23:59:59 AoE",
-      "conference_date": "Dec, 2025",
-      "location": "Oxford, UK",
-      "website": "https://www.setta2025.uk",
-      "year": "2025",
-      "comment": "Round 2(Summer) Paper Submission"
-    },
-    {
       "title": "SCA",
       "description": "ACM SIGGRAPH/Eurographics Symposium on Computer Animation",
       "rank": "B",
@@ -3768,6 +3756,18 @@
       "website": "https://www.asplos-conference.org/asplos2026/cfp/",
       "year": "2026",
       "comment": "Summer Submission Deadline"
+    },
+    {
+      "title": "SETTA",
+      "description": "Symposium on Dependable Software Engineering: Theories, Tools and Applications",
+      "rank": "C",
+      "category": "CT",
+      "submission_deadline": "2025-08-20 23:59:59 AoE",
+      "conference_date": "Dec, 2025",
+      "location": "Oxford, UK",
+      "website": "https://www.setta2025.uk",
+      "year": "2025",
+      "comment": "Round 2 Paper Submission"
     },
     {
       "title": "ICVRV",
