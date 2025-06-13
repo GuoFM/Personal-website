@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-12T01:04:35.122895",
+  "last_updated": "2025-06-13T01:05:33.615422",
   "conferences": [
     {
       "title": "PODC",
@@ -3338,18 +3338,6 @@
       "comment": "Submission of revised papers"
     },
     {
-      "title": "PRICAI",
-      "description": "Pacific Rim International Conference on Artificial Intelligence",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2025-06-13 23:59:59 UTC-12",
-      "conference_date": "Nov 17-21, 2025",
-      "location": "Wellington, New Zealand",
-      "website": "https://www.pricai.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "INSCRYPT",
       "description": "International Conference on Information Security and Cryptology",
       "rank": "C",
@@ -3386,18 +3374,6 @@
       "comment": ""
     },
     {
-      "title": "ACML",
-      "description": "Asian Conference on Machine Learning",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2025-06-16 23:59:59 AoE",
-      "conference_date": "December 9-12, 2025",
-      "location": "Taipei, Taiwan",
-      "website": "https://www.acml-conf.org/2025/",
-      "year": "2025",
-      "comment": "Conference Track"
-    },
-    {
       "title": "ICDE",
       "description": "IEEE International Conference on Data Engineering",
       "rank": "A",
@@ -3420,6 +3396,30 @@
       "website": "https://iiswc.org/iiswc2025/",
       "year": "2025",
       "comment": "Submissions Due: 2025-06-21"
+    },
+    {
+      "title": "ACML",
+      "description": "Asian Conference on Machine Learning",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-06-26 23:59:59 AoE",
+      "conference_date": "December 9-12, 2025",
+      "location": "Taipei, Taiwan",
+      "website": "https://www.acml-conf.org/2025/",
+      "year": "2025",
+      "comment": "Conference Track"
+    },
+    {
+      "title": "PRICAI",
+      "description": "Pacific Rim International Conference on Artificial Intelligence",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-06-27 23:59:59 UTC-12",
+      "conference_date": "Nov 17-21, 2025",
+      "location": "Wellington, New Zealand",
+      "website": "https://www.pricai.org/2025/",
+      "year": "2025",
+      "comment": ""
     },
     {
       "title": "ICA3PP",
