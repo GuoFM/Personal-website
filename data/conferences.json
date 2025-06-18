@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-17T01:05:05.715989",
+  "last_updated": "2025-06-18T01:04:51.591954",
   "conferences": [
     {
       "title": "PODC",
@@ -3326,18 +3326,6 @@
       "comment": "Submission of revised papers"
     },
     {
-      "title": "INSCRYPT",
-      "description": "International Conference on Information Security and Cryptology",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2025-06-15 23:59:59 UTC-8",
-      "conference_date": "October 19-21, 2025",
-      "location": "Xi'an, China",
-      "website": "https://inscrypt2025.xidian.edu.cn/",
-      "year": "2025",
-      "comment": "2nd Round"
-    },
-    {
       "title": "SCA",
       "description": "ACM SIGGRAPH/Eurographics Symposium on Computer Animation",
       "rank": "B",
@@ -3432,6 +3420,18 @@
       "website": "https://ieee-cybermatics.org/2025/ica3pp/",
       "year": "2025",
       "comment": "Paper Submission Due"
+    },
+    {
+      "title": "INSCRYPT",
+      "description": "International Conference on Information Security and Cryptology",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-06-30 23:59:59 UTC-8",
+      "conference_date": "October 19-21, 2025",
+      "location": "Xi'an, China",
+      "website": "https://inscrypt2025.xidian.edu.cn/",
+      "year": "2025",
+      "comment": "2nd Round"
     },
     {
       "title": "PRCV",
