@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-19T01:05:34.710473",
+  "last_updated": "2025-06-20T01:05:04.966866",
   "conferences": [
     {
       "title": "PODC",
@@ -1582,18 +1582,6 @@
       "conference_date": "June 20-22, 2025",
       "location": "Trondheim, Norway",
       "website": "https://conf.researchr.org/home/internetware-2025",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "ACL",
-      "description": "Annual Meeting of the Association for Computational Linguistics",
-      "rank": "A",
-      "category": "AI",
-      "submission_deadline": "2025-02-15 23:59:59 UTC-12",
-      "conference_date": "July 27 - August 1, 2025",
-      "location": "Vienna, Austria",
-      "website": "https://2025.aclweb.org/",
       "year": "2025",
       "comment": ""
     },
@@ -3330,7 +3318,7 @@
       "description": "IEEE International Conference on Data Engineering",
       "rank": "A",
       "category": "DB",
-      "submission_deadline": "2025-06-18 17:59:59 UTC-7",
+      "submission_deadline": "2025-06-18 17:00:00 UTC-7",
       "conference_date": "May 4-8, 2026",
       "location": "Montréal, Canada",
       "website": "https://icde2026.github.io/",
@@ -4038,7 +4026,7 @@
       "description": "IEEE International Conference on Data Engineering",
       "rank": "A",
       "category": "DB",
-      "submission_deadline": "2025-10-27 17:59:59 UTC-7",
+      "submission_deadline": "2025-10-27 17:00:00 UTC-7",
       "conference_date": "May 4-8, 2026",
       "location": "Montréal, Canada",
       "website": "https://icde2026.github.io/",
