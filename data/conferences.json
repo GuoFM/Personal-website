@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-20T01:05:04.966866",
+  "last_updated": "2025-06-21T01:03:44.296705",
   "conferences": [
     {
       "title": "PODC",
@@ -2736,6 +2736,18 @@
       "website": "https://www.ubicomp.org/ubicomp-iswc-2025",
       "year": "2025",
       "comment": "second round"
+    },
+    {
+      "title": "UIC",
+      "description": "IEEE International Conference on Ubiquitous Intelligence and Computing",
+      "rank": "C",
+      "category": "HI",
+      "submission_deadline": "2025-05-01 23:59:59 UTC-4",
+      "conference_date": "Aug 18 - 22, 2025",
+      "location": "Calgary, Alberta, Canada",
+      "website": "https://www.ieee-smart-world.org/2025/",
+      "year": "2025",
+      "comment": "Conference Papers"
     },
     {
       "title": "CLUSTER",
