@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-06-28T01:03:33.427018",
+  "last_updated": "2025-06-29T01:13:13.886789",
   "conferences": [
     {
       "title": "PODC",
@@ -442,18 +442,6 @@
       "conference_date": "February 24-27, 2025",
       "location": "Milan, Italy",
       "website": "https://algorithmiclearningtheory.org/alt2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "ICLR",
-      "description": "International Conference on Learning Representations",
-      "rank": "N",
-      "category": "AI",
-      "submission_deadline": "2024-10-01 23:59:59 UTC-12",
-      "conference_date": "April 24-28, 2025",
-      "location": "Singapore",
-      "website": "https://iclr.cc/Conferences/2025",
       "year": "2025",
       "comment": ""
     },
@@ -3984,6 +3972,18 @@
       "website": "https://2026.eurosys.org/",
       "year": "2026",
       "comment": "Fall Submission Deadline"
+    },
+    {
+      "title": "ICLR",
+      "description": "International Conference on Learning Representations",
+      "rank": "N",
+      "category": "AI",
+      "submission_deadline": "2025-09-25 20:59:59 UTC-8",
+      "conference_date": "May 01-05, 2026",
+      "location": "Brazil",
+      "website": "https://iclr.cc/Conferences/2026",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "IFIP WG 11.9",
