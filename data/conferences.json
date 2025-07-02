@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-07-01T01:13:24.759040",
+  "last_updated": "2025-07-02T01:05:53.620099",
   "conferences": [
     {
       "title": "PODC",
@@ -3554,6 +3554,18 @@
       "comment": "First round"
     },
     {
+      "title": "MMAsia",
+      "description": "ACM Multimedia Asia",
+      "rank": "C",
+      "category": "CG",
+      "submission_deadline": "2025-07-25 23:59:59 AoE",
+      "conference_date": "December 9-12, 2025",
+      "location": "Grand Millenium Hotel, Kuala Lumpur, Malaysia",
+      "website": "https://mmasia2025.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "ISS",
       "description": "ACM International Conference on Interactive Surfaces and Spaces",
       "rank": "B",
@@ -3672,18 +3684,6 @@
       "website": "https://www.ubicomp.org/ubicomp-iswc-2025",
       "year": "2025",
       "comment": "third round (only for resubmissions after major revisions)"
-    },
-    {
-      "title": "MMAsia",
-      "description": "ACM Multimedia Asia",
-      "rank": "C",
-      "category": "CG",
-      "submission_deadline": "2025-08-02 23:59:59 AoE",
-      "conference_date": "December 9-12, 2025",
-      "location": "Grand Millenium Hotel, Kuala Lumpur, Malaysia",
-      "website": "https://mmasia2025.org/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "BIBM",
