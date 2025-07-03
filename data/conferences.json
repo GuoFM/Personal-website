@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-07-02T01:05:53.620099",
+  "last_updated": "2025-07-03T01:05:36.648841",
   "conferences": [
     {
       "title": "PODC",
@@ -242,18 +242,6 @@
       "comment": "summer round"
     },
     {
-      "title": "WSDM",
-      "description": "International Conference on Web Search and Data Mining",
-      "rank": "B",
-      "category": "DB",
-      "submission_deadline": "2024-08-14 23:59:59 UTC-12",
-      "conference_date": "March 10 - March 14, 2025",
-      "location": "Hannover, Germany",
-      "website": "https://www.wsdm-conference.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "PPoPP",
       "description": "ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming",
       "rank": "A",
@@ -348,18 +336,6 @@
       "website": "https://coling2025.org/",
       "year": "2025",
       "comment": "First Call for Main Conference Papers"
-    },
-    {
-      "title": "IEEE VR",
-      "description": "IEEE Virtual Reality",
-      "rank": "A",
-      "category": "CG",
-      "submission_deadline": "2024-09-18 23:59:59 AoE",
-      "conference_date": "March 8-12, 2025",
-      "location": "Saint-Malo, France",
-      "website": "https://ieeevr.org/2025/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "DATE",
@@ -3720,6 +3696,18 @@
       "website": "https://www.ndss-symposium.org/ndss2026/",
       "year": "2026",
       "comment": "Fall"
+    },
+    {
+      "title": "WSDM",
+      "description": "International Conference on Web Search and Data Mining",
+      "rank": "B",
+      "category": "DB",
+      "submission_deadline": "2025-08-14 23:59:59 UTC-12",
+      "conference_date": "February 22 - 26, 2026",
+      "location": "Boise, Idaho, USA",
+      "website": "https://wsdm-conference.org/2026/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "3DV",
