@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-07-03T01:05:36.648841",
+  "last_updated": "2025-07-04T01:05:42.589818",
   "conferences": [
     {
       "title": "PODC",
@@ -4006,6 +4006,18 @@
       "conference_date": "March 24-27, 2026",
       "location": "Tampere, Finland",
       "website": "https://edbticdt2026.github.io/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "IUI",
+      "description": "ACM Conference on Intelligent User Interfaces",
+      "rank": "B",
+      "category": "HI",
+      "submission_deadline": "2025-10-10 23:59:59 AoE",
+      "conference_date": "March 23 - 26, 2026",
+      "location": "Paphos, Cyprus",
+      "website": "https://iui.hosting.acm.org/2026/",
       "year": "2026",
       "comment": ""
     },
