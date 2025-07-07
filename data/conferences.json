@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-07-06T01:11:38.547777",
+  "last_updated": "2025-07-07T01:09:53.507624",
   "conferences": [
     {
       "title": "PODC",
@@ -3946,6 +3946,18 @@
       "conference_date": "March 16 - 20, 2026",
       "location": "Pisa, Italy",
       "website": "https://percom.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "SATML",
+      "description": "IEEE Conference on Secure and Trustworthy Machine Learning",
+      "rank": "N",
+      "category": "SC",
+      "submission_deadline": "2025-09-24 23:59:59 UTC-12",
+      "conference_date": "March 23-25, 2026",
+      "location": "Munich, Germany",
+      "website": "https://www.satml.org",
       "year": "2026",
       "comment": ""
     },
