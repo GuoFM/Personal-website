@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-07-10T01:07:12.460916",
+  "last_updated": "2025-07-11T01:08:04.505814",
   "conferences": [
     {
       "title": "PODC",
@@ -526,18 +526,6 @@
       "conference_date": "May 3-5, 2025",
       "location": "Mai Khao, Thailand",
       "website": "https://aistats.org/aistats2025",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "ICC",
-      "description": "IEEE International Conference on Communications",
-      "rank": "C",
-      "category": "NW",
-      "submission_deadline": "2024-10-11 23:59:59 AoE",
-      "conference_date": "June 8-12, 2025",
-      "location": "Palais des congrès de Montréal in Montreal, Quebec, Canada",
-      "website": "https://icc2025.ieee-icc.org",
       "year": "2025",
       "comment": ""
     },
@@ -3710,6 +3698,18 @@
       "comment": ""
     },
     {
+      "title": "ICPADS",
+      "description": "IEEE International Conference on Parallel and Distributed Systems",
+      "rank": "C",
+      "category": "DS",
+      "submission_deadline": "2025-08-15 18:00:00 UTC+8",
+      "conference_date": "December 14-18, 2025",
+      "location": "Hefei, China",
+      "website": "http://ieee-icpads.org.cn/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
       "title": "3DV",
       "description": "International Conference on 3D Vision",
       "rank": "C",
@@ -3982,6 +3982,18 @@
       "conference_date": "May 01-05, 2026",
       "location": "Brazil",
       "website": "https://iclr.cc/Conferences/2026",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ICC",
+      "description": "IEEE International Conference on Communications",
+      "rank": "C",
+      "category": "NW",
+      "submission_deadline": "2025-09-29 23:59:59 UTC-4",
+      "conference_date": "May 24-28, 2026",
+      "location": "Glasgow, Scotland",
+      "website": "https://icc2026.ieee-icc.org",
       "year": "2026",
       "comment": ""
     },
