@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-07-20T01:15:55.657916",
+  "last_updated": "2025-07-21T01:13:25.908276",
   "conferences": [
     {
       "title": "PODC",
@@ -418,18 +418,6 @@
       "conference_date": "May 4-8, 2025",
       "location": "Madrid, Spain",
       "website": "https://eurocrypt.iacr.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "Eurographics",
-      "description": "Eurographics",
-      "rank": "B",
-      "category": "CG",
-      "submission_deadline": "2024-10-03 23:59:59 UTC",
-      "conference_date": "May 12-16, 2025",
-      "location": "London, UK",
-      "website": "https://eg25.cs.ucl.ac.uk/main/home.html",
       "year": "2025",
       "comment": ""
     },
@@ -3982,6 +3970,18 @@
       "conference_date": "May 01-05, 2026",
       "location": "Brazil",
       "website": "https://iclr.cc/Conferences/2026",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "Eurographics",
+      "description": "Eurographics",
+      "rank": "B",
+      "category": "CG",
+      "submission_deadline": "2025-09-26 23:59:59 UTC",
+      "conference_date": "May 4-8, 2025",
+      "location": "Aachen, Germany",
+      "website": "https://eg2026.github.io/",
       "year": "2026",
       "comment": ""
     },
