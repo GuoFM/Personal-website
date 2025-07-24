@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-07-23T01:10:43.393133",
+  "last_updated": "2025-07-24T01:09:40.137337",
   "conferences": [
     {
       "title": "PODC",
@@ -888,18 +888,6 @@
       "website": "https://www.dimva.org/dimva2025/",
       "year": "2025",
       "comment": "Paper submission deadline"
-    },
-    {
-      "title": "ICDCS",
-      "description": "IEEE International Conference on Distributed Computing Systems",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2024-12-11 23:59:59 UTC-12",
-      "conference_date": "July 21-23, 2025",
-      "location": "Glasgow, Scotland, UK",
-      "website": "https://www.icdcs2025.com",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "GMP",
@@ -3878,6 +3866,18 @@
       "comment": ""
     },
     {
+      "title": "ICRA",
+      "description": "IEEE International Conference on Robotics and Automation",
+      "rank": "B",
+      "category": "AI",
+      "submission_deadline": "2025-09-15 23:59:00 UTC-8",
+      "conference_date": "Jun 1-5, 2026",
+      "location": "Vienna, Austria",
+      "website": "https://2026.ieee-icra.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "FAST",
       "description": "USENIX Conference on File and Storage Technologies",
       "rank": "A",
@@ -4198,6 +4198,18 @@
       "conference_date": "July 13-15, 2026",
       "location": "Seattle, WA, USA",
       "website": "https://www.usenix.org/conference/osdi26",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ICDCS",
+      "description": "IEEE International Conference on Distributed Computing Systems",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-12-12 23:59:59 AoE",
+      "conference_date": "TBD",
+      "location": "South Korea",
+      "website": "http://icdcs2026.icdcs.org/",
       "year": "2026",
       "comment": ""
     },
