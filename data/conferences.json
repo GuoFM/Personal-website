@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-07-25T01:09:23.254266",
+  "last_updated": "2025-07-26T01:07:31.669849",
   "conferences": [
     {
       "title": "PODC",
@@ -4248,6 +4248,18 @@
       "website": "https://etaps.org/2026",
       "year": "2026",
       "comment": "ESOP, FASE, FoSSaCS artifact, TACAS voluntary artifact submission"
+    },
+    {
+      "title": "ISSTA",
+      "description": "ACM SIGSOFT International Symposium on Software Testing and Analysis",
+      "rank": "A",
+      "category": "SE",
+      "submission_deadline": "2026-01-29 23:59:59 AoE",
+      "conference_date": "October 3-9, 2026",
+      "location": "Oakland, California, United States",
+      "website": "https://conf.researchr.org/home/issta-2026",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "IJCNN",
