@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-07-27T01:15:56.407247",
+  "last_updated": "2025-07-28T01:14:30.733299",
   "conferences": [
     {
       "title": "PODC",
@@ -218,18 +218,6 @@
       "comment": "Submission Due (Conference Track)"
     },
     {
-      "title": "SIGMETRICS",
-      "description": "ACM Special Interest Group on Measurement and Evaluation",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2024-08-07 23:59:00 AoE",
-      "conference_date": "June 9-13, 2025",
-      "location": "Stony Brook, New York, USA",
-      "website": "https://www.sigmetrics.org/sigmetrics2025/",
-      "year": "2025",
-      "comment": "summer round"
-    },
-    {
       "title": "PETS",
       "description": "Privacy Enhancing Technologies Symposium",
       "rank": "C",
@@ -434,18 +422,6 @@
       "comment": ""
     },
     {
-      "title": "SIGMETRICS",
-      "description": "ACM Special Interest Group on Measurement and Evaluation",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2024-10-09 23:59:00 AoE",
-      "conference_date": "June 9-13, 2025",
-      "location": "Stony Brook, New York, USA",
-      "website": "https://www.sigmetrics.org/sigmetrics2025/",
-      "year": "2025",
-      "comment": "fall round"
-    },
-    {
       "title": "ECIR",
       "description": "European Conference on Information Retrieval",
       "rank": "C",
@@ -454,18 +430,6 @@
       "conference_date": "April 06 - April 10, 2025",
       "location": "Lucca, Italy",
       "website": "https://ecir2025.eu/key-dates/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "IPDPS",
-      "description": "IEEE International Parallel and Distributed Processing Symposium",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2024-10-10 23:59:59 AoE",
-      "conference_date": "June 3-7, 2025",
-      "location": "Politecnico di Milano, Milan, Italy",
-      "website": "https://www.ipdps.org/",
       "year": "2025",
       "comment": ""
     },
@@ -574,18 +538,6 @@
       "conference_date": "May 12-15, 2025",
       "location": "Røros, Norway",
       "website": "https://pkc.iacr.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "AAMAS",
-      "description": "International Conference on Autonomous Agents and Multiagent Systems",
-      "rank": "B",
-      "category": "AI",
-      "submission_deadline": "2024-10-16 23:59:59 UTC-12",
-      "conference_date": "May 19-23, 2025",
-      "location": "Detroit, Michigan, USA",
-      "website": "https://aamas2025.org/",
       "year": "2025",
       "comment": ""
     },
@@ -866,18 +818,6 @@
       "comment": ""
     },
     {
-      "title": "DSN",
-      "description": "International Conference on Dependable Systems and Networks",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2024-12-04 23:59:59 AoE",
-      "conference_date": "June 23-26, 2025",
-      "location": "Naples, Italy",
-      "website": "https://dsn2025.github.io/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "DIMVA",
       "description": "Detection of Intrusions and Malware & Vulnerability Assessment",
       "rank": "C",
@@ -1092,18 +1032,6 @@
       "website": "https://dis.acm.org/2025/",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "SIGMETRICS",
-      "description": "ACM Special Interest Group on Measurement and Evaluation",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2025-01-22 23:59:00 AoE",
-      "conference_date": "June 9-13, 2025",
-      "location": "Stony Brook, New York, USA",
-      "website": "https://www.sigmetrics.org/sigmetrics2025/",
-      "year": "2025",
-      "comment": "winter round"
     },
     {
       "title": "ICIP",
@@ -3482,6 +3410,18 @@
       "comment": "ACL Rolling Review"
     },
     {
+      "title": "SIGMETRICS",
+      "description": "ACM Special Interest Group on Measurement and Evaluation",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-07-29 23:59:00 AoE",
+      "conference_date": "June 8-12, 2026",
+      "location": "Ann Arbor, Michigan, USA",
+      "website": "https://www.sigmetrics.org/sigmetrics2026/",
+      "year": "2026",
+      "comment": "summer round"
+    },
+    {
       "title": "INFOCOM",
       "description": "IEEE International Conference on Computer Communications",
       "rank": "A",
@@ -4034,6 +3974,30 @@
       "comment": ""
     },
     {
+      "title": "AAMAS",
+      "description": "International Conference on Autonomous Agents and Multiagent Systems",
+      "rank": "B",
+      "category": "AI",
+      "submission_deadline": "2025-10-08 23:59:59 UTC-12",
+      "conference_date": "May 27-29, 2026",
+      "location": "Paphos, Cyprus",
+      "website": "https://cyprusconferences.org/aamas2026",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "IPDPS",
+      "description": "IEEE International Parallel and Distributed Processing Symposium",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-10-09 23:59:59 AoE",
+      "conference_date": "May 25-29, 2026",
+      "location": "New Orleans, USA",
+      "website": "https://www.ipdps.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "IUI",
       "description": "ACM Conference on Intelligent User Interfaces",
       "rank": "B",
@@ -4068,6 +4032,18 @@
       "website": "http://iccvm.org/2026/",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "SIGMETRICS",
+      "description": "ACM Special Interest Group on Measurement and Evaluation",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-10-14 23:59:00 AoE",
+      "conference_date": "June 8-12, 2026",
+      "location": "Ann Arbor, Michigan, USA",
+      "website": "https://www.sigmetrics.org/sigmetrics2026/",
+      "year": "2026",
+      "comment": "fall round"
     },
     {
       "title": "ETAPS",
@@ -4190,6 +4166,18 @@
       "comment": ""
     },
     {
+      "title": "DSN",
+      "description": "International Conference on Dependable Systems and Networks",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-12-04 23:59:59 AoE",
+      "conference_date": "June 22-25, 2026",
+      "location": "Charlotte, USA",
+      "website": "https://dsn2026.github.io",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "OSDI",
       "description": "USENIX Symposium on Operating Systems Design and Implementation",
       "rank": "A",
@@ -4248,6 +4236,18 @@
       "website": "https://etaps.org/2026",
       "year": "2026",
       "comment": "ESOP, FASE, FoSSaCS artifact, TACAS voluntary artifact submission"
+    },
+    {
+      "title": "SIGMETRICS",
+      "description": "ACM Special Interest Group on Measurement and Evaluation",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2026-01-13 23:59:00 AoE",
+      "conference_date": "June 8-12, 2026",
+      "location": "Ann Arbor, Michigan, USA",
+      "website": "https://www.sigmetrics.org/sigmetrics2026/",
+      "year": "2026",
+      "comment": "winter round"
     },
     {
       "title": "ISSTA",
