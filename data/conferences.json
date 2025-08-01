@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-07-31T01:10:29.390940",
+  "last_updated": "2025-08-01T01:17:54.658950",
   "conferences": [
     {
       "title": "PODC",
@@ -194,18 +194,6 @@
       "comment": ""
     },
     {
-      "title": "CHES",
-      "description": "International Conference on Cryptographic Hardware and Embedded Systems",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2024-07-15 23:59:59 AoE",
-      "conference_date": "September 14-18, 2025",
-      "location": "Kuala Lumpur, Malaysia",
-      "website": "https://ches.iacr.org/2025/",
-      "year": "2025",
-      "comment": "Schedule for TCHES Volume 2025/1"
-    },
-    {
       "title": "FPT",
       "description": "International Conference on Field Programmable Technology",
       "rank": "C",
@@ -374,18 +362,6 @@
       "comment": ""
     },
     {
-      "title": "EUROCRYPT",
-      "description": "European Cryptology Conference",
-      "rank": "A",
-      "category": "SC",
-      "submission_deadline": "2024-10-02 23:59:59 AoE",
-      "conference_date": "May 4-8, 2025",
-      "location": "Madrid, Spain",
-      "website": "https://eurocrypt.iacr.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "SDM",
       "description": "SIAM International Conference on Data Mining",
       "rank": "B",
@@ -482,18 +458,6 @@
       "comment": "Research Papers Paper Submission"
     },
     {
-      "title": "CHES",
-      "description": "International Conference on Cryptographic Hardware and Embedded Systems",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2024-10-15 23:59:59 AoE",
-      "conference_date": "September 14-18, 2025",
-      "location": "Kuala Lumpur, Malaysia",
-      "website": "https://ches.iacr.org/2025/",
-      "year": "2025",
-      "comment": "Schedule for TCHES Volume 2025/2"
-    },
-    {
       "title": "CT-RSA",
       "description": "Cryptographer's Track at RSA Conference",
       "rank": "C",
@@ -526,18 +490,6 @@
       "conference_date": "April 29-May 4, 2025",
       "location": "Albuquerque, New Mexico, USA",
       "website": "https://2025.naacl.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "PKC",
-      "description": "International Conference on Practice and Theory of Public-Key Cryptography",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2024-10-16 23:59:59 UTC-12",
-      "conference_date": "May 12-15, 2025",
-      "location": "Røros, Norway",
-      "website": "https://pkc.iacr.org/2025/",
       "year": "2025",
       "comment": ""
     },
@@ -912,18 +864,6 @@
       "website": "http://wasa-conference.org/WASA2025/index.html",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "CHES",
-      "description": "International Conference on Cryptographic Hardware and Embedded Systems",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2025-01-15 23:59:59 AoE",
-      "conference_date": "September 14-18, 2025",
-      "location": "Kuala Lumpur, Malaysia",
-      "website": "https://ches.iacr.org/2025/",
-      "year": "2025",
-      "comment": "Schedule for TCHES Volume 2025/3"
     },
     {
       "title": "HotOS",
@@ -2174,18 +2114,6 @@
       "comment": ""
     },
     {
-      "title": "CHES",
-      "description": "International Conference on Cryptographic Hardware and Embedded Systems",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2025-04-15 23:59:59 AoE",
-      "conference_date": "September 14-18, 2025",
-      "location": "Kuala Lumpur, Malaysia",
-      "website": "https://ches.iacr.org/2025/",
-      "year": "2025",
-      "comment": "Schedule for TCHES Volume 2025/4"
-    },
-    {
       "title": "INSCRYPT",
       "description": "International Conference on Information Security and Cryptology",
       "rank": "C",
@@ -3326,6 +3254,18 @@
       "comment": ""
     },
     {
+      "title": "CHES",
+      "description": "International Conference on Cryptographic Hardware and Embedded Systems",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-07-15 23:59:59 AoE",
+      "conference_date": "October 11-15, 2026",
+      "location": "Türkiye",
+      "website": "https://ches.iacr.org/2026/",
+      "year": "2026",
+      "comment": "Schedule for TCHES Volume 2026/1"
+    },
+    {
       "title": "GROUP",
       "description": "ACM International Conference on Supporting Group Work",
       "rank": "B",
@@ -3962,6 +3902,18 @@
       "comment": ""
     },
     {
+      "title": "EUROCRYPT",
+      "description": "European Cryptology Conference",
+      "rank": "A",
+      "category": "SC",
+      "submission_deadline": "2025-10-02 23:59:59 AoE",
+      "conference_date": "May 10-14, 2026",
+      "location": "Rome, Italy",
+      "website": "https://eurocrypt.iacr.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "EDBT",
       "description": "International Conference on Extending Database Technology",
       "rank": "B",
@@ -4046,6 +3998,18 @@
       "comment": "fall round"
     },
     {
+      "title": "CHES",
+      "description": "International Conference on Cryptographic Hardware and Embedded Systems",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-10-15 23:59:59 AoE",
+      "conference_date": "October 11-15, 2026",
+      "location": "Türkiye",
+      "website": "https://ches.iacr.org/2026/",
+      "year": "2026",
+      "comment": "Schedule for TCHES Volume 2026/2"
+    },
+    {
       "title": "ETAPS",
       "description": "European Joint Conferences on Theory and Practice of Software",
       "rank": "B",
@@ -4068,6 +4032,18 @@
       "website": "https://2026.sigmod.org/",
       "year": "2026",
       "comment": "round 4"
+    },
+    {
+      "title": "PKC",
+      "description": "International Conference on Practice and Theory of Public-Key Cryptography",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-10-24 23:59:59 UTC-12",
+      "conference_date": "May 25-28, 2026",
+      "location": "West Palm Beach, USA",
+      "website": "https://pkc.iacr.org/2026/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "DASFAA",
@@ -4250,6 +4226,18 @@
       "comment": "winter round"
     },
     {
+      "title": "CHES",
+      "description": "International Conference on Cryptographic Hardware and Embedded Systems",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2026-01-15 23:59:59 AoE",
+      "conference_date": "October 11-15, 2026",
+      "location": "Türkiye",
+      "website": "https://ches.iacr.org/2026/",
+      "year": "2026",
+      "comment": "Schedule for TCHES Volume 2026/3"
+    },
+    {
       "title": "ISSTA",
       "description": "ACM SIGSOFT International Symposium on Software Testing and Analysis",
       "rank": "A",
@@ -4344,6 +4332,18 @@
       "website": "https://ecscw.eusset.eu/2026",
       "year": "2026",
       "comment": "Conference Papers"
+    },
+    {
+      "title": "CHES",
+      "description": "International Conference on Cryptographic Hardware and Embedded Systems",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2026-04-15 23:59:59 AoE",
+      "conference_date": "October 11-15, 2026",
+      "location": "Türkiye",
+      "website": "https://ches.iacr.org/2026/",
+      "year": "2026",
+      "comment": "Schedule for TCHES Volume 2026/4"
     }
   ]
 }
