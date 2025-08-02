@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-08-01T01:17:54.658950",
+  "last_updated": "2025-08-02T01:07:33.019635",
   "conferences": [
     {
       "title": "PODC",
@@ -468,18 +468,6 @@
       "website": "https://ct-rsa-2025.csa.iisc.ac.in/",
       "year": "2025",
       "comment": "Paper submission deadline"
-    },
-    {
-      "title": "OOPSLA",
-      "description": "Conference on Object-Oriented Programming Systems, Languages, and Applications",
-      "rank": "A",
-      "category": "SE",
-      "submission_deadline": "2024-10-15 07:59:59 UTC-12",
-      "conference_date": "October 12-18, 2025",
-      "location": "Singapore",
-      "website": "https://2025.splashcon.org/track/OOPSLA",
-      "year": "2025",
-      "comment": "Submission Deadline Round 1"
     },
     {
       "title": "NAACL",
@@ -1166,18 +1154,6 @@
       "comment": "winter"
     },
     {
-      "title": "OOPSLA",
-      "description": "Conference on Object-Oriented Programming Systems, Languages, and Applications",
-      "rank": "A",
-      "category": "SE",
-      "submission_deadline": "2025-02-04 07:59:59 UTC-12",
-      "conference_date": "October 12-18, 2025",
-      "location": "Singapore",
-      "website": "https://2025.splashcon.org/track/OOPSLA",
-      "year": "2025",
-      "comment": "Submission Deadline Revision R1"
-    },
-    {
       "title": "EDBT",
       "description": "International Conference on Extending Database Technology",
       "rank": "B",
@@ -1800,18 +1776,6 @@
       "website": "https://www.sacmat.org/2025/index.php",
       "year": "2025",
       "comment": "Paper Submission Deadline"
-    },
-    {
-      "title": "OOPSLA",
-      "description": "Conference on Object-Oriented Programming Systems, Languages, and Applications",
-      "rank": "A",
-      "category": "SE",
-      "submission_deadline": "2025-03-25 23:59:59 UTC-12",
-      "conference_date": "October 12-18, 2025",
-      "location": "Singapore",
-      "website": "https://2025.splashcon.org/track/OOPSLA",
-      "year": "2025",
-      "comment": "Submission Deadline Round 2"
     },
     {
       "title": "CP",
@@ -3950,6 +3914,18 @@
       "comment": ""
     },
     {
+      "title": "OOPSLA",
+      "description": "Conference on Object-Oriented Programming Systems, Languages, and Applications",
+      "rank": "A",
+      "category": "SE",
+      "submission_deadline": "2025-10-10 23:59:59 UTC-12",
+      "conference_date": "October 3-9, 2025",
+      "location": "Oakland, California, United States",
+      "website": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
+      "year": "2026",
+      "comment": "Submission Deadline Round 1"
+    },
+    {
       "title": "IUI",
       "description": "ACM Conference on Intelligent User Interfaces",
       "rank": "B",
@@ -4332,6 +4308,18 @@
       "website": "https://ecscw.eusset.eu/2026",
       "year": "2026",
       "comment": "Conference Papers"
+    },
+    {
+      "title": "OOPSLA",
+      "description": "Conference on Object-Oriented Programming Systems, Languages, and Applications",
+      "rank": "A",
+      "category": "SE",
+      "submission_deadline": "2026-03-17 23:59:59 UTC-12",
+      "conference_date": "October 3-9, 2025",
+      "location": "Oakland, California, United States",
+      "website": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
+      "year": "2026",
+      "comment": "Submission Deadline Round 2"
     },
     {
       "title": "CHES",
