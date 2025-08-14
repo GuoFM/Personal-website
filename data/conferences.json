@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-08-13T01:06:18.338274",
+  "last_updated": "2025-08-14T01:06:28.292643",
   "conferences": [
     {
       "title": "PODC",
@@ -3734,6 +3734,18 @@
       "comment": ""
     },
     {
+      "title": "ICLR",
+      "description": "International Conference on Learning Representations",
+      "rank": "N",
+      "category": "AI",
+      "submission_deadline": "2025-09-24 23:59:59 AoE",
+      "conference_date": "May 01-05, 2026",
+      "location": "Brazil",
+      "website": "https://iclr.cc/Conferences/2026",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "EuroSys",
       "description": "European Conference on Computer Systems",
       "rank": "A",
@@ -3744,18 +3756,6 @@
       "website": "https://2026.eurosys.org/",
       "year": "2026",
       "comment": "Fall Submission Deadline"
-    },
-    {
-      "title": "ICLR",
-      "description": "International Conference on Learning Representations",
-      "rank": "N",
-      "category": "AI",
-      "submission_deadline": "2025-09-25 20:59:59 UTC-8",
-      "conference_date": "May 01-05, 2026",
-      "location": "Brazil",
-      "website": "https://iclr.cc/Conferences/2026",
-      "year": "2026",
-      "comment": ""
     },
     {
       "title": "DFRWS",
