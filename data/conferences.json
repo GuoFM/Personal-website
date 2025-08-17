@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-08-16T01:03:05.742768",
+  "last_updated": "2025-08-17T01:11:29.355803",
   "conferences": [
     {
       "title": "PODC",
@@ -3374,18 +3374,6 @@
       "comment": ""
     },
     {
-      "title": "ICPADS",
-      "description": "IEEE International Conference on Parallel and Distributed Systems",
-      "rank": "C",
-      "category": "DS",
-      "submission_deadline": "2025-08-15 18:00:00 UTC+8",
-      "conference_date": "December 14-18, 2025",
-      "location": "Hefei, China",
-      "website": "http://ieee-icpads.org.cn/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "3DV",
       "description": "International Conference on 3D Vision",
       "rank": "C",
@@ -3490,6 +3478,18 @@
       "conference_date": "December 8-11, 2025",
       "location": "Macau SAR, China",
       "website": "https://conferences.cis.um.edu.mo/ieeebigdata2025/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "ICPADS",
+      "description": "IEEE International Conference on Parallel and Distributed Systems",
+      "rank": "C",
+      "category": "DS",
+      "submission_deadline": "2025-08-31 18:00:00 UTC+8",
+      "conference_date": "December 14-18, 2025",
+      "location": "Hefei, China",
+      "website": "http://ieee-icpads.org.cn/",
       "year": "2025",
       "comment": ""
     },
@@ -4250,6 +4250,18 @@
       "comment": "Cycle 2 Deadline"
     },
     {
+      "title": "InterSpeech",
+      "description": "Conference of the International Speech Communication Association",
+      "rank": "C",
+      "category": "CG",
+      "submission_deadline": "2026-02-25 23:59:59 UTC+0",
+      "conference_date": "September 27 - October 1, 2026",
+      "location": "Sydney, Australia",
+      "website": "https://interspeech2026.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "PETS",
       "description": "Privacy Enhancing Technologies Symposium",
       "rank": "C",
@@ -4270,18 +4282,6 @@
       "conference_date": "August 31 - September 4, 2026",
       "location": "Boston, MA, USA",
       "website": "https://www.vldb.org/2026/",
-      "year": "2026",
-      "comment": ""
-    },
-    {
-      "title": "InterSpeech",
-      "description": "Conference of the International Speech Communication Association",
-      "rank": "C",
-      "category": "CG",
-      "submission_deadline": "2026-03-02 23:59:59 UTC+0",
-      "conference_date": "September 27 - October 1, 2026",
-      "location": "Sydney, Australia",
-      "website": "https://interspeech2026.org/",
       "year": "2026",
       "comment": ""
     },
