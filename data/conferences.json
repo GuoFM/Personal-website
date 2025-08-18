@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-08-17T01:11:29.355803",
+  "last_updated": "2025-08-18T01:10:14.737855",
   "conferences": [
     {
       "title": "PODC",
@@ -334,18 +334,6 @@
       "conference_date": "April 06 - April 10, 2025",
       "location": "Lucca, Italy",
       "website": "https://ecir2025.eu/key-dates/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "AISTATS",
-      "description": "International Conference on Artificial Intelligence and Statistics",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2024-10-10 23:59:59 UTC-12",
-      "conference_date": "May 3-5, 2025",
-      "location": "Mai Khao, Thailand",
-      "website": "https://aistats.org/aistats2025",
       "year": "2025",
       "comment": ""
     },
@@ -3826,6 +3814,18 @@
       "conference_date": "May 10-14, 2026",
       "location": "Rome, Italy",
       "website": "https://eurocrypt.iacr.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "AISTATS",
+      "description": "International Conference on Artificial Intelligence and Statistics",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-10-02 23:59:59 UTC-12",
+      "conference_date": "May 2-5, 2025",
+      "location": "Morocco",
+      "website": "https://virtual.aistats.org/Conferences/2026",
       "year": "2026",
       "comment": ""
     },
