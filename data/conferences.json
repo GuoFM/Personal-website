@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-08-18T01:10:14.737855",
+  "last_updated": "2025-08-19T01:03:28.938241",
   "conferences": [
     {
       "title": "PODC",
@@ -478,18 +478,6 @@
       "conference_date": "April 28-29, 2025",
       "location": "Ottawa, Canada",
       "website": "https://2025.msrconf.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "PLDI",
-      "description": "ACM SIGPLAN Conference on Programming Language Design & Implementation",
-      "rank": "A",
-      "category": "SE",
-      "submission_deadline": "2024-11-14 23:59:59 AoE",
-      "conference_date": "June 16-20, 2025",
-      "location": "Seoul, South Korea",
-      "website": "https://pldi25.sigplan.org/",
       "year": "2025",
       "comment": ""
     },
@@ -4056,6 +4044,18 @@
       "website": "https://www.ieee-security.org/TC/SP2026/",
       "year": "2026",
       "comment": "Second Paper submission deadline"
+    },
+    {
+      "title": "PLDI",
+      "description": "ACM SIGPLAN Conference on Programming Language Design & Implementation",
+      "rank": "A",
+      "category": "SE",
+      "submission_deadline": "2025-11-13 23:59:59 AoE",
+      "conference_date": "June 15-19, 2026",
+      "location": "Boulder, Colorado, United States",
+      "website": "https://pldi26.sigplan.org/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "PETS",
