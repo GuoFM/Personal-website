@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-08-19T01:03:28.938241",
+  "last_updated": "2025-08-20T01:01:59.648722",
   "conferences": [
     {
       "title": "PODC",
@@ -194,18 +194,6 @@
       "comment": "ToSC, Volume 2024, Issue 4 Submission deadline"
     },
     {
-      "title": "ACNS",
-      "description": "Applied Cryptography and Network Security",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-09-09 23:59:59 AoE",
-      "conference_date": "June 23-26, 2025",
-      "location": "Munich, Germany",
-      "website": "http://acns2025.fordaysec.de/",
-      "year": "2025",
-      "comment": "First submission deadline"
-    },
-    {
       "title": "NOMS",
       "description": "IEEE/IFIP Network Operations and Management Symposium",
       "rank": "N",
@@ -362,18 +350,6 @@
       "comment": "Submission deadline"
     },
     {
-      "title": "SANER",
-      "description": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
-      "rank": "B",
-      "category": "SE",
-      "submission_deadline": "2024-10-11 23:59:59 AoE",
-      "conference_date": "March 4-7, 2025",
-      "location": "Montréal, Québec, Canada",
-      "website": "https://conf.researchr.org/home/saner-2025",
-      "year": "2025",
-      "comment": "Research Papers Paper Submission"
-    },
-    {
       "title": "CT-RSA",
       "description": "Cryptographer's Track at RSA Conference",
       "rank": "C",
@@ -396,6 +372,18 @@
       "website": "https://2025.naacl.org/",
       "year": "2025",
       "comment": ""
+    },
+    {
+      "title": "SANER",
+      "description": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
+      "rank": "B",
+      "category": "SE",
+      "submission_deadline": "2024-10-16 23:59:59 AoE",
+      "conference_date": "March 17-20, 2026",
+      "location": "Limassol, Cyprus",
+      "website": "https://conf.researchr.org/home/saner-2026",
+      "year": "2026",
+      "comment": "Research Track Paper submission deadline"
     },
     {
       "title": "EuroS&P",
@@ -710,18 +698,6 @@
       "comment": "First Submission deadline"
     },
     {
-      "title": "ACNS",
-      "description": "Applied Cryptography and Network Security",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2025-01-13 23:59:59 AoE",
-      "conference_date": "June 23-26, 2025",
-      "location": "Munich, Germany",
-      "website": "http://acns2025.fordaysec.de/",
-      "year": "2025",
-      "comment": "Second submission deadline"
-    },
-    {
       "title": "USENIX ATC",
       "description": "USENIX Annual Technical Conference",
       "rank": "A",
@@ -828,18 +804,6 @@
       "website": "https://2026.sigmod.org/",
       "year": "2026",
       "comment": "round 1"
-    },
-    {
-      "title": "SEC",
-      "description": "IFIP International Information Security Conference",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2025-01-20 23:59:59 AoE",
-      "conference_date": "May 21-23, 2025",
-      "location": "Hotel City, Maribor, Slovenia",
-      "website": "https://sec2025.um.si/",
-      "year": "2025",
-      "comment": "Submission deadline"
     },
     {
       "title": "DIS",
@@ -3242,18 +3206,6 @@
       "comment": ""
     },
     {
-      "title": "PDCAT",
-      "description": "International Conference on Parallel and Distributed Computing, Applications and Technologies",
-      "rank": "N",
-      "category": "DS",
-      "submission_deadline": "2025-08-01 23:59:00 UTC+10",
-      "conference_date": "November 22-November 24, 2025",
-      "location": "Gold Coast, Australia",
-      "website": "https://www.pd-cat.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "TrustCom",
       "description": "IEEE International Conference on Trust, Security and Privacy in Computing and Communications",
       "rank": "C",
@@ -3347,6 +3299,18 @@
       "location": "Boise, Idaho, USA",
       "website": "https://wsdm-conference.org/2026/",
       "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "PDCAT",
+      "description": "International Conference on Parallel and Distributed Computing, Applications and Technologies",
+      "rank": "N",
+      "category": "DS",
+      "submission_deadline": "2025-08-15 23:59:00 UTC+10",
+      "conference_date": "November 22-November 24, 2025",
+      "location": "Gold Coast, Australia",
+      "website": "https://www.pd-cat.org/",
+      "year": "2025",
       "comment": ""
     },
     {
@@ -3734,6 +3698,18 @@
       "comment": "Fall Submission Deadline"
     },
     {
+      "title": "ACNS",
+      "description": "Applied Cryptography and Network Security",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-09-26 23:59:59 AoE",
+      "conference_date": "June 22-25, 2026",
+      "location": "New York, United States",
+      "website": "https://acns2026.github.io/index.html",
+      "year": "2026",
+      "comment": "Cycle 1 Submission deadline"
+    },
+    {
       "title": "DFRWS",
       "description": "Digital Forensic Research Workshop",
       "rank": "C",
@@ -3864,6 +3840,18 @@
       "website": "https://csf2026.ieee-security.org/",
       "year": "2026",
       "comment": "Fall"
+    },
+    {
+      "title": "SANER",
+      "description": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
+      "rank": "B",
+      "category": "SE",
+      "submission_deadline": "2025-10-09 23:59:59 AoE",
+      "conference_date": "March 17-20, 2026",
+      "location": "Limassol, Cyprus",
+      "website": "https://conf.researchr.org/home/saner-2026",
+      "year": "2026",
+      "comment": "Research Track Abstract submission (mandatory)"
     },
     {
       "title": "OOPSLA",
@@ -4142,6 +4130,18 @@
       "comment": "2nd round Deadline"
     },
     {
+      "title": "SEC",
+      "description": "IFIP International Information Security Conference",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-12-19 23:59:59 AoE",
+      "conference_date": "June 09 - 11, 2026",
+      "location": "Perth, Australia",
+      "website": "https://ifipsec.org/index.html",
+      "year": "2026",
+      "comment": "Submission deadline"
+    },
+    {
       "title": "VLDB",
       "description": "International Conference on Very Large Data Bases",
       "rank": "A",
@@ -4188,6 +4188,18 @@
       "website": "https://ches.iacr.org/2026/",
       "year": "2026",
       "comment": "Schedule for TCHES Volume 2026/3"
+    },
+    {
+      "title": "ACNS",
+      "description": "Applied Cryptography and Network Security",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2026-01-23 23:59:59 AoE",
+      "conference_date": "June 22-25, 2026",
+      "location": "New York, United States",
+      "website": "https://acns2026.github.io/index.html",
+      "year": "2026",
+      "comment": "Cycle 2 Submission deadline"
     },
     {
       "title": "CSFW",
