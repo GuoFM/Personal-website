@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-08-21T01:00:50.538847",
+  "last_updated": "2025-08-22T01:01:56.950168",
   "conferences": [
     {
       "title": "PODC",
@@ -242,18 +242,6 @@
       "comment": "Journal track"
     },
     {
-      "title": "FG",
-      "description": "International Conference on Automatic Face and Gesture Recognition",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2024-09-30 23:59:59 UTC-8",
-      "conference_date": "May 26-30, 2025",
-      "location": "Clearwater, USA",
-      "website": "https://fg2025.ieee-biometrics.org/",
-      "year": "2025",
-      "comment": "Round 1"
-    },
-    {
       "title": "FPGA",
       "description": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
       "rank": "B",
@@ -338,18 +326,6 @@
       "comment": ""
     },
     {
-      "title": "FC",
-      "description": "Financial Cryptography and Data Security",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-10-11 23:59:59 UTC-12",
-      "conference_date": "April 14-18, 2025",
-      "location": "Miyakojima, Japan",
-      "website": "https://fc25.ifca.ai/",
-      "year": "2025",
-      "comment": "Submission deadline"
-    },
-    {
       "title": "CT-RSA",
       "description": "Cryptographer's Track at RSA Conference",
       "rank": "C",
@@ -384,18 +360,6 @@
       "website": "https://conf.researchr.org/home/saner-2026",
       "year": "2026",
       "comment": "Research Track Paper submission deadline"
-    },
-    {
-      "title": "EuroS&P",
-      "description": "IEEE European Symposium on Security and Privacy",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-10-24 23:59:59 UTC-12",
-      "conference_date": "June 30-July 4, 2025",
-      "location": "Venice, Italy",
-      "website": "https://eurosp2025.ieee-security.org/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "RECOMB",
@@ -444,18 +408,6 @@
       "website": "https://uow-ic2.github.io/acisp2025/",
       "year": "2025",
       "comment": "1st round Deadline"
-    },
-    {
-      "title": "ICPC",
-      "description": "IEEE International Conference on Program Comprehension",
-      "rank": "B",
-      "category": "SE",
-      "submission_deadline": "2024-11-09 23:59:59 AoE",
-      "conference_date": "April 27-28, 2025",
-      "location": "Ottawa, Canada",
-      "website": "https://conf.researchr.org/home/icpc-2025",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "MSR",
@@ -960,18 +912,6 @@
       "website": "https://conferences.i-cav.org/2025/",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "FG",
-      "description": "International Conference on Automatic Face and Gesture Recognition",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2025-01-31 23:59:59 UTC-8",
-      "conference_date": "May 26-30, 2025",
-      "location": "Clearwater, USA",
-      "website": "https://fg2025.ieee-biometrics.org/",
-      "year": "2025",
-      "comment": "Round 2"
     },
     {
       "title": "UbiComp/ISWC",
@@ -1764,18 +1704,6 @@
       "website": "https://uist.acm.org/2025/",
       "year": "2025",
       "comment": "paper deadline"
-    },
-    {
-      "title": "ICIC",
-      "description": "International Conference on Intelligent Computing",
-      "rank": "C",
-      "category": "MX",
-      "submission_deadline": "2025-04-10 11:59:59 UTC+8",
-      "conference_date": "July 26-29, 2025",
-      "location": "Ningbo, China",
-      "website": "http://www.ic-icc.cn/2025/index.php",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "MICRO",
@@ -3614,6 +3542,18 @@
       "comment": "Fall deadline"
     },
     {
+      "title": "FC",
+      "description": "Financial Cryptography and Data Security",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-09-16 23:59:59 UTC-12",
+      "conference_date": "March 2-6, 2026",
+      "location": "St. Kitts",
+      "website": "https://fc26.ifca.ai/",
+      "year": "2026",
+      "comment": "Submission deadline"
+    },
+    {
       "title": "ICASSP",
       "description": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
       "rank": "B",
@@ -3787,11 +3727,23 @@
       "rank": "C",
       "category": "AI",
       "submission_deadline": "2025-10-02 23:59:59 UTC-12",
-      "conference_date": "May 2-5, 2025",
+      "conference_date": "May 2-5, 2026",
       "location": "Morocco",
       "website": "https://virtual.aistats.org/Conferences/2026",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "FG",
+      "description": "International Conference on Automatic Face and Gesture Recognition",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-10-02 23:59:59 UTC-8",
+      "conference_date": "May 25-29, 2026",
+      "location": "Kyoto, Japan",
+      "website": "https://fg2026.ieee-biometrics.org/",
+      "year": "2026",
+      "comment": "Round 1"
     },
     {
       "title": "EDBT",
@@ -3950,6 +3902,18 @@
       "comment": "round 4"
     },
     {
+      "title": "ICPC",
+      "description": "IEEE International Conference on Program Comprehension",
+      "rank": "B",
+      "category": "SE",
+      "submission_deadline": "2025-10-23 23:59:59 AoE",
+      "conference_date": "April 12-13, 2026",
+      "location": "Rio de Janeiro, Brazil",
+      "website": "https://conf.researchr.org/home/icpc-2026",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "PKC",
       "description": "International Conference on Practice and Theory of Public-Key Cryptography",
       "rank": "B",
@@ -4042,6 +4006,18 @@
       "conference_date": "June 15-19, 2026",
       "location": "Boulder, Colorado, United States",
       "website": "https://pldi26.sigplan.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "EuroS&P",
+      "description": "IEEE European Symposium on Security and Privacy",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-11-20 23:59:59 UTC-12",
+      "conference_date": "July 6 - 10, 2026",
+      "location": "Lisbon, Portugal",
+      "website": "https://eurosp2026.ieee-security.org/",
       "year": "2026",
       "comment": ""
     },
@@ -4188,6 +4164,18 @@
       "website": "https://ches.iacr.org/2026/",
       "year": "2026",
       "comment": "Schedule for TCHES Volume 2026/3"
+    },
+    {
+      "title": "FG",
+      "description": "International Conference on Automatic Face and Gesture Recognition",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2026-01-15 23:59:59 UTC-8",
+      "conference_date": "May 25-29, 2026",
+      "location": "Kyoto, Japan",
+      "website": "https://fg2026.ieee-biometrics.org/",
+      "year": "2026",
+      "comment": "Round 2"
     },
     {
       "title": "ACNS",
