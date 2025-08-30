@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-08-29T01:00:10.628044",
+  "last_updated": "2025-08-30T00:57:04.178472",
   "conferences": [
     {
       "title": "PODC",
@@ -3636,6 +3636,18 @@
       "website": "https://2026.eurosys.org/",
       "year": "2026",
       "comment": "Fall Submission Deadline"
+    },
+    {
+      "title": "MMSys",
+      "description": "ACM International Conference on Multimedia Systems",
+      "rank": "N",
+      "category": "NW",
+      "submission_deadline": "2025-09-26 23:59:59 AoE",
+      "conference_date": "April 4 - 8, 2026",
+      "location": "Hong Kong SAR",
+      "website": "https://2026.acmmmsys.org",
+      "year": "2026",
+      "comment": "Round 1 deadline"
     },
     {
       "title": "ACNS",
