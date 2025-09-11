@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-10T00:58:40.507797",
+  "last_updated": "2025-09-11T00:59:32.742529",
   "conferences": [
     {
       "title": "PODC",
@@ -3756,6 +3756,18 @@
       "website": "https://fg2026.ieee-biometrics.org/",
       "year": "2026",
       "comment": "Round 1"
+    },
+    {
+      "title": "EACL",
+      "description": "The Annual Conference of the European Chapter of the Association for Computational Linguistics",
+      "rank": "N",
+      "category": "AI",
+      "submission_deadline": "2025-10-06 23:59:59 AoE",
+      "conference_date": "March 24-29, 2026",
+      "location": "Rabat, Morocco",
+      "website": "https://2026.eacl.org/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "EDBT",
