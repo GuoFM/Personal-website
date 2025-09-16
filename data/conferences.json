@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-15T01:03:00.503945",
+  "last_updated": "2025-09-16T00:58:01.072180",
   "conferences": [
     {
       "title": "PODC",
@@ -146,18 +146,6 @@
       "comment": ""
     },
     {
-      "title": "FPT",
-      "description": "International Conference on Field Programmable Technology",
-      "rank": "C",
-      "category": "DS",
-      "submission_deadline": "2024-07-14 23:59:59 AoE",
-      "conference_date": "December 10 - December 12, 2024",
-      "location": "Sydney, Australia",
-      "website": "https://fpt2024.org/",
-      "year": "2024",
-      "comment": "Title and Abstract Due (Conference Track)"
-    },
-    {
       "title": "SoCC",
       "description": "ACM Symposium on Cloud Computing",
       "rank": "B",
@@ -168,18 +156,6 @@
       "website": "https://acmsocc.org/2024/",
       "year": "2024",
       "comment": ""
-    },
-    {
-      "title": "FPT",
-      "description": "International Conference on Field Programmable Technology",
-      "rank": "C",
-      "category": "DS",
-      "submission_deadline": "2024-07-21 23:59:59 AoE",
-      "conference_date": "December 10 - December 12, 2024",
-      "location": "Sydney, Australia",
-      "website": "https://fpt2024.org/",
-      "year": "2024",
-      "comment": "Submission Due (Conference Track)"
     },
     {
       "title": "FSE",
@@ -242,18 +218,6 @@
       "comment": "Journal track"
     },
     {
-      "title": "FPGA",
-      "description": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2024-10-01 23:59:59 UTC-12",
-      "conference_date": "February 27 - March 01, 2025",
-      "location": "Monterey, California, USA",
-      "website": "https://www.isfpga.org/",
-      "year": "2025",
-      "comment": "Abstracts Due"
-    },
-    {
       "title": "ALT",
       "description": "International Conference on Algorithmic Learning Theory",
       "rank": "C",
@@ -276,18 +240,6 @@
       "website": "https://www.siam.org/conferences-events/siam-conferences/sdm25",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "FPGA",
-      "description": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2024-10-08 23:59:59 UTC-12",
-      "conference_date": "February 27 - March 01, 2025",
-      "location": "Monterey, California, USA",
-      "website": "https://www.isfpga.org/",
-      "year": "2025",
-      "comment": "Submissions Due"
     },
     {
       "title": "PAM",
@@ -410,30 +362,6 @@
       "comment": "1st round Deadline"
     },
     {
-      "title": "MSR",
-      "description": "International Conference on Mining Software Repositories",
-      "rank": "C",
-      "category": "SE",
-      "submission_deadline": "2024-11-09 23:59:59 AoE",
-      "conference_date": "April 28-29, 2025",
-      "location": "Ottawa, Canada",
-      "website": "https://2025.msrconf.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "CVPR",
-      "description": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
-      "rank": "A",
-      "category": "AI",
-      "submission_deadline": "2024-11-14 23:59:00 UTC-8",
-      "conference_date": "June 10-17, 2025",
-      "location": "Nashville, Tennessee, USA",
-      "website": "https://cvpr.thecvf.com/Conferences/2025/CallForPapers",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "ISCA",
       "description": "International Symposium on Computer Architecture",
       "rank": "A",
@@ -480,18 +408,6 @@
       "website": "https://pacificvis2025.github.io/pages/index.html",
       "year": "2025",
       "comment": "Conference track"
-    },
-    {
-      "title": "ESANN",
-      "description": "European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning",
-      "rank": "N",
-      "category": "AI",
-      "submission_deadline": "2024-11-20 00:00:00 UTC-8",
-      "conference_date": "April 23 - April 25, 2025",
-      "location": "Bruges, Belgium",
-      "website": "https://www.esann.org/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "IMC",
@@ -766,18 +682,6 @@
       "conference_date": "July 5 - 9, 2025",
       "location": "Funchal, Madeira, Portugal",
       "website": "https://dis.acm.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "ICIP",
-      "description": "The IEEE International Conference on Image Processing",
-      "rank": "C",
-      "category": "CG",
-      "submission_deadline": "2025-01-22 23:59:59 UTC+0",
-      "conference_date": "Sep 14-17, 2025",
-      "location": "Anchorage Alaska, USA",
-      "website": "https://2025.ieeeicip.org/",
       "year": "2025",
       "comment": ""
     },
@@ -3038,6 +2942,18 @@
       "comment": "First round"
     },
     {
+      "title": "FPT",
+      "description": "International Conference on Field Programmable Technology",
+      "rank": "C",
+      "category": "DS",
+      "submission_deadline": "2025-07-20 23:59:59 AoE",
+      "conference_date": "December 02 - December 05, 2025",
+      "location": "Shanghai, China",
+      "website": "https://fpt2025.shanghaitech.edu.cn",
+      "year": "2025",
+      "comment": "Title and Abstract Due (Conference Track)"
+    },
+    {
       "title": "CSFW",
       "description": "IEEE Computer Security Foundations Workshop",
       "rank": "B",
@@ -3120,6 +3036,18 @@
       "website": "https://kdd2026.kdd.org/",
       "year": "2026",
       "comment": "1st round of 2 total rounds"
+    },
+    {
+      "title": "FPT",
+      "description": "International Conference on Field Programmable Technology",
+      "rank": "C",
+      "category": "DS",
+      "submission_deadline": "2025-08-01 23:59:59 AoE",
+      "conference_date": "December 02 - December 05, 2025",
+      "location": "Shanghai, China",
+      "website": "https://fpt2025.shanghaitech.edu.cn",
+      "year": "2025",
+      "comment": "Submission Due (Conference Track)"
     },
     {
       "title": "HPCA",
@@ -3518,6 +3446,18 @@
       "comment": ""
     },
     {
+      "title": "VMCAI",
+      "description": "International Conference on Verification, Model Checking, and Abstract Interpretation",
+      "rank": "B",
+      "category": "SE",
+      "submission_deadline": "2025-09-15 23:59:59 AoE",
+      "conference_date": "January 12-13, 2026",
+      "location": "Rennes, France",
+      "website": "https://conf.researchr.org/home/VMCAI-2026",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "ICRA",
       "description": "IEEE International Conference on Robotics and Automation",
       "rank": "B",
@@ -3600,6 +3540,18 @@
       "website": "https://percom.org/",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "FPGA",
+      "description": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-09-24 23:59:59 UTC-12",
+      "conference_date": "February 22 - February 24, 2026",
+      "location": "Monterey, California, USA",
+      "website": "https://www.isfpga.org/",
+      "year": "2026",
+      "comment": "Abstracts Due"
     },
     {
       "title": "SATML",
@@ -3708,6 +3660,18 @@
       "website": "http://www.ifip119.org/Conferences/",
       "year": "2026",
       "comment": "Submission Deadline"
+    },
+    {
+      "title": "FPGA",
+      "description": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-10-01 23:59:59 UTC-12",
+      "conference_date": "February 22 - February 24, 2026",
+      "location": "Monterey, California, USA",
+      "website": "https://www.isfpga.org/",
+      "year": "2026",
+      "comment": "Submissions Due"
     },
     {
       "title": "VLDB",
@@ -3938,6 +3902,18 @@
       "comment": ""
     },
     {
+      "title": "MSR",
+      "description": "International Conference on Mining Software Repositories",
+      "rank": "C",
+      "category": "SE",
+      "submission_deadline": "2025-10-23 23:59:59 AoE",
+      "conference_date": "April 13-14, 2026",
+      "location": "Rio de Janeiro, Brazil",
+      "website": "https://2026.msrconf.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "PKC",
       "description": "International Conference on Practice and Theory of Public-Key Cryptography",
       "rank": "B",
@@ -3986,6 +3962,18 @@
       "comment": "TACAS mandatory artifact submission"
     },
     {
+      "title": "MLSys",
+      "description": "Conference on Machine Learning and Systems",
+      "rank": "N",
+      "category": "MX",
+      "submission_deadline": "2025-10-30 20:00:00 AoE",
+      "conference_date": "May 17-22, 2025",
+      "location": "Bellevue, Washington, USA",
+      "website": "https://mlsys.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "VLDB",
       "description": "International Conference on Very Large Data Bases",
       "rank": "A",
@@ -4030,6 +4018,30 @@
       "conference_date": "June 15-19, 2026",
       "location": "Boulder, Colorado, United States",
       "website": "https://pldi26.sigplan.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "CVPR",
+      "description": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "rank": "A",
+      "category": "AI",
+      "submission_deadline": "2025-11-14 23:59:00 UTC+0",
+      "conference_date": "June 2-6, 2026",
+      "location": "Denver, Colorado, United States",
+      "website": "https://cvpr.thecvf.com/Conferences/2026",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ESANN",
+      "description": "European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning",
+      "rank": "N",
+      "category": "AI",
+      "submission_deadline": "2025-11-19 23:59:59 UTC-8",
+      "conference_date": "April 22 - 24, 2026",
+      "location": "Bruges, Belgium and Online",
+      "website": "https://www.esann.org/",
       "year": "2026",
       "comment": ""
     },
@@ -4128,6 +4140,18 @@
       "website": "https://asiaccs2026.cse.iitkgp.ac.in/",
       "year": "2026",
       "comment": "2nd round Deadline"
+    },
+    {
+      "title": "ISPASS",
+      "description": "International Symposium on Performance Analysis of Systems and Software",
+      "rank": "C",
+      "category": "SE",
+      "submission_deadline": "2025-12-12 23:59:59 AoE",
+      "conference_date": "April 26-28, 2026",
+      "location": "Seoul, South Korea",
+      "website": "https://ispass.org/ispass2026/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "SEC",
