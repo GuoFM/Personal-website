@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-16T00:58:01.072180",
+  "last_updated": "2025-09-17T00:57:56.423190",
   "conferences": [
     {
       "title": "PODC",
@@ -300,18 +300,6 @@
       "website": "https://2025.naacl.org/",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "SANER",
-      "description": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
-      "rank": "B",
-      "category": "SE",
-      "submission_deadline": "2024-10-16 23:59:59 AoE",
-      "conference_date": "March 17-20, 2026",
-      "location": "Limassol, Cyprus",
-      "website": "https://conf.researchr.org/home/saner-2026",
-      "year": "2026",
-      "comment": "Research Track Paper submission deadline"
     },
     {
       "title": "RECOMB",
@@ -3498,8 +3486,8 @@
       "description": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
       "rank": "B",
       "category": "CG",
-      "submission_deadline": "2025-09-17 22:59:59 UTC-8",
-      "conference_date": "May 3-8, 2026",
+      "submission_deadline": "2025-09-17 23:59:59 UTC-12",
+      "conference_date": "May 4-8, 2026",
       "location": "Barcelona, Spain",
       "website": "https://2026.ieeeicassp.org/",
       "year": "2026",
@@ -3799,7 +3787,7 @@
       "rank": "A",
       "category": "SE",
       "submission_deadline": "2025-10-10 23:59:59 UTC-12",
-      "conference_date": "October 3-9, 2025",
+      "conference_date": "October 3-9, 2026",
       "location": "Oakland, California, United States",
       "website": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
       "year": "2026",
@@ -3876,6 +3864,18 @@
       "website": "https://etaps.org/2026",
       "year": "2026",
       "comment": "Submission deadline ESOP round 2"
+    },
+    {
+      "title": "SANER",
+      "description": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
+      "rank": "B",
+      "category": "SE",
+      "submission_deadline": "2025-10-16 23:59:59 AoE",
+      "conference_date": "March 17-20, 2026",
+      "location": "Limassol, Cyprus",
+      "website": "https://conf.researchr.org/home/saner-2026",
+      "year": "2026",
+      "comment": "Research Track Paper submission deadline"
     },
     {
       "title": "SIGMOD",
@@ -4363,7 +4363,7 @@
       "rank": "A",
       "category": "SE",
       "submission_deadline": "2026-03-17 23:59:59 UTC-12",
-      "conference_date": "October 3-9, 2025",
+      "conference_date": "October 3-9, 2026",
       "location": "Oakland, California, United States",
       "website": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
       "year": "2026",
