@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-21T01:04:13.881900",
+  "last_updated": "2025-09-22T01:03:33.167281",
   "conferences": [
     {
       "title": "PODC",
@@ -4224,6 +4224,18 @@
       "website": "https://fg2026.ieee-biometrics.org/",
       "year": "2026",
       "comment": "Round 2"
+    },
+    {
+      "title": "ISIT",
+      "description": "IEEE International Symposium on Information Theory",
+      "rank": "N",
+      "category": "CT",
+      "submission_deadline": "2026-01-16 23:59:59 AoE",
+      "conference_date": "June 28 - July 3, 2026",
+      "location": "Guangzhou, China",
+      "website": "https://2026.ieee-isit.org/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "ACNS",
