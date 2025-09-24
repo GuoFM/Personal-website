@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-23T00:58:10.834550",
+  "last_updated": "2025-09-24T00:59:02.197857",
   "conferences": [
     {
       "title": "PODC",
@@ -3518,18 +3518,6 @@
       "comment": "Second round"
     },
     {
-      "title": "PerCom",
-      "description": "IEEE International Conference on Pervasive Computing and Communications",
-      "rank": "B",
-      "category": "HI",
-      "submission_deadline": "2025-09-19 23:59:00 AoE",
-      "conference_date": "March 16 - 20, 2026",
-      "location": "Pisa, Italy",
-      "website": "https://percom.org/",
-      "year": "2026",
-      "comment": ""
-    },
-    {
       "title": "FPGA",
       "description": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
       "rank": "B",
@@ -3708,6 +3696,18 @@
       "website": "https://fg2026.ieee-biometrics.org/",
       "year": "2026",
       "comment": "Round 1"
+    },
+    {
+      "title": "PerCom",
+      "description": "IEEE International Conference on Pervasive Computing and Communications",
+      "rank": "B",
+      "category": "HI",
+      "submission_deadline": "2025-10-03 23:59:00 AoE",
+      "conference_date": "March 16 - 20, 2026",
+      "location": "Pisa, Italy",
+      "website": "https://percom.org/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "EACL",
