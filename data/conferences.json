@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-24T00:59:02.197857",
+  "last_updated": "2025-09-25T00:59:39.405354",
   "conferences": [
     {
       "title": "PODC",
@@ -206,18 +206,6 @@
       "comment": "First Call for Main Conference Papers"
     },
     {
-      "title": "PacificVis",
-      "description": "IEEE Pacific Visualization Symposium",
-      "rank": "C",
-      "category": "CG",
-      "submission_deadline": "2024-09-22 23:59:00 AoE",
-      "conference_date": "April 22 - 25, 2025",
-      "location": "Chang Yung-fa Foundation International Convention Center, Taipei, Taiwan",
-      "website": "https://pacificvis2025.github.io/pages/index.html",
-      "year": "2025",
-      "comment": "Journal track"
-    },
-    {
       "title": "ALT",
       "description": "International Conference on Algorithmic Learning Theory",
       "rank": "C",
@@ -384,18 +372,6 @@
       "website": "https://www.dac.com/Conference/2025-Call-for-Contributions",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "PacificVis",
-      "description": "IEEE Pacific Visualization Symposium",
-      "rank": "C",
-      "category": "CG",
-      "submission_deadline": "2024-11-20 23:59:00 AoE",
-      "conference_date": "April 22 - 25, 2025",
-      "location": "Chang Yung-fa Foundation International Convention Center, Taipei, Taiwan",
-      "website": "https://pacificvis2025.github.io/pages/index.html",
-      "year": "2025",
-      "comment": "Conference track"
     },
     {
       "title": "IMC",
@@ -946,18 +922,6 @@
       "conference_date": "June 20-22, 2025",
       "location": "Trondheim, Norway",
       "website": "https://conf.researchr.org/home/internetware-2025",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "CGI",
-      "description": "Computer Graphics International",
-      "rank": "C",
-      "category": "CG",
-      "submission_deadline": "2025-02-18 23:59:00 UTC",
-      "conference_date": "July 14-18, 2025",
-      "location": "Hong Kong, China",
-      "website": "https://www.cgs-network.org/cgi25/",
       "year": "2025",
       "comment": ""
     },
@@ -3338,6 +3302,18 @@
       "comment": "Summer Deadlines"
     },
     {
+      "title": "PacificVis",
+      "description": "IEEE Pacific Visualization Symposium",
+      "rank": "C",
+      "category": "CG",
+      "submission_deadline": "2025-09-07 23:59:00 AoE",
+      "conference_date": "April 20 - 23, 2026",
+      "location": "Sydney, Australia",
+      "website": "https://pacificvis2026.github.io/",
+      "year": "2026",
+      "comment": "Journal track"
+    },
+    {
       "title": "ICDT",
       "description": "International Conference on Database Theory",
       "rank": "B",
@@ -3996,6 +3972,18 @@
       "website": "https://www.ubicomp.org/ubicomp-iswc-2025",
       "year": "2025",
       "comment": "fourth round"
+    },
+    {
+      "title": "PacificVis",
+      "description": "IEEE Pacific Visualization Symposium",
+      "rank": "C",
+      "category": "CG",
+      "submission_deadline": "2025-11-08 23:59:00 AoE",
+      "conference_date": "April 20 - 23, 2026",
+      "location": "Sydney, Australia",
+      "website": "https://pacificvis2026.github.io/",
+      "year": "2026",
+      "comment": "Conference track"
     },
     {
       "title": "S&P",
