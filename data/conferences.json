@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-25T00:59:39.405354",
+  "last_updated": "2025-09-26T00:59:03.275475",
   "conferences": [
     {
       "title": "PODC",
@@ -170,18 +170,6 @@
       "comment": "ToSC, Volume 2024, Issue 4 Submission deadline"
     },
     {
-      "title": "NOMS",
-      "description": "IEEE/IFIP Network Operations and Management Symposium",
-      "rank": "N",
-      "category": "SC",
-      "submission_deadline": "2024-09-14 19:59:59 UTC+10",
-      "conference_date": "May 12-16, 2025",
-      "location": "Honolulu, HI, USA",
-      "website": "https://noms2025.ieee-noms.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "ICWSM",
       "description": "The International AAAI Conference on Web and Social Media",
       "rank": "B",
@@ -242,18 +230,6 @@
       "comment": ""
     },
     {
-      "title": "ECIR",
-      "description": "European Conference on Information Retrieval",
-      "rank": "C",
-      "category": "DB",
-      "submission_deadline": "2024-10-09 23:59:59 UTC-12",
-      "conference_date": "April 06 - April 10, 2025",
-      "location": "Lucca, Italy",
-      "website": "https://ecir2025.eu/key-dates/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "DCC",
       "description": "Data Compression Conference",
       "rank": "B",
@@ -286,30 +262,6 @@
       "conference_date": "April 29-May 4, 2025",
       "location": "Albuquerque, New Mexico, USA",
       "website": "https://2025.naacl.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "RECOMB",
-      "description": "International Conference on Research inComputational Molecular Biology",
-      "rank": "B",
-      "category": "MX",
-      "submission_deadline": "2024-10-25 23:59:59 AoE",
-      "conference_date": "April 26-29, 2025",
-      "location": "Seoul, Korea",
-      "website": "https://recomb.org/recomb2025/index.html",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "ICAPS",
-      "description": "International Conference on Automated Planning and Scheduling",
-      "rank": "B",
-      "category": "AI",
-      "submission_deadline": "2024-11-01 23:59:59 UTC-12",
-      "conference_date": "November 9-14, 2025",
-      "location": "Melbourne, Victoria, Australia",
-      "website": "https://icaps25.icaps-conference.org/",
       "year": "2025",
       "comment": ""
     },
@@ -432,18 +384,6 @@
       "website": "https://fse.iacr.org/2025/",
       "year": "2025",
       "comment": "ToSC, Volume 2025, Issue 1 Submission deadline"
-    },
-    {
-      "title": "CPAL",
-      "description": "The Conference on Parsimony and Learning",
-      "rank": "N",
-      "category": "AI",
-      "submission_deadline": "2024-11-25 23:59:59 AoE",
-      "conference_date": "March 24-27, 2025",
-      "location": "California, USA",
-      "website": "https://cpal.cc/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "CAiSE",
@@ -588,18 +528,6 @@
       "website": "https://www.icwsm.org/2025/index.html",
       "year": "2025",
       "comment": "3rd Full-paper Deadline"
-    },
-    {
-      "title": "ICS",
-      "description": "ACM International Conference on Supercomputing",
-      "rank": "B",
-      "category": "DS",
-      "submission_deadline": "2025-01-16 23:59:59 AoE",
-      "conference_date": "June 9-11, 2025",
-      "location": "Salt Lake City, U.S.A.",
-      "website": "https://hpcrl.github.io/ICS2025-webpage/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "NOSSDAV",
@@ -1090,18 +1018,6 @@
       "conference_date": "July 7-12, 2025",
       "location": "Helsinki, Finland",
       "website": "https://services.conferences.computer.org/2025/icws-2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "COMPSAC",
-      "description": "International Computer Software and Applications Conference",
-      "rank": "C",
-      "category": "SE",
-      "submission_deadline": "2025-03-05 23:59:59 AoE",
-      "conference_date": "July 8-11, 2025",
-      "location": "Toronto, Canada",
-      "website": "https://ieeecompsac.computer.org/2025/",
       "year": "2025",
       "comment": ""
     },
@@ -3650,6 +3566,18 @@
       "comment": ""
     },
     {
+      "title": "ECIR",
+      "description": "European Conference on Information Retrieval",
+      "rank": "C",
+      "category": "DB",
+      "submission_deadline": "2025-10-02 23:59:59 AoE",
+      "conference_date": "March 30 - April 01, 2026",
+      "location": "Delft, The Netherlands",
+      "website": "https://ecir2026.eu/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "AISTATS",
       "description": "International Conference on Artificial Intelligence and Statistics",
       "rank": "C",
@@ -3790,6 +3718,18 @@
       "conference_date": "May 24-27, 2026",
       "location": "SHANGHAI, CHINA",
       "website": "https://2026.ieee-iscas.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "NOMS",
+      "description": "IEEE/IFIP Network Operations and Management Symposium",
+      "rank": "N",
+      "category": "SC",
+      "submission_deadline": "2025-10-13 19:59:59 UTC+10",
+      "conference_date": "May 18-22, 2026",
+      "location": "Rome, Italy",
+      "website": "https://noms2026.ieee-noms.org/",
       "year": "2026",
       "comment": ""
     },
@@ -4094,6 +4034,30 @@
       "comment": ""
     },
     {
+      "title": "CPAL",
+      "description": "The Conference on Parsimony and Learning",
+      "rank": "N",
+      "category": "AI",
+      "submission_deadline": "2025-12-05 23:59:59 AoE",
+      "conference_date": "March 23-27, 2026",
+      "location": "Tübingen, Germany",
+      "website": "https://cpal.cc/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ICAPS",
+      "description": "International Conference on Automated Planning and Scheduling",
+      "rank": "B",
+      "category": "AI",
+      "submission_deadline": "2025-12-08 23:59:59 UTC-12",
+      "conference_date": "June 27 - July 2, 2026",
+      "location": "Dublin, Ireland",
+      "website": "https://icaps26.icaps-conference.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "OSDI",
       "description": "USENIX Symposium on Operating Systems Design and Implementation",
       "rank": "A",
@@ -4140,6 +4104,18 @@
       "website": "https://ispass.org/ispass2026/",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "ICS",
+      "description": "ACM International Conference on Supercomputing",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-12-16 23:59:59 AoE",
+      "conference_date": "July 6-9, 2026",
+      "location": "Belfast, Northern Ireland, United Kingdom",
+      "website": "https://dipsa-qub.github.io/ICS2026-webpage/",
+      "year": "2026",
+      "comment": "Cycle 1"
     },
     {
       "title": "SEC",
@@ -4262,6 +4238,18 @@
       "comment": ""
     },
     {
+      "title": "COMPSAC",
+      "description": "International Computer Software and Applications Conference",
+      "rank": "C",
+      "category": "SE",
+      "submission_deadline": "2026-01-31 23:59:59 AoE",
+      "conference_date": "July 7-10, 2026",
+      "location": "Madrid, Spain",
+      "website": "https://ieeecompsac.computer.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "IJCNN",
       "description": "International Joint Conference on Neural Networks",
       "rank": "C",
@@ -4296,6 +4284,18 @@
       "website": "https://www.usenix.org/conference/usenixsecurity26",
       "year": "2026",
       "comment": "Cycle 2 Deadline"
+    },
+    {
+      "title": "ICS",
+      "description": "ACM International Conference on Supercomputing",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2026-02-09 23:59:59 AoE",
+      "conference_date": "July 6-9, 2026",
+      "location": "Belfast, Northern Ireland, United Kingdom",
+      "website": "https://dipsa-qub.github.io/ICS2026-webpage/",
+      "year": "2026",
+      "comment": "Cycle 2"
     },
     {
       "title": "InterSpeech",
