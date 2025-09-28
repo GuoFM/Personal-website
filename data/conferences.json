@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-27T00:56:43.573050",
+  "last_updated": "2025-09-28T01:05:01.889622",
   "conferences": [
     {
       "title": "PODC",
@@ -407,6 +407,18 @@
       "location": "Kanazawa, Japan",
       "website": "https://socg25.github.io/",
       "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "EuroVis",
+      "description": "Eurographics Conference on Visualization",
+      "rank": "B",
+      "category": "CG",
+      "submission_deadline": "2024-12-03 23:59:59 AoE",
+      "conference_date": "June 8-12, 2026",
+      "location": "Nottingham, United Kingdom",
+      "website": "https://www.eurovis.org.uk/",
+      "year": "2026",
       "comment": ""
     },
     {
@@ -4130,6 +4142,18 @@
       "comment": "Submission deadline"
     },
     {
+      "title": "ICPR",
+      "description": "International Conference on Pattern Recognition",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-12-20 23:59:59 AoE",
+      "conference_date": "August 17-21, 2026",
+      "location": "Lyon, France",
+      "website": "https://icpr2026.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "VLDB",
       "description": "International Conference on Very Large Data Bases",
       "rank": "A",
@@ -4368,6 +4392,18 @@
       "website": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
       "year": "2026",
       "comment": "Submission Deadline Round 2"
+    },
+    {
+      "title": "ICIC",
+      "description": "International Conference on Intelligent Computing",
+      "rank": "C",
+      "category": "MX",
+      "submission_deadline": "2026-03-20 11:59:59 UTC+8",
+      "conference_date": "July 22-26, 2026",
+      "location": "Toronto, Canada",
+      "website": "http://www.ic-icc.cn/2026/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "CHES",
