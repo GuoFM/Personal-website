@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-28T01:05:01.889622",
+  "last_updated": "2025-09-29T01:00:39.613128",
   "conferences": [
     {
       "title": "PODC",
@@ -290,18 +290,6 @@
       "comment": "1st round Deadline"
     },
     {
-      "title": "ISCA",
-      "description": "International Symposium on Computer Architecture",
-      "rank": "A",
-      "category": "DS",
-      "submission_deadline": "2024-11-15 23:59:59 AoE",
-      "conference_date": "June 21-25, 2025",
-      "location": "Tokyo, Japan",
-      "website": "https://iscaconf.org/isca2025/",
-      "year": "2025",
-      "comment": "abstract deadline"
-    },
-    {
       "title": "CSCWD",
       "description": "International Conference on Computer Supported Cooperative Work in Design",
       "rank": "C",
@@ -360,18 +348,6 @@
       "website": "https://wowmomconference.uta.edu/index.html",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "ISCA",
-      "description": "International Symposium on Computer Architecture",
-      "rank": "A",
-      "category": "DS",
-      "submission_deadline": "2024-11-22 23:59:59 AoE",
-      "conference_date": "June 21-25, 2025",
-      "location": "Tokyo, Japan",
-      "website": "https://iscaconf.org/isca2025/",
-      "year": "2025",
-      "comment": "full paper deadline"
     },
     {
       "title": "FSE",
@@ -3938,6 +3914,18 @@
       "comment": "Conference track"
     },
     {
+      "title": "ISCA",
+      "description": "International Symposium on Computer Architecture",
+      "rank": "A",
+      "category": "DS",
+      "submission_deadline": "2025-11-10 23:59:59 AoE",
+      "conference_date": "June 27-July 1, 2026",
+      "location": "Raleigh, USA",
+      "website": "https://iscaconf.org/isca2026/",
+      "year": "2026",
+      "comment": "abstract deadline"
+    },
+    {
       "title": "S&P",
       "description": "IEEE Symposium on Security and Privacy",
       "rank": "A",
@@ -3972,6 +3960,42 @@
       "website": "https://cvpr.thecvf.com/Conferences/2026",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "RECOMB",
+      "description": "International Conference on Research inComputational Molecular Biology",
+      "rank": "B",
+      "category": "MX",
+      "submission_deadline": "2025-11-14 23:59:59 AoE",
+      "conference_date": "May 26 - 29, 2026",
+      "location": "Thessaloniki, Greece",
+      "website": "https://recomb.org/recomb2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "PAKDD",
+      "description": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
+      "rank": "C",
+      "category": "DB",
+      "submission_deadline": "2025-11-15 23:59:59 UTC-8",
+      "conference_date": "June 9-12, 2026",
+      "location": "Hong Kong, China",
+      "website": "https://www.pakdd2026.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ISCA",
+      "description": "International Symposium on Computer Architecture",
+      "rank": "A",
+      "category": "DS",
+      "submission_deadline": "2025-11-17 23:59:59 AoE",
+      "conference_date": "June 27-July 1, 2026",
+      "location": "Raleigh, USA",
+      "website": "https://iscaconf.org/isca2026/",
+      "year": "2026",
+      "comment": "full paper deadline"
     },
     {
       "title": "ESANN",
