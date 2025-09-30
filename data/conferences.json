@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-09-29T01:00:39.613128",
+  "last_updated": "2025-09-30T01:00:04.588707",
   "conferences": [
     {
       "title": "PODC",
@@ -3954,8 +3954,8 @@
       "description": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
       "rank": "A",
       "category": "AI",
-      "submission_deadline": "2025-11-14 23:59:00 UTC+0",
-      "conference_date": "June 2-6, 2026",
+      "submission_deadline": "2025-11-13 23:59:00 UTC-12",
+      "conference_date": "June 3-7, 2026",
       "location": "Denver, Colorado, United States",
       "website": "https://cvpr.thecvf.com/Conferences/2026",
       "year": "2026",
