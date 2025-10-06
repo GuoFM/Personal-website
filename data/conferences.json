@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-05T01:03:58.954701",
+  "last_updated": "2025-10-06T00:59:51.915149",
   "conferences": [
     {
       "title": "PODC",
@@ -300,30 +300,6 @@
       "website": "http://2025.cscwd.org",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "DAC",
-      "description": "Design Automation Conference",
-      "rank": "A",
-      "category": "DS",
-      "submission_deadline": "2024-11-19 17:00:00 UTC-8",
-      "conference_date": "June 22-25, 2025",
-      "location": "San Francisco, CA",
-      "website": "https://www.dac.com/Conference/2025-Call-for-Contributions",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "IMC",
-      "description": "ACM Internet Measurement Conference",
-      "rank": "B",
-      "category": "NW",
-      "submission_deadline": "2024-11-21 23:59:59 AoE",
-      "conference_date": "Oct 28-31, 2025",
-      "location": "Madison, Wisconsin, USA",
-      "website": "https://conferences.sigcomm.org/imc/2025/",
-      "year": "2025",
-      "comment": "Fall deadline"
     },
     {
       "title": "WiSec",
@@ -2078,18 +2054,6 @@
       "comment": "MAY 2025 SUBMISSION CYCLE"
     },
     {
-      "title": "IMC",
-      "description": "ACM Internet Measurement Conference",
-      "rank": "B",
-      "category": "NW",
-      "submission_deadline": "2025-05-15 23:59:59 AoE",
-      "conference_date": "Oct 28-31, 2025",
-      "location": "Madison, Wisconsin, USA",
-      "website": "https://conferences.sigcomm.org/imc/2025/",
-      "year": "2025",
-      "comment": "Spring deadline"
-    },
-    {
       "title": "EuroSys",
       "description": "European Conference on Computer Systems",
       "rank": "A",
@@ -2639,7 +2603,7 @@
       "location": "Saint-Malo, France",
       "website": "https://sensys.acm.org/2026/",
       "year": "2026",
-      "comment": ""
+      "comment": "1st deadline"
     },
     {
       "title": "VLDB",
@@ -3926,6 +3890,18 @@
       "comment": "abstract deadline"
     },
     {
+      "title": "SenSys",
+      "description": "ACM Conference on Embedded Networked Sensor Systems",
+      "rank": "B",
+      "category": "NW",
+      "submission_deadline": "2025-11-13 23:59:00 AoE",
+      "conference_date": "May 11-14, 2026",
+      "location": "Saint-Malo, France",
+      "website": "https://sensys.acm.org/2026/",
+      "year": "2026",
+      "comment": "2nd deadline"
+    },
+    {
       "title": "S&P",
       "description": "IEEE Symposium on Security and Privacy",
       "rank": "A",
@@ -3998,6 +3974,18 @@
       "comment": "full paper deadline"
     },
     {
+      "title": "DAC",
+      "description": "Design Automation Conference",
+      "rank": "A",
+      "category": "DS",
+      "submission_deadline": "2025-11-18 17:00:00 UTC-8",
+      "conference_date": "July 26-29, 2026",
+      "location": "Long Beach, CA",
+      "website": "https://dac.com/2026/call-for-contributions",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "ESANN",
       "description": "European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning",
       "rank": "N",
@@ -4008,6 +3996,18 @@
       "website": "https://www.esann.org/",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "IMC",
+      "description": "ACM Internet Measurement Conference",
+      "rank": "B",
+      "category": "NW",
+      "submission_deadline": "2025-11-20 23:59:59 AoE",
+      "conference_date": "November 03-06, 2026",
+      "location": "Karlsruhe, Germany",
+      "website": "https://conferences.sigcomm.org/imc/2026/",
+      "year": "2026",
+      "comment": "Cycle 1 Deadline"
     },
     {
       "title": "EuroS&P",
@@ -4066,6 +4066,18 @@
       "conference_date": "June 22-25, 2026",
       "location": "Charlotte, USA",
       "website": "https://dsn2026.github.io",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "MobiSys",
+      "description": "ACM International Conference on Mobile Systems, Applications, and Services",
+      "rank": "B",
+      "category": "NW",
+      "submission_deadline": "2025-12-05 23:59:59 AoE",
+      "conference_date": "June 21-25, 2026",
+      "location": "Cambridge, UK",
+      "website": "https://www.sigmobile.org/mobisys/2026/",
       "year": "2026",
       "comment": ""
     },
@@ -4440,6 +4452,18 @@
       "website": "https://ches.iacr.org/2026/",
       "year": "2026",
       "comment": "Schedule for TCHES Volume 2026/4"
+    },
+    {
+      "title": "IMC",
+      "description": "ACM Internet Measurement Conference",
+      "rank": "B",
+      "category": "NW",
+      "submission_deadline": "2026-04-29 23:59:59 AoE",
+      "conference_date": "November 03-06, 2026",
+      "location": "Karlsruhe, Germany",
+      "website": "https://conferences.sigcomm.org/imc/2026/",
+      "year": "2026",
+      "comment": "Cycle 2 Deadline"
     }
   ]
 }
