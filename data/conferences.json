@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-08T00:58:16.549064",
+  "last_updated": "2025-10-09T00:59:42.689426",
   "conferences": [
     {
       "title": "PODC",
@@ -4198,6 +4198,18 @@
       "conference_date": "August 31 - September 4, 2026",
       "location": "Boston, MA, USA",
       "website": "https://www.vldb.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ACL",
+      "description": "Annual Meeting of the Association for Computational Linguistics",
+      "rank": "A",
+      "category": "AI",
+      "submission_deadline": "2026-01-05 23:59:59 UTC-12",
+      "conference_date": "July 2 - 7, 2026",
+      "location": "San Diego, California, United States",
+      "website": "https://2026.aclweb.org/",
       "year": "2026",
       "comment": ""
     },
