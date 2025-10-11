@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-10T00:59:25.555970",
+  "last_updated": "2025-10-11T00:56:44.538746",
   "conferences": [
     {
       "title": "PODC",
@@ -50,18 +50,6 @@
       "comment": "Early Submission"
     },
     {
-      "title": "FSE",
-      "description": "Fast Software Encryption",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2024-03-01 23:59:59 UTC-12",
-      "conference_date": "March 17-21, 2025",
-      "location": "Rome, Italy",
-      "website": "https://fse.iacr.org/2025/",
-      "year": "2025",
-      "comment": "ToSC, Volume 2024, Issue 2 Submission deadline"
-    },
-    {
       "title": "NETYS",
       "description": "The International Conference on Networked Systems",
       "rank": "N",
@@ -110,18 +98,6 @@
       "comment": "1st Full-paper Deadline"
     },
     {
-      "title": "FSE",
-      "description": "Fast Software Encryption",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2024-06-01 23:59:59 UTC-12",
-      "conference_date": "March 17-21, 2025",
-      "location": "Rome, Italy",
-      "website": "https://fse.iacr.org/2025/",
-      "year": "2025",
-      "comment": "ToSC, Volume 2024, Issue 3 Submission deadline"
-    },
-    {
       "title": "CoNEXT",
       "description": "International Conference on Emerging Networking Experiments and Technologies",
       "rank": "B",
@@ -156,18 +132,6 @@
       "website": "https://acmsocc.org/2024/",
       "year": "2024",
       "comment": ""
-    },
-    {
-      "title": "FSE",
-      "description": "Fast Software Encryption",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2024-09-01 23:59:59 UTC-12",
-      "conference_date": "March 17-21, 2025",
-      "location": "Rome, Italy",
-      "website": "https://fse.iacr.org/2025/",
-      "year": "2025",
-      "comment": "ToSC, Volume 2024, Issue 4 Submission deadline"
     },
     {
       "title": "ICWSM",
@@ -218,18 +182,6 @@
       "comment": ""
     },
     {
-      "title": "PAM",
-      "description": "Passive and Active Measurement Conference",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-10-08 23:59:59 AoE",
-      "conference_date": "March 10-12, 2025",
-      "location": "Virtual",
-      "website": "https://udesa.edu.ar/pam25",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "DCC",
       "description": "Data Compression Conference",
       "rank": "B",
@@ -240,18 +192,6 @@
       "website": "https://datacompressionconference.org/",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "CT-RSA",
-      "description": "Cryptographer's Track at RSA Conference",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-10-15 23:59:59 UTC-12",
-      "conference_date": "April 28-May 1, 2025",
-      "location": "San Francisco, California, USA",
-      "website": "https://ct-rsa-2025.csa.iisc.ac.in/",
-      "year": "2025",
-      "comment": "Paper submission deadline"
     },
     {
       "title": "NAACL",
@@ -278,18 +218,6 @@
       "comment": ""
     },
     {
-      "title": "ACISP",
-      "description": "Australasia Conference on Information Security and Privacy",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-11-06 23:59:59 AoE",
-      "conference_date": "July 14-16, 2025",
-      "location": "Wollongong, Australia",
-      "website": "https://uow-ic2.github.io/acisp2025/",
-      "year": "2025",
-      "comment": "1st round Deadline"
-    },
-    {
       "title": "CSCWD",
       "description": "International Conference on Computer Supported Cooperative Work in Design",
       "rank": "C",
@@ -302,18 +230,6 @@
       "comment": ""
     },
     {
-      "title": "WiSec",
-      "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-11-21 23:59:59 AoE",
-      "conference_date": "June 30 - July 3, 2025",
-      "location": "Arlington, Virginia, USA",
-      "website": "https://wisec2025.gmu.edu/",
-      "year": "2025",
-      "comment": "First Cycle deadline"
-    },
-    {
       "title": "WoWMoM",
       "description": "IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks",
       "rank": "C",
@@ -324,18 +240,6 @@
       "website": "https://wowmomconference.uta.edu/index.html",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "FSE",
-      "description": "Fast Software Encryption",
-      "rank": "B",
-      "category": "SC",
-      "submission_deadline": "2024-11-22 23:59:59 UTC-12",
-      "conference_date": "March 17-21, 2025",
-      "location": "Rome, Italy",
-      "website": "https://fse.iacr.org/2025/",
-      "year": "2025",
-      "comment": "ToSC, Volume 2025, Issue 1 Submission deadline"
     },
     {
       "title": "CAiSE",
@@ -372,18 +276,6 @@
       "website": "https://www.eurovis.org.uk/",
       "year": "2026",
       "comment": ""
-    },
-    {
-      "title": "DIMVA",
-      "description": "Detection of Intrusions and Malware & Vulnerability Assessment",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2024-12-10 23:59:59 AoE",
-      "conference_date": "July 9-11, 2025",
-      "location": "Graz University of Technology, Graz, Austria",
-      "website": "https://www.dimva.org/dimva2025/",
-      "year": "2025",
-      "comment": "Paper submission deadline"
     },
     {
       "title": "GMP",
@@ -650,18 +542,6 @@
       "comment": ""
     },
     {
-      "title": "EASE",
-      "description": "International Conference on Evaluation and Assessment in Software Engineering",
-      "rank": "C",
-      "category": "SE",
-      "submission_deadline": "2025-01-31 23:59:59 AoE",
-      "conference_date": "June 17 - 20, 2025",
-      "location": "Istanbul, Turkey",
-      "website": "https://conf.researchr.org/home/ease-2025",
-      "year": "2025",
-      "comment": "Research Papers"
-    },
-    {
       "title": "CAV",
       "description": "International Conference on Computer-Aided Verification",
       "rank": "A",
@@ -770,18 +650,6 @@
       "comment": ""
     },
     {
-      "title": "DIMVA",
-      "description": "Detection of Intrusions and Malware & Vulnerability Assessment",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2025-02-12 23:59:59 AoE",
-      "conference_date": "July 9-11, 2025",
-      "location": "Graz University of Technology, Graz, Austria",
-      "website": "https://www.dimva.org/dimva2025/",
-      "year": "2025",
-      "comment": "Final paper submission deadline"
-    },
-    {
       "title": "CRYPTO",
       "description": "International Cryptology Conference",
       "rank": "A",
@@ -816,18 +684,6 @@
       "website": "https://conf.researchr.org/home/internetware-2025",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "ACISP",
-      "description": "Australasia Conference on Information Security and Privacy",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2025-02-19 23:59:59 AoE",
-      "conference_date": "July 14-16, 2025",
-      "location": "Wollongong, Australia",
-      "website": "https://uow-ic2.github.io/acisp2025/",
-      "year": "2025",
-      "comment": "2nd round Deadline"
     },
     {
       "title": "TASE",
@@ -936,6 +792,18 @@
       "website": "https://www.ihmmsec.org/cms/home/index.html",
       "year": "2025",
       "comment": "Submission Deadline"
+    },
+    {
+      "title": "FSE",
+      "description": "Fast Software Encryption",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-03-01 23:59:59 UTC-12",
+      "conference_date": "March 23-27, 2026",
+      "location": "Singapore, Singapore",
+      "website": "https://fse.iacr.org/2026/",
+      "year": "2026",
+      "comment": "ToSC, Volume 2025, Issue 2 Submission deadline"
     },
     {
       "title": "SecureComm",
@@ -1082,18 +950,6 @@
       "comment": "Spring Submission Deadline"
     },
     {
-      "title": "WiSec",
-      "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2025-03-12 23:59:59 AoE",
-      "conference_date": "June 30 - July 3, 2025",
-      "location": "Arlington, Virginia, USA",
-      "website": "https://wisec2025.gmu.edu/",
-      "year": "2025",
-      "comment": "Second Cycle deadline"
-    },
-    {
       "title": "APNet",
       "description": "Asia-Pacific Workshop on Networking",
       "rank": "C",
@@ -1188,18 +1044,6 @@
       "website": "https://spmconf2025.github.io/SPM2025/",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "EASE",
-      "description": "International Conference on Evaluation and Assessment in Software Engineering",
-      "rank": "C",
-      "category": "SE",
-      "submission_deadline": "2025-03-16 23:59:59 AoE",
-      "conference_date": "June 17 - 20, 2025",
-      "location": "Istanbul, Turkey",
-      "website": "https://conf.researchr.org/home/ease-2025",
-      "year": "2025",
-      "comment": "Short Papers, Emerging Results"
     },
     {
       "title": "GLSVLSI",
@@ -2342,6 +2186,18 @@
       "comment": ""
     },
     {
+      "title": "FSE",
+      "description": "Fast Software Encryption",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-06-01 23:59:59 UTC-12",
+      "conference_date": "March 23-27, 2026",
+      "location": "Singapore, Singapore",
+      "website": "https://fse.iacr.org/2026/",
+      "year": "2026",
+      "comment": "ToSC, Volume 2025, Issue 3 Submission deadline"
+    },
+    {
       "title": "ICFEM",
       "description": "International Conference on Formal Engineering Methods",
       "rank": "C",
@@ -2851,8 +2707,8 @@
       "rank": "A",
       "category": "DB",
       "submission_deadline": "2025-07-31 23:59:59 AoE",
-      "conference_date": "TBD",
-      "location": "TBD, Korea",
+      "conference_date": "August 9-13, 2026",
+      "location": "Jeju, Korea",
       "website": "https://kdd2026.kdd.org/",
       "year": "2026",
       "comment": "1st round of 2 total rounds"
@@ -3132,6 +2988,18 @@
       "website": "https://ppopp26.sigplan.org/",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "FSE",
+      "description": "Fast Software Encryption",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-09-01 23:59:59 UTC-12",
+      "conference_date": "March 23-27, 2026",
+      "location": "Singapore, Singapore",
+      "website": "https://fse.iacr.org/2026/",
+      "year": "2026",
+      "comment": "ToSC, Volume 2025, Issue 4 Submission deadline"
     },
     {
       "title": "INDOCRYPT",
@@ -3722,6 +3590,18 @@
       "comment": "Schedule for TCHES Volume 2026/2"
     },
     {
+      "title": "PAM",
+      "description": "Passive and Active Measurement Conference",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-10-15 23:59:59 AoE",
+      "conference_date": "March 23-25, 2026",
+      "location": "Virtual",
+      "website": "https://pam2026.at/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "ETAPS",
       "description": "European Joint Conferences on Theory and Practice of Software",
       "rank": "B",
@@ -3780,6 +3660,18 @@
       "website": "https://2026.msrconf.org/",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "CT-RSA",
+      "description": "Cryptographer's Track at RSA Conference",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-10-24 23:59:59 UTC-12",
+      "conference_date": "March 23-26, 2026",
+      "location": "San Francisco, California, USA",
+      "website": "https://conference.wsu.edu/ct-rsa-2026/",
+      "year": "2026",
+      "comment": "Paper submission deadline"
     },
     {
       "title": "PKC",
@@ -3986,6 +3878,18 @@
       "comment": ""
     },
     {
+      "title": "WiSec",
+      "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-11-18 23:59:59 AoE",
+      "conference_date": "June 30 - July 3, 2026",
+      "location": "Saarbrücken, Germany",
+      "website": "https://wisec26.events.cispa.de/",
+      "year": "2026",
+      "comment": "First Cycle deadline"
+    },
+    {
       "title": "ESANN",
       "description": "European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning",
       "rank": "N",
@@ -4022,6 +3926,30 @@
       "comment": ""
     },
     {
+      "title": "FSE",
+      "description": "Fast Software Encryption",
+      "rank": "B",
+      "category": "SC",
+      "submission_deadline": "2025-11-23 23:59:59 UTC-12",
+      "conference_date": "March 23-27, 2026",
+      "location": "Singapore, Singapore",
+      "website": "https://fse.iacr.org/2026/",
+      "year": "2026",
+      "comment": "ToSC, Volume 2026, Issue 1 Submission deadline"
+    },
+    {
+      "title": "ACISP",
+      "description": "Australasia Conference on Information Security and Privacy",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-11-27 23:59:59 AoE",
+      "conference_date": "July 6-9, 2026",
+      "location": "Perth, Australia",
+      "website": "https://acisp-conference.github.io/acisp2026/index.html",
+      "year": "2026",
+      "comment": "1st round Deadline"
+    },
+    {
       "title": "PETS",
       "description": "Privacy Enhancing Technologies Symposium",
       "rank": "C",
@@ -4056,6 +3984,18 @@
       "website": "https://conf.researchr.org/home/fm-2026",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "DIMVA",
+      "description": "Detection of Intrusions and Malware & Vulnerability Assessment",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-12-03 23:59:59 AoE",
+      "conference_date": "July 1-3, 2026",
+      "location": "Chania, Greece",
+      "website": "https://www.dimva.org/dimva2026/",
+      "year": "2026",
+      "comment": "Cycle 1 submission deadline"
     },
     {
       "title": "DSN",
@@ -4150,6 +4090,18 @@
       "conference_date": "April 26-28, 2026",
       "location": "Seoul, South Korea",
       "website": "https://ispass.org/ispass2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ICME",
+      "description": "The IEEE International Conference on Multimedia & Expo",
+      "rank": "B",
+      "category": "CG",
+      "submission_deadline": "2025-12-12 23:59:59 UTC+0",
+      "conference_date": "July 6 - July 10, 2026",
+      "location": "Bangkok, Thailand",
+      "website": "https://2026.ieeeicme.org/",
       "year": "2026",
       "comment": ""
     },
@@ -4286,6 +4238,18 @@
       "comment": "Cycle 2 Submission deadline"
     },
     {
+      "title": "EASE",
+      "description": "International Conference on Evaluation and Assessment in Software Engineering",
+      "rank": "C",
+      "category": "SE",
+      "submission_deadline": "2026-01-23 23:59:59 AoE",
+      "conference_date": "June 9 - 12, 2026",
+      "location": "Glasgow, United Kingdom",
+      "website": "https://conf.researchr.org/home/ease-2026",
+      "year": "2026",
+      "comment": "Research Papers"
+    },
+    {
       "title": "CSFW",
       "description": "IEEE Computer Security Foundations Workshop",
       "rank": "B",
@@ -4370,6 +4334,18 @@
       "comment": "Cycle 2"
     },
     {
+      "title": "DIMVA",
+      "description": "Detection of Intrusions and Malware & Vulnerability Assessment",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2026-02-11 23:59:59 AoE",
+      "conference_date": "July 1-3, 2026",
+      "location": "Chania, Greece",
+      "website": "https://www.dimva.org/dimva2026/",
+      "year": "2026",
+      "comment": "Cycle 2 submission deadline"
+    },
+    {
       "title": "InterSpeech",
       "description": "Conference of the International Speech Communication Association",
       "rank": "C",
@@ -4380,6 +4356,18 @@
       "website": "https://interspeech2026.org/",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "ACISP",
+      "description": "Australasia Conference on Information Security and Privacy",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2026-02-26 23:59:59 AoE",
+      "conference_date": "July 6-9, 2026",
+      "location": "Perth, Australia",
+      "website": "https://acisp-conference.github.io/acisp2026/index.html",
+      "year": "2026",
+      "comment": "2nd round Deadline"
     },
     {
       "title": "PETS",
@@ -4404,6 +4392,18 @@
       "website": "https://www.vldb.org/2026/",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "WiSec",
+      "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2026-03-03 23:59:59 AoE",
+      "conference_date": "June 30 - July 3, 2026",
+      "location": "Saarbrücken, Germany",
+      "website": "https://wisec26.events.cispa.de/",
+      "year": "2026",
+      "comment": "Second Cycle deadline"
     },
     {
       "title": "ECCV",
