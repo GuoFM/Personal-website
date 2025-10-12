@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-11T00:56:44.538746",
+  "last_updated": "2025-10-12T01:02:05.613298",
   "conferences": [
     {
       "title": "PODC",
@@ -38,18 +38,6 @@
       "comment": "Paper submission"
     },
     {
-      "title": "ICCBR",
-      "description": "International Conference on Case-Based Reasoning",
-      "rank": "B",
-      "category": "AI",
-      "submission_deadline": "2024-02-26 00:00:00 UTC-6",
-      "conference_date": "June 1-4, 2024",
-      "location": "Merida, Yucatan, Mexico",
-      "website": "https://www.iccbr2024.org/",
-      "year": "2024",
-      "comment": "Early Submission"
-    },
-    {
       "title": "NETYS",
       "description": "The International Conference on Networked Systems",
       "rank": "N",
@@ -60,42 +48,6 @@
       "website": "https://netys.net/",
       "year": "2024",
       "comment": ""
-    },
-    {
-      "title": "ICCBR",
-      "description": "International Conference on Case-Based Reasoning",
-      "rank": "B",
-      "category": "AI",
-      "submission_deadline": "2024-04-02 00:00:00 UTC-6",
-      "conference_date": "June 1-4, 2024",
-      "location": "Merida, Yucatan, Mexico",
-      "website": "https://www.iccbr2024.org/",
-      "year": "2024",
-      "comment": "Late Submission"
-    },
-    {
-      "title": "PPSN",
-      "description": "International Conference on Parallel Problem Solving From Nature",
-      "rank": "B",
-      "category": "AI",
-      "submission_deadline": "2024-04-18 23:59:59 UTC-12",
-      "conference_date": "September 14-18, 2024",
-      "location": "University of Applied Sciences Upper Austria, Softwarepark Hagenberg, Austria",
-      "website": "https://ppsn2024.fh-ooe.at/",
-      "year": "2024",
-      "comment": ""
-    },
-    {
-      "title": "ICWSM",
-      "description": "The International AAAI Conference on Web and Social Media",
-      "rank": "B",
-      "category": "HI",
-      "submission_deadline": "2024-05-15 23:59:59 AoE",
-      "conference_date": "June 23 - 26, 2025",
-      "location": "Copenhagen, Denmark",
-      "website": "https://www.icwsm.org/2025/index.html",
-      "year": "2025",
-      "comment": "1st Full-paper Deadline"
     },
     {
       "title": "CoNEXT",
@@ -134,18 +86,6 @@
       "comment": ""
     },
     {
-      "title": "ICWSM",
-      "description": "The International AAAI Conference on Web and Social Media",
-      "rank": "B",
-      "category": "HI",
-      "submission_deadline": "2024-09-15 23:59:59 AoE",
-      "conference_date": "June 23 - 26, 2025",
-      "location": "Copenhagen, Denmark",
-      "website": "https://www.icwsm.org/2025/index.html",
-      "year": "2025",
-      "comment": "2nd Full-paper Deadline"
-    },
-    {
       "title": "COLING",
       "description": "INTERNATIONNAL CONFERENCE ON COMPUTATIONAL LINGUISTICS",
       "rank": "B",
@@ -156,18 +96,6 @@
       "website": "https://coling2025.org/",
       "year": "2025",
       "comment": "First Call for Main Conference Papers"
-    },
-    {
-      "title": "ALT",
-      "description": "International Conference on Algorithmic Learning Theory",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2024-10-01 09:59:59 UTC+0",
-      "conference_date": "February 24-27, 2025",
-      "location": "Milan, Italy",
-      "website": "https://algorithmiclearningtheory.org/alt2025/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "SDM",
@@ -206,18 +134,6 @@
       "comment": ""
     },
     {
-      "title": "STOC",
-      "description": "ACM Symposium on the Theory of Computing",
-      "rank": "A",
-      "category": "CT",
-      "submission_deadline": "2024-11-04 19:59:59 UTC-5",
-      "conference_date": "June 23-27, 2025",
-      "location": "Prague, Czech Republic",
-      "website": "http://acm-stoc.org/stoc2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "CSCWD",
       "description": "International Conference on Computer Supported Cooperative Work in Design",
       "rank": "C",
@@ -226,42 +142,6 @@
       "conference_date": "May 5-7, 2025",
       "location": "Compiègne, France",
       "website": "http://2025.cscwd.org",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "WoWMoM",
-      "description": "IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks",
-      "rank": "C",
-      "category": "NW",
-      "submission_deadline": "2024-11-22 23:59:59 AoE",
-      "conference_date": "May 27-30, 2025",
-      "location": "Fort Worth, Texas, USA",
-      "website": "https://wowmomconference.uta.edu/index.html",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "CAiSE",
-      "description": "International Conference on Advanced Information Systems Engineering",
-      "rank": "B",
-      "category": "SE",
-      "submission_deadline": "2024-12-01 23:59:59 AoE",
-      "conference_date": "June 16-20, 2025",
-      "location": "Vienna, Austria",
-      "website": "https://conferences.big.tuwien.ac.at/caise2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "SOCG",
-      "description": "International Symposium on Computational Geometry",
-      "rank": "B",
-      "category": "CT",
-      "submission_deadline": "2024-12-03 23:59:00 AoE",
-      "conference_date": "June 23-27, 2025",
-      "location": "Kanazawa, Japan",
-      "website": "https://socg25.github.io/",
       "year": "2025",
       "comment": ""
     },
@@ -275,18 +155,6 @@
       "location": "Nottingham, United Kingdom",
       "website": "https://www.eurovis.org.uk/",
       "year": "2026",
-      "comment": ""
-    },
-    {
-      "title": "GMP",
-      "description": "International Conference on Geometric Modeling and Processing",
-      "rank": "C",
-      "category": "CG",
-      "submission_deadline": "2024-12-16 23:59:59 UTC",
-      "conference_date": "May 28-30, 2025",
-      "location": "Washington University in St. Louis, USA",
-      "website": "https://sites.wustl.edu/gmp2025/",
-      "year": "2025",
       "comment": ""
     },
     {
@@ -374,18 +242,6 @@
       "comment": ""
     },
     {
-      "title": "ICWSM",
-      "description": "The International AAAI Conference on Web and Social Media",
-      "rank": "B",
-      "category": "HI",
-      "submission_deadline": "2025-01-15 23:59:59 AoE",
-      "conference_date": "June 23 - 26, 2025",
-      "location": "Copenhagen, Denmark",
-      "website": "https://www.icwsm.org/2025/index.html",
-      "year": "2025",
-      "comment": "3rd Full-paper Deadline"
-    },
-    {
       "title": "NOSSDAV",
       "description": "International Workshop on Network and Operating System Support for Digital Audio and Video",
       "rank": "B",
@@ -458,18 +314,6 @@
       "comment": ""
     },
     {
-      "title": "IJCAI",
-      "description": "International Joint Conference on Artificial Intelligence",
-      "rank": "A",
-      "category": "AI",
-      "submission_deadline": "2025-01-23 23:59:59 UTC-12",
-      "conference_date": "August 16-22, 2025",
-      "location": "Montreal, Canada.",
-      "website": "https://2025.ijcai.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "RSS",
       "description": "Robotics Science and Systems",
       "rank": "N",
@@ -480,18 +324,6 @@
       "website": "https://roboticsconference.org",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "SAC",
-      "description": "Selected Areas in Cryptography",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2025-01-27 23:59:59 AoE",
-      "conference_date": "August 13-15, 2025",
-      "location": "Toronto, Ontario, Canada",
-      "website": "https://sacworkshop.org/SAC25/",
-      "year": "2025",
-      "comment": "Paper submission deadline (cycle 1)"
     },
     {
       "title": "GECCO",
@@ -516,18 +348,6 @@
       "website": "https://gecco-2025.sigevo.org/HomePage",
       "year": "2025",
       "comment": "Poster-only papers "
-    },
-    {
-      "title": "ICML",
-      "description": "International Conference on Machine Learning",
-      "rank": "A",
-      "category": "AI",
-      "submission_deadline": "2025-01-30 23:59:59 UTC-12",
-      "conference_date": "July 11-19, 2025",
-      "location": "Vancouver Convention Center, Vancouver, Canada",
-      "website": "https://icml.cc/Conferences/2025",
-      "year": "2025",
-      "comment": "Paper Submissions Open on OpenReview Jan 08 2025 11:59 PM UTC"
     },
     {
       "title": "SIGCOMM",
@@ -564,18 +384,6 @@
       "website": "https://www.ubicomp.org/ubicomp-iswc-2025",
       "year": "2025",
       "comment": "first round"
-    },
-    {
-      "title": "CogSci",
-      "description": "Annual Meeting of the Cognitive Science Society",
-      "rank": "B",
-      "category": "MX",
-      "submission_deadline": "2025-02-01 23:59:59 UTC+8",
-      "conference_date": "July 30-August 2, 2025",
-      "location": "Marriott Marquis, San Francisco",
-      "website": "https://cognitivesciencesociety.org/cogsci-2025/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "EDBT",
@@ -624,18 +432,6 @@
       "website": "https://sgp2025.my.canva.site/",
       "year": "2025",
       "comment": "First (visa-friendly) round"
-    },
-    {
-      "title": "ICALP",
-      "description": "EATCS International Colloquium on Automata, Languages, and Programming",
-      "rank": "B",
-      "category": "CT",
-      "submission_deadline": "2025-02-08 23:59:59 AoE",
-      "conference_date": "July 8-11, 2025",
-      "location": "Aarhus, Denmark",
-      "website": "https://conferences.au.dk/icalp2025",
-      "year": "2025",
-      "comment": "Submissions"
     },
     {
       "title": "UAI",
@@ -806,18 +602,6 @@
       "comment": "ToSC, Volume 2025, Issue 2 Submission deadline"
     },
     {
-      "title": "SecureComm",
-      "description": "International Conference on Security and Privacy in Communication Networks",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2025-03-01 23:59:59 AoE",
-      "conference_date": "July 4-6, 2025",
-      "location": "Xiangtan, China",
-      "website": "https://securecomm.eai-conferences.org/2025/",
-      "year": "2025",
-      "comment": "Full Paper Submission deadline"
-    },
-    {
       "title": "IROS",
       "description": "IEEE\\RSJ International Conference on Intelligent Robots and Systems",
       "rank": "C",
@@ -974,18 +758,6 @@
       "comment": ""
     },
     {
-      "title": "EUSIPCO",
-      "description": "IEEE Conference on Signal Processing",
-      "rank": "B",
-      "category": "DB",
-      "submission_deadline": "2025-03-13 23:59:59 AoE",
-      "conference_date": "September 8-12, 2025",
-      "location": "Isola delle Femmine, Palermo, Italy",
-      "website": "https://eusipco2025.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "ICSE",
       "description": "International Conference on Software Engineering",
       "rank": "A",
@@ -996,18 +768,6 @@
       "website": "https://conf.researchr.org/home/icse-2026",
       "year": "2026",
       "comment": "First Cycle: Submission"
-    },
-    {
-      "title": "ECML-PKDD",
-      "description": "European Conference on Machine Learning and 25th Principles and Practice of Knowledge Discovery in Databases",
-      "rank": "B",
-      "category": "DB",
-      "submission_deadline": "2025-03-14 23:59:59 AoE",
-      "conference_date": "September 15-19, 2025",
-      "location": "Porto, Portugal",
-      "website": "https://ecmlpkdd.org/2025/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "CoNLL",
@@ -1092,30 +852,6 @@
       "website": "https://edbticdt2026.github.io/",
       "year": "2026",
       "comment": ""
-    },
-    {
-      "title": "KSEM",
-      "description": "International Conference on Knowledge Science, Engineering and Management",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2025-03-20 23:59:59 UTC+0",
-      "conference_date": "August 4-6, 2025",
-      "location": "Macao SAR, China",
-      "website": "https://ksem2025.scimeeting.cn/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "SACMAT",
-      "description": "ACM Symposium on Access Control Models and Technologies",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2025-03-24 23:59:59 AoE",
-      "conference_date": "July 8-10, 2025",
-      "location": "Stony Brook, NY, USA",
-      "website": "https://www.sacmat.org/2025/index.php",
-      "year": "2025",
-      "comment": "Paper Submission Deadline"
     },
     {
       "title": "CP",
@@ -1222,18 +958,6 @@
       "conference_date": "December 14-17, 2025",
       "location": "Sydney, Australia",
       "website": "https://focs.computer.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "EGSR",
-      "description": "Eurographics Symposium on Rendering",
-      "rank": "B",
-      "category": "CG",
-      "submission_deadline": "2025-04-07 23:59:59 UTC",
-      "conference_date": "June 25-27, 2025",
-      "location": "Copenhagen, Denmark",
-      "website": "https://conferences.eg.org/egsr2025/",
       "year": "2025",
       "comment": ""
     },
@@ -1354,18 +1078,6 @@
       "conference_date": "October 27-31, 2025",
       "location": "Dublin, Ireland",
       "website": "https://acmmm2025.org/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "IJCB",
-      "description": "International Joint Conference on Biometrics",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2025-04-11 23:59:59 UTC-7",
-      "conference_date": "September 8-11, 2025",
-      "location": "Osaka, Japan",
-      "website": "https://ijcb2025.ieee-biometrics.org/",
       "year": "2025",
       "comment": ""
     },
@@ -1826,18 +1538,6 @@
       "comment": ""
     },
     {
-      "title": "SAC",
-      "description": "Selected Areas in Cryptography",
-      "rank": "C",
-      "category": "SC",
-      "submission_deadline": "2025-05-07 23:59:59 AoE",
-      "conference_date": "August 13-15, 2025",
-      "location": "Toronto, Ontario, Canada",
-      "website": "https://sacworkshop.org/SAC25/",
-      "year": "2025",
-      "comment": "Paper submission deadline (cycle 2)"
-    },
-    {
       "title": "ADMA",
       "description": "The International Conference on Advanced Data Mining and Applications",
       "rank": "C",
@@ -1920,6 +1620,18 @@
       "website": "https://neurips.cc/Conferences/2025",
       "year": "2025",
       "comment": ""
+    },
+    {
+      "title": "ICWSM",
+      "description": "The International AAAI Conference on Web and Social Media",
+      "rank": "B",
+      "category": "HI",
+      "submission_deadline": "2025-05-15 23:59:59 AoE",
+      "conference_date": "May 27-29, 2026",
+      "location": "Los Angeles, CA, USA",
+      "website": "https://www.icwsm.org/2026/index.html",
+      "year": "2026",
+      "comment": "1st Full-paper Deadline"
     },
     {
       "title": "ICNP",
@@ -2083,7 +1795,7 @@
       "rank": "B",
       "category": "DS",
       "submission_deadline": "2025-05-29 23:59:59 AoE",
-      "conference_date": "TBD",
+      "conference_date": "January 31 - 4 February, 2026",
       "location": "Sydney, Australia",
       "website": "https://conf.researchr.org/home/cgo-2026",
       "year": "2026",
@@ -3067,7 +2779,7 @@
       "rank": "B",
       "category": "DS",
       "submission_deadline": "2025-09-11 23:59:59 AoE",
-      "conference_date": "TBD",
+      "conference_date": "January 31 - 4 February, 2026",
       "location": "Sydney, Australia",
       "website": "https://conf.researchr.org/home/cgo-2026",
       "year": "2026",
@@ -3168,6 +2880,18 @@
       "website": "https://2026.ieee-icra.org/",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "ICWSM",
+      "description": "The International AAAI Conference on Web and Social Media",
+      "rank": "B",
+      "category": "HI",
+      "submission_deadline": "2025-09-15 23:59:59 AoE",
+      "conference_date": "May 27-29, 2026",
+      "location": "Los Angeles, CA, USA",
+      "website": "https://www.icwsm.org/2026/index.html",
+      "year": "2026",
+      "comment": "2nd Full-paper Deadline"
     },
     {
       "title": "FAST",
@@ -3394,6 +3118,18 @@
       "conference_date": "May 2-5, 2026",
       "location": "Morocco",
       "website": "https://virtual.aistats.org/Conferences/2026",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ALT",
+      "description": "International Conference on Algorithmic Learning Theory",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2025-10-02 09:59:59 UTC+0",
+      "conference_date": "February 23-26, 2026",
+      "location": "Fields Institute, Toronto, Canada",
+      "website": "https://algorithmiclearningtheory.org/alt2026/",
       "year": "2026",
       "comment": ""
     },
@@ -3686,6 +3422,18 @@
       "comment": ""
     },
     {
+      "title": "SACMAT",
+      "description": "ACM Symposium on Access Control Models and Technologies",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-10-27 23:59:59 AoE",
+      "conference_date": "July 8-10, 2026",
+      "location": "Waterloo, Canada",
+      "website": "https://www.sacmat.org/2026/index.php",
+      "year": "2026",
+      "comment": "First Cycle"
+    },
+    {
       "title": "DASFAA",
       "description": "Database Systems for Advanced Applications",
       "rank": "B",
@@ -3727,7 +3475,7 @@
       "rank": "N",
       "category": "MX",
       "submission_deadline": "2025-10-30 20:00:00 AoE",
-      "conference_date": "May 17-22, 2025",
+      "conference_date": "May 17-22, 2026",
       "location": "Bellevue, Washington, USA",
       "website": "https://mlsys.org/",
       "year": "2026",
@@ -3756,6 +3504,18 @@
       "website": "https://www.ubicomp.org/ubicomp-iswc-2025",
       "year": "2025",
       "comment": "fourth round"
+    },
+    {
+      "title": "STOC",
+      "description": "ACM Symposium on the Theory of Computing",
+      "rank": "A",
+      "category": "CT",
+      "submission_deadline": "2025-11-04 16:59:59 UTC-5",
+      "conference_date": "June 22-26, 2026",
+      "location": "Salt Lake City, Utah, USA",
+      "website": "https://acm-stoc.org/stoc2026/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "PacificVis",
@@ -3792,6 +3552,18 @@
       "website": "https://sensys.acm.org/2026/",
       "year": "2026",
       "comment": "2nd deadline"
+    },
+    {
+      "title": "RTAS",
+      "description": "IEEE Real-Time and Embedded Technology and Applications Symposium",
+      "rank": "B",
+      "category": "DS",
+      "submission_deadline": "2025-11-13 11:59:59 AoE",
+      "conference_date": "May 12-14, 2026",
+      "location": "Saint Malo, France",
+      "website": "https://2026.rtas.org/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "S&P",
@@ -3950,6 +3722,18 @@
       "comment": "1st round Deadline"
     },
     {
+      "title": "CAiSE",
+      "description": "International Conference on Advanced Information Systems Engineering",
+      "rank": "B",
+      "category": "SE",
+      "submission_deadline": "2025-11-28 23:59:59 AoE",
+      "conference_date": "June 8-12, 2026",
+      "location": "Verona, Italy",
+      "website": "https://caise26.polimi.it/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "PETS",
       "description": "Privacy Enhancing Technologies Symposium",
       "rank": "C",
@@ -3986,6 +3770,18 @@
       "comment": ""
     },
     {
+      "title": "SOCG",
+      "description": "International Symposium on Computational Geometry",
+      "rank": "B",
+      "category": "CT",
+      "submission_deadline": "2025-12-02 23:59:00 AoE",
+      "conference_date": "June 2-5, 2026",
+      "location": "New Brunswick, New Jersey, USA",
+      "website": "https://cgweek26.computational-geometry.org/contribute/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "DIMVA",
       "description": "Detection of Intrusions and Malware & Vulnerability Assessment",
       "rank": "C",
@@ -4018,6 +3814,18 @@
       "conference_date": "June 21-25, 2026",
       "location": "Cambridge, UK",
       "website": "https://www.sigmobile.org/mobisys/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "WoWMoM",
+      "description": "IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks",
+      "rank": "C",
+      "category": "NW",
+      "submission_deadline": "2025-12-05 23:59:59 AoE",
+      "conference_date": "June 16-19, 2026",
+      "location": "Bologna, Italy",
+      "website": "https://www.cs.unibo.it/wowmom2026/",
       "year": "2026",
       "comment": ""
     },
@@ -4118,6 +3926,18 @@
       "comment": "Cycle 1"
     },
     {
+      "title": "GMP",
+      "description": "International Conference on Geometric Modeling and Processing",
+      "rank": "C",
+      "category": "CG",
+      "submission_deadline": "2025-12-18 23:59:59 UTC",
+      "conference_date": "May 27-29, 2026",
+      "location": "Pilsen, Czech Republic",
+      "website": "https://gmp2026.kma.zcu.cz/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "SEC",
       "description": "IFIP International Information Security Conference",
       "rank": "C",
@@ -4214,6 +4034,30 @@
       "comment": "Round 2"
     },
     {
+      "title": "KSEM",
+      "description": "International Conference on Knowledge Science, Engineering and Management",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2026-01-15 23:59:59 UTC+0",
+      "conference_date": "July 17-19, 2026",
+      "location": "Beijing, China",
+      "website": "https://ksem2026.rosc.org.cn/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ICWSM",
+      "description": "The International AAAI Conference on Web and Social Media",
+      "rank": "B",
+      "category": "HI",
+      "submission_deadline": "2026-01-15 23:59:59 AoE",
+      "conference_date": "May 27-29, 2026",
+      "location": "Los Angeles, CA, USA",
+      "website": "https://www.icwsm.org/2026/index.html",
+      "year": "2026",
+      "comment": "3rd Full-paper Deadline"
+    },
+    {
       "title": "ISIT",
       "description": "IEEE International Symposium on Information Theory",
       "rank": "N",
@@ -4222,6 +4066,18 @@
       "conference_date": "June 28 - July 3, 2026",
       "location": "Guangzhou, China",
       "website": "https://2026.ieee-isit.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "LICS",
+      "description": "IEEE Symposium on Logic in Computer Science",
+      "rank": "A",
+      "category": "CT",
+      "submission_deadline": "2026-01-22 23:59:59 AoE",
+      "conference_date": "July 20-23, 2026",
+      "location": "Lisbon, Portugal",
+      "website": "https://lics.siglog.org/lics26/",
       "year": "2026",
       "comment": ""
     },
@@ -4310,6 +4166,18 @@
       "comment": ""
     },
     {
+      "title": "CogSci",
+      "description": "Annual Meeting of the Cognitive Science Society",
+      "rank": "B",
+      "category": "MX",
+      "submission_deadline": "2026-02-02 23:59:59 AoE",
+      "conference_date": "July 22-25, 2026",
+      "location": "Rio de Janeiro, Brazil",
+      "website": "https://cognitivesciencesociety.org/cogsci-2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "USENIX Security",
       "description": "USENIX Security Symposium",
       "rank": "A",
@@ -4320,6 +4188,30 @@
       "website": "https://www.usenix.org/conference/usenixsecurity26",
       "year": "2026",
       "comment": "Cycle 2 Deadline"
+    },
+    {
+      "title": "EUSIPCO",
+      "description": "IEEE Conference on Signal Processing",
+      "rank": "B",
+      "category": "DB",
+      "submission_deadline": "2026-02-06 23:59:59 AoE",
+      "conference_date": "August 31 - September 4, 2026",
+      "location": "Bruges, Belgium",
+      "website": "https://eusipco2026.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "SIGKDD",
+      "description": "ACM Knowledge Discovery and Data Mining",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2026-02-08 23:59:59 AoE",
+      "conference_date": "August 9-13, 2026",
+      "location": "Jeju, Korea",
+      "website": "https://kdd2026.kdd.org/",
+      "year": "2026",
+      "comment": "2nd round of 2 total rounds"
     },
     {
       "title": "ICS",
@@ -4394,6 +4286,18 @@
       "comment": ""
     },
     {
+      "title": "SACMAT",
+      "description": "ACM Symposium on Access Control Models and Technologies",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2026-03-02 23:59:59 AoE",
+      "conference_date": "July 8-10, 2026",
+      "location": "Waterloo, Canada",
+      "website": "https://www.sacmat.org/2026/index.php",
+      "year": "2026",
+      "comment": "Second Cycle"
+    },
+    {
       "title": "WiSec",
       "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
       "rank": "C",
@@ -4430,6 +4334,18 @@
       "comment": "Conference Papers"
     },
     {
+      "title": "SecureComm",
+      "description": "International Conference on Security and Privacy in Communication Networks",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2026-03-15 23:59:59 AoE",
+      "conference_date": "July 4-6, 2026",
+      "location": "Lancaster, UK and hybrid",
+      "website": "https://securecomm.eai-conferences.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "OOPSLA",
       "description": "Conference on Object-Oriented Programming Systems, Languages, and Applications",
       "rank": "A",
@@ -4442,6 +4358,18 @@
       "comment": "Submission Deadline Round 2"
     },
     {
+      "title": "ICCBR",
+      "description": "International Conference on Case-Based Reasoning",
+      "rank": "B",
+      "category": "AI",
+      "submission_deadline": "2026-03-20 23:59:59 AoE",
+      "conference_date": "August 13-16, 2026",
+      "location": "Bremen, Germany",
+      "website": "https://2026.iccbr.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "ICIC",
       "description": "International Conference on Intelligent Computing",
       "rank": "C",
@@ -4450,6 +4378,30 @@
       "conference_date": "July 22-26, 2026",
       "location": "Toronto, Canada",
       "website": "http://www.ic-icc.cn/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "PPSN",
+      "description": "International Conference on Parallel Problem Solving From Nature",
+      "rank": "B",
+      "category": "AI",
+      "submission_deadline": "2026-03-28 23:59:59 AoE",
+      "conference_date": "August 29-September 2, 2026",
+      "location": "University of Trento, Trento, Italy",
+      "website": "https://ppsn2026.disi.unitn.it/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "IJCB",
+      "description": "International Joint Conference on Biometrics",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2026-04-10 23:59:59 AoE",
+      "conference_date": "September 1-4, 2026",
+      "location": "Rome, Italy",
+      "website": "https://ijcb2026.ieee-biometrics.org/",
       "year": "2026",
       "comment": ""
     },
