@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-15T01:00:51.083454",
+  "last_updated": "2025-10-16T01:00:45.637650",
   "conferences": [
     {
       "title": "PODC",
@@ -615,7 +615,7 @@
     },
     {
       "title": "APWeb-WAIM",
-      "description": "The 8th APWeb-WAIM joint international conference on Web and Big Data",
+      "description": "APWeb-WAIM joint international conference on Web and Big Data",
       "rank": "C",
       "category": "DB",
       "submission_deadline": "2025-03-02 23:59:59 UTC-8",
@@ -1491,7 +1491,7 @@
     },
     {
       "title": "APWeb-WAIM",
-      "description": "The 8th APWeb-WAIM joint international conference on Web and Big Data",
+      "description": "APWeb-WAIM joint international conference on Web and Big Data",
       "rank": "C",
       "category": "DB",
       "submission_deadline": "2025-05-04 23:59:59 UTC-8",
@@ -3458,18 +3458,6 @@
       "comment": "second round"
     },
     {
-      "title": "ETAPS",
-      "description": "European Joint Conferences on Theory and Practice of Software",
-      "rank": "B",
-      "category": "SE",
-      "submission_deadline": "2025-10-30 23:59:59 AoE",
-      "conference_date": "April 11-16, 2026",
-      "location": "Torino, Italy",
-      "website": "https://etaps.org/2026",
-      "year": "2026",
-      "comment": "TACAS mandatory artifact submission"
-    },
-    {
       "title": "MLSys",
       "description": "Conference on Machine Learning and Systems",
       "rank": "N",
@@ -3986,18 +3974,6 @@
       "comment": ""
     },
     {
-      "title": "ETAPS",
-      "description": "European Joint Conferences on Theory and Practice of Software",
-      "rank": "B",
-      "category": "SE",
-      "submission_deadline": "2026-01-08 23:59:59 AoE",
-      "conference_date": "April 11-16, 2026",
-      "location": "Torino, Italy",
-      "website": "https://etaps.org/2026",
-      "year": "2026",
-      "comment": "ESOP, FASE, FoSSaCS artifact, TACAS voluntary artifact submission"
-    },
-    {
       "title": "SIGMETRICS",
       "description": "ACM Special Interest Group on Measurement and Evaluation",
       "rank": "B",
@@ -4066,6 +4042,18 @@
       "conference_date": "June 28 - July 3, 2026",
       "location": "Guangzhou, China",
       "website": "https://2026.ieee-isit.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "CF",
+      "description": "ACM International Conference on Computing Frontiers",
+      "rank": "C",
+      "category": "DS",
+      "submission_deadline": "2026-01-19 23:59:59 AoE",
+      "conference_date": "May 19-21, 2026",
+      "location": "Catania, Sicily, Italy",
+      "website": "https://www.computingfrontiers.org/2026/",
       "year": "2026",
       "comment": ""
     },
