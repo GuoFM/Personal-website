@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-17T01:00:26.588211",
+  "last_updated": "2025-10-18T00:57:49.123181",
   "conferences": [
     {
       "title": "PODC",
@@ -47,18 +47,6 @@
       "location": "Rabat, Morocco",
       "website": "https://netys.net/",
       "year": "2024",
-      "comment": ""
-    },
-    {
-      "title": "CoNEXT",
-      "description": "International Conference on Emerging Networking Experiments and Technologies",
-      "rank": "B",
-      "category": "NW",
-      "submission_deadline": "2024-06-27 23:59:59 AoE",
-      "conference_date": "TBD",
-      "location": "TBD",
-      "website": "https://conferences.sigcomm.org/co-next/2025/#!/home",
-      "year": "2025",
       "comment": ""
     },
     {
@@ -3854,6 +3842,18 @@
       "comment": ""
     },
     {
+      "title": "CoNEXT",
+      "description": "International Conference on Emerging Networking Experiments and Technologies",
+      "rank": "B",
+      "category": "NW",
+      "submission_deadline": "2025-12-12 23:59:59 AoE",
+      "conference_date": "December 7-10, 2026",
+      "location": "Utrecht, The Netherlands",
+      "website": "https://conferences.sigcomm.org/co-next/2026/#!/home",
+      "year": "2026",
+      "comment": "December Cycle"
+    },
+    {
       "title": "ICDCS",
       "description": "IEEE International Conference on Distributed Computing Systems",
       "rank": "B",
@@ -4416,6 +4416,18 @@
       "website": "https://conferences.sigcomm.org/imc/2026/",
       "year": "2026",
       "comment": "Cycle 2 Deadline"
+    },
+    {
+      "title": "CoNEXT",
+      "description": "International Conference on Emerging Networking Experiments and Technologies",
+      "rank": "B",
+      "category": "NW",
+      "submission_deadline": "2026-06-05 23:59:59 AoE",
+      "conference_date": "December 7-10, 2026",
+      "location": "Utrecht, The Netherlands",
+      "website": "https://conferences.sigcomm.org/co-next/2026/#!/home",
+      "year": "2026",
+      "comment": "June Cycle"
     }
   ]
 }
