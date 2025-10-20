@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-19T01:07:02.841638",
+  "last_updated": "2025-10-20T01:04:47.236013",
   "conferences": [
     {
       "title": "PODC",
@@ -1714,6 +1714,18 @@
       "conference_date": "December 2-5, 2025",
       "location": "Boston, MA, USA",
       "website": "http://2025.rtss.org/",
+      "year": "2025",
+      "comment": ""
+    },
+    {
+      "title": "DFRWS APAC",
+      "description": "Digital Forensic Research Workshop Asia Pacific",
+      "rank": "C",
+      "category": "SC",
+      "submission_deadline": "2025-05-23 23:59:59 AoE",
+      "conference_date": "November 10-12, 2025",
+      "location": "Seoul, South Korea",
+      "website": "https://dfrws.org/conferences/dfrws-apac-2025/",
       "year": "2025",
       "comment": ""
     },
