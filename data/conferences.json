@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-20T01:04:47.236013",
+  "last_updated": "2025-10-21T01:01:36.377959",
   "conferences": [
     {
       "title": "PODC",
@@ -156,18 +156,6 @@
       "website": "https://2025.ecoop.org/",
       "year": "2025",
       "comment": "Submission R1"
-    },
-    {
-      "title": "CCS",
-      "description": "ACM Conference on Computer and Communications Security",
-      "rank": "A",
-      "category": "SC",
-      "submission_deadline": "2025-01-09 23:59:59 UTC-12",
-      "conference_date": "October 13-17, 2025",
-      "location": "TICC, Taipei, Taiwan",
-      "website": "https://www.sigsac.org/ccs/CCS2025/",
-      "year": "2025",
-      "comment": "First Review Cycle"
     },
     {
       "title": "ESORICS",
@@ -1080,18 +1068,6 @@
       "website": "https://sc25.supercomputing.org/",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "CCS",
-      "description": "ACM Conference on Computer and Communications Security",
-      "rank": "A",
-      "category": "SC",
-      "submission_deadline": "2025-04-14 23:59:59 UTC-12",
-      "conference_date": "October 13-17, 2025",
-      "location": "TICC, Taipei, Taiwan",
-      "website": "https://www.sigsac.org/ccs/CCS2025/",
-      "year": "2025",
-      "comment": "Second Review Cycle"
     },
     {
       "title": "GLOBECOM",
@@ -3578,6 +3554,18 @@
       "comment": ""
     },
     {
+      "title": "HSCC",
+      "description": "International Conference on Hybrid Systems: Computation and Control",
+      "rank": "B",
+      "category": "CT",
+      "submission_deadline": "2025-11-13 23:59:59 AoE",
+      "conference_date": "May 11-14, 2026",
+      "location": "Saint Malo, France",
+      "website": "https://www.isis.vanderbilt.edu/events/hscciccps-2026",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "CVPR",
       "description": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
       "rank": "A",
@@ -3996,6 +3984,18 @@
       "website": "https://www.sigmetrics.org/sigmetrics2026/",
       "year": "2026",
       "comment": "winter round"
+    },
+    {
+      "title": "CCS",
+      "description": "ACM Conference on Computer and Communications Security",
+      "rank": "A",
+      "category": "SC",
+      "submission_deadline": "2026-01-14 23:59:59 UTC-12",
+      "conference_date": "November 15-19, 2026",
+      "location": "World Forum, Hague, Netherlands",
+      "website": "https://www.sigsac.org/ccs/CCS2026/",
+      "year": "2026",
+      "comment": "First Review Cycle"
     },
     {
       "title": "CHES",
@@ -4428,6 +4428,18 @@
       "website": "https://conferences.sigcomm.org/imc/2026/",
       "year": "2026",
       "comment": "Cycle 2 Deadline"
+    },
+    {
+      "title": "CCS",
+      "description": "ACM Conference on Computer and Communications Security",
+      "rank": "A",
+      "category": "SC",
+      "submission_deadline": "2026-04-29 23:59:59 UTC-12",
+      "conference_date": "November 15-19, 2026",
+      "location": "World Forum, Hague, Netherlands",
+      "website": "https://www.sigsac.org/ccs/CCS2026/",
+      "year": "2026",
+      "comment": "Second Review Cycle"
     },
     {
       "title": "CoNEXT",
