@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-22T01:02:18.052500",
+  "last_updated": "2025-10-23T01:00:58.186553",
   "conferences": [
     {
       "title": "PODC",
@@ -4128,6 +4128,18 @@
       "website": "https://conf.researchr.org/home/issta-2026",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "ICML",
+      "description": "International Conference on Machine Learning",
+      "rank": "A",
+      "category": "AI",
+      "submission_deadline": "2026-01-29 11:59:59 UTC+0",
+      "conference_date": "July 6-12, 2026",
+      "location": "Seoul, Korea",
+      "website": "https://icml.cc/Conferences/2026",
+      "year": "2026",
+      "comment": "Paper Submissions Open on OpenReview Jan 08 2026 12:00AM UTC-0"
     },
     {
       "title": "COMPSAC",
