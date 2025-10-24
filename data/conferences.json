@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-23T01:00:58.186553",
+  "last_updated": "2025-10-24T00:57:37.346184",
   "conferences": [
     {
       "title": "PODC",
@@ -1428,18 +1428,6 @@
       "website": "https://srds-conference.org/",
       "year": "2025",
       "comment": "Full Paper Submission"
-    },
-    {
-      "title": "ICMI",
-      "description": "ACM International Conference on Multimodal Interaction",
-      "rank": "C",
-      "category": "HI",
-      "submission_deadline": "2025-05-02 23:59:59 UTC+7",
-      "conference_date": "Oct 13 - 17, 2025",
-      "location": "Canberra, Australia",
-      "website": "https://icmi.acm.org/2025/",
-      "year": "2025",
-      "comment": ""
     },
     {
       "title": "SAS",
@@ -4428,6 +4416,18 @@
       "website": "https://ches.iacr.org/2026/",
       "year": "2026",
       "comment": "Schedule for TCHES Volume 2026/4"
+    },
+    {
+      "title": "ICMI",
+      "description": "ACM International Conference on Multimodal Interaction",
+      "rank": "C",
+      "category": "HI",
+      "submission_deadline": "2026-04-20 23:59:59 UTC+7",
+      "conference_date": "Oct 5 - 9, 2026",
+      "location": "Napoli, Italy",
+      "website": "https://icmi.acm.org/2026/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "IMC",
