@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-10-25T00:59:02.287436",
+  "last_updated": "2025-10-26T01:05:10.217410",
   "conferences": [
     {
       "title": "PODC",
@@ -638,18 +638,6 @@
       "comment": ""
     },
     {
-      "title": "ICDAR",
-      "description": "International Conference on Document Analysis and Recognition",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2025-03-07 23:59:59 UTC+0",
-      "conference_date": "September 17-21, 2025",
-      "location": "Wuhan, China",
-      "website": "https://www.icdar2025.com/home",
-      "year": "2025",
-      "comment": ""
-    },
-    {
       "title": "CASA",
       "description": "International Conference on Computer Animation and Social Agents",
       "rank": "C",
@@ -850,18 +838,6 @@
       "conference_date": "October 7-9, 2025",
       "location": "Palais des Congrès Montreal, Canada",
       "website": "https://colmweb.org/cfp.html",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "ICANN",
-      "description": "International Conference on Artificial Neural Networks",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2025-03-29 23:59:59 AoE",
-      "conference_date": "Sept 9-12, 2025",
-      "location": "Kaunas, Lithuania",
-      "website": "https://e-nns.org/icann2025/",
       "year": "2025",
       "comment": ""
     },
@@ -1486,18 +1462,6 @@
       "conference_date": "October 25-30, 2025",
       "location": "Bologna, ITALY",
       "website": "https://ecai2025.org/deadlines/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "ADMA",
-      "description": "The International Conference on Advanced Data Mining and Applications",
-      "rank": "C",
-      "category": "DB",
-      "submission_deadline": "2025-05-08 23:59:59 AoE",
-      "conference_date": "October 22 - 24, 2025",
-      "location": "Kyoto, Japan",
-      "website": "https://adma2025.github.io",
       "year": "2025",
       "comment": ""
     },
@@ -4260,6 +4224,18 @@
       "website": "https://acisp-conference.github.io/acisp2026/index.html",
       "year": "2026",
       "comment": "2nd round Deadline"
+    },
+    {
+      "title": "ICDAR",
+      "description": "International Conference on Document Analysis and Recognition",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2026-02-27 23:59:59 UTC+0",
+      "conference_date": "August 30 - September 4, 2026",
+      "location": "Vienna, Austria",
+      "website": "https://icdar2026.org/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "PETS",
