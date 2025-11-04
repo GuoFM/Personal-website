@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-03T01:05:24.823666",
+  "last_updated": "2025-11-04T01:02:31.794669",
   "conferences": [
     {
       "title": "PODC",
@@ -334,18 +334,6 @@
       "conference_date": "September 8-11, 2025",
       "location": "Coimbra, Portugal",
       "website": "https://conferences.sigcomm.org/sigcomm/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "CAV",
-      "description": "International Conference on Computer-Aided Verification",
-      "rank": "A",
-      "category": "CT",
-      "submission_deadline": "2025-01-31 23:59:59 AoE",
-      "conference_date": "July 21-25, 2025",
-      "location": "Zagreb, Croatia",
-      "website": "https://conferences.i-cav.org/2025/",
       "year": "2025",
       "comment": ""
     },
@@ -4056,6 +4044,18 @@
       "website": "https://conf.researchr.org/home/ease-2026",
       "year": "2026",
       "comment": "Research Papers"
+    },
+    {
+      "title": "CAV",
+      "description": "International Conference on Computer-Aided Verification",
+      "rank": "A",
+      "category": "CT",
+      "submission_deadline": "2026-01-28 23:59:59 AoE",
+      "conference_date": "July 26-29, 2026",
+      "location": "Lisbon, Portugal",
+      "website": "https://conferences.i-cav.org/2026/",
+      "year": "2026",
+      "comment": ""
     },
     {
       "title": "CSFW",
