@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-05T01:03:52.745289",
+  "last_updated": "2025-11-06T01:02:54.651789",
   "conferences": [
     {
       "title": "PODC",
@@ -1495,8 +1495,8 @@
       "rank": "A",
       "category": "HI",
       "submission_deadline": "2025-05-13 23:59:59 AoE",
-      "conference_date": "TBD",
-      "location": "USA",
+      "conference_date": "October 10-14, 2026",
+      "location": "Salt Lake City, Utah, USA",
       "website": "https://cscw.acm.org/2026/",
       "year": "2026",
       "comment": "MAY 2025 SUBMISSION CYCLE"
@@ -3799,8 +3799,8 @@
       "rank": "B",
       "category": "DS",
       "submission_deadline": "2025-12-12 23:59:59 AoE",
-      "conference_date": "TBD",
-      "location": "South Korea",
+      "conference_date": "June 22-25, 2026",
+      "location": "Seoul, South Korea",
       "website": "http://icdcs2026.icdcs.org/",
       "year": "2026",
       "comment": ""
