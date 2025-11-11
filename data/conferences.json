@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-10T01:05:48.930773",
+  "last_updated": "2025-11-11T01:03:38.200148",
   "conferences": [
     {
       "title": "PODC",
@@ -4006,6 +4006,18 @@
       "conference_date": "May 19-21, 2026",
       "location": "Catania, Sicily, Italy",
       "website": "https://www.computingfrontiers.org/2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "IJCAI",
+      "description": "International Joint Conference on Artificial Intelligence",
+      "rank": "A",
+      "category": "AI",
+      "submission_deadline": "2026-01-19 23:59:59 UTC-12",
+      "conference_date": "August 15-21, 2026",
+      "location": "Bremen, Germany",
+      "website": "https://2026.ijcai.org/",
       "year": "2026",
       "comment": ""
     },
