@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-18T01:02:56.269445",
+  "last_updated": "2025-11-19T01:02:51.404791",
   "conferences": [
     {
       "title": "PODC",
@@ -46,18 +46,6 @@
       "conference_date": "May 29-31, 2024",
       "location": "Rabat, Morocco",
       "website": "https://netys.net/",
-      "year": "2024",
-      "comment": ""
-    },
-    {
-      "title": "ACCV",
-      "description": "Asian Conference on Computer Vision",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2024-07-02 23:59:59 UTC-12",
-      "conference_date": "December 8-12, 2024",
-      "location": "Hanoi, Vietnam",
-      "website": "https://accv2024.org/",
       "year": "2024",
       "comment": ""
     },
@@ -240,18 +228,6 @@
       "website": "https://www.fccm.org/",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "SIGMOD",
-      "description": "ACM Conference on Management of Data",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2025-01-17 23:59:00 AoE",
-      "conference_date": "May 31-June 5, 2026",
-      "location": "Bangalore, India",
-      "website": "https://2026.sigmod.org/",
-      "year": "2026",
-      "comment": "round 1"
     },
     {
       "title": "DIS",
@@ -1104,18 +1080,6 @@
       "website": "https://sigops.org/s/conferences/sosp/2025/index.html",
       "year": "2025",
       "comment": ""
-    },
-    {
-      "title": "SIGMOD",
-      "description": "ACM Conference on Management of Data",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2025-04-17 23:59:00 AoE",
-      "conference_date": "May 31-June 5, 2026",
-      "location": "Bangalore, India",
-      "website": "https://2026.sigmod.org/",
-      "year": "2026",
-      "comment": "round 2"
     },
     {
       "title": "PACT",
@@ -2210,18 +2174,6 @@
       "comment": "Full Paper First Wave Submissions"
     },
     {
-      "title": "SIGMOD",
-      "description": "ACM Conference on Management of Data",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2025-07-17 23:59:00 AoE",
-      "conference_date": "May 31-June 5, 2026",
-      "location": "Bangalore, India",
-      "website": "https://2026.sigmod.org/",
-      "year": "2026",
-      "comment": "round 3"
-    },
-    {
       "title": "ICSE",
       "description": "International Conference on Software Engineering",
       "rank": "A",
@@ -2918,18 +2870,6 @@
       "comment": "Fall Submission Deadline"
     },
     {
-      "title": "MMSys",
-      "description": "ACM International Conference on Multimedia Systems",
-      "rank": "N",
-      "category": "NW",
-      "submission_deadline": "2025-09-26 23:59:59 AoE",
-      "conference_date": "April 4 - 8, 2026",
-      "location": "Hong Kong SAR",
-      "website": "https://2026.acmmmsys.org",
-      "year": "2026",
-      "comment": "Round 1 deadline"
-    },
-    {
       "title": "ACNS",
       "description": "Applied Cryptography and Network Security",
       "rank": "C",
@@ -3266,18 +3206,6 @@
       "comment": "Research Track Paper submission deadline"
     },
     {
-      "title": "SIGMOD",
-      "description": "ACM Conference on Management of Data",
-      "rank": "A",
-      "category": "DB",
-      "submission_deadline": "2025-10-17 23:59:00 AoE",
-      "conference_date": "May 31-June 5, 2026",
-      "location": "Bangalore, India",
-      "website": "https://2026.sigmod.org/",
-      "year": "2026",
-      "comment": "round 4"
-    },
-    {
       "title": "ICPC",
       "description": "IEEE International Conference on Program Comprehension",
       "rank": "B",
@@ -3612,6 +3540,18 @@
       "website": "https://eurosp2026.ieee-security.org/",
       "year": "2026",
       "comment": ""
+    },
+    {
+      "title": "MMSys",
+      "description": "ACM International Conference on Multimedia Systems",
+      "rank": "N",
+      "category": "NW",
+      "submission_deadline": "2025-11-21 23:59:59 AoE",
+      "conference_date": "April 4 - 8, 2026",
+      "location": "Hong Kong SAR",
+      "website": "https://2026.acmmmsys.org",
+      "year": "2026",
+      "comment": "Round 2 deadline"
     },
     {
       "title": "FSE",
@@ -3998,6 +3938,18 @@
       "comment": ""
     },
     {
+      "title": "SIGMOD",
+      "description": "ACM Conference on Management of Data",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2026-01-17 23:59:00 AoE",
+      "conference_date": "June 13-19, 2027",
+      "location": "Huntington Beach, CA, USA",
+      "website": "https://2027.sigmod.org/",
+      "year": "2027",
+      "comment": "round 1"
+    },
+    {
       "title": "CF",
       "description": "ACM International Conference on Computing Frontiers",
       "rank": "C",
@@ -4018,6 +3970,18 @@
       "conference_date": "August 15-21, 2026",
       "location": "Bremen, Germany",
       "website": "https://2026.ijcai.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "ICIP",
+      "description": "The IEEE International Conference on Image Processing",
+      "rank": "C",
+      "category": "CG",
+      "submission_deadline": "2026-01-21 23:59:59 UTC+0",
+      "conference_date": "Sep 13-17, 2026",
+      "location": "Tampere, Finland",
+      "website": "https://2026.ieeeicip.org/",
       "year": "2026",
       "comment": ""
     },
@@ -4334,6 +4298,18 @@
       "comment": ""
     },
     {
+      "title": "ICANN",
+      "description": "International Conference on Artificial Neural Networks",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2026-03-16 23:59:59 AoE",
+      "conference_date": "Sept 14-17, 2026",
+      "location": "Conference center of the School of Psychology, University of Padua, Italy",
+      "website": "https://e-nns.org/icann2026/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
       "title": "OOPSLA",
       "description": "Conference on Object-Oriented Programming Systems, Languages, and Applications",
       "rank": "A",
@@ -4406,6 +4382,18 @@
       "comment": "Schedule for TCHES Volume 2026/4"
     },
     {
+      "title": "SIGMOD",
+      "description": "ACM Conference on Management of Data",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2026-04-17 23:59:00 AoE",
+      "conference_date": "June 13-19, 2027",
+      "location": "Huntington Beach, CA, USA",
+      "website": "https://2027.sigmod.org/",
+      "year": "2027",
+      "comment": "round 2"
+    },
+    {
       "title": "ICMI",
       "description": "ACM International Conference on Multimodal Interaction",
       "rank": "C",
@@ -4452,6 +4440,42 @@
       "website": "https://conferences.sigcomm.org/co-next/2026/#!/home",
       "year": "2026",
       "comment": "June Cycle"
+    },
+    {
+      "title": "ACCV",
+      "description": "Asian Conference on Computer Vision",
+      "rank": "C",
+      "category": "AI",
+      "submission_deadline": "2026-07-05 23:59:59 UTC-12",
+      "conference_date": "December 14-18, 2026",
+      "location": "Osaka, japan",
+      "website": "https://accv2026.org/",
+      "year": "2026",
+      "comment": ""
+    },
+    {
+      "title": "SIGMOD",
+      "description": "ACM Conference on Management of Data",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2026-07-17 23:59:00 AoE",
+      "conference_date": "June 13-19, 2027",
+      "location": "Huntington Beach, CA, USA",
+      "website": "https://2027.sigmod.org/",
+      "year": "2027",
+      "comment": "round 3"
+    },
+    {
+      "title": "SIGMOD",
+      "description": "ACM Conference on Management of Data",
+      "rank": "A",
+      "category": "DB",
+      "submission_deadline": "2026-10-17 23:59:00 AoE",
+      "conference_date": "June 13-19, 2027",
+      "location": "Huntington Beach, CA, USA",
+      "website": "https://2027.sigmod.org/",
+      "year": "2027",
+      "comment": "round 4"
     }
   ]
 }
