@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-11-19T01:02:51.404791",
+  "last_updated": "2025-11-20T01:01:59.321113",
   "conferences": [
     {
       "title": "PODC",
@@ -1522,18 +1522,6 @@
       "conference_date": "December 8-12, 2025",
       "location": "Melbourne, Australia",
       "website": "https://asiacrypt.iacr.org/2025/",
-      "year": "2025",
-      "comment": ""
-    },
-    {
-      "title": "BMVC",
-      "description": "British Machine Vision Conference",
-      "rank": "C",
-      "category": "AI",
-      "submission_deadline": "2025-05-16 23:59:59 UTC+0",
-      "conference_date": "November 24-27, 2025",
-      "location": "Sheffield, UK",
-      "website": "https://bmvc2025.bmva.org/",
       "year": "2025",
       "comment": ""
     },
